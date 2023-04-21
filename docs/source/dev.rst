@@ -1,6 +1,6 @@
 Development
 ===========
-We'd love you to contribute to *IFDat-docs*!
+We'd love you to contribute to *ELFund-docs*!
 
 
 .. contents::
@@ -10,7 +10,7 @@ We'd love you to contribute to *IFDat-docs*!
 Issues
 ------
 
-Questions, feature requests and bug reports are all welcome as [discussions or issues](https://github.com/lerooze/ifdat-docs/issues/new/choose).
+Questions, feature requests and bug reports are all welcome as [discussions or issues](https://github.com/lerooze/elfund-docs/issues/new/choose).
 
 
 Pull Requests
@@ -24,8 +24,8 @@ You'll need to have a version between **python 3.8 and 3.11** and **git** instal
 .. code-block:: bash
 
     # 1. clone your fork and cd into the repo directory
-    git clone git@github.com:<your username>/ifdat-docs.git
-    cd ifdat-docs
+    git clone git@github.com:<your username>/elfund-docs.git
+    cd elfund-docs
 
     # 2. Set up a virtualenv
     python -m venv env
@@ -33,7 +33,7 @@ You'll need to have a version between **python 3.8 and 3.11** and **git** instal
     # 3. Activate virtualenv
     source env/bin/activate
 
-    # 4. Inatall ifdat-docs
+    # 4. Install elfund-docs
     pip install --editable .[docs]
 
     # 5. Checkout a new branch and make your changes
