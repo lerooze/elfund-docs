@@ -1,0 +1,5 @@
+"ID","NAME","DESCRIPTION"
+"A","Normal value","Normal value"
+"E","Estimated value","Estimated value"
+"M","Missing value; data cannot exist","Missing value; data cannot exist"
+"O","Missing value","Missing value"

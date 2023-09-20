@@ -10,13 +10,17 @@
         {
           "DIMS": {
             "IID": "IGR8801101230000012300302300",
-            "DT": "2022-01-31"
+            "DT": "2022-01-31",
+            "FRQNCY": "M"
           },
           "STCK": {
             "VALUE": 4110007.78
           },
           "EUR_STCK": {
             "VALUE": 4110007.78
+          },
+          "FLS": {
+            "VALUE": 4110000.0
           },
           "ACCRLS": {
             "VALUE": 7.78
@@ -43,16 +47,7 @@
           "NMNL_STCK": {
             "VALUE": 1023386.0
           },
-          "LND_FR_RPS": {
-            "VALUE": 0.0
-          },
-          "LND_FR_SCLB": {
-            "VALUE": 0.0
-          },
-          "LND_FR_BSBT": {
-            "VALUE": 0.0
-          },
-          "LND_FR_MLT": {
+          "LND_FR_SFT": {
             "VALUE": 0.0
           },
           "ACCRLS": {
@@ -83,17 +78,11 @@
           "QNTTY": {
             "VALUE": 277778.0
           },
-          "LND_FR_RPS": {
+          "LND_FR_SFT": {
             "VALUE": 0.0
           },
-          "LND_FR_SCLB": {
-            "VALUE": 0.0
-          },
-          "LND_FR_BSBT": {
-            "VALUE": 0.0
-          },
-          "LND_FR_MLT": {
-            "VALUE": 0.0
+          "IS_DRCT_INVSTMNT": {
+            "VALUE": false
           }
         }
       ],

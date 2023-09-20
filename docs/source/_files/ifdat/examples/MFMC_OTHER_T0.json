@@ -1,0 +1,60 @@
+{
+  "HEADER": {
+    "RA": "EGRMFMC000",
+    "RP": "aloumiotis",
+    "DOMAIN": "IFDat"
+  },
+  "CATEGORIES": {
+    "OTHER": {
+      "HOLDER": [
+        {
+          "DIMS": {
+            "ID": "PGRMFMC000_H1"
+          },
+          "CNTRY_RSDNC": {
+            "VALUE": "GR"
+          },
+          "INSTTTNL_SCTR": {
+            "VALUE": "S14"
+          }
+        },
+        {
+          "DIMS": {
+            "ID": "PGRMFMC000_H2"
+          },
+          "CNTRY_RSDNC": {
+            "VALUE": "CY"
+          },
+          "INSTTTNL_SCTR": {
+            "VALUE": "S14"
+          }
+        }
+      ],
+      "DEPOSIT": [
+        {
+          "DIMS": {
+            "ID": "IGR8801101230000012300302300"
+          },
+          "DT_BRTH": {
+            "VALUE": "2022-01-27"
+          },
+          "TYP": {
+            "VALUE": "OVER"
+          },
+          "CRRNCY": {
+            "VALUE": "EUR"
+          },
+          "IS_TRNSFRBL": {
+            "VALUE": true
+          },
+          "DBTR": {
+            "VALUE": "EGR011"
+          },
+          "CRDTR": {
+            "VALUE": "EGRAK1"
+          }
+        }
+      ]
+    }
+  }
+}

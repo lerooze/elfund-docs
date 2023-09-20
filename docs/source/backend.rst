@@ -12,9 +12,9 @@ BACKEND DATABASE
   είναι επίσημα τα στοιχεία της εγγραφής.  Οι διαστάσεις αυτές θα έχουν το
   όνομα OFFICIAL_FROM, OFFICIAL_TO με ακρώνυμα OFFCL_FRM, OFFCL_T.  Για
   παράδειγμα αν οι διαστασεις ενός πίνακα του **DBDat** είναι οι
-  SRC_ORG,SRC_PSN,SRC_TYP,ID,VLD_FRM,VLD_T τότε οι διαστάσεις του αντίστοιχου
+  SRC_ORG,SRC_USR,SRC_TYP,ID,VLD_FRM,VLD_T τότε οι διαστάσεις του αντίστοιχου
   πίνακα της βάσης θα πρέπει να είναι
-  OFFCL_FRM,OFFCL_T,SRC_ORG,SRC_PSN,SRC_TYP,ID,VLD_FRM,VLD_T.
+  OFFCL_FRM,OFFCL_T,SRC_ORG,SRC_USR,SRC_TYP,ID,VLD_FRM,VLD_T.
 
 * μεταβλητή LOG που δίνει σύνδεσμο με το πίνακα LOG έτσι ώστε να μπορεί να
   διαπιστωθεί ποιος ευθύνεται για τις αλλαγές που υπάρχουν στις παρεχόμενες

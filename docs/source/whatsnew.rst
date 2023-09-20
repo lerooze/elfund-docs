@@ -11,6 +11,12 @@ What's new?
 .. Next release
 .. ============
 
+v0.1.3 (2023-09-20)
+-------------------
+
+* Update DBDat and IFDat models after extensive consultations within the Statistics Department of BoG
+* Minor fixes
+
 v0.1.2 (2023-04-25)
 -------------------
 
