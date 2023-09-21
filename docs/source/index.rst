@@ -31,6 +31,7 @@ ELFUND-DOCS
 .. toctree::
    :maxdepth: 1
 
+   download
    ifdat
    riad
    csdb
