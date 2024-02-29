@@ -11,6 +11,15 @@ What's new?
 .. Next release
 .. ============
 
+v0.3.0 (2024-02-29)
+-------------------
+
+* Update DBDat model
+* Refactored excel data models and improved the json schemas
+* Added acknowledgment schema
+* Added openapi backend schema
+* Other improvements
+
 v0.2.0 (2023-09-21)
 -------------------
 

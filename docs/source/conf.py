@@ -12,14 +12,15 @@
 
 import os
 import sys
-sys.path.append(os.path.abspath('ext'))
-sys.path.append('.')
+
+sys.path.append(os.path.abspath("ext"))
+sys.path.append(".")
 
 
 # -- Project information -----------------------------------------------------
 
 project = "ELFund-docs"
-author = 'Antonis Loumiotis'
+author = "Antonis Loumiotis"
 copyright = "2022–2023 ifdat-docs developers"
 
 # # The full version, including alpha/beta/rc tags
@@ -42,6 +43,7 @@ extensions = [
     "sphinx.ext.viewcode",
     "IPython.sphinxext.ipython_console_highlighting",
     "IPython.sphinxext.ipython_directive",
+    "docxbuilder",
 ]
 
 from links.link import *
@@ -55,7 +57,9 @@ templates_path = ["_templates"]
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-# language = "el"
+language = "el"
+latex_engine = "xelatex"
+latex_use_xindy = False
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -70,7 +74,3 @@ html_theme = "sphinx_book_theme"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-latex_engine = "xelatex"
-latex_use_xindy = False
-language = "el"
-

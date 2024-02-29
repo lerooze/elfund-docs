@@ -16,7 +16,7 @@ Questions, feature requests and bug reports are all welcome as [discussions or i
 Pull Requests
 -------------
 
-It should be extremely simple to get started and create a Pull Request.
+It should be relatively simple to get started and create a Pull Request.
 
 
 You'll need to have a version between **python 3.8 and 3.11** and **git** installed.
@@ -36,11 +36,22 @@ You'll need to have a version between **python 3.8 and 3.11** and **git** instal
     # 4. Install elfund-docs
     pip install --editable .[docs]
 
-    # 5. Checkout a new branch and make your changes
+    # 5. Checkout a new branch and cd into docs 
     git checkout -b my-new-feature-branch
-    # make your changes...
+    cd docs
 
-    # 6. Build documentation
-    sphinx-build -b html docs/source docs/_build/html
+    # 5a (optional). Copy static files
+    make copy
+
+    # 6 Make your changes 
+
+    # 7. Build docx documentation
+    make docx
+
+    # 8. Copy docx documentation to static
+    make copy_docx
+
+    # 9. Build html documentation
+    make html
 
     # ... commit, push, and create your pull request
