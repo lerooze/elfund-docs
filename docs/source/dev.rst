@@ -19,7 +19,7 @@ Pull Requests
 It should be relatively simple to get started and create a Pull Request.
 
 
-You'll need to have a version between **python 3.8 and 3.11** and **git** installed.
+You'll need to have a version between **python 3.8 and 3.12** and **git** installed.
 
 .. code-block:: bash
 

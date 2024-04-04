@@ -11,6 +11,14 @@ What's new?
 .. Next release
 .. ============
 
+v0.3.1 (2024-04-24)
+-------------------
+
+* Added DBDat documentation
+* Refactored index page
+* Added test data
+* Added validation section
+
 v0.3.0 (2024-02-29)
 -------------------
 
