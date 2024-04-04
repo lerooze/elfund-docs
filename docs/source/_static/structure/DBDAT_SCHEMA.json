@@ -4,274 +4,148 @@
       "additionalProperties": false,
       "properties": {
         "ASST_DPST": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__DpstSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Asst Dpst"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__acc__DpstSeries"
+          },
+          "title": "Asst Dpst",
+          "type": "array"
         },
         "ASST_SFT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__SftSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Asst Sft"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__acc__SftSeries"
+          },
+          "title": "Asst Sft",
+          "type": "array"
         },
         "ASST_DBT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/AsstDbtSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Asst Dbt"
+          "items": {
+            "$ref": "#/$defs/AsstDbtSeries"
+          },
+          "title": "Asst Dbt",
+          "type": "array"
         },
         "ASST_LN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__LnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Asst Ln"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__acc__LnSeries"
+          },
+          "title": "Asst Ln",
+          "type": "array"
         },
         "SHR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__ShrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Shr"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__acc__ShrSeries"
+          },
+          "title": "Shr",
+          "type": "array"
         },
         "EDR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__EdrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Edr"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__acc__EdrSeries"
+          },
+          "title": "Edr",
+          "type": "array"
         },
         "ODR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__OdrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Odr"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__acc__OdrSeries"
+          },
+          "title": "Odr",
+          "type": "array"
         },
         "ASST_NN_FNNCL": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/AsstNnFnnclSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Asst Nn Fnncl"
+          "items": {
+            "$ref": "#/$defs/AsstNnFnnclSeries"
+          },
+          "title": "Asst Nn Fnncl",
+          "type": "array"
         },
         "ASST_RMNNG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/AsstRmnngSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Asst Rmnng"
+          "items": {
+            "$ref": "#/$defs/AsstRmnngSeries"
+          },
+          "title": "Asst Rmnng",
+          "type": "array"
         },
         "LBLTY_DPST": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__DpstSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Lblty Dpst"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__acc__DpstSeries"
+          },
+          "title": "Lblty Dpst",
+          "type": "array"
         },
         "LBLTY_SFT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__SftSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Lblty Sft"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__acc__SftSeries"
+          },
+          "title": "Lblty Sft",
+          "type": "array"
         },
         "LBLTY_DBT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/LbltyDbtSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Lblty Dbt"
+          "items": {
+            "$ref": "#/$defs/LbltyDbtSeries"
+          },
+          "title": "Lblty Dbt",
+          "type": "array"
         },
         "LBLTY_LN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__LnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Lblty Ln"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__acc__LnSeries"
+          },
+          "title": "Lblty Ln",
+          "type": "array"
         },
         "LBLTY_RMNNG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/LbltyRmnngSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Lblty Rmnng"
+          "items": {
+            "$ref": "#/$defs/LbltyRmnngSeries"
+          },
+          "title": "Lblty Rmnng",
+          "type": "array"
         },
         "HLDR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/HldrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Hldr"
+          "items": {
+            "$ref": "#/$defs/HldrSeries"
+          },
+          "title": "Hldr",
+          "type": "array"
         },
         "RVN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/RvnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Rvn"
+          "items": {
+            "$ref": "#/$defs/RvnSeries"
+          },
+          "title": "Rvn",
+          "type": "array"
         },
         "EXPNS": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/ExpnsSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Expns"
+          "items": {
+            "$ref": "#/$defs/ExpnsSeries"
+          },
+          "title": "Expns",
+          "type": "array"
         },
         "KEY": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/KeySeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Key"
+          "items": {
+            "$ref": "#/$defs/KeySeries"
+          },
+          "title": "Key",
+          "type": "array"
         }
       },
       "title": "AccDatasets",
@@ -459,23 +333,17 @@
     "Categories": {
       "properties": {
         "REF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/RefDatasets"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ACC": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/AccDatasets"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -564,331 +432,241 @@
     "DbtDynmcSeries": {
       "properties": {
         "NM": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__str__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_SHRT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__str__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "STTS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_DbtSttsEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MTRTY_DT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_GenCrrncyEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ISS_PRC": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "RDMPTN_PRC": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MRKT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_GenMrktEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ACCRL_STRTDT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_DbtTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "GRNT_LVL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_DbtGrntLvlEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "RNK_LVL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_DbtRnkLvlEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "SCRTY_LVL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_DbtScrtyLvlEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_SCRTZTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "SCRTZTN_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_DbtScrtznTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_CVRD": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CVRD_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_DbtCvrdTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CPN_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_DbtCpnTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CPN_CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_GenCrrncyEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CPN_FRQNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_DbtCpnFrqncyEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CPN_SPRD": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Annotated_int__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CPN_MLTPLR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CPN_CP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CPN_FLR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "FRST_CPN_DT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "LST_CPN_DT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MNMM_INVSTMNT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_PRVT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CFI": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -1036,78 +814,57 @@
     "DbtSeries": {
       "properties": {
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ORGNL_MTRTY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "RSTRCTRD_T": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____3"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "RSTRCTRD_FRM": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "UNDRLYNG": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____3"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TRNSFRMD_T": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____3"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4453,12 +4210,9 @@
           "type": "number"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4478,12 +4232,9 @@
           "type": "number"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusConfAttr_AttrObsrvtnSttsEnum_AttrCnfdntltySttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4503,12 +4254,9 @@
           "type": "number"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4528,12 +4276,9 @@
           "type": "integer"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4554,12 +4299,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusConfAttr_AttrObsrvtnSttsEnum_AttrCnfdntltySttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4579,12 +4321,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusConfAttr_AttrObsrvtnSttsEnum_AttrCnfdntltySttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4602,12 +4341,9 @@
           "$ref": "#/$defs/BoolEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4625,12 +4361,9 @@
           "$ref": "#/$defs/BoolEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusConfAttr_AttrObsrvtnSttsEnum_AttrCnfdntltySttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4648,12 +4381,9 @@
           "$ref": "#/$defs/DbtCpnFrqncyEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4671,12 +4401,9 @@
           "$ref": "#/$defs/DbtCpnTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4694,12 +4421,9 @@
           "$ref": "#/$defs/DbtCvrdTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4717,12 +4441,9 @@
           "$ref": "#/$defs/DbtGrntLvlEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4740,12 +4461,9 @@
           "$ref": "#/$defs/DbtRnkLvlEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4763,12 +4481,9 @@
           "$ref": "#/$defs/DbtScrtyLvlEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4786,12 +4501,9 @@
           "$ref": "#/$defs/DbtScrtznTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4809,12 +4521,9 @@
           "$ref": "#/$defs/DbtSttsEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4832,12 +4541,9 @@
           "$ref": "#/$defs/DbtTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4855,12 +4561,9 @@
           "$ref": "#/$defs/DepNtcEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4878,12 +4581,9 @@
           "$ref": "#/$defs/DepTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4901,12 +4601,9 @@
           "$ref": "#/$defs/DrvtvTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4924,12 +4621,9 @@
           "$ref": "#/$defs/DvdndCstmFrqncyEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4947,12 +4641,9 @@
           "$ref": "#/$defs/DvdndTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4972,12 +4663,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4997,12 +4685,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusConfAttr_AttrObsrvtnSttsEnum_AttrCnfdntltySttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5020,12 +4705,9 @@
           "$ref": "#/$defs/FndBndFcsEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5043,12 +4725,9 @@
           "$ref": "#/$defs/FndDstrbtnPlcyEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5066,12 +4745,9 @@
           "$ref": "#/$defs/FndGgrphclFcsEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5089,12 +4765,9 @@
           "$ref": "#/$defs/FndGrnTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5112,12 +4785,9 @@
           "$ref": "#/$defs/FndInvstmntPlcyEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5135,12 +4805,9 @@
           "$ref": "#/$defs/FndInvstrTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5158,12 +4825,9 @@
           "$ref": "#/$defs/FndLglTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5181,12 +4845,9 @@
           "$ref": "#/$defs/FndRlEsttTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5204,12 +4865,9 @@
           "$ref": "#/$defs/FndStrtgyEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5227,12 +4885,9 @@
           "$ref": "#/$defs/GenCntryEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5250,12 +4905,9 @@
           "$ref": "#/$defs/GenCrrncyEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5273,12 +4925,9 @@
           "$ref": "#/$defs/GenMrktEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5296,12 +4945,9 @@
           "$ref": "#/$defs/LonTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5319,12 +4965,9 @@
           "$ref": "#/$defs/OrgEcnmcActvtyTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5342,12 +4985,9 @@
           "$ref": "#/$defs/OrgInstttnlSctrCntrlEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5365,12 +5005,9 @@
           "$ref": "#/$defs/OrgInstttnlSctrDtlEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5388,12 +5025,9 @@
           "$ref": "#/$defs/OrgInstttnlSctrEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5411,12 +5045,9 @@
           "$ref": "#/$defs/OrgIntrntnlOrgnstnCdEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5434,12 +5065,9 @@
           "$ref": "#/$defs/SftTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5457,12 +5085,9 @@
           "$ref": "#/$defs/ShrEsaTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5480,12 +5105,9 @@
           "$ref": "#/$defs/ShrFndRdmptnFrqncyEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5503,12 +5125,9 @@
           "$ref": "#/$defs/ShrTypEnum"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5529,12 +5148,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5554,12 +5170,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5579,12 +5192,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusConfAttr_AttrObsrvtnSttsEnum_AttrCnfdntltySttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5603,12 +5213,9 @@
           "type": "number"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5627,12 +5234,9 @@
           "type": "number"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusConfAttr_AttrObsrvtnSttsEnum_AttrCnfdntltySttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5647,12 +5251,9 @@
     "Org2DbtSeries": {
       "properties": {
         "ISSR_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5670,34 +5271,25 @@
     "Org2OrgSeries": {
       "properties": {
         "MNGMNT_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "UMBRLL_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IFDAT_RPRTR_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5715,12 +5307,9 @@
     "Org2ShrSeries": {
       "properties": {
         "ISSR_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5754,364 +5343,265 @@
     "OrgDynmcSeries": {
       "properties": {
         "NM": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__str__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____3"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_SHRT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__str__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "STRT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__str__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "STRT_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____3"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CTY_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CTY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__str__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "PSTL_CD": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__str__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____5"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "URL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Url_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "EMAIL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_EmailStr_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "INTRNTNL_ORGNZTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_OrgIntrntnlOrgnstnCdEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CNTRY_RSDNC": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_GenCntryEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "INSTTTNL_SCTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_OrgInstttnlSctrEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "INSTTTNL_SCTR_DTL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_OrgInstttnlSctrDtlEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "INSTTTNL_SCTR_CNTRL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_OrgInstttnlSctrCntrlEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ECNMC_ACTVTY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_OrgEcnmcActvtyTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_LSTD": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_INVSTMNT_GRDD": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_INCTV": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_UNDR_LQDTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "FND_LGL_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_FndLglTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "FND_INVSTMNT_PLCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_FndInvstmntPlcyEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "FND_DSTRBTN_PLCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_FndDstrbtnPlcyEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "FND_INVSTR_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_FndInvstrTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "FND_GRN_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_FndGrnTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "FND_STRTGY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_FndStrtgyEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "FND_GGRPHCL_FCS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_FndGgrphclFcsEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "FND_BND_FCS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_FndBndFcsEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "FND_RL_ESTT_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_FndRlEsttTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_FOF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_ETF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_PEF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_SBFND": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -7384,56 +6874,41 @@
     "OrgSeries": {
       "properties": {
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "SPLT_FRM": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MRGD_WTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TRNSFRMD_T": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -7452,409 +6927,220 @@
       "additionalProperties": false,
       "properties": {
         "ORG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/OrgSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Org"
+          "items": {
+            "$ref": "#/$defs/OrgSeries"
+          },
+          "title": "Org",
+          "type": "array"
         },
         "ORG_ALIAS": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/OrgAliasSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Org Alias"
+          "items": {
+            "$ref": "#/$defs/OrgAliasSeries"
+          },
+          "title": "Org Alias",
+          "type": "array"
         },
         "ORG2ORG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/Org2OrgSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Org2Org"
+          "items": {
+            "$ref": "#/$defs/Org2OrgSeries"
+          },
+          "title": "Org2Org",
+          "type": "array"
         },
         "ORG_DYNMC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/OrgDynmcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Org Dynmc"
+          "items": {
+            "$ref": "#/$defs/OrgDynmcSeries"
+          },
+          "title": "Org Dynmc",
+          "type": "array"
         },
         "USR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/UsrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Usr"
+          "items": {
+            "$ref": "#/$defs/UsrSeries"
+          },
+          "title": "Usr",
+          "type": "array"
         },
         "USR2ORG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/Usr2OrgSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Usr2Org"
+          "items": {
+            "$ref": "#/$defs/Usr2OrgSeries"
+          },
+          "title": "Usr2Org",
+          "type": "array"
         },
         "USR_DYNMC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/UsrDynmcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Usr Dynmc"
+          "items": {
+            "$ref": "#/$defs/UsrDynmcSeries"
+          },
+          "title": "Usr Dynmc",
+          "type": "array"
         },
         "DPST": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__ref__DpstSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Dpst"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__ref__DpstSeries"
+          },
+          "title": "Dpst",
+          "type": "array"
         },
         "SFT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__ref__SftSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Sft"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__ref__SftSeries"
+          },
+          "title": "Sft",
+          "type": "array"
         },
         "DBT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/DbtSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Dbt"
+          "items": {
+            "$ref": "#/$defs/DbtSeries"
+          },
+          "title": "Dbt",
+          "type": "array"
         },
         "DBT_ALIAS": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/DbtAliasSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Dbt Alias"
+          "items": {
+            "$ref": "#/$defs/DbtAliasSeries"
+          },
+          "title": "Dbt Alias",
+          "type": "array"
         },
         "ORG2DBT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/Org2DbtSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Org2Dbt"
+          "items": {
+            "$ref": "#/$defs/Org2DbtSeries"
+          },
+          "title": "Org2Dbt",
+          "type": "array"
         },
         "DBT_DYNMC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/DbtDynmcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Dbt Dynmc"
+          "items": {
+            "$ref": "#/$defs/DbtDynmcSeries"
+          },
+          "title": "Dbt Dynmc",
+          "type": "array"
         },
         "DBT_OUTSTNDNG_CHNG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/DbtOutstndngChngSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Dbt Outstndng Chng"
+          "items": {
+            "$ref": "#/$defs/DbtOutstndngChngSeries"
+          },
+          "title": "Dbt Outstndng Chng",
+          "type": "array"
         },
         "DBT_CPN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/CpnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Dbt Cpn"
+          "items": {
+            "$ref": "#/$defs/CpnSeries"
+          },
+          "title": "Dbt Cpn",
+          "type": "array"
         },
         "DBT_PRC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/DbtPrcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Dbt Prc"
+          "items": {
+            "$ref": "#/$defs/DbtPrcSeries"
+          },
+          "title": "Dbt Prc",
+          "type": "array"
         },
         "LN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__ref__LnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Ln"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__ref__LnSeries"
+          },
+          "title": "Ln",
+          "type": "array"
         },
         "SHR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__ref__ShrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Shr"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__ref__ShrSeries"
+          },
+          "title": "Shr",
+          "type": "array"
         },
         "SHR_ALIAS": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/ShrAliasSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Shr Alias"
+          "items": {
+            "$ref": "#/$defs/ShrAliasSeries"
+          },
+          "title": "Shr Alias",
+          "type": "array"
         },
         "ORG2SHR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/Org2ShrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Org2Shr"
+          "items": {
+            "$ref": "#/$defs/Org2ShrSeries"
+          },
+          "title": "Org2Shr",
+          "type": "array"
         },
         "SHR_DYNMC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/ShrDynmcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Shr Dynmc"
+          "items": {
+            "$ref": "#/$defs/ShrDynmcSeries"
+          },
+          "title": "Shr Dynmc",
+          "type": "array"
         },
         "SHR_DVDND": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/DvdndSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Shr Dvdnd"
+          "items": {
+            "$ref": "#/$defs/DvdndSeries"
+          },
+          "title": "Shr Dvdnd",
+          "type": "array"
         },
         "SHR_SPLT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/SpltSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Shr Splt"
+          "items": {
+            "$ref": "#/$defs/SpltSeries"
+          },
+          "title": "Shr Splt",
+          "type": "array"
         },
         "SHR_PRC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/ShrPrcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Shr Prc"
+          "items": {
+            "$ref": "#/$defs/ShrPrcSeries"
+          },
+          "title": "Shr Prc",
+          "type": "array"
         },
         "EDR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__ref__EdrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Edr"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__ref__EdrSeries"
+          },
+          "title": "Edr",
+          "type": "array"
         },
         "EDR_ALIAS": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/EdrAliasSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Edr Alias"
+          "items": {
+            "$ref": "#/$defs/EdrAliasSeries"
+          },
+          "title": "Edr Alias",
+          "type": "array"
         },
         "ODR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__ref__OdrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Odr"
+          "items": {
+            "$ref": "#/$defs/journey__structure__dbdat__ref__OdrSeries"
+          },
+          "title": "Odr",
+          "type": "array"
         }
       },
       "title": "RefDatasets",
@@ -7964,111 +7250,81 @@
     "ShrDynmcSeries": {
       "properties": {
         "NM": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__str__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_SHRT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__str__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_GenCrrncyEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MRKT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_GenMrktEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_ShrTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ESA_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_ShrEsaTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CFI": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "RDMPTN_FRQNCY_IF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_ShrFndRdmptnFrqncyEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MNMM_AMNT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8179,23 +7435,17 @@
     "Usr2OrgSeries": {
       "properties": {
         "ASSCTD_WTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IFDAT_RL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_BoolEnum_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8213,45 +7463,33 @@
     "UsrDynmcSeries": {
       "properties": {
         "FRST": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Annotated_str__str__str__StringConstraints__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "LST": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Annotated_str__str__str__StringConstraints__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "PHN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Annotated_str__StringConstraints__str__StringConstraints__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "EMAIL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_EmailStr_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8269,34 +7507,25 @@
     "UsrSeries": {
       "properties": {
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TRNSFRMD_T": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8320,12 +7549,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8346,12 +7572,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8372,12 +7595,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8398,12 +7618,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8424,12 +7641,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8450,12 +7664,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8476,12 +7687,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8502,12 +7710,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8528,12 +7733,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8554,12 +7756,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8580,12 +7779,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8606,12 +7802,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8632,12 +7825,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8657,12 +7847,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8682,12 +7869,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8707,12 +7891,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8732,12 +7913,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -8757,12 +7935,9 @@
           "type": "string"
         },
         "ATTRS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/GenericStatusAttr_AttrObsrvtnSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -9086,30 +8261,16 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld Frm"
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
         },
         "VLD_T": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld T"
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
         }
       },
       "required": [
@@ -9127,30 +8288,16 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld Frm"
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
         },
         "VLD_T": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld T"
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
         }
       },
       "required": [
@@ -9168,30 +8315,16 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld Frm"
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
         },
         "VLD_T": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld T"
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
         }
       },
       "required": [
@@ -9209,30 +8342,16 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld Frm"
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
         },
         "VLD_T": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld T"
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
         }
       },
       "required": [
@@ -9331,30 +8450,16 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld Frm"
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
         },
         "VLD_T": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld T"
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
         }
       },
       "required": [
@@ -9379,30 +8484,16 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld Frm"
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
         },
         "VLD_T": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld T"
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
         }
       },
       "required": [
@@ -9427,30 +8518,16 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld Frm"
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
         },
         "VLD_T": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld T"
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
         }
       },
       "required": [
@@ -9475,30 +8552,16 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld Frm"
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
         },
         "VLD_T": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld T"
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
         }
       },
       "required": [
@@ -9755,89 +8818,65 @@
     "journey__structure__dbdat__ref__DpstSeries": {
       "properties": {
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_DepTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NTC": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_DepNtcEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_GenCrrncyEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DBTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRDTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TRNSFRMD_T": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -9855,100 +8894,73 @@
     "journey__structure__dbdat__ref__EdrSeries": {
       "properties": {
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TCKR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____5"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_DrvtvTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_GenCrrncyEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MLTPLR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "WRTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_GenMrktEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TRNSFRMD_T": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____7"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -9966,78 +8978,57 @@
     "journey__structure__dbdat__ref__LnSeries": {
       "properties": {
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_GenCrrncyEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_LonTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DBTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRDTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TRNSFRMD_T": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -10055,100 +9046,73 @@
     "journey__structure__dbdat__ref__OdrSeries": {
       "properties": {
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_DrvtvTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_GenCrrncyEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MLTPLR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "BYR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "WRTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TRNSFRMD_T": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____8"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -10166,78 +9130,57 @@
     "journey__structure__dbdat__ref__SftSeries": {
       "properties": {
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_GenCrrncyEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_SftTypEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DBTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRDTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TRNSFRMD_T": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____6"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -10255,45 +9198,33 @@
     "journey__structure__dbdat__ref__ShrSeries": {
       "properties": {
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "RSTRCTRD_T": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____5"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TRNSFRMD_T": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__Measure_Annotated_str__StringConstraints__str__StringConstraints__Doc__GenericStatusAttr_AttrObsrvtnSttsEnum____5"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null

@@ -11,6 +11,11 @@ What's new?
 .. Next release
 .. ============
 
+v0.3.2 (2024-04-24)
+-------------------
+
+* Modified json schema so that anyof does not appear.
+
 v0.3.1 (2024-04-24)
 -------------------
 

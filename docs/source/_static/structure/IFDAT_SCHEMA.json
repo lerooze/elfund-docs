@@ -706,23 +706,17 @@
     "Categories": {
       "properties": {
         "REF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__structure__ifdat__ref__Datasets"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ACC": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__structure__ifdat__acc__Datasets"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -737,67 +731,49 @@
           "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         },
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CNTRY_RSDNC": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenCntryEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "INSTTTNL_SCTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_OrgInstttnlSctrEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ALS_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -946,67 +922,49 @@
           "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
         },
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DbtTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ISSD_BY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ALS_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -1198,320 +1156,233 @@
           "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         },
         "NM": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_SHRT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "STRT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "STRT_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____5"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CTY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____3"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CTY_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____6"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "PSTL_CD": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "URL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_Url_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "EMAIL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_EmailStr_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_LSTD": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_INCTV": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_UNDR_LQDTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "INSTTTNL_SCTR_CNTRL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_OrgInstttnlSctrCntrlEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MNGD_BY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____3"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "UNDR_UMBRLL_BY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____3"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "LGL_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_FndLglTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "INVSTMNT_PLCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_FndInvstmntPlcyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "EQTY_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_FndEqtyTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DSTRBTN_PLCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_FndDstrbtnPlcyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "INVSTR_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_FndInvstrTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "GRN_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_FndGrnTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "STRTGY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_FndStrtgyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "GGRPHCL_FCS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_FndGgrphclFcsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "BND_FCS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_FndBndFcsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "RL_ESTT_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_FndRlEsttTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_FOF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_ETF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_PEF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -1614,78 +1485,57 @@
           "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         },
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "LEI_ID": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TAX_ID": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NBR_ID": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "SPLT_FRM": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MRGD_WTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4668,122 +4518,89 @@
           "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         },
         "NM": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_SHRT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "STRT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "STRT_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____5"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CTY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____3"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CTY_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____6"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "PSTL_CD": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "URL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_Url_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "EMAIL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_EmailStr_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CNTRY_RSDNC": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenCntryEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4801,78 +4618,57 @@
           "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         },
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "LEI_ID": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TAX_ID": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NBR_ID": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "SPLT_FRM": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MRGD_WTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -4933,30 +4729,16 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld Frm"
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
         },
         "VLD_T": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld T"
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
         }
       },
       "required": [
@@ -5062,67 +4844,49 @@
           "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
         },
         "NM_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_SHRT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "STTS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DbtSttsEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MTRTY_DT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ISSD_BY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CFI": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____7"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5160,353 +4924,257 @@
           "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
         },
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ORGNL_MTRTY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ISS_PRC": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "RDMPTN_PRC": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MRKT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenMrktEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ACCRL_STRTDT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DbtTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "GRNT_LVL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DbtGrntLvlEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "RNK_LVL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DbtRnkLvlEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "SCRTY_LVL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DbtScrtyLvlEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_SCRTZTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "SCRTZTN_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DbtScrtznTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_CVRD": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CVRD_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DbtCvrdTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CPN_TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DbtCpnTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CPN_CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CPN_FRQNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DbtCpnFrqncyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CPN_SPRD": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_Annotated_int__Ge__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CPN_MLTPLR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CPN_CP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CPN_FLR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "FRST_CPN_DT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "LST_CPN_DT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "UNDRLYNG": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MNMM_INVSTMNT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "IS_PRVT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CFI": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____7"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "RSTRCTRD_T": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "RSTRCTRD_FRM": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ALS_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5564,89 +5232,65 @@
           "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
         },
         "NM_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_SHRT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ISSD_BY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____3"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NMNL_PRC": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CFI": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____7"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "RDMPTN_FRQNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_ShrFndRdmptnFrqncyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MNMM_AMNT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_ShrTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5664,67 +5308,49 @@
           "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
         },
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MRKT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenMrktEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "RSTRCTRD_T": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ALS_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5814,34 +5440,25 @@
           "$ref": "#/$defs/RelDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc__"
         },
         "ASSCTD_WTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "WRKS_FR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DprtmntEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "RSPNSBL_FR_IFDAT": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -5859,45 +5476,33 @@
           "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____5"
         },
         "EMAIL": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_EmailStr_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "FRST": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____3"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "LST": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____3"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "PHN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____6"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -6425,30 +6030,16 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld Frm"
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
         },
         "VLD_T": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld T"
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
         }
       },
       "required": [
@@ -6466,30 +6057,16 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld Frm"
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
         },
         "VLD_T": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld T"
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
         }
       },
       "required": [
@@ -6507,30 +6084,16 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld Frm"
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
         },
         "VLD_T": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Vld T"
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
         }
       },
       "required": [
@@ -6746,259 +6309,140 @@
       "additionalProperties": false,
       "properties": {
         "DPST": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__ifdat__acc__DpstSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Dpst"
+          "items": {
+            "$ref": "#/$defs/journey__structure__ifdat__acc__DpstSeries"
+          },
+          "title": "Dpst",
+          "type": "array"
         },
         "ASST_SFT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__ifdat__acc__SftSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Asst Sft"
+          "items": {
+            "$ref": "#/$defs/journey__structure__ifdat__acc__SftSeries"
+          },
+          "title": "Asst Sft",
+          "type": "array"
         },
         "ASST_DBT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/AsstDbtSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Asst Dbt"
+          "items": {
+            "$ref": "#/$defs/AsstDbtSeries"
+          },
+          "title": "Asst Dbt",
+          "type": "array"
         },
         "ASST_LN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__ifdat__acc__LnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Asst Ln"
+          "items": {
+            "$ref": "#/$defs/journey__structure__ifdat__acc__LnSeries"
+          },
+          "title": "Asst Ln",
+          "type": "array"
         },
         "SHR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__ifdat__acc__ShrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Shr"
+          "items": {
+            "$ref": "#/$defs/journey__structure__ifdat__acc__ShrSeries"
+          },
+          "title": "Shr",
+          "type": "array"
         },
         "EDR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__ifdat__acc__EdrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Edr"
+          "items": {
+            "$ref": "#/$defs/journey__structure__ifdat__acc__EdrSeries"
+          },
+          "title": "Edr",
+          "type": "array"
         },
         "ODR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__ifdat__acc__OdrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Odr"
+          "items": {
+            "$ref": "#/$defs/journey__structure__ifdat__acc__OdrSeries"
+          },
+          "title": "Odr",
+          "type": "array"
         },
         "ASST_NN_FNNCL": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/AsstNnFnnclSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Asst Nn Fnncl"
+          "items": {
+            "$ref": "#/$defs/AsstNnFnnclSeries"
+          },
+          "title": "Asst Nn Fnncl",
+          "type": "array"
         },
         "ASST_RMNNG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/AsstRmnngSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Asst Rmnng"
+          "items": {
+            "$ref": "#/$defs/AsstRmnngSeries"
+          },
+          "title": "Asst Rmnng",
+          "type": "array"
         },
         "LBLTY_SFT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__ifdat__acc__SftSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Lblty Sft"
+          "items": {
+            "$ref": "#/$defs/journey__structure__ifdat__acc__SftSeries"
+          },
+          "title": "Lblty Sft",
+          "type": "array"
         },
         "LBLTY_DBT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/LbltyDbtSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Lblty Dbt"
+          "items": {
+            "$ref": "#/$defs/LbltyDbtSeries"
+          },
+          "title": "Lblty Dbt",
+          "type": "array"
         },
         "LBLTY_LN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__ifdat__acc__LnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Lblty Ln"
+          "items": {
+            "$ref": "#/$defs/journey__structure__ifdat__acc__LnSeries"
+          },
+          "title": "Lblty Ln",
+          "type": "array"
         },
         "LBLTY_RMNNG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/LbltyRmnngSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Lblty Rmnng"
+          "items": {
+            "$ref": "#/$defs/LbltyRmnngSeries"
+          },
+          "title": "Lblty Rmnng",
+          "type": "array"
         },
         "HLDR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/HldrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Hldr"
+          "items": {
+            "$ref": "#/$defs/HldrSeries"
+          },
+          "title": "Hldr",
+          "type": "array"
         },
         "RVN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/RvnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Rvn"
+          "items": {
+            "$ref": "#/$defs/RvnSeries"
+          },
+          "title": "Rvn",
+          "type": "array"
         },
         "EXPNS": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/ExpnsSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Expns"
+          "items": {
+            "$ref": "#/$defs/ExpnsSeries"
+          },
+          "title": "Expns",
+          "type": "array"
         },
         "KEY": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/KeySeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Key"
+          "items": {
+            "$ref": "#/$defs/KeySeries"
+          },
+          "title": "Key",
+          "type": "array"
         }
       },
       "title": "Datasets",
@@ -7156,334 +6600,180 @@
       "additionalProperties": false,
       "properties": {
         "FND": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/FndSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Fnd"
+          "items": {
+            "$ref": "#/$defs/FndSeries"
+          },
+          "title": "Fnd",
+          "type": "array"
         },
         "FND_DYNMC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/FndDynmcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Fnd Dynmc"
+          "items": {
+            "$ref": "#/$defs/FndDynmcSeries"
+          },
+          "title": "Fnd Dynmc",
+          "type": "array"
         },
         "SELF_DBT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/SelfDbtSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Self Dbt"
+          "items": {
+            "$ref": "#/$defs/SelfDbtSeries"
+          },
+          "title": "Self Dbt",
+          "type": "array"
         },
         "SELF_DBT_DYNMC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/SelfDbtDynmcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Self Dbt Dynmc"
+          "items": {
+            "$ref": "#/$defs/SelfDbtDynmcSeries"
+          },
+          "title": "Self Dbt Dynmc",
+          "type": "array"
         },
         "SELF_DBT_OUTSTNDNG_CHNG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/SelfDbtOutstndngChngSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Self Dbt Outstndng Chng"
+          "items": {
+            "$ref": "#/$defs/SelfDbtOutstndngChngSeries"
+          },
+          "title": "Self Dbt Outstndng Chng",
+          "type": "array"
         },
         "SELF_DBT_CPN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/SelfCpnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Self Dbt Cpn"
+          "items": {
+            "$ref": "#/$defs/SelfCpnSeries"
+          },
+          "title": "Self Dbt Cpn",
+          "type": "array"
         },
         "SELF_SHR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/SelfShrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Self Shr"
+          "items": {
+            "$ref": "#/$defs/SelfShrSeries"
+          },
+          "title": "Self Shr",
+          "type": "array"
         },
         "SELF_SHR_DYNMC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/SelfShrDynmcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Self Shr Dynmc"
+          "items": {
+            "$ref": "#/$defs/SelfShrDynmcSeries"
+          },
+          "title": "Self Shr Dynmc",
+          "type": "array"
         },
         "SELF_SHR_DVDND": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/SelfDvdndSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Self Shr Dvdnd"
+          "items": {
+            "$ref": "#/$defs/SelfDvdndSeries"
+          },
+          "title": "Self Shr Dvdnd",
+          "type": "array"
         },
         "SELF_SHR_SPLT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/SelfSpltSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Self Shr Splt"
+          "items": {
+            "$ref": "#/$defs/SelfSpltSeries"
+          },
+          "title": "Self Shr Splt",
+          "type": "array"
         },
         "MNGMNT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/MngmntSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Mngmnt"
+          "items": {
+            "$ref": "#/$defs/MngmntSeries"
+          },
+          "title": "Mngmnt",
+          "type": "array"
         },
         "MNGMNT_DYNMC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/MngmntDynmcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Mngmnt Dynmc"
+          "items": {
+            "$ref": "#/$defs/MngmntDynmcSeries"
+          },
+          "title": "Mngmnt Dynmc",
+          "type": "array"
         },
         "USR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/UsrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Usr"
+          "items": {
+            "$ref": "#/$defs/UsrSeries"
+          },
+          "title": "Usr",
+          "type": "array"
         },
         "USR_T_RA": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/Usr2RaSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Usr T Ra"
+          "items": {
+            "$ref": "#/$defs/Usr2RaSeries"
+          },
+          "title": "Usr T Ra",
+          "type": "array"
         },
         "CNTRPRTY": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/CntrprtySeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Cntrprty"
+          "items": {
+            "$ref": "#/$defs/CntrprtySeries"
+          },
+          "title": "Cntrprty",
+          "type": "array"
         },
         "DPST": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__ifdat__ref__DpstSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Dpst"
+          "items": {
+            "$ref": "#/$defs/journey__structure__ifdat__ref__DpstSeries"
+          },
+          "title": "Dpst",
+          "type": "array"
         },
         "SFT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__ifdat__ref__SftSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Sft"
+          "items": {
+            "$ref": "#/$defs/journey__structure__ifdat__ref__SftSeries"
+          },
+          "title": "Sft",
+          "type": "array"
         },
         "LN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__ifdat__ref__LnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Ln"
+          "items": {
+            "$ref": "#/$defs/journey__structure__ifdat__ref__LnSeries"
+          },
+          "title": "Ln",
+          "type": "array"
         },
         "DBT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/DbtSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Dbt"
+          "items": {
+            "$ref": "#/$defs/DbtSeries"
+          },
+          "title": "Dbt",
+          "type": "array"
         },
         "SHR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__ifdat__ref__ShrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Shr"
+          "items": {
+            "$ref": "#/$defs/journey__structure__ifdat__ref__ShrSeries"
+          },
+          "title": "Shr",
+          "type": "array"
         },
         "EDR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__ifdat__ref__EdrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Edr"
+          "items": {
+            "$ref": "#/$defs/journey__structure__ifdat__ref__EdrSeries"
+          },
+          "title": "Edr",
+          "type": "array"
         },
         "ODR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__ifdat__ref__OdrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
           "default": null,
-          "title": "Odr"
+          "items": {
+            "$ref": "#/$defs/journey__structure__ifdat__ref__OdrSeries"
+          },
+          "title": "Odr",
+          "type": "array"
         }
       },
       "title": "Datasets",
@@ -7495,89 +6785,65 @@
           "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____6"
         },
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DepTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NTC": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DepNtcEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DBTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRDTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ALS_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____5"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -7595,100 +6861,73 @@
           "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
         },
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TCKR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____8"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DrvtvTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MLTPLR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "WRTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenMrktEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ALS_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____7"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -7706,78 +6945,57 @@
           "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____8"
         },
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_LonTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DBTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRDTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ALS_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -7795,100 +7013,73 @@
           "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
         },
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "NM_LTN": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_DrvtvTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "MLTPLR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "WRTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "BYR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ALS_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____8"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -7906,78 +7097,57 @@
           "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____7"
         },
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_SftTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DBTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRDTR": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ALS_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____6"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
@@ -7995,67 +7165,49 @@
           "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
         },
         "DT_BRTH": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "DT_CLS": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_date_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "CRRNCY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "TYP": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/BaseMeasure_ShrEsaTypEnum_"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ISSD_BY": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null
         },
         "ALS_OF": {
-          "anyOf": [
+          "allOf": [
             {
               "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
-            },
-            {
-              "type": "null"
             }
           ],
           "default": null

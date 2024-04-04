@@ -1,3 +1,0 @@
-[91m/home/al459/envs/elfund-docs/docs/source/examples.rst:14: WARNING: download file not readable: /home/al459/envs/elfund-docs/docs/source/_static/data/ack/ACK_000000001_JUSER.json[39;49;00m
-[91m/home/al459/envs/elfund-docs/docs/source/examples.rst:15: WARNING: download file not readable: /home/al459/envs/elfund-docs/docs/source/_static/data/ack/ACK_000000003_JUSER.json[39;49;00m
-[91m/home/al459/envs/elfund-docs/docs/source/examples.rst:16: WARNING: download file not readable: /home/al459/envs/elfund-docs/docs/source/_static/data/ack/ACK_000000005_JUSER.json[39;49;00m
