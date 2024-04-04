@@ -10,6 +10,14 @@
           "title": "No Header",
           "type": "array"
         },
+        "corrupt_zip": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Corrupt Zip",
+          "type": "array"
+        },
         "corrupt_excel": {
           "default": [],
           "items": {
@@ -66,12 +74,12 @@
           "title": "No Content",
           "type": "array"
         },
-        "wrong_suffix": {
+        "wrong_extension": {
           "default": [],
           "items": {
             "type": "string"
           },
-          "title": "Wrong Suffix",
+          "title": "Wrong Extension",
           "type": "array"
         }
       },
@@ -448,6 +456,7 @@
       ],
       "default": {
         "no_header": [],
+        "corrupt_zip": [],
         "corrupt_excel": [],
         "not_supported_domain": [],
         "corrupt_json": [],
@@ -455,7 +464,7 @@
         "unauthorized_submitter": [],
         "schema_errors": [],
         "no_content": [],
-        "wrong_suffix": []
+        "wrong_extension": []
       }
     },
     "standard_errors": {

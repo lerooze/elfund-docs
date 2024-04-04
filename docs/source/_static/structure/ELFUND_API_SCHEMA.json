@@ -524,7 +524,7 @@
         ],
         "title": "AsstDbtSeries"
       },
-      "AsstNnFnnclDimensionContainer": {
+      "AsstNnFnnclDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "TYP": {
             "$ref": "#/components/schemas/AsstNnFnnclEnum"
@@ -555,7 +555,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "AsstNnFnnclDimensionContainer"
+        "title": "AsstNnFnnclDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "AsstNnFnnclEnum": {
         "type": "string",
@@ -582,7 +582,7 @@
             "$ref": "#/components/schemas/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/AsstNnFnnclDimensionContainer"
+            "$ref": "#/components/schemas/AsstNnFnnclDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -594,7 +594,7 @@
         ],
         "title": "AsstNnFnnclSeries"
       },
-      "AsstRmnngDimensionContainer": {
+      "AsstRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "TYP": {
             "$ref": "#/components/schemas/RemAssetEnum"
@@ -621,7 +621,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "AsstRmnngDimensionContainer"
+        "title": "AsstRmnngDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "AsstRmnngSeries": {
         "properties": {
@@ -632,7 +632,7 @@
             "$ref": "#/components/schemas/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/AsstRmnngDimensionContainer"
+            "$ref": "#/components/schemas/AsstRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -1071,7 +1071,7 @@
         ],
         "title": "DbtGrntLvlEnum"
       },
-      "DbtOutstndngChnDimensionContainer": {
+      "DbtOutstndngChnDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "ID": {
             "type": "string",
@@ -1094,7 +1094,7 @@
           "TP",
           "DT"
         ],
-        "title": "DbtOutstndngChnDimensionContainer"
+        "title": "DbtOutstndngChnDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "DbtOutstndngChnTypEnum": {
         "type": "string",
@@ -1116,7 +1116,7 @@
             "$ref": "#/components/schemas/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/DbtOutstndngChnDimensionContainer"
+            "$ref": "#/components/schemas/DbtOutstndngChnDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -1424,7 +1424,7 @@
         ],
         "title": "EdrAliasSeries"
       },
-      "ExpenseDimensionContainer": {
+      "ExpenseDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "IID": {
             "type": "string",
@@ -1451,7 +1451,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "ExpenseDimensionContainer"
+        "title": "ExpenseDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "ExpnsSeries": {
         "properties": {
@@ -1459,7 +1459,7 @@
             "$ref": "#/components/schemas/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/ExpenseDimensionContainer"
+            "$ref": "#/components/schemas/ExpenseDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -4509,7 +4509,7 @@
         ],
         "title": "LbltyDbtSeries"
       },
-      "LbltyRmnngDimensionContainer": {
+      "LbltyRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "TYP": {
             "$ref": "#/components/schemas/RemLiabEnum"
@@ -4536,7 +4536,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "LbltyRmnngDimensionContainer"
+        "title": "LbltyRmnngDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "LbltyRmnngSeries": {
         "properties": {
@@ -4547,7 +4547,7 @@
             "$ref": "#/components/schemas/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/LbltyRmnngDimensionContainer"
+            "$ref": "#/components/schemas/LbltyRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -5630,29 +5630,6 @@
           "VALUE"
         ],
         "title": "Measure[Url, GenericStatusAttr[AttrObsrvtnSttsEnum]]"
-      },
-      "Measure_bool_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__": {
-        "properties": {
-          "VALUE": {
-            "type": "boolean",
-            "title": "Value"
-          },
-          "ATTRS": {
-            "anyOf": [
-              {
-                "$ref": "#/components/schemas/GenericStatusConfAttr_AttrObsrvtnSttsEnum_AttrCnfdntltySttsEnum_"
-              },
-              {
-                "type": "null"
-              }
-            ]
-          }
-        },
-        "type": "object",
-        "required": [
-          "VALUE"
-        ],
-        "title": "Measure[bool, GenericStatusConfAttr[AttrObsrvtnSttsEnum, AttrCnfdntltySttsEnum]]"
       },
       "Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__": {
         "properties": {
@@ -7923,7 +7900,7 @@
         ],
         "title": "RemLiabEnum"
       },
-      "RevenueDimensionContainer": {
+      "RevenueDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "IID": {
             "type": "string",
@@ -7950,7 +7927,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "RevenueDimensionContainer"
+        "title": "RevenueDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "RvnSeries": {
         "properties": {
@@ -7958,7 +7935,7 @@
             "$ref": "#/components/schemas/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/RevenueDimensionContainer"
+            "$ref": "#/components/schemas/RevenueDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -8463,7 +8440,7 @@
         ],
         "title": "SourceAsstDbtSeries"
       },
-      "SourceAsstNnFnnclDimensionContainer": {
+      "SourceAsstNnFnnclDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "SRC_ORG": {
             "type": "string",
@@ -8512,7 +8489,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "SourceAsstNnFnnclDimensionContainer"
+        "title": "SourceAsstNnFnnclDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "SourceAsstNnFnnclSeries": {
         "properties": {
@@ -8526,7 +8503,7 @@
             "$ref": "#/components/schemas/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/SourceAsstNnFnnclDimensionContainer"
+            "$ref": "#/components/schemas/SourceAsstNnFnnclDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -8538,7 +8515,7 @@
         ],
         "title": "SourceAsstNnFnnclSeries"
       },
-      "SourceAsstRmnngDimensionContainer": {
+      "SourceAsstRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "SRC_ORG": {
             "type": "string",
@@ -8583,7 +8560,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "SourceAsstRmnngDimensionContainer"
+        "title": "SourceAsstRmnngDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "SourceAsstRmnngSeries": {
         "properties": {
@@ -8594,7 +8571,7 @@
             "$ref": "#/components/schemas/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/SourceAsstRmnngDimensionContainer"
+            "$ref": "#/components/schemas/SourceAsstRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -8949,7 +8926,7 @@
         ],
         "title": "SourceDbtDynmcSeries"
       },
-      "SourceDbtOutstndngChnDimensionContainer": {
+      "SourceDbtOutstndngChnDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "SRC_ORG": {
             "type": "string",
@@ -8990,7 +8967,7 @@
           "TP",
           "DT"
         ],
-        "title": "SourceDbtOutstndngChnDimensionContainer"
+        "title": "SourceDbtOutstndngChnDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "SourceDbtOutstndngChngSeries": {
         "properties": {
@@ -9001,7 +8978,7 @@
             "$ref": "#/components/schemas/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/SourceDbtOutstndngChnDimensionContainer"
+            "$ref": "#/components/schemas/SourceDbtOutstndngChnDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -9174,7 +9151,7 @@
         ],
         "title": "SourceEdrAliasSeries"
       },
-      "SourceExpenseDimensionContainer": {
+      "SourceExpenseDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "SRC_ORG": {
             "type": "string",
@@ -9219,7 +9196,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "SourceExpenseDimensionContainer"
+        "title": "SourceExpenseDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "SourceExpnsSeries": {
         "properties": {
@@ -9227,7 +9204,7 @@
             "$ref": "#/components/schemas/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/SourceExpenseDimensionContainer"
+            "$ref": "#/components/schemas/SourceExpenseDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -9352,7 +9329,7 @@
         ],
         "title": "SourceLbltyDbtSeries"
       },
-      "SourceLbltyRmnngDimensionContainer": {
+      "SourceLbltyRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "SRC_ORG": {
             "type": "string",
@@ -9397,7 +9374,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "SourceLbltyRmnngDimensionContainer"
+        "title": "SourceLbltyRmnngDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "SourceLbltyRmnngSeries": {
         "properties": {
@@ -9408,7 +9385,7 @@
             "$ref": "#/components/schemas/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/SourceLbltyRmnngDimensionContainer"
+            "$ref": "#/components/schemas/SourceLbltyRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -10310,7 +10287,7 @@
         "type": "object",
         "title": "SourceRefDatasets"
       },
-      "SourceRevenueDimensionContainer": {
+      "SourceRevenueDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "SRC_ORG": {
             "type": "string",
@@ -10355,7 +10332,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "SourceRevenueDimensionContainer"
+        "title": "SourceRevenueDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "SourceRvnSeries": {
         "properties": {
@@ -10363,7 +10340,7 @@
             "$ref": "#/components/schemas/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/SourceRevenueDimensionContainer"
+            "$ref": "#/components/schemas/SourceRevenueDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -11141,7 +11118,7 @@
         ],
         "title": "VersionedAsstDbtSeries"
       },
-      "VersionedAsstNnFnnclDimensionContainer": {
+      "VersionedAsstNnFnnclDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "VRSN_FRM": {
             "type": "string",
@@ -11202,7 +11179,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "VersionedAsstNnFnnclDimensionContainer"
+        "title": "VersionedAsstNnFnnclDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "VersionedAsstNnFnnclSeries": {
         "properties": {
@@ -11216,7 +11193,7 @@
             "$ref": "#/components/schemas/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/VersionedAsstNnFnnclDimensionContainer"
+            "$ref": "#/components/schemas/VersionedAsstNnFnnclDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -11228,7 +11205,7 @@
         ],
         "title": "VersionedAsstNnFnnclSeries"
       },
-      "VersionedAsstRmnngDimensionContainer": {
+      "VersionedAsstRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "VRSN_FRM": {
             "type": "string",
@@ -11285,7 +11262,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "VersionedAsstRmnngDimensionContainer"
+        "title": "VersionedAsstRmnngDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "VersionedAsstRmnngSeries": {
         "properties": {
@@ -11296,7 +11273,7 @@
             "$ref": "#/components/schemas/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/VersionedAsstRmnngDimensionContainer"
+            "$ref": "#/components/schemas/VersionedAsstRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -11651,7 +11628,7 @@
         ],
         "title": "VersionedDbtDynmcSeries"
       },
-      "VersionedDbtOutstndngChnDimensionContainer": {
+      "VersionedDbtOutstndngChnDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "VRSN_FRM": {
             "type": "string",
@@ -11704,7 +11681,7 @@
           "TP",
           "DT"
         ],
-        "title": "VersionedDbtOutstndngChnDimensionContainer"
+        "title": "VersionedDbtOutstndngChnDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "VersionedDbtOutstndngChngSeries": {
         "properties": {
@@ -11715,7 +11692,7 @@
             "$ref": "#/components/schemas/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/VersionedDbtOutstndngChnDimensionContainer"
+            "$ref": "#/components/schemas/VersionedDbtOutstndngChnDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -11888,7 +11865,7 @@
         ],
         "title": "VersionedEdrAliasSeries"
       },
-      "VersionedExpenseDimensionContainer": {
+      "VersionedExpenseDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "VRSN_FRM": {
             "type": "string",
@@ -11945,7 +11922,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "VersionedExpenseDimensionContainer"
+        "title": "VersionedExpenseDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "VersionedExpnsSeries": {
         "properties": {
@@ -11953,7 +11930,7 @@
             "$ref": "#/components/schemas/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/VersionedExpenseDimensionContainer"
+            "$ref": "#/components/schemas/VersionedExpenseDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -12090,7 +12067,7 @@
         ],
         "title": "VersionedLbltyDbtSeries"
       },
-      "VersionedLbltyRmnngDimensionContainer": {
+      "VersionedLbltyRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "VRSN_FRM": {
             "type": "string",
@@ -12147,7 +12124,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "VersionedLbltyRmnngDimensionContainer"
+        "title": "VersionedLbltyRmnngDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "VersionedLbltyRmnngSeries": {
         "properties": {
@@ -12158,7 +12135,7 @@
             "$ref": "#/components/schemas/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/VersionedLbltyRmnngDimensionContainer"
+            "$ref": "#/components/schemas/VersionedLbltyRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -13060,7 +13037,7 @@
         "type": "object",
         "title": "VersionedRefDatasets"
       },
-      "VersionedRevenueDimensionContainer": {
+      "VersionedRevenueDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
         "properties": {
           "VRSN_FRM": {
             "type": "string",
@@ -13117,7 +13094,7 @@
           "DT",
           "FRQNCY"
         ],
-        "title": "VersionedRevenueDimensionContainer"
+        "title": "VersionedRevenueDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]"
       },
       "VersionedRvnSeries": {
         "properties": {
@@ -13125,7 +13102,7 @@
             "$ref": "#/components/schemas/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
-            "$ref": "#/components/schemas/VersionedRevenueDimensionContainer"
+            "$ref": "#/components/schemas/VersionedRevenueDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
           }
         },
         "type": "object",
@@ -17774,7 +17751,7 @@
             "$ref": "#/components/schemas/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "IS_GRP_LN": {
-            "$ref": "#/components/schemas/Measure_bool_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+            "$ref": "#/components/schemas/Measure_BoolEnum_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
             "$ref": "#/components/schemas/journey__model_dimension__AccFreqDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
@@ -17845,7 +17822,7 @@
             "$ref": "#/components/schemas/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "IS_DRCT_INVSTMNT": {
-            "$ref": "#/components/schemas/Measure_bool_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+            "$ref": "#/components/schemas/Measure_BoolEnum_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
             "$ref": "#/components/schemas/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
@@ -17922,7 +17899,7 @@
             "$ref": "#/components/schemas/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "IS_GRP_LN": {
-            "$ref": "#/components/schemas/Measure_bool_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+            "$ref": "#/components/schemas/Measure_BoolEnum_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
             "$ref": "#/components/schemas/journey__model_dimension__SourceAccFreqDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
@@ -17993,7 +17970,7 @@
             "$ref": "#/components/schemas/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "IS_DRCT_INVSTMNT": {
-            "$ref": "#/components/schemas/Measure_bool_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+            "$ref": "#/components/schemas/Measure_BoolEnum_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
             "$ref": "#/components/schemas/journey__model_dimension__SourceRelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
@@ -18070,7 +18047,7 @@
             "$ref": "#/components/schemas/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "IS_GRP_LN": {
-            "$ref": "#/components/schemas/Measure_bool_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+            "$ref": "#/components/schemas/Measure_BoolEnum_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
             "$ref": "#/components/schemas/journey__model_dimension__VersionedAccFreqDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
@@ -18141,7 +18118,7 @@
             "$ref": "#/components/schemas/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "IS_DRCT_INVSTMNT": {
-            "$ref": "#/components/schemas/Measure_bool_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+            "$ref": "#/components/schemas/Measure_BoolEnum_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
           },
           "DIMS": {
             "$ref": "#/components/schemas/journey__model_dimension__VersionedRelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____2"

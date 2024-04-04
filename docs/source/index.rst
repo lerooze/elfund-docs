@@ -65,6 +65,8 @@ RIAD που αντλούνται από το RIAD_API σε στοιχεία **DB
 
 Στο κεφάλαιο :doc:`examples` δίδονται παραδείγματα αρχείων με πραγματικά δεδομένα.
 
+Στο κεφάλαιο :doc:`validation` περιγϱαφετο το ACK data model.
+
 Στο κεφάλαιο :doc:`whatsnew` παρουσιάζονται λεπτομέρειες σχετικά με το τι
 αλλάζει σε κάθε νέα έκδοση του **ELFUND-DOCS**.
 
@@ -81,8 +83,9 @@ RIAD που αντλούνται από το RIAD_API σε στοιχεία **DB
    csdb
    dbdat
    backend
-   model
    generic
+   validation
+   examples
    whatsnew
    dev
 

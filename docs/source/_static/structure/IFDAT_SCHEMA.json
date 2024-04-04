@@ -32,7 +32,7 @@
       "title": "AsstDbtSeries",
       "type": "object"
     },
-    "AsstNnFnnclDimensionContainer": {
+    "AsstNnFnnclDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
       "properties": {
         "TYP": {
           "$ref": "#/$defs/AsstNnFnnclEnum"
@@ -62,7 +62,7 @@
         "DT",
         "FRQNCY"
       ],
-      "title": "AsstNnFnnclDimensionContainer",
+      "title": "AsstNnFnnclDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
       "type": "object"
     },
     "AsstNnFnnclEnum": {
@@ -81,7 +81,7 @@
     "AsstNnFnnclSeries": {
       "properties": {
         "DIMS": {
-          "$ref": "#/$defs/AsstNnFnnclDimensionContainer"
+          "$ref": "#/$defs/AsstNnFnnclDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
         },
         "STCK": {
           "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
@@ -102,7 +102,7 @@
       "title": "AsstNnFnnclSeries",
       "type": "object"
     },
-    "AsstRmnngDimensionContainer": {
+    "AsstRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
       "properties": {
         "TYP": {
           "$ref": "#/$defs/RemAssetEnum"
@@ -128,13 +128,13 @@
         "DT",
         "FRQNCY"
       ],
-      "title": "AsstRmnngDimensionContainer",
+      "title": "AsstRmnngDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
       "type": "object"
     },
     "AsstRmnngSeries": {
       "properties": {
         "DIMS": {
-          "$ref": "#/$defs/AsstRmnngDimensionContainer"
+          "$ref": "#/$defs/AsstRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
         },
         "STCK": {
           "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
@@ -865,7 +865,7 @@
       "title": "DbtGrntLvlEnum",
       "type": "string"
     },
-    "DbtOutstndngChnDimensionContainer": {
+    "DbtOutstndngChnDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
       "properties": {
         "ID": {
           "maxLength": 512,
@@ -887,7 +887,7 @@
         "TP",
         "DT"
       ],
-      "title": "DbtOutstndngChnDimensionContainer",
+      "title": "DbtOutstndngChnDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
       "type": "object"
     },
     "DbtOutstndngChnTypEnum": {
@@ -1127,7 +1127,7 @@
       "title": "DvdndTypEnum",
       "type": "string"
     },
-    "ExpenseDimensionContainer": {
+    "ExpenseDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
       "properties": {
         "IID": {
           "maxLength": 512,
@@ -1153,13 +1153,13 @@
         "DT",
         "FRQNCY"
       ],
-      "title": "ExpenseDimensionContainer",
+      "title": "ExpenseDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
       "type": "object"
     },
     "ExpnsSeries": {
       "properties": {
         "DIMS": {
-          "$ref": "#/$defs/ExpenseDimensionContainer"
+          "$ref": "#/$defs/ExpenseDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
         },
         "AMNT": {
           "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
@@ -4594,7 +4594,7 @@
       "title": "LbltyDbtSeries",
       "type": "object"
     },
-    "LbltyRmnngDimensionContainer": {
+    "LbltyRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
       "properties": {
         "TYP": {
           "$ref": "#/$defs/RemLiabEnum"
@@ -4620,13 +4620,13 @@
         "DT",
         "FRQNCY"
       ],
-      "title": "LbltyRmnngDimensionContainer",
+      "title": "LbltyRmnngDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
       "type": "object"
     },
     "LbltyRmnngSeries": {
       "properties": {
         "DIMS": {
-          "$ref": "#/$defs/LbltyRmnngDimensionContainer"
+          "$ref": "#/$defs/LbltyRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
         },
         "STCK": {
           "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
@@ -4995,7 +4995,7 @@
       "title": "RemLiabEnum",
       "type": "string"
     },
-    "RevenueDimensionContainer": {
+    "RevenueDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
       "properties": {
         "IID": {
           "maxLength": 512,
@@ -5021,13 +5021,13 @@
         "DT",
         "FRQNCY"
       ],
-      "title": "RevenueDimensionContainer",
+      "title": "RevenueDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
       "type": "object"
     },
     "RvnSeries": {
       "properties": {
         "DIMS": {
-          "$ref": "#/$defs/RevenueDimensionContainer"
+          "$ref": "#/$defs/RevenueDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
         },
         "AMNT": {
           "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
@@ -5137,7 +5137,7 @@
     "SelfDbtOutstndngChngSeries": {
       "properties": {
         "DIMS": {
-          "$ref": "#/$defs/DbtOutstndngChnDimensionContainer"
+          "$ref": "#/$defs/DbtOutstndngChnDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
         },
         "AMNT": {
           "$ref": "#/$defs/BaseMeasure_float_"

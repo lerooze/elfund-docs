@@ -4,7 +4,7 @@
 πάλι μέσω IRIS αρχείο για το αν και κατά πόσο τα δεδομένα του αρχείου έχουν
 κρίσιμα ή μη λάθη.  Σε περίπτωση κρίσιμων λαθών το αρχείο θα πρέπει να
 αποσταλεί εκ νέου αφού διορθωθούν.  Το αρχείο επικύρωσης ακολουθεί τη δομή
-:download:`Acknowledgement Schema </_static/structure/ACK_SCHEMA.json> όπου τα βασικά
+:download:`Acknowledgement Schema </_static/structure/ACK_SCHEMA.json>` όπου τα βασικά
 χαρακτηρτικά της επεξηγούνται παρακάτω.
 
 ID

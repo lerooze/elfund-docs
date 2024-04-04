@@ -1,10 +1,284 @@
 {
   "$defs": {
+    "AccDatasets": {
+      "additionalProperties": false,
+      "properties": {
+        "ASST_DPST": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__acc__DpstSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Asst Dpst"
+        },
+        "ASST_SFT": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__acc__SftSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Asst Sft"
+        },
+        "ASST_DBT": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/AsstDbtSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Asst Dbt"
+        },
+        "ASST_LN": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__acc__LnSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Asst Ln"
+        },
+        "SHR": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__acc__ShrSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Shr"
+        },
+        "EDR": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__acc__EdrSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Edr"
+        },
+        "ODR": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__acc__OdrSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Odr"
+        },
+        "ASST_NN_FNNCL": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/AsstNnFnnclSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Asst Nn Fnncl"
+        },
+        "ASST_RMNNG": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/AsstRmnngSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Asst Rmnng"
+        },
+        "LBLTY_DPST": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__acc__DpstSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lblty Dpst"
+        },
+        "LBLTY_SFT": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__acc__SftSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lblty Sft"
+        },
+        "LBLTY_DBT": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/LbltyDbtSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lblty Dbt"
+        },
+        "LBLTY_LN": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__acc__LnSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lblty Ln"
+        },
+        "LBLTY_RMNNG": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/LbltyRmnngSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lblty Rmnng"
+        },
+        "HLDR": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/HldrSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Hldr"
+        },
+        "RVN": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/RvnSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rvn"
+        },
+        "EXPNS": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/ExpnsSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expns"
+        },
+        "KEY": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/KeySeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Key"
+        }
+      },
+      "title": "AccDatasets",
+      "type": "object"
+    },
     "AsstDbtSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
         "STCK": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
@@ -19,20 +293,23 @@
         },
         "ACCRLS": {
           "$ref": "#/$defs/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         }
       },
       "required": [
-        "DIMS",
         "STCK",
         "FLS",
         "NMNL_STCK",
         "LND_FR_SFT",
-        "ACCRLS"
+        "ACCRLS",
+        "DIMS"
       ],
       "title": "AsstDbtSeries",
       "type": "object"
     },
-    "AsstNnFnnclDimensionContainer": {
+    "AsstNnFnnclDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
       "properties": {
         "TYP": {
           "$ref": "#/$defs/AsstNnFnnclEnum"
@@ -62,7 +339,7 @@
         "DT",
         "FRQNCY"
       ],
-      "title": "AsstNnFnnclDimensionContainer",
+      "title": "AsstNnFnnclDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
       "type": "object"
     },
     "AsstNnFnnclEnum": {
@@ -80,9 +357,6 @@
     },
     "AsstNnFnnclSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/AsstNnFnnclDimensionContainer"
-        },
         "STCK": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
@@ -91,18 +365,21 @@
         },
         "ACCRLS": {
           "$ref": "#/$defs/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/AsstNnFnnclDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
         }
       },
       "required": [
-        "DIMS",
         "STCK",
         "FLS",
-        "ACCRLS"
+        "ACCRLS",
+        "DIMS"
       ],
       "title": "AsstNnFnnclSeries",
       "type": "object"
     },
-    "AsstRmnngDimensionContainer": {
+    "AsstRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
       "properties": {
         "TYP": {
           "$ref": "#/$defs/RemAssetEnum"
@@ -128,25 +405,25 @@
         "DT",
         "FRQNCY"
       ],
-      "title": "AsstRmnngDimensionContainer",
+      "title": "AsstRmnngDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
       "type": "object"
     },
     "AsstRmnngSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/AsstRmnngDimensionContainer"
-        },
         "STCK": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
         "FLS": {
           "$ref": "#/$defs/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/AsstRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
         }
       },
       "required": [
-        "DIMS",
         "STCK",
-        "FLS"
+        "FLS",
+        "DIMS"
       ],
       "title": "AsstRmnngSeries",
       "type": "object"
@@ -184,7 +461,7 @@
         "REF": {
           "anyOf": [
             {
-              "$ref": "#/$defs/journey__structure__dbdat__ref__Datasets"
+              "$ref": "#/$defs/RefDatasets"
             },
             {
               "type": "null"
@@ -195,7 +472,7 @@
         "ACC": {
           "anyOf": [
             {
-              "$ref": "#/$defs/journey__structure__dbdat__acc__Datasets"
+              "$ref": "#/$defs/AccDatasets"
             },
             {
               "type": "null"
@@ -209,32 +486,32 @@
     },
     "CpnSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DtDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
         "RT": {
           "$ref": "#/$defs/Measure_float_GenericStatusAttr_AttrObsrvtnSttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DtDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         }
       },
       "required": [
-        "DIMS",
-        "RT"
+        "RT",
+        "DIMS"
       ],
       "title": "CpnSeries",
       "type": "object"
     },
     "DbtAliasSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__AliasDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Annotated_str__StringConstraints__str__StringConstraints____2"
-        },
         "ALIAS_OF": {
           "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__AliasDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Annotated_str__StringConstraints__str__StringConstraints____2"
         }
       },
       "required": [
-        "DIMS",
-        "ALIAS_OF"
+        "ALIAS_OF",
+        "DIMS"
       ],
       "title": "DbtAliasSeries",
       "type": "object"
@@ -286,9 +563,6 @@
     },
     "DbtDynmcSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
-        },
         "NM": {
           "anyOf": [
             {
@@ -618,6 +892,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
         }
       },
       "required": [
@@ -637,7 +914,7 @@
       "title": "DbtGrntLvlEnum",
       "type": "string"
     },
-    "DbtOutstndngChnDimensionContainer": {
+    "DbtOutstndngChnDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
       "properties": {
         "ID": {
           "maxLength": 512,
@@ -659,7 +936,7 @@
         "TP",
         "DT"
       ],
-      "title": "DbtOutstndngChnDimensionContainer",
+      "title": "DbtOutstndngChnDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
       "type": "object"
     },
     "DbtOutstndngChnTypEnum": {
@@ -675,29 +952,26 @@
     },
     "DbtOutstndngChngSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/DbtOutstndngChnDimensionContainer"
-        },
         "AMNT": {
           "$ref": "#/$defs/Measure_float_GenericStatusAttr_AttrObsrvtnSttsEnum__"
         },
         "PRC": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/DbtOutstndngChnDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
         }
       },
       "required": [
-        "DIMS",
         "AMNT",
-        "PRC"
+        "PRC",
+        "DIMS"
       ],
       "title": "DbtOutstndngChngSeries",
       "type": "object"
     },
     "DbtPrcSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DtDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
         "PRC": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
         },
@@ -706,13 +980,16 @@
         },
         "OTSTNDNG": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DtDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         }
       },
       "required": [
-        "DIMS",
         "PRC",
         "ACCRD_INTRST",
-        "OTSTNDNG"
+        "OTSTNDNG",
+        "DIMS"
       ],
       "title": "DbtPrcSeries",
       "type": "object"
@@ -758,9 +1035,6 @@
     },
     "DbtSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____6"
-        },
         "DT_BRTH": {
           "anyOf": [
             {
@@ -837,6 +1111,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____6"
         }
       },
       "required": [
@@ -922,9 +1199,6 @@
     },
     "DvdndSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DtDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-        },
         "EX_DT": {
           "$ref": "#/$defs/Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__"
         },
@@ -945,17 +1219,20 @@
         },
         "AMNT": {
           "$ref": "#/$defs/Measure_Annotated_float__Gt__GenericStatusAttr_AttrObsrvtnSttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DtDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
         }
       },
       "required": [
-        "DIMS",
         "EX_DT",
         "DCLRTN_DT",
         "PYMNT_DT",
         "FRQNCY",
         "TYP",
         "CRRNCY",
-        "AMNT"
+        "AMNT",
+        "DIMS"
       ],
       "title": "DvdndSeries",
       "type": "object"
@@ -983,21 +1260,21 @@
     },
     "EdrAliasSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__AliasDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Annotated_str__StringConstraints__str__StringConstraints____4"
-        },
         "ALIAS_OF": {
           "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__AliasDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Annotated_str__StringConstraints__str__StringConstraints____4"
         }
       },
       "required": [
-        "DIMS",
-        "ALIAS_OF"
+        "ALIAS_OF",
+        "DIMS"
       ],
       "title": "EdrAliasSeries",
       "type": "object"
     },
-    "ExpenseDimensionContainer": {
+    "ExpenseDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
       "properties": {
         "IID": {
           "maxLength": 512,
@@ -1023,21 +1300,21 @@
         "DT",
         "FRQNCY"
       ],
-      "title": "ExpenseDimensionContainer",
+      "title": "ExpenseDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
       "type": "object"
     },
     "ExpnsSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/ExpenseDimensionContainer"
-        },
         "AMNT": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/ExpenseDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
         }
       },
       "required": [
-        "DIMS",
-        "AMNT"
+        "AMNT",
+        "DIMS"
       ],
       "title": "ExpnsSeries",
       "type": "object"
@@ -4001,9 +4278,6 @@
     },
     "HldrSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-        },
         "QNTTY": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
@@ -4012,13 +4286,16 @@
         },
         "RDMPTNS": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
         }
       },
       "required": [
-        "DIMS",
         "QNTTY",
         "SBSCRPTNS",
-        "RDMPTNS"
+        "RDMPTNS",
+        "DIMS"
       ],
       "title": "HldrSeries",
       "type": "object"
@@ -4054,29 +4331,26 @@
     },
     "KeySeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__AccFreqDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-        },
         "BK_PRC": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
         "INCM": {
           "$ref": "#/$defs/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__AccFreqDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
         }
       },
       "required": [
-        "DIMS",
         "BK_PRC",
-        "INCM"
+        "INCM",
+        "DIMS"
       ],
       "title": "KeySeries",
       "type": "object"
     },
     "LbltyDbtSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
         "STCK": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
@@ -4088,19 +4362,22 @@
         },
         "ACCRLS": {
           "$ref": "#/$defs/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         }
       },
       "required": [
-        "DIMS",
         "STCK",
         "FLS",
         "NMNL_STCK",
-        "ACCRLS"
+        "ACCRLS",
+        "DIMS"
       ],
       "title": "LbltyDbtSeries",
       "type": "object"
     },
-    "LbltyRmnngDimensionContainer": {
+    "LbltyRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
       "properties": {
         "TYP": {
           "$ref": "#/$defs/RemLiabEnum"
@@ -4126,25 +4403,25 @@
         "DT",
         "FRQNCY"
       ],
-      "title": "LbltyRmnngDimensionContainer",
+      "title": "LbltyRmnngDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
       "type": "object"
     },
     "LbltyRmnngSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/LbltyRmnngDimensionContainer"
-        },
         "STCK": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
         "FLS": {
           "$ref": "#/$defs/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/LbltyRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
         }
       },
       "required": [
-        "DIMS",
         "STCK",
-        "FLS"
+        "FLS",
+        "DIMS"
       ],
       "title": "LbltyRmnngSeries",
       "type": "object"
@@ -5269,30 +5546,6 @@
       "title": "Measure[Url, GenericStatusAttr[AttrObsrvtnSttsEnum]]",
       "type": "object"
     },
-    "Measure_bool_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__": {
-      "properties": {
-        "VALUE": {
-          "title": "Value",
-          "type": "boolean"
-        },
-        "ATTRS": {
-          "anyOf": [
-            {
-              "$ref": "#/$defs/GenericStatusConfAttr_AttrObsrvtnSttsEnum_AttrCnfdntltySttsEnum_"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "Measure[bool, GenericStatusConfAttr[AttrObsrvtnSttsEnum, AttrCnfdntltySttsEnum]]",
-      "type": "object"
-    },
     "Measure_date_GenericStatusAttr_AttrObsrvtnSttsEnum__": {
       "properties": {
         "VALUE": {
@@ -5393,9 +5646,6 @@
     },
     "Org2DbtSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__RelDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
-        },
         "ISSR_OF": {
           "anyOf": [
             {
@@ -5406,6 +5656,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__RelDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
         }
       },
       "required": [
@@ -5416,9 +5669,6 @@
     },
     "Org2OrgSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__RelDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
         "MNGMNT_OF": {
           "anyOf": [
             {
@@ -5451,6 +5701,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__RelDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         }
       },
       "required": [
@@ -5461,9 +5714,6 @@
     },
     "Org2ShrSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__RelDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
-        },
         "ISSR_OF": {
           "anyOf": [
             {
@@ -5474,6 +5724,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__RelDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
         }
       },
       "required": [
@@ -5484,25 +5737,22 @@
     },
     "OrgAliasSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__AliasDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Annotated_str__StringConstraints__str__StringConstraints____1"
-        },
         "ALIAS_OF": {
           "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__AliasDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Annotated_str__StringConstraints__str__StringConstraints____1"
         }
       },
       "required": [
-        "DIMS",
-        "ALIAS_OF"
+        "ALIAS_OF",
+        "DIMS"
       ],
       "title": "OrgAliasSeries",
       "type": "object"
     },
     "OrgDynmcSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
         "NM": {
           "anyOf": [
             {
@@ -5865,6 +6115,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         }
       },
       "required": [
@@ -7130,9 +7383,6 @@
     },
     "OrgSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-        },
         "DT_BRTH": {
           "anyOf": [
             {
@@ -7187,12 +7437,427 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
         }
       },
       "required": [
         "DIMS"
       ],
       "title": "OrgSeries",
+      "type": "object"
+    },
+    "RefDatasets": {
+      "additionalProperties": false,
+      "properties": {
+        "ORG": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/OrgSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Org"
+        },
+        "ORG_ALIAS": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/OrgAliasSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Org Alias"
+        },
+        "ORG2ORG": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Org2OrgSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Org2Org"
+        },
+        "ORG_DYNMC": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/OrgDynmcSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Org Dynmc"
+        },
+        "USR": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/UsrSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Usr"
+        },
+        "USR2ORG": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Usr2OrgSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Usr2Org"
+        },
+        "USR_DYNMC": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/UsrDynmcSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Usr Dynmc"
+        },
+        "DPST": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__ref__DpstSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dpst"
+        },
+        "SFT": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__ref__SftSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sft"
+        },
+        "DBT": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/DbtSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dbt"
+        },
+        "DBT_ALIAS": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/DbtAliasSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dbt Alias"
+        },
+        "ORG2DBT": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Org2DbtSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Org2Dbt"
+        },
+        "DBT_DYNMC": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/DbtDynmcSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dbt Dynmc"
+        },
+        "DBT_OUTSTNDNG_CHNG": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/DbtOutstndngChngSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dbt Outstndng Chng"
+        },
+        "DBT_CPN": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/CpnSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dbt Cpn"
+        },
+        "DBT_PRC": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/DbtPrcSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dbt Prc"
+        },
+        "LN": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__ref__LnSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ln"
+        },
+        "SHR": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__ref__ShrSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Shr"
+        },
+        "SHR_ALIAS": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/ShrAliasSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Shr Alias"
+        },
+        "ORG2SHR": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Org2ShrSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Org2Shr"
+        },
+        "SHR_DYNMC": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/ShrDynmcSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Shr Dynmc"
+        },
+        "SHR_DVDND": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/DvdndSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Shr Dvdnd"
+        },
+        "SHR_SPLT": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/SpltSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Shr Splt"
+        },
+        "SHR_PRC": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/ShrPrcSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Shr Prc"
+        },
+        "EDR": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__ref__EdrSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Edr"
+        },
+        "EDR_ALIAS": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/EdrAliasSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Edr Alias"
+        },
+        "ODR": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/journey__structure__dbdat__ref__OdrSeries"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Odr"
+        }
+      },
+      "title": "RefDatasets",
       "type": "object"
     },
     "RemAssetEnum": {
@@ -7224,7 +7889,7 @@
       "title": "RemLiabEnum",
       "type": "string"
     },
-    "RevenueDimensionContainer": {
+    "RevenueDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
       "properties": {
         "IID": {
           "maxLength": 512,
@@ -7250,21 +7915,21 @@
         "DT",
         "FRQNCY"
       ],
-      "title": "RevenueDimensionContainer",
+      "title": "RevenueDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
       "type": "object"
     },
     "RvnSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/RevenueDimensionContainer"
-        },
         "AMNT": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/RevenueDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
         }
       },
       "required": [
-        "DIMS",
-        "AMNT"
+        "AMNT",
+        "DIMS"
       ],
       "title": "RvnSeries",
       "type": "object"
@@ -7282,25 +7947,22 @@
     },
     "ShrAliasSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__AliasDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Annotated_str__StringConstraints__str__StringConstraints____3"
-        },
         "ALIAS_OF": {
           "$ref": "#/$defs/Measure_BoolEnum_GenericStatusAttr_AttrObsrvtnSttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__AliasDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Annotated_str__StringConstraints__str__StringConstraints____3"
         }
       },
       "required": [
-        "DIMS",
-        "ALIAS_OF"
+        "ALIAS_OF",
+        "DIMS"
       ],
       "title": "ShrAliasSeries",
       "type": "object"
     },
     "ShrDynmcSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
-        },
         "NM": {
           "anyOf": [
             {
@@ -7410,6 +8072,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
         }
       },
       "required": [
@@ -7450,20 +8115,20 @@
     },
     "ShrPrcSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/FreqDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
-        },
         "PRC": {
           "$ref": "#/$defs/Measure_float_GenericStatusAttr_AttrObsrvtnSttsEnum__"
         },
         "OTSTNDNG": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusAttr_AttrObsrvtnSttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/FreqDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
         }
       },
       "required": [
-        "DIMS",
         "PRC",
-        "OTSTNDNG"
+        "OTSTNDNG",
+        "DIMS"
       ],
       "title": "ShrPrcSeries",
       "type": "object"
@@ -7497,25 +8162,22 @@
     },
     "SpltSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DtDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-        },
         "FCTR": {
           "$ref": "#/$defs/Measure_Annotated_float__Gt__GenericStatusAttr_AttrObsrvtnSttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DtDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
         }
       },
       "required": [
-        "DIMS",
-        "FCTR"
+        "FCTR",
+        "DIMS"
       ],
       "title": "SpltSeries",
       "type": "object"
     },
     "Usr2OrgSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__RelDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-        },
         "ASSCTD_WTH": {
           "anyOf": [
             {
@@ -7537,6 +8199,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__RelDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
         }
       },
       "required": [
@@ -7547,9 +8212,6 @@
     },
     "UsrDynmcSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-        },
         "FRST": {
           "anyOf": [
             {
@@ -7593,6 +8255,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
         }
       },
       "required": [
@@ -7603,9 +8268,6 @@
     },
     "UsrSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
-        },
         "DT_BRTH": {
           "anyOf": [
             {
@@ -7638,6 +8300,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
         }
       },
       "required": [
@@ -8939,288 +9604,8 @@
       "title": "RelFrqncyAccDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc], Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
       "type": "object"
     },
-    "journey__structure__dbdat__acc__Datasets": {
-      "additionalProperties": false,
-      "properties": {
-        "ASST_DPST": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__DpstSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Asst Dpst"
-        },
-        "ASST_SFT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__SftSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Asst Sft"
-        },
-        "ASST_DBT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/AsstDbtSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Asst Dbt"
-        },
-        "ASST_LN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__LnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Asst Ln"
-        },
-        "SHR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__ShrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Shr"
-        },
-        "EDR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__EdrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Edr"
-        },
-        "ODR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__OdrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Odr"
-        },
-        "ASST_NN_FNNCL": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/AsstNnFnnclSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Asst Nn Fnncl"
-        },
-        "ASST_RMNNG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/AsstRmnngSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Asst Rmnng"
-        },
-        "LBLTY_DPST": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__DpstSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Lblty Dpst"
-        },
-        "LBLTY_SFT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__SftSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Lblty Sft"
-        },
-        "LBLTY_DBT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/LbltyDbtSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Lblty Dbt"
-        },
-        "LBLTY_LN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__acc__LnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Lblty Ln"
-        },
-        "LBLTY_RMNNG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/LbltyRmnngSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Lblty Rmnng"
-        },
-        "HLDR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/HldrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Hldr"
-        },
-        "RVN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/RvnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Rvn"
-        },
-        "EXPNS": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/ExpnsSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Expns"
-        },
-        "KEY": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/KeySeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Key"
-        }
-      },
-      "title": "Datasets",
-      "type": "object"
-    },
     "journey__structure__dbdat__acc__DpstSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__FrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
         "STCK": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
@@ -9229,22 +9614,22 @@
         },
         "ACCRLS": {
           "$ref": "#/$defs/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__FrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         }
       },
       "required": [
-        "DIMS",
         "STCK",
         "FLS",
-        "ACCRLS"
+        "ACCRLS",
+        "DIMS"
       ],
       "title": "DpstSeries",
       "type": "object"
     },
     "journey__structure__dbdat__acc__EdrSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
-        },
         "STCK": {
           "$ref": "#/$defs/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
@@ -9253,22 +9638,22 @@
         },
         "QNTTY": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
         }
       },
       "required": [
-        "DIMS",
         "STCK",
         "FLS",
-        "QNTTY"
+        "QNTTY",
+        "DIMS"
       ],
       "title": "EdrSeries",
       "type": "object"
     },
     "journey__structure__dbdat__acc__LnSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__AccFreqDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
         "STCK": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
@@ -9279,64 +9664,64 @@
           "$ref": "#/$defs/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
         "IS_GRP_LN": {
-          "$ref": "#/$defs/Measure_bool_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+          "$ref": "#/$defs/Measure_BoolEnum_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__AccFreqDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         }
       },
       "required": [
-        "DIMS",
         "STCK",
         "FLS",
         "ACCRLS",
-        "IS_GRP_LN"
+        "IS_GRP_LN",
+        "DIMS"
       ],
       "title": "LnSeries",
       "type": "object"
     },
     "journey__structure__dbdat__acc__OdrSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__FrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
-        },
         "STCK": {
           "$ref": "#/$defs/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
         "FLS": {
           "$ref": "#/$defs/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__FrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
         }
       },
       "required": [
-        "DIMS",
         "STCK",
-        "FLS"
+        "FLS",
+        "DIMS"
       ],
       "title": "OdrSeries",
       "type": "object"
     },
     "journey__structure__dbdat__acc__SftSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__FrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-        },
         "STCK": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
         "FLS": {
           "$ref": "#/$defs/Measure_float_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__FrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
         }
       },
       "required": [
-        "DIMS",
         "STCK",
-        "FLS"
+        "FLS",
+        "DIMS"
       ],
       "title": "SftSeries",
       "type": "object"
     },
     "journey__structure__dbdat__acc__ShrSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-        },
         "STCK": {
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
@@ -9350,437 +9735,25 @@
           "$ref": "#/$defs/Measure_Annotated_float__Ge__GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
         },
         "IS_DRCT_INVSTMNT": {
-          "$ref": "#/$defs/Measure_bool_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+          "$ref": "#/$defs/Measure_BoolEnum_GenericStatusConfAttr_AttrObsrvtnSttsEnum__AttrCnfdntltySttsEnum__"
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
         }
       },
       "required": [
-        "DIMS",
         "STCK",
         "FLS",
         "QNTTY",
         "LND_FR_SFT",
-        "IS_DRCT_INVSTMNT"
+        "IS_DRCT_INVSTMNT",
+        "DIMS"
       ],
       "title": "ShrSeries",
       "type": "object"
     },
-    "journey__structure__dbdat__ref__Datasets": {
-      "additionalProperties": false,
-      "properties": {
-        "ORG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/OrgSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Org"
-        },
-        "ORG_ALIAS": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/OrgAliasSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Org Alias"
-        },
-        "ORG2ORG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/Org2OrgSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Org2Org"
-        },
-        "ORG_DYNMC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/OrgDynmcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Org Dynmc"
-        },
-        "USR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/UsrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Usr"
-        },
-        "USR2ORG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/Usr2OrgSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Usr2Org"
-        },
-        "USR_DYNMC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/UsrDynmcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Usr Dynmc"
-        },
-        "DPST": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__ref__DpstSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Dpst"
-        },
-        "SFT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__ref__SftSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Sft"
-        },
-        "DBT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/DbtSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Dbt"
-        },
-        "DBT_ALIAS": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/DbtAliasSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Dbt Alias"
-        },
-        "ORG2DBT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/Org2DbtSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Org2Dbt"
-        },
-        "DBT_DYNMC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/DbtDynmcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Dbt Dynmc"
-        },
-        "DBT_OUTSTNDNG_CHNG": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/DbtOutstndngChngSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Dbt Outstndng Chng"
-        },
-        "DBT_CPN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/CpnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Dbt Cpn"
-        },
-        "DBT_PRC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/DbtPrcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Dbt Prc"
-        },
-        "LN": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__ref__LnSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Ln"
-        },
-        "SHR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__ref__ShrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Shr"
-        },
-        "SHR_ALIAS": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/ShrAliasSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Shr Alias"
-        },
-        "ORG2SHR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/Org2ShrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Org2Shr"
-        },
-        "SHR_DYNMC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/ShrDynmcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Shr Dynmc"
-        },
-        "SHR_DVDND": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/DvdndSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Shr Dvdnd"
-        },
-        "SHR_SPLT": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/SpltSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Shr Splt"
-        },
-        "SHR_PRC": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/ShrPrcSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Shr Prc"
-        },
-        "EDR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__ref__EdrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Edr"
-        },
-        "EDR_ALIAS": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/EdrAliasSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Edr Alias"
-        },
-        "ODR": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/journey__structure__dbdat__ref__OdrSeries"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Odr"
-        }
-      },
-      "title": "Datasets",
-      "type": "object"
-    },
     "journey__structure__dbdat__ref__DpstSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
-        },
         "DT_BRTH": {
           "anyOf": [
             {
@@ -9868,6 +9841,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
         }
       },
       "required": [
@@ -9878,9 +9854,6 @@
     },
     "journey__structure__dbdat__ref__EdrSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
         "DT_BRTH": {
           "anyOf": [
             {
@@ -9979,6 +9952,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         }
       },
       "required": [
@@ -9989,9 +9965,6 @@
     },
     "journey__structure__dbdat__ref__LnSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____7"
-        },
         "DT_BRTH": {
           "anyOf": [
             {
@@ -10068,6 +10041,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____7"
         }
       },
       "required": [
@@ -10078,9 +10054,6 @@
     },
     "journey__structure__dbdat__ref__OdrSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
         "DT_BRTH": {
           "anyOf": [
             {
@@ -10179,6 +10152,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
         }
       },
       "required": [
@@ -10189,9 +10165,6 @@
     },
     "journey__structure__dbdat__ref__SftSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____5"
-        },
         "DT_BRTH": {
           "anyOf": [
             {
@@ -10268,6 +10241,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____5"
         }
       },
       "required": [
@@ -10278,9 +10254,6 @@
     },
     "journey__structure__dbdat__ref__ShrSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____8"
-        },
         "DT_BRTH": {
           "anyOf": [
             {
@@ -10324,6 +10297,9 @@
             }
           ],
           "default": null
+        },
+        "DIMS": {
+          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____8"
         }
       },
       "required": [
