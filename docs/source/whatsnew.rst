@@ -10,6 +10,14 @@ What's new?
 
 .. Next release
 .. ============
+v0.3.3 (2024-05-20)
+-------------------
+* Created compact json schemas
+* Collapse categories into tables
+* Improve excel data structure
+* Modified examples to be used with the compact json schemas
+* Other fixes
+* ReadTheDocs Documentation not yet changed to reflect the above changes 
 
 v0.3.2 (2024-04-24)
 -------------------

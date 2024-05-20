@@ -7,8 +7,8 @@
   "emails": [],
   "files": [
     {
-      "name": "dbdat_juser_second.json",
-      "processed": true
+      "name": "dbdat_juser_third.json",
+      "processed": false
     }
   ],
   "critical_errors": {
@@ -19,7 +19,56 @@
     "corrupt_json": [],
     "submitter_inconsistency": [],
     "unauthorized_submitter": [],
-    "schema_errors": [],
+    "schema_errors": [
+      {
+        "filename": "dbdat_juser_third.json",
+        "location": "('DATASETS', 'REF.ORG_DYNMC', 33, 'NM_LTN')",
+        "message": "String should match pattern '^[a-zA-Z0-9_]+'",
+        "input": "ΝΝ EUROPEAN EQUITY FUNDS",
+        "domain": null,
+        "type": "string_pattern_mismatch",
+        "level": null,
+        "line": null,
+        "column": null,
+        "file": null
+      },
+      {
+        "filename": "dbdat_juser_third.json",
+        "location": "('DATASETS', 'REF.ORG_DYNMC', 38, 'NM_LTN')",
+        "message": "String should match pattern '^[a-zA-Z0-9_]+'",
+        "input": "ΝΝ FUND OF FUNDS EQUITY COMMODITIES",
+        "domain": null,
+        "type": "string_pattern_mismatch",
+        "level": null,
+        "line": null,
+        "column": null,
+        "file": null
+      },
+      {
+        "filename": "dbdat_juser_third.json",
+        "location": "('DATASETS', 'REF.ORG_DYNMC', 61, 'NM_LTN')",
+        "message": "String should match pattern '^[a-zA-Z0-9_]+'",
+        "input": "ΝΝ EUROPEAN CORPORATE BONDS",
+        "domain": null,
+        "type": "string_pattern_mismatch",
+        "level": null,
+        "line": null,
+        "column": null,
+        "file": null
+      },
+      {
+        "filename": "dbdat_juser_third.json",
+        "location": "('DATASETS', 'REF.ORG_DYNMC', 136, 'NM_LTN')",
+        "message": "String should match pattern '^[a-zA-Z0-9_]+'",
+        "input": "ΕΠΑΓΓΕΛΜΑΤΙΚΟ ΤΑΜΕΙΟ ΟΙΚΟΝΟΜΟΛΟΓΩΝ Μικτό",
+        "domain": null,
+        "type": "string_pattern_mismatch",
+        "level": null,
+        "line": null,
+        "column": null,
+        "file": null
+      }
+    ],
     "no_content": [],
     "wrong_extension": []
   },

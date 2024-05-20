@@ -1,28 +1,322 @@
 {
   "$defs": {
-    "AsstDbtSeries": {
+    "AccDpstSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
+        "IID": {
+          "maxLength": 512,
+          "pattern": "^[JIPC][a-zA-Z0-9_]+",
+          "title": "Iid",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/GenFrqncyEnum"
         },
         "STCK": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
+          "minimum": 0.0,
+          "title": "Stck",
+          "type": "number"
         },
         "FLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        },
-        "NMNL_STCK": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        },
-        "LND_FR_SFT": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
+          "title": "Fls",
+          "type": "number"
         },
         "ACCRLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
+          "title": "Accrls",
+          "type": "number"
         }
       },
       "required": [
-        "DIMS",
+        "IID",
+        "DT",
+        "FRQNCY",
+        "STCK",
+        "FLS",
+        "ACCRLS"
+      ],
+      "title": "AccDpstSeries",
+      "type": "object"
+    },
+    "AccEdrSeries": {
+      "properties": {
+        "IID": {
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Iid",
+          "type": "string"
+        },
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "STCK": {
+          "title": "Stck",
+          "type": "number"
+        },
+        "FLS": {
+          "title": "Fls",
+          "type": "number"
+        },
+        "QNTTY": {
+          "minimum": 0.0,
+          "title": "Qntty",
+          "type": "number"
+        }
+      },
+      "required": [
+        "IID",
+        "ID",
+        "DT",
+        "FRQNCY",
+        "STCK",
+        "FLS",
+        "QNTTY"
+      ],
+      "title": "AccEdrSeries",
+      "type": "object"
+    },
+    "AccLnSeries": {
+      "properties": {
+        "IID": {
+          "maxLength": 512,
+          "pattern": "^[P][a-zA-Z0-9_]+",
+          "title": "Iid",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "STCK": {
+          "minimum": 0.0,
+          "title": "Stck",
+          "type": "number"
+        },
+        "FLS": {
+          "title": "Fls",
+          "type": "number"
+        },
+        "ACCRLS": {
+          "title": "Accrls",
+          "type": "number"
+        },
+        "IS_GRP_LN": {
+          "title": "Is Grp Ln",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "IID",
+        "DT",
+        "FRQNCY",
+        "STCK",
+        "FLS",
+        "ACCRLS",
+        "IS_GRP_LN"
+      ],
+      "title": "AccLnSeries",
+      "type": "object"
+    },
+    "AccOdrSeries": {
+      "properties": {
+        "IID": {
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Iid",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "STCK": {
+          "title": "Stck",
+          "type": "number"
+        },
+        "FLS": {
+          "title": "Fls",
+          "type": "number"
+        }
+      },
+      "required": [
+        "IID",
+        "DT",
+        "FRQNCY",
+        "STCK",
+        "FLS"
+      ],
+      "title": "AccOdrSeries",
+      "type": "object"
+    },
+    "AccSftSeries": {
+      "properties": {
+        "IID": {
+          "maxLength": 512,
+          "pattern": "^[P][a-zA-Z0-9_]+",
+          "title": "Iid",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "STCK": {
+          "minimum": 0.0,
+          "title": "Stck",
+          "type": "number"
+        },
+        "FLS": {
+          "title": "Fls",
+          "type": "number"
+        }
+      },
+      "required": [
+        "IID",
+        "DT",
+        "FRQNCY",
+        "STCK",
+        "FLS"
+      ],
+      "title": "AccSftSeries",
+      "type": "object"
+    },
+    "AccShrSeries": {
+      "properties": {
+        "IID": {
+          "maxLength": 512,
+          "pattern": "^[IPU][a-zA-Z0-9_]+",
+          "title": "Iid",
+          "type": "string"
+        },
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "STCK": {
+          "minimum": 0.0,
+          "title": "Stck",
+          "type": "number"
+        },
+        "FLS": {
+          "title": "Fls",
+          "type": "number"
+        },
+        "QNTTY": {
+          "minimum": 0.0,
+          "title": "Qntty",
+          "type": "number"
+        },
+        "LND_FR_SFT": {
+          "minimum": 0.0,
+          "title": "Lnd Fr Sft",
+          "type": "number"
+        },
+        "IS_DRCT_INVSTMNT": {
+          "title": "Is Drct Invstmnt",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "IID",
+        "ID",
+        "DT",
+        "FRQNCY",
+        "STCK",
+        "FLS",
+        "QNTTY",
+        "LND_FR_SFT",
+        "IS_DRCT_INVSTMNT"
+      ],
+      "title": "AccShrSeries",
+      "type": "object"
+    },
+    "AsstDbtSeries": {
+      "properties": {
+        "IID": {
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Iid",
+          "type": "string"
+        },
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "STCK": {
+          "minimum": 0.0,
+          "title": "Stck",
+          "type": "number"
+        },
+        "FLS": {
+          "title": "Fls",
+          "type": "number"
+        },
+        "NMNL_STCK": {
+          "minimum": 0.0,
+          "title": "Nmnl Stck",
+          "type": "number"
+        },
+        "LND_FR_SFT": {
+          "minimum": 0.0,
+          "title": "Lnd Fr Sft",
+          "type": "number"
+        },
+        "ACCRLS": {
+          "title": "Accrls",
+          "type": "number"
+        }
+      },
+      "required": [
+        "IID",
+        "ID",
+        "DT",
+        "FRQNCY",
         "STCK",
         "FLS",
         "NMNL_STCK",
@@ -32,7 +326,21 @@
       "title": "AsstDbtSeries",
       "type": "object"
     },
-    "AsstNnFnnclDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
+    "AsstNnFnnclEnum": {
+      "enum": [
+        "RESET",
+        "RETAIN",
+        "NFA1",
+        "NFA2",
+        "NFA3",
+        "NFA4",
+        "NFA5",
+        "NFA6"
+      ],
+      "title": "AsstNnFnnclEnum",
+      "type": "string"
+    },
+    "AsstNnFnnclSeries": {
       "properties": {
         "TYP": {
           "$ref": "#/$defs/AsstNnFnnclEnum"
@@ -53,6 +361,19 @@
         },
         "FRQNCY": {
           "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "STCK": {
+          "minimum": 0.0,
+          "title": "Stck",
+          "type": "number"
+        },
+        "FLS": {
+          "title": "Fls",
+          "type": "number"
+        },
+        "ACCRLS": {
+          "title": "Accrls",
+          "type": "number"
         }
       },
       "required": [
@@ -60,41 +381,7 @@
         "CNTRY",
         "ID",
         "DT",
-        "FRQNCY"
-      ],
-      "title": "AsstNnFnnclDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "AsstNnFnnclEnum": {
-      "enum": [
-        "-",
-        "NFA1",
-        "NFA2",
-        "NFA3",
-        "NFA4",
-        "NFA5",
-        "NFA6"
-      ],
-      "title": "AsstNnFnnclEnum",
-      "type": "string"
-    },
-    "AsstNnFnnclSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/AsstNnFnnclDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
-        },
-        "STCK": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        },
-        "FLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        },
-        "ACCRLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        }
-      },
-      "required": [
-        "DIMS",
+        "FRQNCY",
         "STCK",
         "FLS",
         "ACCRLS"
@@ -102,7 +389,7 @@
       "title": "AsstNnFnnclSeries",
       "type": "object"
     },
-    "AsstRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
+    "AsstRmnngSeries": {
       "properties": {
         "TYP": {
           "$ref": "#/$defs/RemAssetEnum"
@@ -120,674 +407,408 @@
         },
         "FRQNCY": {
           "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "STCK": {
+          "minimum": 0.0,
+          "title": "Stck",
+          "type": "number"
+        },
+        "FLS": {
+          "title": "Fls",
+          "type": "number"
         }
       },
       "required": [
         "TYP",
         "ID",
         "DT",
-        "FRQNCY"
-      ],
-      "title": "AsstRmnngDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "AsstRmnngSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/AsstRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
-        },
-        "STCK": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        },
-        "FLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        }
-      },
-      "required": [
-        "DIMS",
+        "FRQNCY",
         "STCK",
         "FLS"
       ],
       "title": "AsstRmnngSeries",
       "type": "object"
     },
-    "BaseMeasure_Annotated_float__Ge__": {
-      "properties": {
-        "VALUE": {
-          "minimum": 0.0,
-          "title": "Value",
-          "type": "number"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[float, Ge]]",
-      "type": "object"
-    },
-    "BaseMeasure_Annotated_float__Gt__": {
-      "properties": {
-        "VALUE": {
-          "exclusiveMinimum": 0.0,
-          "title": "Value",
-          "type": "number"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[float, Gt]]",
-      "type": "object"
-    },
-    "BaseMeasure_Annotated_int__Ge__": {
-      "properties": {
-        "VALUE": {
-          "minimum": 0,
-          "title": "Value",
-          "type": "integer"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[int, Ge]]",
-      "type": "object"
-    },
-    "BaseMeasure_BoolEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/BoolEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[BoolEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DbtCpnFrqncyEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DbtCpnFrqncyEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DbtCpnFrqncyEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DbtCpnTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DbtCpnTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DbtCpnTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DbtCvrdTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DbtCvrdTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DbtCvrdTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DbtGrntLvlEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DbtGrntLvlEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DbtGrntLvlEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DbtRnkLvlEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DbtRnkLvlEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DbtRnkLvlEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DbtScrtyLvlEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DbtScrtyLvlEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DbtScrtyLvlEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DbtScrtznTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DbtScrtznTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DbtScrtznTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DbtSttsEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DbtSttsEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DbtSttsEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DbtTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DbtTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DbtTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DepNtcEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DepNtcEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DepNtcEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DepTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DepTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DepTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DprtmntEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DprtmntEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DprtmntEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DrvtvTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DrvtvTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DrvtvTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DvdndCstmFrqncyEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DvdndCstmFrqncyEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DvdndCstmFrqncyEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_DvdndTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/DvdndTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[DvdndTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_EmailStr_": {
-      "properties": {
-        "VALUE": {
-          "format": "email",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[EmailStr]",
-      "type": "object"
-    },
-    "BaseMeasure_FndBndFcsEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/FndBndFcsEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[FndBndFcsEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_FndDstrbtnPlcyEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/FndDstrbtnPlcyEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[FndDstrbtnPlcyEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_FndEqtyTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/FndEqtyTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[FndEqtyTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_FndGgrphclFcsEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/FndGgrphclFcsEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[FndGgrphclFcsEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_FndGrnTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/FndGrnTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[FndGrnTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_FndInvstmntPlcyEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/FndInvstmntPlcyEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[FndInvstmntPlcyEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_FndInvstrTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/FndInvstrTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[FndInvstrTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_FndLglTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/FndLglTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[FndLglTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_FndRlEsttTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/FndRlEsttTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[FndRlEsttTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_FndStrtgyEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/FndStrtgyEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[FndStrtgyEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_GenCntryEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/GenCntryEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[GenCntryEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_GenCrrncyEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/GenCrrncyEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[GenCrrncyEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_GenMrktEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/GenMrktEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[GenMrktEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_LonTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/LonTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[LonTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_OrgInstttnlSctrCntrlEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/OrgInstttnlSctrCntrlEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[OrgInstttnlSctrCntrlEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_OrgInstttnlSctrEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/OrgInstttnlSctrEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[OrgInstttnlSctrEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_SftTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/SftTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[SftTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_ShrEsaTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/ShrEsaTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[ShrEsaTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_ShrFndRdmptnFrqncyEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/ShrFndRdmptnFrqncyEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[ShrFndRdmptnFrqncyEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_ShrTypEnum_": {
-      "properties": {
-        "VALUE": {
-          "$ref": "#/$defs/ShrTypEnum"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[ShrTypEnum]",
-      "type": "object"
-    },
-    "BaseMeasure_Url_": {
-      "properties": {
-        "VALUE": {
-          "format": "uri",
-          "minLength": 1,
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Url]",
-      "type": "object"
-    },
-    "BaseMeasure_bool_": {
-      "properties": {
-        "VALUE": {
-          "title": "Value",
-          "type": "boolean"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[bool]",
-      "type": "object"
-    },
-    "BaseMeasure_date_": {
-      "properties": {
-        "VALUE": {
-          "format": "date",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[date]",
-      "type": "object"
-    },
-    "BaseMeasure_float_": {
-      "properties": {
-        "VALUE": {
-          "title": "Value",
-          "type": "number"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[float]",
-      "type": "object"
-    },
     "BoolEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "T",
         "F"
       ],
       "title": "BoolEnum",
       "type": "string"
     },
-    "Categories": {
-      "properties": {
-        "REF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__structure__ifdat__ref__Datasets"
-            }
-          ],
-          "default": null
-        },
-        "ACC": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__structure__ifdat__acc__Datasets"
-            }
-          ],
-          "default": null
-        }
-      },
-      "title": "Categories",
-      "type": "object"
-    },
     "CntrprtySeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
         },
         "DT_BRTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Brth",
+          "type": "string"
         },
         "DT_CLS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Cls",
+          "type": "string"
         },
         "NM_LTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____2"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 128,
+          "title": "Nm Ltn",
+          "type": "string"
         },
         "CNTRY_RSDNC": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_GenCntryEnum_"
+              "$ref": "#/$defs/GenCntryEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "INSTTTNL_SCTR": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_OrgInstttnlSctrEnum_"
+              "$ref": "#/$defs/OrgInstttnlSctrEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "ALS_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Als Of",
+          "type": "string"
         }
       },
       "required": [
-        "DIMS"
+        "ID"
       ],
       "title": "CntrprtySeries",
       "type": "object"
     },
+    "DataSets": {
+      "properties": {
+        "REF.FND": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/FndSeries"
+          },
+          "title": "Ref.Fnd",
+          "type": "array"
+        },
+        "REF.FND_DYNMC": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/FndDynmcSeries"
+          },
+          "title": "Ref.Fnd Dynmc",
+          "type": "array"
+        },
+        "REF.SELF_DBT": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/SelfDbtSeries"
+          },
+          "title": "Ref.Self Dbt",
+          "type": "array"
+        },
+        "REF.SELF_DBT_DYNMC": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/SelfDbtDynmcSeries"
+          },
+          "title": "Ref.Self Dbt Dynmc",
+          "type": "array"
+        },
+        "REF.SELF_DBT_OUTSTNDNG_CHNG": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/SelfDbtOutstndngChngSeries"
+          },
+          "title": "Ref.Self Dbt Outstndng Chng",
+          "type": "array"
+        },
+        "REF.SELF_DBT_CPN": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/SelfCpnSeries"
+          },
+          "title": "Ref.Self Dbt Cpn",
+          "type": "array"
+        },
+        "REF.SELF_SHR": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/SelfShrSeries"
+          },
+          "title": "Ref.Self Shr",
+          "type": "array"
+        },
+        "REF.SELF_SHR_DYNMC": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/SelfShrDynmcSeries"
+          },
+          "title": "Ref.Self Shr Dynmc",
+          "type": "array"
+        },
+        "REF.SELF_SHR_DVDND": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/SelfDvdndSeries"
+          },
+          "title": "Ref.Self Shr Dvdnd",
+          "type": "array"
+        },
+        "REF.SELF_SHR_SPLT": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/SelfSpltSeries"
+          },
+          "title": "Ref.Self Shr Splt",
+          "type": "array"
+        },
+        "REF.MNGMNT": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/MngmntSeries"
+          },
+          "title": "Ref.Mngmnt",
+          "type": "array"
+        },
+        "REF.MNGMNT_DYNMC": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/MngmntDynmcSeries"
+          },
+          "title": "Ref.Mngmnt Dynmc",
+          "type": "array"
+        },
+        "REF.USR": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/UsrSeries"
+          },
+          "title": "Ref.Usr",
+          "type": "array"
+        },
+        "REF.USR_T_RA": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/Usr2RaSeries"
+          },
+          "title": "Ref.Usr T Ra",
+          "type": "array"
+        },
+        "REF.CNTRPRTY": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/CntrprtySeries"
+          },
+          "title": "Ref.Cntrprty",
+          "type": "array"
+        },
+        "REF.DPST": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/RefDpstSeries"
+          },
+          "title": "Ref.Dpst",
+          "type": "array"
+        },
+        "REF.SFT": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/RefSftSeries"
+          },
+          "title": "Ref.Sft",
+          "type": "array"
+        },
+        "REF.LN": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/RefLnSeries"
+          },
+          "title": "Ref.Ln",
+          "type": "array"
+        },
+        "REF.DBT": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/DbtSeries"
+          },
+          "title": "Ref.Dbt",
+          "type": "array"
+        },
+        "REF.SHR": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/RefShrSeries"
+          },
+          "title": "Ref.Shr",
+          "type": "array"
+        },
+        "REF.EDR": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/RefEdrSeries"
+          },
+          "title": "Ref.Edr",
+          "type": "array"
+        },
+        "REF.ODR": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/RefOdrSeries"
+          },
+          "title": "Ref.Odr",
+          "type": "array"
+        },
+        "ACC.DPST": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AccDpstSeries"
+          },
+          "title": "Acc.Dpst",
+          "type": "array"
+        },
+        "ASST.SFT": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AccSftSeries"
+          },
+          "title": "Asst.Sft",
+          "type": "array"
+        },
+        "ASST.DBT": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AsstDbtSeries"
+          },
+          "title": "Asst.Dbt",
+          "type": "array"
+        },
+        "ASST.LN": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AccLnSeries"
+          },
+          "title": "Asst.Ln",
+          "type": "array"
+        },
+        "SHR": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AccShrSeries"
+          },
+          "title": "Shr",
+          "type": "array"
+        },
+        "EDR": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AccEdrSeries"
+          },
+          "title": "Edr",
+          "type": "array"
+        },
+        "ODR": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AccOdrSeries"
+          },
+          "title": "Odr",
+          "type": "array"
+        },
+        "ASST.NN_FNNCL": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AsstNnFnnclSeries"
+          },
+          "title": "Asst.Nn Fnncl",
+          "type": "array"
+        },
+        "ASST.RMNNG": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AsstRmnngSeries"
+          },
+          "title": "Asst.Rmnng",
+          "type": "array"
+        },
+        "LBLTY.SFT": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AccSftSeries"
+          },
+          "title": "Lblty.Sft",
+          "type": "array"
+        },
+        "LBLTY.DBT": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/LbltyDbtSeries"
+          },
+          "title": "Lblty.Dbt",
+          "type": "array"
+        },
+        "LBLTY.LN": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AccLnSeries"
+          },
+          "title": "Lblty.Ln",
+          "type": "array"
+        },
+        "LBLTY.RMNNG": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/LbltyRmnngSeries"
+          },
+          "title": "Lblty.Rmnng",
+          "type": "array"
+        },
+        "HLDR": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/HldrSeries"
+          },
+          "title": "Hldr",
+          "type": "array"
+        },
+        "RVN": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/RvnSeries"
+          },
+          "title": "Rvn",
+          "type": "array"
+        },
+        "EXPNS": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/ExpnsSeries"
+          },
+          "title": "Expns",
+          "type": "array"
+        }
+      },
+      "title": "DataSets",
+      "type": "object"
+    },
     "DbtCpnFrqncyEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "ZC",
         "AN",
         "SA",
@@ -804,7 +825,8 @@
     },
     "DbtCpnTypEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "FIX",
         "STE",
         "FLO",
@@ -818,7 +840,8 @@
     },
     "DbtCvrdTypEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "PUBLIC",
         "MORTGAGE",
         "SHIP",
@@ -832,7 +855,8 @@
     },
     "DbtGrntLvlEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "UNGUARANTEED",
         "GOVERNMENT",
         "OTHER",
@@ -841,34 +865,10 @@
       "title": "DbtGrntLvlEnum",
       "type": "string"
     },
-    "DbtOutstndngChnDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
-      "properties": {
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[IP][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        },
-        "TP": {
-          "$ref": "#/$defs/DbtOutstndngChnTypEnum"
-        },
-        "DT": {
-          "format": "date",
-          "title": "Dt",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID",
-        "TP",
-        "DT"
-      ],
-      "title": "DbtOutstndngChnDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
     "DbtOutstndngChnTypEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "INIT",
         "TRANCHE",
         "PARTIAL",
@@ -879,7 +879,8 @@
     },
     "DbtRnkLvlEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "SUB_JUNIOR",
         "SUB_SENIOR",
         "SUB_NOINFO",
@@ -894,7 +895,8 @@
     },
     "DbtScrtyLvlEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "UNSECURED",
         "SECURED",
         "NOINFO"
@@ -904,7 +906,8 @@
     },
     "DbtScrtznTypEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "ABS",
         "MBS",
         "CDO",
@@ -918,67 +921,65 @@
     },
     "DbtSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
         },
         "DT_BRTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Brth",
+          "type": "string"
         },
         "DT_CLS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Cls",
+          "type": "string"
         },
         "CRRNCY": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
+              "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "TYP": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_DbtTypEnum_"
+              "$ref": "#/$defs/DbtTypEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "ISSD_BY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Issd By",
+          "type": "string"
         },
         "ALS_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Als Of",
+          "type": "string"
         }
       },
       "required": [
-        "DIMS"
+        "ID"
       ],
       "title": "DbtSeries",
       "type": "object"
     },
     "DbtSttsEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "100",
         "101",
         "102",
@@ -993,7 +994,8 @@
     },
     "DbtTypEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "BND",
         "MNY",
         "HBRD",
@@ -1004,7 +1006,8 @@
     },
     "DepNtcEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "S",
         "M",
         "L"
@@ -1014,7 +1017,8 @@
     },
     "DepTypEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "SIGHT",
         "AMAT",
         "ANOT"
@@ -1024,7 +1028,8 @@
     },
     "DprtmntEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "ACC",
         "ECO",
         "COM",
@@ -1037,7 +1042,8 @@
     },
     "DrvtvTypEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "CAL",
         "PUT",
         "WAR",
@@ -1052,7 +1058,8 @@
     },
     "DvdndCstmFrqncyEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "AN",
         "SA",
         "QA",
@@ -1066,7 +1073,8 @@
     },
     "DvdndTypEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "10",
         "20",
         "11",
@@ -1085,7 +1093,7 @@
       "title": "DvdndTypEnum",
       "type": "string"
     },
-    "ExpenseDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
+    "ExpnsSeries": {
       "properties": {
         "IID": {
           "maxLength": 512,
@@ -1103,28 +1111,18 @@
         },
         "FRQNCY": {
           "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "AMNT": {
+          "minimum": 0.0,
+          "title": "Amnt",
+          "type": "number"
         }
       },
       "required": [
         "IID",
         "TP",
         "DT",
-        "FRQNCY"
-      ],
-      "title": "ExpenseDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "ExpnsSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/ExpenseDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
-        },
-        "AMNT": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        }
-      },
-      "required": [
-        "DIMS",
+        "FRQNCY",
         "AMNT"
       ],
       "title": "ExpnsSeries",
@@ -1132,7 +1130,8 @@
     },
     "FndBndFcsEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "GOV",
         "COR",
         "MIX"
@@ -1142,7 +1141,8 @@
     },
     "FndDstrbtnPlcyEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "DIS",
         "CUM",
         "MIX"
@@ -1152,251 +1152,247 @@
     },
     "FndDynmcSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "VLD_FRM": {
+          "default": "MINDATE",
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
+        },
+        "VLD_T": {
+          "default": "MAXDATE",
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
         },
         "NM": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____2"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 128,
+          "title": "Nm",
+          "type": "string"
         },
         "NM_LTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____4"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Nm Ltn",
+          "type": "string"
         },
         "NM_SHRT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 64,
+          "title": "Nm Shrt",
+          "type": "string"
         },
         "STRT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 64,
+          "title": "Strt",
+          "type": "string"
         },
         "STRT_LTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____5"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Strt Ltn",
+          "type": "string"
         },
         "CTY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____3"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 32,
+          "title": "Cty",
+          "type": "string"
         },
         "CTY_LTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____6"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 32,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Cty Ltn",
+          "type": "string"
         },
         "PSTL_CD": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____4"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 16,
+          "title": "Pstl Cd",
+          "type": "string"
         },
         "URL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_Url_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "uri",
+          "minLength": 1,
+          "title": "Url",
+          "type": "string"
         },
         "EMAIL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_EmailStr_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "email",
+          "title": "Email",
+          "type": "string"
         },
         "IS_LSTD": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_BoolEnum_"
+              "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "IS_INCTV": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_BoolEnum_"
+              "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "IS_UNDR_LQDTN": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_BoolEnum_"
+              "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "INSTTTNL_SCTR_CNTRL": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_OrgInstttnlSctrCntrlEnum_"
+              "$ref": "#/$defs/OrgInstttnlSctrCntrlEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "MNGD_BY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____3"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "title": "Mngd By",
+          "type": "string"
         },
         "UNDR_UMBRLL_BY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____3"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "title": "Undr Umbrll By",
+          "type": "string"
         },
         "LGL_TYP": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_FndLglTypEnum_"
+              "$ref": "#/$defs/FndLglTypEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "INVSTMNT_PLCY": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_FndInvstmntPlcyEnum_"
+              "$ref": "#/$defs/FndInvstmntPlcyEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "EQTY_TYP": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_FndEqtyTypEnum_"
+              "$ref": "#/$defs/FndEqtyTypEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "DSTRBTN_PLCY": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_FndDstrbtnPlcyEnum_"
+              "$ref": "#/$defs/FndDstrbtnPlcyEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "INVSTR_TYP": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_FndInvstrTypEnum_"
+              "$ref": "#/$defs/FndInvstrTypEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "GRN_TYP": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_FndGrnTypEnum_"
+              "$ref": "#/$defs/FndGrnTypEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "STRTGY": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_FndStrtgyEnum_"
+              "$ref": "#/$defs/FndStrtgyEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "GGRPHCL_FCS": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_FndGgrphclFcsEnum_"
+              "$ref": "#/$defs/FndGgrphclFcsEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "BND_FCS": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_FndBndFcsEnum_"
+              "$ref": "#/$defs/FndBndFcsEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "RL_ESTT_TYP": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_FndRlEsttTypEnum_"
+              "$ref": "#/$defs/FndRlEsttTypEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "IS_FOF": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_BoolEnum_"
+              "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "IS_ETF": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_BoolEnum_"
+              "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "IS_PEF": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_BoolEnum_"
+              "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         }
       },
       "required": [
-        "DIMS"
+        "ID"
       ],
       "title": "FndDynmcSeries",
       "type": "object"
     },
     "FndEqtyTypEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "OPEN",
         "CLOSE"
       ],
@@ -1405,7 +1401,8 @@
     },
     "FndGgrphclFcsEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "DOM",
         "EEA",
         "OEA",
@@ -1421,7 +1418,8 @@
     },
     "FndGrnTypEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "LIGHT",
         "DARK",
         "OTHER"
@@ -1431,7 +1429,8 @@
     },
     "FndInvstmntPlcyEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "MMF",
         "BON",
         "EQT",
@@ -1448,7 +1447,8 @@
     },
     "FndInvstrTypEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "PRF",
         "RTL"
       ],
@@ -1457,7 +1457,8 @@
     },
     "FndLglTypEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "UCITS",
         "RAIF",
         "OAIF",
@@ -1469,7 +1470,8 @@
     },
     "FndRlEsttTypEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "RES",
         "COM",
         "IND",
@@ -1481,75 +1483,70 @@
     },
     "FndSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
         },
         "DT_BRTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Brth",
+          "type": "string"
         },
         "DT_CLS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Cls",
+          "type": "string"
         },
         "LEI_ID": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____2"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 20,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Lei Id",
+          "type": "string"
         },
         "TAX_ID": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 31,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Tax Id",
+          "type": "string"
         },
         "NBR_ID": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 31,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Nbr Id",
+          "type": "string"
         },
         "SPLT_FRM": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Splt Frm",
+          "type": "string"
         },
         "MRGD_WTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Mrgd Wth",
+          "type": "string"
         }
       },
       "required": [
-        "DIMS"
+        "ID"
       ],
       "title": "FndSeries",
       "type": "object"
     },
     "FndStrtgyEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "ACTIVE",
         "SYNPAS",
         "SYNPHY"
@@ -1559,7 +1556,8 @@
     },
     "GenCntryEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "AE",
         "AF",
         "AL",
@@ -1669,7 +1667,8 @@
     },
     "GenCrrncyEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "ARS",
         "AUD",
         "BGN",
@@ -1717,7 +1716,8 @@
     },
     "GenFrqncyEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "A",
         "B",
         "D",
@@ -1758,7 +1758,8 @@
     },
     "GenMrktEnum": {
       "enum": [
-        "-",
+        "RESET",
+        "RETAIN",
         "3579",
         "24EX",
         "360T",
@@ -4333,1947 +4334,21 @@
         "DOMAIN": {
           "const": "IFDat",
           "title": "Domain"
+        },
+        "SOURCE": {
+          "$ref": "#/$defs/SourceTypeEnum"
         }
       },
       "required": [
         "PARTNER",
         "USERNAME",
-        "DOMAIN"
+        "DOMAIN",
+        "SOURCE"
       ],
       "title": "Header",
       "type": "object"
     },
     "HldrSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
-        },
-        "QNTTY": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        },
-        "SBSCRPTNS": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        },
-        "RDMPTNS": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        }
-      },
-      "required": [
-        "DIMS",
-        "QNTTY",
-        "SBSCRPTNS",
-        "RDMPTNS"
-      ],
-      "title": "HldrSeries",
-      "type": "object"
-    },
-    "IncmExpnsEnum": {
-      "enum": [
-        "-",
-        "INTRST",
-        "RNTS",
-        "TRNSCTNS_FEES",
-        "MNGMNT_FEES",
-        "DPSTR_FEES",
-        "TAXES",
-        "WAGES",
-        "BDE",
-        "BLE",
-        "OTHER"
-      ],
-      "title": "IncmExpnsEnum",
-      "type": "string"
-    },
-    "IncmRvnEnum": {
-      "enum": [
-        "-",
-        "INTRST",
-        "DVDNDS",
-        "RNTS",
-        "FDI",
-        "INS"
-      ],
-      "title": "IncmRvnEnum",
-      "type": "string"
-    },
-    "KeySeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__AccFreqDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-        },
-        "BK_PRC": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        },
-        "INCM": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        }
-      },
-      "required": [
-        "DIMS",
-        "BK_PRC",
-        "INCM"
-      ],
-      "title": "KeySeries",
-      "type": "object"
-    },
-    "LbltyDbtSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
-        "STCK": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        },
-        "FLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        },
-        "NMNL_STCK": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        },
-        "ACCRLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        }
-      },
-      "required": [
-        "DIMS",
-        "STCK",
-        "FLS",
-        "NMNL_STCK",
-        "ACCRLS"
-      ],
-      "title": "LbltyDbtSeries",
-      "type": "object"
-    },
-    "LbltyRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
-      "properties": {
-        "TYP": {
-          "$ref": "#/$defs/RemLiabEnum"
-        },
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        },
-        "DT": {
-          "format": "date",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        }
-      },
-      "required": [
-        "TYP",
-        "ID",
-        "DT",
-        "FRQNCY"
-      ],
-      "title": "LbltyRmnngDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "LbltyRmnngSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/LbltyRmnngDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
-        },
-        "STCK": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        },
-        "FLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        }
-      },
-      "required": [
-        "DIMS",
-        "STCK",
-        "FLS"
-      ],
-      "title": "LbltyRmnngSeries",
-      "type": "object"
-    },
-    "LonTypEnum": {
-      "enum": [
-        "-",
-        "CRD",
-        "OVR",
-        "REV",
-        "FLS",
-        "NOS",
-        "TRD",
-        "SUB",
-        "INT",
-        "RFC",
-        "NFC",
-        "LVG",
-        "OTH"
-      ],
-      "title": "LonTypEnum",
-      "type": "string"
-    },
-    "MngmntDynmcSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
-        "NM": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____2"
-            }
-          ],
-          "default": null
-        },
-        "NM_LTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____4"
-            }
-          ],
-          "default": null
-        },
-        "NM_SHRT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____1"
-            }
-          ],
-          "default": null
-        },
-        "STRT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____1"
-            }
-          ],
-          "default": null
-        },
-        "STRT_LTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____5"
-            }
-          ],
-          "default": null
-        },
-        "CTY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____3"
-            }
-          ],
-          "default": null
-        },
-        "CTY_LTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____6"
-            }
-          ],
-          "default": null
-        },
-        "PSTL_CD": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____4"
-            }
-          ],
-          "default": null
-        },
-        "URL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_Url_"
-            }
-          ],
-          "default": null
-        },
-        "EMAIL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_EmailStr_"
-            }
-          ],
-          "default": null
-        },
-        "CNTRY_RSDNC": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_GenCntryEnum_"
-            }
-          ],
-          "default": null
-        }
-      },
-      "required": [
-        "DIMS"
-      ],
-      "title": "MngmntDynmcSeries",
-      "type": "object"
-    },
-    "MngmntSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
-        "DT_BRTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
-        },
-        "DT_CLS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
-        },
-        "LEI_ID": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____2"
-            }
-          ],
-          "default": null
-        },
-        "TAX_ID": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____1"
-            }
-          ],
-          "default": null
-        },
-        "NBR_ID": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____1"
-            }
-          ],
-          "default": null
-        },
-        "SPLT_FRM": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
-        },
-        "MRGD_WTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
-        }
-      },
-      "required": [
-        "DIMS"
-      ],
-      "title": "MngmntSeries",
-      "type": "object"
-    },
-    "OrgInstttnlSctrCntrlEnum": {
-      "enum": [
-        "-",
-        "0",
-        "1",
-        "2",
-        "3"
-      ],
-      "title": "OrgInstttnlSctrCntrlEnum",
-      "type": "string"
-    },
-    "OrgInstttnlSctrEnum": {
-      "enum": [
-        "-",
-        "S11",
-        "S121",
-        "S122",
-        "S123",
-        "S124",
-        "S125",
-        "S126",
-        "S127",
-        "S128",
-        "S129",
-        "S1311",
-        "S1312",
-        "S1313",
-        "S1314",
-        "S14",
-        "S15"
-      ],
-      "title": "OrgInstttnlSctrEnum",
-      "type": "string"
-    },
-    "RelDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
-      "properties": {
-        "LID": {
-          "maxLength": 512,
-          "pattern": "^[a-zA-Z0-9]+",
-          "title": "Lid",
-          "type": "string"
-        },
-        "RID": {
-          "maxLength": 512,
-          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
-          "title": "Rid",
-          "type": "string"
-        },
-        "VLD_FRM": {
-          "default": null,
-          "format": "date",
-          "title": "Vld Frm",
-          "type": "string"
-        },
-        "VLD_T": {
-          "default": null,
-          "format": "date",
-          "title": "Vld T",
-          "type": "string"
-        }
-      },
-      "required": [
-        "LID",
-        "RID"
-      ],
-      "title": "RelDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc], Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "RemAssetEnum": {
-      "enum": [
-        "-",
-        "AI_DPST",
-        "AI_LN",
-        "AI_DBT",
-        "AR",
-        "OTR"
-      ],
-      "title": "RemAssetEnum",
-      "type": "string"
-    },
-    "RemLiabEnum": {
-      "enum": [
-        "-",
-        "AI_LN",
-        "AI_DBT",
-        "AR",
-        "MNGMNT_FEES",
-        "TRNSCTNS_FEES",
-        "TAXES",
-        "OTHER_PRVSNS",
-        "NO_CASH_SL",
-        "FUTURE",
-        "OTHER"
-      ],
-      "title": "RemLiabEnum",
-      "type": "string"
-    },
-    "RevenueDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__": {
-      "properties": {
-        "IID": {
-          "maxLength": 512,
-          "pattern": "^[IPU][a-zA-Z0-9_]+",
-          "title": "Iid",
-          "type": "string"
-        },
-        "TP": {
-          "$ref": "#/$defs/IncmRvnEnum"
-        },
-        "DT": {
-          "format": "date",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        }
-      },
-      "required": [
-        "IID",
-        "TP",
-        "DT",
-        "FRQNCY"
-      ],
-      "title": "RevenueDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "RvnSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/RevenueDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
-        },
-        "AMNT": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        }
-      },
-      "required": [
-        "DIMS",
-        "AMNT"
-      ],
-      "title": "RvnSeries",
-      "type": "object"
-    },
-    "SelfCpnSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DtDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-        },
-        "RT": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        }
-      },
-      "required": [
-        "DIMS",
-        "RT"
-      ],
-      "title": "SelfCpnSeries",
-      "type": "object"
-    },
-    "SelfDbtDynmcSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-        },
-        "NM_LTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____4"
-            }
-          ],
-          "default": null
-        },
-        "NM_SHRT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____1"
-            }
-          ],
-          "default": null
-        },
-        "STTS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_DbtSttsEnum_"
-            }
-          ],
-          "default": null
-        },
-        "MTRTY_DT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
-        },
-        "ISSD_BY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
-        },
-        "CFI": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____7"
-            }
-          ],
-          "default": null
-        }
-      },
-      "required": [
-        "DIMS"
-      ],
-      "title": "SelfDbtDynmcSeries",
-      "type": "object"
-    },
-    "SelfDbtOutstndngChngSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/DbtOutstndngChnDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__"
-        },
-        "AMNT": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        },
-        "PRC": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        }
-      },
-      "required": [
-        "DIMS",
-        "AMNT",
-        "PRC"
-      ],
-      "title": "SelfDbtOutstndngChngSeries",
-      "type": "object"
-    },
-    "SelfDbtSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-        },
-        "DT_BRTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
-        },
-        "DT_CLS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
-        },
-        "ORGNL_MTRTY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
-        },
-        "CRRNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
-            }
-          ],
-          "default": null
-        },
-        "ISS_PRC": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            }
-          ],
-          "default": null
-        },
-        "RDMPTN_PRC": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            }
-          ],
-          "default": null
-        },
-        "MRKT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_GenMrktEnum_"
-            }
-          ],
-          "default": null
-        },
-        "ACCRL_STRTDT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
-        },
-        "TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_DbtTypEnum_"
-            }
-          ],
-          "default": null
-        },
-        "GRNT_LVL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_DbtGrntLvlEnum_"
-            }
-          ],
-          "default": null
-        },
-        "RNK_LVL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_DbtRnkLvlEnum_"
-            }
-          ],
-          "default": null
-        },
-        "SCRTY_LVL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_DbtScrtyLvlEnum_"
-            }
-          ],
-          "default": null
-        },
-        "IS_SCRTZTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            }
-          ],
-          "default": null
-        },
-        "SCRTZTN_TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_DbtScrtznTypEnum_"
-            }
-          ],
-          "default": null
-        },
-        "IS_CVRD": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            }
-          ],
-          "default": null
-        },
-        "CVRD_TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_DbtCvrdTypEnum_"
-            }
-          ],
-          "default": null
-        },
-        "CPN_TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_DbtCpnTypEnum_"
-            }
-          ],
-          "default": null
-        },
-        "CPN_CRRNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
-            }
-          ],
-          "default": null
-        },
-        "CPN_FRQNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_DbtCpnFrqncyEnum_"
-            }
-          ],
-          "default": null
-        },
-        "CPN_SPRD": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_Annotated_int__Ge__"
-            }
-          ],
-          "default": null
-        },
-        "CPN_MLTPLR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            }
-          ],
-          "default": null
-        },
-        "CPN_CP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            }
-          ],
-          "default": null
-        },
-        "CPN_FLR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            }
-          ],
-          "default": null
-        },
-        "FRST_CPN_DT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
-        },
-        "LST_CPN_DT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
-        },
-        "UNDRLYNG": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-            }
-          ],
-          "default": null
-        },
-        "MNMM_INVSTMNT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            }
-          ],
-          "default": null
-        },
-        "IS_PRVT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            }
-          ],
-          "default": null
-        },
-        "CFI": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____7"
-            }
-          ],
-          "default": null
-        },
-        "RSTRCTRD_T": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-            }
-          ],
-          "default": null
-        },
-        "RSTRCTRD_FRM": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
-            }
-          ],
-          "default": null
-        },
-        "ALS_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-            }
-          ],
-          "default": null
-        }
-      },
-      "required": [
-        "DIMS"
-      ],
-      "title": "SelfDbtSeries",
-      "type": "object"
-    },
-    "SelfDvdndSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DtDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
-        "EX_DT": {
-          "$ref": "#/$defs/BaseMeasure_date_"
-        },
-        "DCLRTN_DT": {
-          "$ref": "#/$defs/BaseMeasure_date_"
-        },
-        "PYMNT_DT": {
-          "$ref": "#/$defs/BaseMeasure_date_"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/BaseMeasure_DvdndCstmFrqncyEnum_"
-        },
-        "TYP": {
-          "$ref": "#/$defs/BaseMeasure_DvdndTypEnum_"
-        },
-        "CRRNCY": {
-          "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
-        },
-        "AMNT": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Gt__"
-        }
-      },
-      "required": [
-        "DIMS",
-        "EX_DT",
-        "DCLRTN_DT",
-        "PYMNT_DT",
-        "FRQNCY",
-        "TYP",
-        "CRRNCY",
-        "AMNT"
-      ],
-      "title": "SelfDvdndSeries",
-      "type": "object"
-    },
-    "SelfShrDynmcSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
-        },
-        "NM_LTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____4"
-            }
-          ],
-          "default": null
-        },
-        "NM_SHRT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____1"
-            }
-          ],
-          "default": null
-        },
-        "ISSD_BY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____3"
-            }
-          ],
-          "default": null
-        },
-        "NMNL_PRC": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            }
-          ],
-          "default": null
-        },
-        "CFI": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____7"
-            }
-          ],
-          "default": null
-        },
-        "RDMPTN_FRQNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_ShrFndRdmptnFrqncyEnum_"
-            }
-          ],
-          "default": null
-        },
-        "MNMM_AMNT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            }
-          ],
-          "default": null
-        },
-        "TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_ShrTypEnum_"
-            }
-          ],
-          "default": null
-        }
-      },
-      "required": [
-        "DIMS"
-      ],
-      "title": "SelfShrDynmcSeries",
-      "type": "object"
-    },
-    "SelfShrSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
-        },
-        "DT_BRTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
-        },
-        "DT_CLS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
-        },
-        "CRRNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
-            }
-          ],
-          "default": null
-        },
-        "MRKT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_GenMrktEnum_"
-            }
-          ],
-          "default": null
-        },
-        "RSTRCTRD_T": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
-            }
-          ],
-          "default": null
-        },
-        "ALS_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
-            }
-          ],
-          "default": null
-        }
-      },
-      "required": [
-        "DIMS"
-      ],
-      "title": "SelfShrSeries",
-      "type": "object"
-    },
-    "SelfSpltSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DtDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
-        "FCTR": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Gt__"
-        }
-      },
-      "required": [
-        "DIMS",
-        "FCTR"
-      ],
-      "title": "SelfSpltSeries",
-      "type": "object"
-    },
-    "SftTypEnum": {
-      "enum": [
-        "-",
-        "REP",
-        "SBL",
-        "BSB",
-        "MLT"
-      ],
-      "title": "SftTypEnum",
-      "type": "string"
-    },
-    "ShrEsaTypEnum": {
-      "enum": [
-        "F511",
-        "F512",
-        "F519",
-        "F521",
-        "F522"
-      ],
-      "title": "ShrEsaTypEnum",
-      "type": "string"
-    },
-    "ShrFndRdmptnFrqncyEnum": {
-      "enum": [
-        "-",
-        "PP",
-        "AN",
-        "SA",
-        "QU",
-        "MO",
-        "BA",
-        "OR",
-        "IR",
-        "SS",
-        "ON",
-        "EL",
-        "OT"
-      ],
-      "title": "ShrFndRdmptnFrqncyEnum",
-      "type": "string"
-    },
-    "ShrTypEnum": {
-      "enum": [
-        "-",
-        "CMMN",
-        "PRFRRD",
-        "DPSTRY_RCPT",
-        "HYBRD",
-        "OTHR_EQTY",
-        "UCITS",
-        "AIF",
-        "OTHR_FND"
-      ],
-      "title": "ShrTypEnum",
-      "type": "string"
-    },
-    "Usr2RaSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/RelDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc__"
-        },
-        "ASSCTD_WTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            }
-          ],
-          "default": null
-        },
-        "WRKS_FR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_DprtmntEnum_"
-            }
-          ],
-          "default": null
-        },
-        "RSPNSBL_FR_IFDAT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_BoolEnum_"
-            }
-          ],
-          "default": null
-        }
-      },
-      "required": [
-        "DIMS"
-      ],
-      "title": "Usr2RaSeries",
-      "type": "object"
-    },
-    "UsrSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____5"
-        },
-        "EMAIL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_EmailStr_"
-            }
-          ],
-          "default": null
-        },
-        "FRST": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____3"
-            }
-          ],
-          "default": null
-        },
-        "LST": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____3"
-            }
-          ],
-          "default": null
-        },
-        "PHN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____6"
-            }
-          ],
-          "default": null
-        }
-      },
-      "required": [
-        "DIMS"
-      ],
-      "title": "UsrSeries",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 512,
-          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____2": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 512,
-          "pattern": "^[IP][a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____3": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 512,
-          "pattern": "^[P][a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____4": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 512,
-          "pattern": "^[IPU][a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____5": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 512,
-          "pattern": "^[IP][a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____6": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 512,
-          "pattern": "^[P][a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____7": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 512,
-          "pattern": "^[IP][a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____8": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 512,
-          "pattern": "^[IP][a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____1": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 31,
-          "pattern": "^[a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____2": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 20,
-          "pattern": "^[a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____3": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 512,
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____4": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 128,
-          "pattern": "^[a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____5": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 64,
-          "pattern": "^[a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____6": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 32,
-          "pattern": "^[a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____7": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 6,
-          "pattern": "^[a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____8": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 12,
-          "pattern": "^[a-zA-Z0-9_]+",
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, StringConstraints, str, StringConstraints]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____1": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 64,
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, str, str, StringConstraints]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____2": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 128,
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, str, str, StringConstraints]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____3": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 32,
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, str, str, StringConstraints]]",
-      "type": "object"
-    },
-    "journey__model__BaseMeasure_Annotated_str__str__str__StringConstraints____4": {
-      "properties": {
-        "VALUE": {
-          "maxLength": 16,
-          "title": "Value",
-          "type": "string"
-        }
-      },
-      "required": [
-        "VALUE"
-      ],
-      "title": "BaseMeasure[Annotated[str, str, str, StringConstraints]]",
-      "type": "object"
-    },
-    "journey__model_dimension__AccFreqDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1": {
-      "properties": {
-        "IID": {
-          "maxLength": 512,
-          "pattern": "^[P][a-zA-Z0-9_]+",
-          "title": "Iid",
-          "type": "string"
-        },
-        "DT": {
-          "format": "date",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        }
-      },
-      "required": [
-        "IID",
-        "DT",
-        "FRQNCY"
-      ],
-      "title": "AccFreqDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__AccFreqDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2": {
-      "properties": {
-        "IID": {
-          "maxLength": 512,
-          "pattern": "^[IPU][a-zA-Z0-9_]+",
-          "title": "Iid",
-          "type": "string"
-        },
-        "DT": {
-          "format": "date",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        }
-      },
-      "required": [
-        "IID",
-        "DT",
-        "FRQNCY"
-      ],
-      "title": "AccFreqDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1": {
-      "properties": {
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID"
-      ],
-      "title": "DimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2": {
-      "properties": {
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[IP][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID"
-      ],
-      "title": "DimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3": {
-      "properties": {
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[IPU][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID"
-      ],
-      "title": "DimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____4": {
-      "properties": {
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[IP][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID"
-      ],
-      "title": "DimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____5": {
-      "properties": {
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[a-zA-Z0-9]+",
-          "title": "Id",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID"
-      ],
-      "title": "DimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____6": {
-      "properties": {
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[IP][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID"
-      ],
-      "title": "DimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____7": {
-      "properties": {
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[P][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID"
-      ],
-      "title": "DimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____8": {
-      "properties": {
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[P][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID"
-      ],
-      "title": "DimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__DtDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1": {
-      "properties": {
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[IPU][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        },
-        "DT": {
-          "format": "date",
-          "title": "Dt",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID",
-        "DT"
-      ],
-      "title": "DtDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__DtDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2": {
-      "properties": {
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[IP][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        },
-        "DT": {
-          "format": "date",
-          "title": "Dt",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID",
-        "DT"
-      ],
-      "title": "DtDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1": {
-      "properties": {
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        },
-        "VLD_FRM": {
-          "default": null,
-          "format": "date",
-          "title": "Vld Frm",
-          "type": "string"
-        },
-        "VLD_T": {
-          "default": null,
-          "format": "date",
-          "title": "Vld T",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID"
-      ],
-      "title": "DynmcDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2": {
-      "properties": {
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[IP][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        },
-        "VLD_FRM": {
-          "default": null,
-          "format": "date",
-          "title": "Vld Frm",
-          "type": "string"
-        },
-        "VLD_T": {
-          "default": null,
-          "format": "date",
-          "title": "Vld T",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID"
-      ],
-      "title": "DynmcDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__DynmcDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3": {
-      "properties": {
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[IPU][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        },
-        "VLD_FRM": {
-          "default": null,
-          "format": "date",
-          "title": "Vld Frm",
-          "type": "string"
-        },
-        "VLD_T": {
-          "default": null,
-          "format": "date",
-          "title": "Vld T",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID"
-      ],
-      "title": "DynmcDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__FrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1": {
-      "properties": {
-        "IID": {
-          "maxLength": 512,
-          "pattern": "^[P][a-zA-Z0-9_]+",
-          "title": "Iid",
-          "type": "string"
-        },
-        "DT": {
-          "format": "date",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        }
-      },
-      "required": [
-        "IID",
-        "DT",
-        "FRQNCY"
-      ],
-      "title": "FrqncyAccDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__FrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2": {
-      "properties": {
-        "IID": {
-          "maxLength": 512,
-          "pattern": "^[JIPC][a-zA-Z0-9_]+",
-          "title": "Iid",
-          "type": "string"
-        },
-        "DT": {
-          "format": "date",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        }
-      },
-      "required": [
-        "IID",
-        "DT",
-        "FRQNCY"
-      ],
-      "title": "FrqncyAccDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__FrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3": {
-      "properties": {
-        "IID": {
-          "maxLength": 512,
-          "pattern": "^[IP][a-zA-Z0-9_]+",
-          "title": "Iid",
-          "type": "string"
-        },
-        "DT": {
-          "format": "date",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        }
-      },
-      "required": [
-        "IID",
-        "DT",
-        "FRQNCY"
-      ],
-      "title": "FrqncyAccDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____1": {
-      "properties": {
-        "IID": {
-          "maxLength": 512,
-          "pattern": "^[IP][a-zA-Z0-9_]+",
-          "title": "Iid",
-          "type": "string"
-        },
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        },
-        "DT": {
-          "format": "date",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        }
-      },
-      "required": [
-        "IID",
-        "ID",
-        "DT",
-        "FRQNCY"
-      ],
-      "title": "RelFrqncyAccDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc], Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____2": {
-      "properties": {
-        "IID": {
-          "maxLength": 512,
-          "pattern": "^[IPU][a-zA-Z0-9_]+",
-          "title": "Iid",
-          "type": "string"
-        },
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        },
-        "DT": {
-          "format": "date",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        }
-      },
-      "required": [
-        "IID",
-        "ID",
-        "DT",
-        "FRQNCY"
-      ],
-      "title": "RelFrqncyAccDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc], Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____3": {
-      "properties": {
-        "IID": {
-          "maxLength": 512,
-          "pattern": "^[IP][a-zA-Z0-9_]+",
-          "title": "Iid",
-          "type": "string"
-        },
-        "ID": {
-          "maxLength": 512,
-          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
-          "title": "Id",
-          "type": "string"
-        },
-        "DT": {
-          "format": "date",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        }
-      },
-      "required": [
-        "IID",
-        "ID",
-        "DT",
-        "FRQNCY"
-      ],
-      "title": "RelFrqncyAccDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc], Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
-      "type": "object"
-    },
-    "journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____4": {
       "properties": {
         "IID": {
           "maxLength": 512,
@@ -6294,945 +4369,1633 @@
         },
         "FRQNCY": {
           "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "QNTTY": {
+          "minimum": 0.0,
+          "title": "Qntty",
+          "type": "number"
+        },
+        "SBSCRPTNS": {
+          "minimum": 0.0,
+          "title": "Sbscrptns",
+          "type": "number"
+        },
+        "RDMPTNS": {
+          "minimum": 0.0,
+          "title": "Rdmptns",
+          "type": "number"
         }
       },
       "required": [
         "IID",
         "ID",
         "DT",
-        "FRQNCY"
+        "FRQNCY",
+        "QNTTY",
+        "SBSCRPTNS",
+        "RDMPTNS"
       ],
-      "title": "RelFrqncyAccDimensionContainer[Annotated[str, StringConstraints, str, StringConstraints, Doc], Annotated[str, StringConstraints, str, StringConstraints, Doc]]",
+      "title": "HldrSeries",
       "type": "object"
     },
-    "journey__structure__ifdat__acc__Datasets": {
-      "additionalProperties": false,
-      "properties": {
-        "DPST": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/journey__structure__ifdat__acc__DpstSeries"
-          },
-          "title": "Dpst",
-          "type": "array"
-        },
-        "ASST_SFT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/journey__structure__ifdat__acc__SftSeries"
-          },
-          "title": "Asst Sft",
-          "type": "array"
-        },
-        "ASST_DBT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/AsstDbtSeries"
-          },
-          "title": "Asst Dbt",
-          "type": "array"
-        },
-        "ASST_LN": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/journey__structure__ifdat__acc__LnSeries"
-          },
-          "title": "Asst Ln",
-          "type": "array"
-        },
-        "SHR": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/journey__structure__ifdat__acc__ShrSeries"
-          },
-          "title": "Shr",
-          "type": "array"
-        },
-        "EDR": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/journey__structure__ifdat__acc__EdrSeries"
-          },
-          "title": "Edr",
-          "type": "array"
-        },
-        "ODR": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/journey__structure__ifdat__acc__OdrSeries"
-          },
-          "title": "Odr",
-          "type": "array"
-        },
-        "ASST_NN_FNNCL": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/AsstNnFnnclSeries"
-          },
-          "title": "Asst Nn Fnncl",
-          "type": "array"
-        },
-        "ASST_RMNNG": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/AsstRmnngSeries"
-          },
-          "title": "Asst Rmnng",
-          "type": "array"
-        },
-        "LBLTY_SFT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/journey__structure__ifdat__acc__SftSeries"
-          },
-          "title": "Lblty Sft",
-          "type": "array"
-        },
-        "LBLTY_DBT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/LbltyDbtSeries"
-          },
-          "title": "Lblty Dbt",
-          "type": "array"
-        },
-        "LBLTY_LN": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/journey__structure__ifdat__acc__LnSeries"
-          },
-          "title": "Lblty Ln",
-          "type": "array"
-        },
-        "LBLTY_RMNNG": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/LbltyRmnngSeries"
-          },
-          "title": "Lblty Rmnng",
-          "type": "array"
-        },
-        "HLDR": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/HldrSeries"
-          },
-          "title": "Hldr",
-          "type": "array"
-        },
-        "RVN": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/RvnSeries"
-          },
-          "title": "Rvn",
-          "type": "array"
-        },
-        "EXPNS": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/ExpnsSeries"
-          },
-          "title": "Expns",
-          "type": "array"
-        },
-        "KEY": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/KeySeries"
-          },
-          "title": "Key",
-          "type": "array"
-        }
-      },
-      "title": "Datasets",
-      "type": "object"
+    "IncmExpnsEnum": {
+      "enum": [
+        "RESET",
+        "RETAIN",
+        "INTRST",
+        "RNTS",
+        "TRNSCTNS_FEES",
+        "MNGMNT_FEES",
+        "DPSTR_FEES",
+        "TAXES",
+        "WAGES",
+        "BDE",
+        "BLE",
+        "OTHER"
+      ],
+      "title": "IncmExpnsEnum",
+      "type": "string"
     },
-    "journey__structure__ifdat__acc__DpstSeries": {
+    "IncmRvnEnum": {
+      "enum": [
+        "RESET",
+        "RETAIN",
+        "INTRST",
+        "DVDNDS",
+        "RNTS",
+        "FDI",
+        "INS"
+      ],
+      "title": "IncmRvnEnum",
+      "type": "string"
+    },
+    "LbltyDbtSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__FrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
+        "IID": {
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Iid",
+          "type": "string"
+        },
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/GenFrqncyEnum"
         },
         "STCK": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
+          "minimum": 0.0,
+          "title": "Stck",
+          "type": "number"
         },
         "FLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
+          "title": "Fls",
+          "type": "number"
+        },
+        "NMNL_STCK": {
+          "minimum": 0.0,
+          "title": "Nmnl Stck",
+          "type": "number"
         },
         "ACCRLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
+          "title": "Accrls",
+          "type": "number"
         }
       },
       "required": [
-        "DIMS",
+        "IID",
+        "ID",
+        "DT",
+        "FRQNCY",
         "STCK",
         "FLS",
+        "NMNL_STCK",
         "ACCRLS"
       ],
-      "title": "DpstSeries",
+      "title": "LbltyDbtSeries",
       "type": "object"
     },
-    "journey__structure__ifdat__acc__EdrSeries": {
+    "LbltyRmnngSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
+        "TYP": {
+          "$ref": "#/$defs/RemLiabEnum"
+        },
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/GenFrqncyEnum"
         },
         "STCK": {
-          "$ref": "#/$defs/BaseMeasure_float_"
+          "minimum": 0.0,
+          "title": "Stck",
+          "type": "number"
         },
         "FLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        },
-        "QNTTY": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
+          "title": "Fls",
+          "type": "number"
         }
       },
       "required": [
-        "DIMS",
-        "STCK",
-        "FLS",
-        "QNTTY"
-      ],
-      "title": "EdrSeries",
-      "type": "object"
-    },
-    "journey__structure__ifdat__acc__LnSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__AccFreqDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
-        "STCK": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        },
-        "FLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        },
-        "ACCRLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        },
-        "IS_GRP_LN": {
-          "$ref": "#/$defs/BaseMeasure_bool_"
-        }
-      },
-      "required": [
-        "DIMS",
-        "STCK",
-        "FLS",
-        "ACCRLS",
-        "IS_GRP_LN"
-      ],
-      "title": "LnSeries",
-      "type": "object"
-    },
-    "journey__structure__ifdat__acc__OdrSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__FrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
-        },
-        "STCK": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        },
-        "FLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        }
-      },
-      "required": [
-        "DIMS",
+        "TYP",
+        "ID",
+        "DT",
+        "FRQNCY",
         "STCK",
         "FLS"
       ],
-      "title": "OdrSeries",
+      "title": "LbltyRmnngSeries",
       "type": "object"
     },
-    "journey__structure__ifdat__acc__SftSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__FrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-        },
-        "STCK": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        },
-        "FLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        }
-      },
-      "required": [
-        "DIMS",
-        "STCK",
-        "FLS"
-      ],
-      "title": "SftSeries",
-      "type": "object"
-    },
-    "journey__structure__ifdat__acc__ShrSeries": {
-      "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__RelFrqncyAccDimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc__Annotated_str__StringConstraints__str__StringConstraints__Doc____2"
-        },
-        "STCK": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        },
-        "FLS": {
-          "$ref": "#/$defs/BaseMeasure_float_"
-        },
-        "QNTTY": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        },
-        "LND_FR_SFT": {
-          "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-        },
-        "IS_DRCT_INVSTMNT": {
-          "$ref": "#/$defs/BaseMeasure_bool_"
-        }
-      },
-      "required": [
-        "DIMS",
-        "STCK",
+    "LonTypEnum": {
+      "enum": [
+        "RESET",
+        "RETAIN",
+        "CRD",
+        "OVR",
+        "REV",
         "FLS",
-        "QNTTY",
-        "LND_FR_SFT",
-        "IS_DRCT_INVSTMNT"
+        "NOS",
+        "TRD",
+        "SUB",
+        "INT",
+        "RFC",
+        "NFC",
+        "LVG",
+        "OTH"
       ],
-      "title": "ShrSeries",
-      "type": "object"
+      "title": "LonTypEnum",
+      "type": "string"
     },
-    "journey__structure__ifdat__ref__Datasets": {
-      "additionalProperties": false,
+    "MngmntDynmcSeries": {
       "properties": {
-        "FND": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/FndSeries"
-          },
-          "title": "Fnd",
-          "type": "array"
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
         },
-        "FND_DYNMC": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/FndDynmcSeries"
-          },
-          "title": "Fnd Dynmc",
-          "type": "array"
+        "VLD_FRM": {
+          "default": "MINDATE",
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
         },
-        "SELF_DBT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/SelfDbtSeries"
-          },
-          "title": "Self Dbt",
-          "type": "array"
+        "VLD_T": {
+          "default": "MAXDATE",
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
         },
-        "SELF_DBT_DYNMC": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/SelfDbtDynmcSeries"
-          },
-          "title": "Self Dbt Dynmc",
-          "type": "array"
+        "NM": {
+          "default": "RETAIN",
+          "maxLength": 128,
+          "title": "Nm",
+          "type": "string"
         },
-        "SELF_DBT_OUTSTNDNG_CHNG": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/SelfDbtOutstndngChngSeries"
-          },
-          "title": "Self Dbt Outstndng Chng",
-          "type": "array"
+        "NM_LTN": {
+          "default": "RETAIN",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Nm Ltn",
+          "type": "string"
         },
-        "SELF_DBT_CPN": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/SelfCpnSeries"
-          },
-          "title": "Self Dbt Cpn",
-          "type": "array"
+        "NM_SHRT": {
+          "default": "RETAIN",
+          "maxLength": 64,
+          "title": "Nm Shrt",
+          "type": "string"
         },
-        "SELF_SHR": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/SelfShrSeries"
-          },
-          "title": "Self Shr",
-          "type": "array"
+        "STRT": {
+          "default": "RETAIN",
+          "maxLength": 64,
+          "title": "Strt",
+          "type": "string"
         },
-        "SELF_SHR_DYNMC": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/SelfShrDynmcSeries"
-          },
-          "title": "Self Shr Dynmc",
-          "type": "array"
+        "STRT_LTN": {
+          "default": "RETAIN",
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Strt Ltn",
+          "type": "string"
         },
-        "SELF_SHR_DVDND": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/SelfDvdndSeries"
-          },
-          "title": "Self Shr Dvdnd",
-          "type": "array"
+        "CTY": {
+          "default": "RETAIN",
+          "maxLength": 32,
+          "title": "Cty",
+          "type": "string"
         },
-        "SELF_SHR_SPLT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/SelfSpltSeries"
-          },
-          "title": "Self Shr Splt",
-          "type": "array"
+        "CTY_LTN": {
+          "default": "RETAIN",
+          "maxLength": 32,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Cty Ltn",
+          "type": "string"
         },
-        "MNGMNT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/MngmntSeries"
-          },
-          "title": "Mngmnt",
-          "type": "array"
+        "PSTL_CD": {
+          "default": "RETAIN",
+          "maxLength": 16,
+          "title": "Pstl Cd",
+          "type": "string"
         },
-        "MNGMNT_DYNMC": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/MngmntDynmcSeries"
-          },
-          "title": "Mngmnt Dynmc",
-          "type": "array"
+        "URL": {
+          "default": "RETAIN",
+          "format": "uri",
+          "minLength": 1,
+          "title": "Url",
+          "type": "string"
         },
-        "USR": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/UsrSeries"
-          },
-          "title": "Usr",
-          "type": "array"
+        "EMAIL": {
+          "default": "RETAIN",
+          "format": "email",
+          "title": "Email",
+          "type": "string"
         },
-        "USR_T_RA": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/Usr2RaSeries"
-          },
-          "title": "Usr T Ra",
-          "type": "array"
-        },
-        "CNTRPRTY": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/CntrprtySeries"
-          },
-          "title": "Cntrprty",
-          "type": "array"
-        },
-        "DPST": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/journey__structure__ifdat__ref__DpstSeries"
-          },
-          "title": "Dpst",
-          "type": "array"
-        },
-        "SFT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/journey__structure__ifdat__ref__SftSeries"
-          },
-          "title": "Sft",
-          "type": "array"
-        },
-        "LN": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/journey__structure__ifdat__ref__LnSeries"
-          },
-          "title": "Ln",
-          "type": "array"
-        },
-        "DBT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/DbtSeries"
-          },
-          "title": "Dbt",
-          "type": "array"
-        },
-        "SHR": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/journey__structure__ifdat__ref__ShrSeries"
-          },
-          "title": "Shr",
-          "type": "array"
-        },
-        "EDR": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/journey__structure__ifdat__ref__EdrSeries"
-          },
-          "title": "Edr",
-          "type": "array"
-        },
-        "ODR": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/journey__structure__ifdat__ref__OdrSeries"
-          },
-          "title": "Odr",
-          "type": "array"
+        "CNTRY_RSDNC": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/GenCntryEnum"
+            }
+          ],
+          "default": "RETAIN"
         }
       },
-      "title": "Datasets",
+      "required": [
+        "ID"
+      ],
+      "title": "MngmntDynmcSeries",
       "type": "object"
     },
-    "journey__structure__ifdat__ref__DpstSeries": {
+    "MngmntSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____6"
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
         },
         "DT_BRTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Brth",
+          "type": "string"
         },
         "DT_CLS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Cls",
+          "type": "string"
+        },
+        "LEI_ID": {
+          "default": "RETAIN",
+          "maxLength": 20,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Lei Id",
+          "type": "string"
+        },
+        "TAX_ID": {
+          "default": "RETAIN",
+          "maxLength": 31,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Tax Id",
+          "type": "string"
+        },
+        "NBR_ID": {
+          "default": "RETAIN",
+          "maxLength": 31,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Nbr Id",
+          "type": "string"
+        },
+        "SPLT_FRM": {
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Splt Frm",
+          "type": "string"
+        },
+        "MRGD_WTH": {
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Mrgd Wth",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ID"
+      ],
+      "title": "MngmntSeries",
+      "type": "object"
+    },
+    "OrgInstttnlSctrCntrlEnum": {
+      "enum": [
+        "RESET",
+        "RETAIN",
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "title": "OrgInstttnlSctrCntrlEnum",
+      "type": "string"
+    },
+    "OrgInstttnlSctrEnum": {
+      "enum": [
+        "RESET",
+        "RETAIN",
+        "S11",
+        "S121",
+        "S122",
+        "S123",
+        "S124",
+        "S125",
+        "S126",
+        "S127",
+        "S128",
+        "S129",
+        "S1311",
+        "S1312",
+        "S1313",
+        "S1314",
+        "S14",
+        "S15"
+      ],
+      "title": "OrgInstttnlSctrEnum",
+      "type": "string"
+    },
+    "RefDpstSeries": {
+      "properties": {
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT_BRTH": {
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Brth",
+          "type": "string"
+        },
+        "DT_CLS": {
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Cls",
+          "type": "string"
         },
         "TYP": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_DepTypEnum_"
+              "$ref": "#/$defs/DepTypEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "NTC": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_DepNtcEnum_"
+              "$ref": "#/$defs/DepNtcEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "CRRNCY": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
+              "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "DBTR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Dbtr",
+          "type": "string"
         },
         "CRDTR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Crdtr",
+          "type": "string"
         },
         "ALS_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____5"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Als Of",
+          "type": "string"
         }
       },
       "required": [
-        "DIMS"
+        "ID"
       ],
-      "title": "DpstSeries",
+      "title": "RefDpstSeries",
       "type": "object"
     },
-    "journey__structure__ifdat__ref__EdrSeries": {
+    "RefEdrSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
         },
         "DT_BRTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Brth",
+          "type": "string"
         },
         "DT_CLS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Cls",
+          "type": "string"
         },
         "NM_LTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____4"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Nm Ltn",
+          "type": "string"
         },
         "TCKR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____8"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 12,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Tckr",
+          "type": "string"
         },
         "TYP": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_DrvtvTypEnum_"
+              "$ref": "#/$defs/DrvtvTypEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "CRRNCY": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
+              "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "MLTPLR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "minimum": 0.0,
+          "title": "Mltplr",
+          "type": "number"
         },
         "WRTR": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_GenMrktEnum_"
+              "$ref": "#/$defs/GenMrktEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "ALS_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____7"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Als Of",
+          "type": "string"
         }
       },
       "required": [
-        "DIMS"
+        "ID"
       ],
-      "title": "EdrSeries",
+      "title": "RefEdrSeries",
       "type": "object"
     },
-    "journey__structure__ifdat__ref__LnSeries": {
+    "RefLnSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____8"
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[P][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
         },
         "DT_BRTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Brth",
+          "type": "string"
         },
         "DT_CLS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Cls",
+          "type": "string"
         },
         "CRRNCY": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
+              "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "TYP": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_LonTypEnum_"
+              "$ref": "#/$defs/LonTypEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "DBTR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Dbtr",
+          "type": "string"
         },
         "CRDTR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Crdtr",
+          "type": "string"
         },
         "ALS_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[P][a-zA-Z0-9_]+",
+          "title": "Als Of",
+          "type": "string"
         }
       },
       "required": [
-        "DIMS"
+        "ID"
       ],
-      "title": "LnSeries",
+      "title": "RefLnSeries",
       "type": "object"
     },
-    "journey__structure__ifdat__ref__OdrSeries": {
+    "RefOdrSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
         },
         "DT_BRTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Brth",
+          "type": "string"
         },
         "DT_CLS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Cls",
+          "type": "string"
         },
         "NM_LTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints____4"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Nm Ltn",
+          "type": "string"
         },
         "TYP": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_DrvtvTypEnum_"
+              "$ref": "#/$defs/DrvtvTypEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "CRRNCY": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
+              "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "MLTPLR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_Annotated_float__Ge__"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "minimum": 0.0,
+          "title": "Mltplr",
+          "type": "number"
         },
         "WRTR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Wrtr",
+          "type": "string"
         },
         "BYR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Byr",
+          "type": "string"
         },
         "ALS_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____8"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Als Of",
+          "type": "string"
         }
       },
       "required": [
-        "DIMS"
+        "ID"
       ],
-      "title": "OdrSeries",
+      "title": "RefOdrSeries",
       "type": "object"
     },
-    "journey__structure__ifdat__ref__SftSeries": {
+    "RefSftSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____7"
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[P][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
         },
         "DT_BRTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Brth",
+          "type": "string"
         },
         "DT_CLS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Cls",
+          "type": "string"
         },
         "CRRNCY": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
+              "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "TYP": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_SftTypEnum_"
+              "$ref": "#/$defs/SftTypEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "DBTR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Dbtr",
+          "type": "string"
         },
         "CRDTR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Crdtr",
+          "type": "string"
         },
         "ALS_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____6"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[P][a-zA-Z0-9_]+",
+          "title": "Als Of",
+          "type": "string"
         }
       },
       "required": [
-        "DIMS"
+        "ID"
       ],
-      "title": "SftSeries",
+      "title": "RefSftSeries",
       "type": "object"
     },
-    "journey__structure__ifdat__ref__ShrSeries": {
+    "RefShrSeries": {
       "properties": {
-        "DIMS": {
-          "$ref": "#/$defs/journey__model_dimension__DimensionContainer_Annotated_str__StringConstraints__str__StringConstraints__Doc____3"
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[IPU][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
         },
         "DT_BRTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Brth",
+          "type": "string"
         },
         "DT_CLS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BaseMeasure_date_"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Cls",
+          "type": "string"
         },
         "CRRNCY": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_GenCrrncyEnum_"
+              "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "TYP": {
           "allOf": [
             {
-              "$ref": "#/$defs/BaseMeasure_ShrEsaTypEnum_"
+              "$ref": "#/$defs/ShrEsaTypEnum"
             }
           ],
-          "default": null
+          "default": "RETAIN"
         },
         "ISSD_BY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____1"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Issd By",
+          "type": "string"
         },
         "ALS_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/journey__model__BaseMeasure_Annotated_str__StringConstraints__str__StringConstraints__Doc____4"
-            }
-          ],
-          "default": null
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[IPU][a-zA-Z0-9_]+",
+          "title": "Als Of",
+          "type": "string"
         }
       },
       "required": [
-        "DIMS"
+        "ID"
       ],
-      "title": "ShrSeries",
+      "title": "RefShrSeries",
+      "type": "object"
+    },
+    "RemAssetEnum": {
+      "enum": [
+        "RESET",
+        "RETAIN",
+        "AI_DPST",
+        "AI_LN",
+        "AI_DBT",
+        "AR",
+        "OTR"
+      ],
+      "title": "RemAssetEnum",
+      "type": "string"
+    },
+    "RemLiabEnum": {
+      "enum": [
+        "RESET",
+        "RETAIN",
+        "AI_LN",
+        "AI_DBT",
+        "AR",
+        "MNGMNT_FEES",
+        "TRNSCTNS_FEES",
+        "TAXES",
+        "OTHER_PRVSNS",
+        "NO_CASH_SL",
+        "FUTURE",
+        "OTHER"
+      ],
+      "title": "RemLiabEnum",
+      "type": "string"
+    },
+    "RvnSeries": {
+      "properties": {
+        "IID": {
+          "maxLength": 512,
+          "pattern": "^[IPU][a-zA-Z0-9_]+",
+          "title": "Iid",
+          "type": "string"
+        },
+        "TP": {
+          "$ref": "#/$defs/IncmRvnEnum"
+        },
+        "DT": {
+          "format": "date",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "AMNT": {
+          "minimum": 0.0,
+          "title": "Amnt",
+          "type": "number"
+        }
+      },
+      "required": [
+        "IID",
+        "TP",
+        "DT",
+        "FRQNCY",
+        "AMNT"
+      ],
+      "title": "RvnSeries",
+      "type": "object"
+    },
+    "SelfCpnSeries": {
+      "properties": {
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date",
+          "title": "Dt",
+          "type": "string"
+        },
+        "RT": {
+          "title": "Rt",
+          "type": "number"
+        }
+      },
+      "required": [
+        "ID",
+        "DT",
+        "RT"
+      ],
+      "title": "SelfCpnSeries",
+      "type": "object"
+    },
+    "SelfDbtDynmcSeries": {
+      "properties": {
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "VLD_FRM": {
+          "default": "MINDATE",
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
+        },
+        "VLD_T": {
+          "default": "MAXDATE",
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
+        },
+        "NM_LTN": {
+          "default": "RETAIN",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Nm Ltn",
+          "type": "string"
+        },
+        "NM_SHRT": {
+          "default": "RETAIN",
+          "maxLength": 64,
+          "title": "Nm Shrt",
+          "type": "string"
+        },
+        "STTS": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/DbtSttsEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "MTRTY_DT": {
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Mtrty Dt",
+          "type": "string"
+        },
+        "ISSD_BY": {
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Issd By",
+          "type": "string"
+        },
+        "CFI": {
+          "default": "RETAIN",
+          "maxLength": 6,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Cfi",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ID"
+      ],
+      "title": "SelfDbtDynmcSeries",
+      "type": "object"
+    },
+    "SelfDbtOutstndngChngSeries": {
+      "properties": {
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "TP": {
+          "$ref": "#/$defs/DbtOutstndngChnTypEnum"
+        },
+        "DT": {
+          "format": "date",
+          "title": "Dt",
+          "type": "string"
+        },
+        "AMNT": {
+          "title": "Amnt",
+          "type": "number"
+        },
+        "PRC": {
+          "minimum": 0.0,
+          "title": "Prc",
+          "type": "number"
+        }
+      },
+      "required": [
+        "ID",
+        "TP",
+        "DT",
+        "AMNT",
+        "PRC"
+      ],
+      "title": "SelfDbtOutstndngChngSeries",
+      "type": "object"
+    },
+    "SelfDbtSeries": {
+      "properties": {
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT_BRTH": {
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Brth",
+          "type": "string"
+        },
+        "DT_CLS": {
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Cls",
+          "type": "string"
+        },
+        "ORGNL_MTRTY": {
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Orgnl Mtrty",
+          "type": "string"
+        },
+        "CRRNCY": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/GenCrrncyEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "ISS_PRC": {
+          "default": "RETAIN",
+          "minimum": 0.0,
+          "title": "Iss Prc",
+          "type": "number"
+        },
+        "RDMPTN_PRC": {
+          "default": "RETAIN",
+          "minimum": 0.0,
+          "title": "Rdmptn Prc",
+          "type": "number"
+        },
+        "MRKT": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/GenMrktEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "ACCRL_STRTDT": {
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Accrl Strtdt",
+          "type": "string"
+        },
+        "TYP": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/DbtTypEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "GRNT_LVL": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/DbtGrntLvlEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "RNK_LVL": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/DbtRnkLvlEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "SCRTY_LVL": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/DbtScrtyLvlEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "IS_SCRTZTN": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "SCRTZTN_TYP": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/DbtScrtznTypEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "IS_CVRD": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "CVRD_TYP": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/DbtCvrdTypEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "CPN_TYP": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/DbtCpnTypEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "CPN_CRRNCY": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/GenCrrncyEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "CPN_FRQNCY": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/DbtCpnFrqncyEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "CPN_SPRD": {
+          "default": "RETAIN",
+          "minimum": 0,
+          "title": "Cpn Sprd",
+          "type": "integer"
+        },
+        "CPN_MLTPLR": {
+          "default": "RETAIN",
+          "minimum": 0.0,
+          "title": "Cpn Mltplr",
+          "type": "number"
+        },
+        "CPN_CP": {
+          "default": "RETAIN",
+          "minimum": 0.0,
+          "title": "Cpn Cp",
+          "type": "number"
+        },
+        "CPN_FLR": {
+          "default": "RETAIN",
+          "minimum": 0.0,
+          "title": "Cpn Flr",
+          "type": "number"
+        },
+        "FRST_CPN_DT": {
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Frst Cpn Dt",
+          "type": "string"
+        },
+        "LST_CPN_DT": {
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Lst Cpn Dt",
+          "type": "string"
+        },
+        "UNDRLYNG": {
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Undrlyng",
+          "type": "string"
+        },
+        "MNMM_INVSTMNT": {
+          "default": "RETAIN",
+          "minimum": 0.0,
+          "title": "Mnmm Invstmnt",
+          "type": "number"
+        },
+        "IS_PRVT": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "CFI": {
+          "default": "RETAIN",
+          "maxLength": 6,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Cfi",
+          "type": "string"
+        },
+        "RSTRCTRD_T": {
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Rstrctrd T",
+          "type": "string"
+        },
+        "RSTRCTRD_FRM": {
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[P][a-zA-Z0-9_]+",
+          "title": "Rstrctrd Frm",
+          "type": "string"
+        },
+        "ALS_OF": {
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[IP][a-zA-Z0-9_]+",
+          "title": "Als Of",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ID"
+      ],
+      "title": "SelfDbtSeries",
+      "type": "object"
+    },
+    "SelfDvdndSeries": {
+      "properties": {
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[IPU][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date",
+          "title": "Dt",
+          "type": "string"
+        },
+        "EX_DT": {
+          "format": "date",
+          "title": "Ex Dt",
+          "type": "string"
+        },
+        "DCLRTN_DT": {
+          "format": "date",
+          "title": "Dclrtn Dt",
+          "type": "string"
+        },
+        "PYMNT_DT": {
+          "format": "date",
+          "title": "Pymnt Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/DvdndCstmFrqncyEnum"
+        },
+        "TYP": {
+          "$ref": "#/$defs/DvdndTypEnum"
+        },
+        "CRRNCY": {
+          "$ref": "#/$defs/GenCrrncyEnum"
+        },
+        "AMNT": {
+          "exclusiveMinimum": 0.0,
+          "title": "Amnt",
+          "type": "number"
+        }
+      },
+      "required": [
+        "ID",
+        "DT",
+        "EX_DT",
+        "DCLRTN_DT",
+        "PYMNT_DT",
+        "FRQNCY",
+        "TYP",
+        "CRRNCY",
+        "AMNT"
+      ],
+      "title": "SelfDvdndSeries",
+      "type": "object"
+    },
+    "SelfShrDynmcSeries": {
+      "properties": {
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[IPU][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "VLD_FRM": {
+          "default": "MINDATE",
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
+        },
+        "VLD_T": {
+          "default": "MAXDATE",
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
+        },
+        "NM_LTN": {
+          "default": "RETAIN",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Nm Ltn",
+          "type": "string"
+        },
+        "NM_SHRT": {
+          "default": "RETAIN",
+          "maxLength": 64,
+          "title": "Nm Shrt",
+          "type": "string"
+        },
+        "ISSD_BY": {
+          "default": "RETAIN",
+          "maxLength": 512,
+          "title": "Issd By",
+          "type": "string"
+        },
+        "NMNL_PRC": {
+          "default": "RETAIN",
+          "minimum": 0.0,
+          "title": "Nmnl Prc",
+          "type": "number"
+        },
+        "CFI": {
+          "default": "RETAIN",
+          "maxLength": 6,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Cfi",
+          "type": "string"
+        },
+        "RDMPTN_FRQNCY": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/ShrFndRdmptnFrqncyEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "MNMM_AMNT": {
+          "default": "RETAIN",
+          "minimum": 0.0,
+          "title": "Mnmm Amnt",
+          "type": "number"
+        },
+        "TYP": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/ShrTypEnum"
+            }
+          ],
+          "default": "RETAIN"
+        }
+      },
+      "required": [
+        "ID"
+      ],
+      "title": "SelfShrDynmcSeries",
+      "type": "object"
+    },
+    "SelfShrSeries": {
+      "properties": {
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[IPU][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT_BRTH": {
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Brth",
+          "type": "string"
+        },
+        "DT_CLS": {
+          "default": "RETAIN",
+          "format": "date",
+          "title": "Dt Cls",
+          "type": "string"
+        },
+        "CRRNCY": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/GenCrrncyEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "MRKT": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/GenMrktEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "RSTRCTRD_T": {
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[IPU][a-zA-Z0-9_]+",
+          "title": "Rstrctrd T",
+          "type": "string"
+        },
+        "ALS_OF": {
+          "default": "RETAIN",
+          "maxLength": 512,
+          "pattern": "^[IPU][a-zA-Z0-9_]+",
+          "title": "Als Of",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ID"
+      ],
+      "title": "SelfShrSeries",
+      "type": "object"
+    },
+    "SelfSpltSeries": {
+      "properties": {
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[IPU][a-zA-Z0-9_]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FCTR": {
+          "exclusiveMinimum": 0.0,
+          "title": "Fctr",
+          "type": "number"
+        }
+      },
+      "required": [
+        "ID",
+        "DT",
+        "FCTR"
+      ],
+      "title": "SelfSpltSeries",
+      "type": "object"
+    },
+    "SftTypEnum": {
+      "enum": [
+        "RESET",
+        "RETAIN",
+        "REP",
+        "SBL",
+        "BSB",
+        "MLT"
+      ],
+      "title": "SftTypEnum",
+      "type": "string"
+    },
+    "ShrEsaTypEnum": {
+      "enum": [
+        "RESET",
+        "RETAIN",
+        "F511",
+        "F512",
+        "F519",
+        "F521",
+        "F522"
+      ],
+      "title": "ShrEsaTypEnum",
+      "type": "string"
+    },
+    "ShrFndRdmptnFrqncyEnum": {
+      "enum": [
+        "RESET",
+        "RETAIN",
+        "PP",
+        "AN",
+        "SA",
+        "QU",
+        "MO",
+        "BA",
+        "OR",
+        "IR",
+        "SS",
+        "ON",
+        "EL",
+        "OT"
+      ],
+      "title": "ShrFndRdmptnFrqncyEnum",
+      "type": "string"
+    },
+    "ShrTypEnum": {
+      "enum": [
+        "RESET",
+        "RETAIN",
+        "CMMN",
+        "PRFRRD",
+        "DPSTRY_RCPT",
+        "HYBRD",
+        "OTHR_EQTY",
+        "UCITS",
+        "AIF",
+        "OTHR_FND"
+      ],
+      "title": "ShrTypEnum",
+      "type": "string"
+    },
+    "SourceTypeEnum": {
+      "enum": [
+        "RESET",
+        "RETAIN",
+        "SUPER",
+        "SDR",
+        "REG",
+        "CDR",
+        "INIT"
+      ],
+      "title": "SourceTypeEnum",
+      "type": "string"
+    },
+    "Usr2RaSeries": {
+      "properties": {
+        "LID": {
+          "maxLength": 512,
+          "pattern": "^[a-zA-Z0-9]+",
+          "title": "Lid",
+          "type": "string"
+        },
+        "RID": {
+          "maxLength": 512,
+          "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+          "title": "Rid",
+          "type": "string"
+        },
+        "VLD_FRM": {
+          "default": "MINDATE",
+          "format": "date",
+          "title": "Vld Frm",
+          "type": "string"
+        },
+        "VLD_T": {
+          "default": "MAXDATE",
+          "format": "date",
+          "title": "Vld T",
+          "type": "string"
+        },
+        "ASSCTD_WTH": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "WRKS_FR": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/DprtmntEnum"
+            }
+          ],
+          "default": "RETAIN"
+        },
+        "RSPNSBL_FR_IFDAT": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": "RETAIN"
+        }
+      },
+      "required": [
+        "LID",
+        "RID"
+      ],
+      "title": "Usr2RaSeries",
+      "type": "object"
+    },
+    "UsrSeries": {
+      "properties": {
+        "ID": {
+          "maxLength": 512,
+          "pattern": "^[a-zA-Z0-9]+",
+          "title": "Id",
+          "type": "string"
+        },
+        "EMAIL": {
+          "default": "RETAIN",
+          "format": "email",
+          "title": "Email",
+          "type": "string"
+        },
+        "FRST": {
+          "default": "RETAIN",
+          "maxLength": 32,
+          "title": "Frst",
+          "type": "string"
+        },
+        "LST": {
+          "default": "RETAIN",
+          "maxLength": 32,
+          "title": "Lst",
+          "type": "string"
+        },
+        "PHN": {
+          "default": "RETAIN",
+          "maxLength": 32,
+          "pattern": "^[a-zA-Z0-9_]+",
+          "title": "Phn",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ID"
+      ],
+      "title": "UsrSeries",
       "type": "object"
     }
   },
-  "additionalProperties": false,
   "properties": {
     "HEADER": {
       "$ref": "#/$defs/Header"
     },
-    "CATEGORIES": {
-      "$ref": "#/$defs/Categories"
+    "DATASETS": {
+      "$ref": "#/$defs/DataSets"
     }
   },
   "required": [
     "HEADER",
-    "CATEGORIES"
+    "DATASETS"
   ],
-  "title": "Message",
-  "type": "object"
+  "title": "CmpctMessage",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
 }

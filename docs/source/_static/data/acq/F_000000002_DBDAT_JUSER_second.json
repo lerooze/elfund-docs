@@ -5,981 +5,523 @@
     "SOURCE": "INIT",
     "DOMAIN": "DBDat"
   },
-  "CATEGORIES": {
-    "REF": {
-      "ORG_ALIAS": [
-        {
-          "DIMS": {
-            "LID": "TGR094321237",
-            "RID": "EGR094321237"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR099757323",
-            "RID": "EGR099757323"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR800398384",
-            "RID": "EGR800398384"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR800433747",
-            "RID": "EGR800433747"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR800597834",
-            "RID": "EGR800597834"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR800639356",
-            "RID": "EGR800639356"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR800792234",
-            "RID": "EGR800792234"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR800901770",
-            "RID": "EGR800901770"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR800903737",
-            "RID": "EGR800903737"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR800911079",
-            "RID": "EGR800911079"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR801296864",
-            "RID": "EGR801296864"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR801322351",
-            "RID": "EGR801322351"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR801390415",
-            "RID": "EGR801390415"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR801446716",
-            "RID": "EGR801446716"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR801446949",
-            "RID": "EGR801446949"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR801470046",
-            "RID": "EGR801470046"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR801554045",
-            "RID": "EGR801554045"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR801698110",
-            "RID": "EGR801698110"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR801812106",
-            "RID": "EGR801812106"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR801878297",
-            "RID": "EGR801878297"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR802025852",
-            "RID": "EGR802025852"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR996764210",
-            "RID": "EGR996764210"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR997148287",
-            "RID": "EGR997148287"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR997673346",
-            "RID": "EGR997673346"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR998159392",
-            "RID": "EGR998159392"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR998279015",
-            "RID": "EGR998279015"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR998642355",
-            "RID": "EGR998642355"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR999510866",
-            "RID": "EGR999510866"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR999984680",
-            "RID": "EGR999984680"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR099554901",
-            "RID": "EGRAEEAP002"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR099555020",
-            "RID": "EGRAEEAP003"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR800397001",
-            "RID": "EGRAEEAP005"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR997521479",
-            "RID": "EGRAEEAP006"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR997656128",
-            "RID": "EGRAEEAP007"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR801077433",
-            "RID": "EGRAEEAP008"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR996805731",
-            "RID": "EGRAEEAP009"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR996899546",
-            "RID": "EGRAEEAP010"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR099759863",
-            "RID": "EGRAEEX002"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR998940936",
-            "RID": "EGRAEPEY059"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR997472014",
-            "RID": "EGRAEPEY065"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR800596087",
-            "RID": "EGREKES001"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR000000000",
-            "RID": "EGRMFMC000"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR094351475",
-            "RID": "EGRMFMC001"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR094354938",
-            "RID": "EGRMFMC002"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR094282521",
-            "RID": "EGRMFMC003"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR094317734",
-            "RID": "EGRMFMC004"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR099760120",
-            "RID": "EGRMFMC005"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR099936130",
-            "RID": "EGRMFMC008"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR094036844",
-            "RID": "EGRMFMC009"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR094493219",
-            "RID": "EGRMFMC010"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR094285719",
-            "RID": "EGRMFMC012"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR094325107",
-            "RID": "EGRMFMC013"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR094304867",
-            "RID": "EGRMFMC014"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR999081601",
-            "RID": "EGRMFMC015"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR094351137",
-            "RID": "EGRMFMC016"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR099553209",
-            "RID": "EGRMFMC018"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        },
-        {
-          "DIMS": {
-            "LID": "TGR997010182",
-            "RID": "EGRMFMC030"
-          },
-          "ALIAS_OF": {
-            "VALUE": "T"
-          }
-        }
-      ],
-      "ORG_DYNMC": [
-        {
-          "DIMS": {
-            "ID": "EGR094321237"
-          },
-          "NM": {
-            "VALUE": "PREMIA PROPERTIES ΑΕΕΑΠ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR099757323"
-          },
-          "NM": {
-            "VALUE": "ELIKONOS CAPITAL ΑΕΔΟΕΕ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR800398384"
-          },
-          "NM": {
-            "VALUE": "PIRAEUS JEREMIE TECHNOLOGY CATALYST MANAGEMENT ΜΟΝΟΠΡΟΣΩΠΗ ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR800433747"
-          },
-          "NM": {
-            "VALUE": "Openfund ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR800597834"
-          },
-          "NM": {
-            "VALUE": "DECA INVESTMENTS ΑΕΔΟΕΕ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR800639356"
-          },
-          "NM": {
-            "VALUE": "LEVANT PARTNETS ΑΕΔΟΕΕ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR800792234"
-          },
-          "NM": {
-            "VALUE": "Marathon ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR800901770"
-          },
-          "NM": {
-            "VALUE": "EOS CAPITAL PARTNERS ΑΕΔΟΕΕ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR800903737"
-          },
-          "NM": {
-            "VALUE": "METAVALLON PARTNERS ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR800911079"
-          },
-          "NM": {
-            "VALUE": "ΓΙΟΥΝΙΦΑΝΤ ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR801296864"
-          },
-          "NM": {
-            "VALUE": "THERMI VENTURE CAPITAL MANAGEMENT ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR801322351"
-          },
-          "NM": {
-            "VALUE": "VENTURE STORIES PARTNERS ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR801390415"
-          },
-          "NM": {
-            "VALUE": "SOUTHBRIDGE ADVISORS ΑΕΔΟΕΕ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR801446716"
-          },
-          "NM": {
-            "VALUE": "BLUE GREEN WHITE CAPITAL ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR801446949"
-          },
-          "NM": {
-            "VALUE": "GREEK BRANDS VENTURES ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR801470046"
-          },
-          "NM": {
-            "VALUE": "NEW ENERGY PARTNERS ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR801554045"
-          },
-          "NM": {
-            "VALUE": "SIREC ENERGY CAPITAL PARTNERS ΜΟΝΟΠΡΟΣΩΠΗ ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR801698110"
-          },
-          "NM": {
-            "VALUE": "ELBRIDGE CAPITAL MANAGEMENT ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR801812106"
-          },
-          "NM": {
-            "VALUE": "LSTONE ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR801878297"
-          },
-          "NM": {
-            "VALUE": "BIG PI ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR802025852"
-          },
-          "NM": {
-            "VALUE": "IGROW VENTURE PARTNERS ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR996764210"
-          },
-          "NM": {
-            "VALUE": "ΣΥΜΜΕΤΟΧΕΣ 5G ΑΕ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR997148287"
-          },
-          "NM": {
-            "VALUE": "ΕΛΛΗΝΙΚΗ ΑΕΔΟΕΕ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR997673346"
-          },
-          "NM": {
-            "VALUE": "Ελληνική Αναπτυξιακή Τράπεζα ΑΕ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR998159392"
-          },
-          "NM": {
-            "VALUE": "ΑΛΦΑ ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR998279015"
-          },
-          "NM": {
-            "VALUE": "PIRAEUS CAPITAL MANAGEMENT ΜΟΝΟΠΡΟΣΩΠΗ ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR998642355"
-          },
-          "NM": {
-            "VALUE": "CNL CAPITAL ΑΕΔΟΕΕ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR999510866"
-          },
-          "NM": {
-            "VALUE": "ΑΤΤΙΚΑ ΒΕΝΤΣΟΥΡΣ ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGR999984680"
-          },
-          "NM": {
-            "VALUE": "ΕΛΛΕΝΙΚ ΚΑΠΙΤΑΛ ΠΑΡΤΝΕΡΣ ΑΕΔΑΚΕΣ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRAEEAP002"
-          },
-          "NM": {
-            "VALUE": "TRASTOR ΑΕΕΑΠ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRAEEAP003"
-          },
-          "NM": {
-            "VALUE": "Προντέα ΑΕΕΑΠ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRAEEAP005"
-          },
-          "NM": {
-            "VALUE": "INTERCONTINENTAL INTERNATIONAL ΑΕΕΑΠ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRAEEAP006"
-          },
-          "NM": {
-            "VALUE": "BriQ Properties ΑΕΕΑΠ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRAEEAP007"
-          },
-          "NM": {
-            "VALUE": "ΜΠΛΕ ΚΕΔΡΟΣ ΑΕΕΑΠ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRAEEAP008"
-          },
-          "NM": {
-            "VALUE": "ORILINA PROPERTIES ΑΕΕΑΠ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRAEEAP009"
-          },
-          "NM": {
-            "VALUE": "TRADE ESTATES ΑΕΕΑΠ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRAEEAP010"
-          },
-          "NM": {
-            "VALUE": "NOVAL PROPERTY ΑΕΕΑΠ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRAEEX002"
-          },
-          "NM": {
-            "VALUE": "ALPHA TRUST ANDROMEDA ΑΕΕΧ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRAEPEY059"
-          },
-          "NM": {
-            "VALUE": "THETIS CAPITAL ΑΕΠΕΥ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRAEPEY065"
-          },
-          "NM": {
-            "VALUE": "IOLCUS INVESTMENTS ΑΕΔΟΕΕ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGREKES001"
-          },
-          "NM": {
-            "VALUE": "CNL CAPITAL ΕΚΕΣ-ΔΟΕΕ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC000"
-          },
-          "NM": {
-            "VALUE": "FOO ΑΕΔΑΚ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC001"
-          },
-          "NM": {
-            "VALUE": "NN ΑΕΔΑΚ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC002"
-          },
-          "NM": {
-            "VALUE": "ALLIANZ ΜΟΝΟΠΡΟΣΩΠΗ ΑΕΔΑΚ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC003"
-          },
-          "NM": {
-            "VALUE": "ALPHA ASSET MANAGEMENT ΑΕΔΑΚ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC004"
-          },
-          "NM": {
-            "VALUE": "ALPHA TRUST ΑΕΔΑΚOEE"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC005"
-          },
-          "NM": {
-            "VALUE": "ΑΕΔΑΚ ΑΣΦΑΛΙΣΤΙΚΩΝ ΟΡΓΑΝΙΣΜΩΝ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC008"
-          },
-          "NM": {
-            "VALUE": "ATTICA WEALTH MANAGEMENT ΑΕΔΑΚ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC009"
-          },
-          "NM": {
-            "VALUE": "ΕΘΝΙΚΗ ASSET MANAGEMENT ΜΟΝΟΠΡΟΣΩΠΗ ΑΕΔΑΚ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC010"
-          },
-          "NM": {
-            "VALUE": "Eurobank Asset Management ΑΕΔΑΚ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC012"
-          },
-          "NM": {
-            "VALUE": "ΕΥΡΩΠΑΙΚΗ ΠΙΣΤΗ ASSET MANAGEMENT ΑΕΔΑΚ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC013"
-          },
-          "NM": {
-            "VALUE": "ΤΡΙΤΩΝ ASSET MANAGEMENT ΑΕΔΑΚ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC014"
-          },
-          "NM": {
-            "VALUE": "3Κ INVESTMENT PARTNERS ΑΕΔΑΚ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC015"
-          },
-          "NM": {
-            "VALUE": "ΠΕΙΡΑΙΩΣ ASSET MANAGEMENT ΜΟΝΟΠΡΟΣΩΠΗ ΑΕΔΑΚ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC016"
-          },
-          "NM": {
-            "VALUE": "THETIS ΑΕΔΑΚ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC018"
-          },
-          "NM": {
-            "VALUE": "Optima Asset Management ΑΕΔΑΚ"
-          }
-        },
-        {
-          "DIMS": {
-            "ID": "EGRMFMC030"
-          },
-          "NM": {
-            "VALUE": "ATHOS ASSET MANAGEMENT ΑΕΔΑΚ"
-          }
-        }
-      ]
-    }
+  "DATASETS": {
+    "REF.ORG_ALIAS": [
+      {
+        "LID": "TGR094321237",
+        "RID": "EGR094321237",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR099757323",
+        "RID": "EGR099757323",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR800398384",
+        "RID": "EGR800398384",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR800433747",
+        "RID": "EGR800433747",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR800597834",
+        "RID": "EGR800597834",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR800639356",
+        "RID": "EGR800639356",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR800792234",
+        "RID": "EGR800792234",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR800901770",
+        "RID": "EGR800901770",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR800903737",
+        "RID": "EGR800903737",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR800911079",
+        "RID": "EGR800911079",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR801296864",
+        "RID": "EGR801296864",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR801322351",
+        "RID": "EGR801322351",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR801390415",
+        "RID": "EGR801390415",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR801446716",
+        "RID": "EGR801446716",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR801446949",
+        "RID": "EGR801446949",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR801470046",
+        "RID": "EGR801470046",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR801554045",
+        "RID": "EGR801554045",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR801698110",
+        "RID": "EGR801698110",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR801812106",
+        "RID": "EGR801812106",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR801878297",
+        "RID": "EGR801878297",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR802025852",
+        "RID": "EGR802025852",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR996764210",
+        "RID": "EGR996764210",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR997148287",
+        "RID": "EGR997148287",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR997673346",
+        "RID": "EGR997673346",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR998159392",
+        "RID": "EGR998159392",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR998279015",
+        "RID": "EGR998279015",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR998642355",
+        "RID": "EGR998642355",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR999510866",
+        "RID": "EGR999510866",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR999984680",
+        "RID": "EGR999984680",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR099554901",
+        "RID": "EGRAEEAP002",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR099555020",
+        "RID": "EGRAEEAP003",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR800397001",
+        "RID": "EGRAEEAP005",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR997521479",
+        "RID": "EGRAEEAP006",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR997656128",
+        "RID": "EGRAEEAP007",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR801077433",
+        "RID": "EGRAEEAP008",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR996805731",
+        "RID": "EGRAEEAP009",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR996899546",
+        "RID": "EGRAEEAP010",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR099759863",
+        "RID": "EGRAEEX002",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR998940936",
+        "RID": "EGRAEPEY059",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR997472014",
+        "RID": "EGRAEPEY065",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR800596087",
+        "RID": "EGREKES001",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR000000000",
+        "RID": "EGRMFMC000",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR094351475",
+        "RID": "EGRMFMC001",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR094354938",
+        "RID": "EGRMFMC002",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR094282521",
+        "RID": "EGRMFMC003",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR094317734",
+        "RID": "EGRMFMC004",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR099760120",
+        "RID": "EGRMFMC005",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR099936130",
+        "RID": "EGRMFMC008",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR094036844",
+        "RID": "EGRMFMC009",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR094493219",
+        "RID": "EGRMFMC010",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR094285719",
+        "RID": "EGRMFMC012",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR094325107",
+        "RID": "EGRMFMC013",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR094304867",
+        "RID": "EGRMFMC014",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR999081601",
+        "RID": "EGRMFMC015",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR094351137",
+        "RID": "EGRMFMC016",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR099553209",
+        "RID": "EGRMFMC018",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "TGR997010182",
+        "RID": "EGRMFMC030",
+        "ALIAS_OF": "T"
+      }
+    ],
+    "REF.ORG_DYNMC": [
+      {
+        "ID": "EGR094321237",
+        "NM": "PREMIA PROPERTIES ΑΕΕΑΠ"
+      },
+      {
+        "ID": "EGR099757323",
+        "NM": "ELIKONOS CAPITAL ΑΕΔΟΕΕ"
+      },
+      {
+        "ID": "EGR800398384",
+        "NM": "PIRAEUS JEREMIE TECHNOLOGY CATALYST MANAGEMENT ΜΟΝΟΠΡΟΣΩΠΗ ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR800433747",
+        "NM": "Openfund ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR800597834",
+        "NM": "DECA INVESTMENTS ΑΕΔΟΕΕ"
+      },
+      {
+        "ID": "EGR800639356",
+        "NM": "LEVANT PARTNETS ΑΕΔΟΕΕ"
+      },
+      {
+        "ID": "EGR800792234",
+        "NM": "Marathon ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR800901770",
+        "NM": "EOS CAPITAL PARTNERS ΑΕΔΟΕΕ"
+      },
+      {
+        "ID": "EGR800903737",
+        "NM": "METAVALLON PARTNERS ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR800911079",
+        "NM": "ΓΙΟΥΝΙΦΑΝΤ ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR801296864",
+        "NM": "THERMI VENTURE CAPITAL MANAGEMENT ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR801322351",
+        "NM": "VENTURE STORIES PARTNERS ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR801390415",
+        "NM": "SOUTHBRIDGE ADVISORS ΑΕΔΟΕΕ"
+      },
+      {
+        "ID": "EGR801446716",
+        "NM": "BLUE GREEN WHITE CAPITAL ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR801446949",
+        "NM": "GREEK BRANDS VENTURES ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR801470046",
+        "NM": "NEW ENERGY PARTNERS ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR801554045",
+        "NM": "SIREC ENERGY CAPITAL PARTNERS ΜΟΝΟΠΡΟΣΩΠΗ ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR801698110",
+        "NM": "ELBRIDGE CAPITAL MANAGEMENT ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR801812106",
+        "NM": "LSTONE ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR801878297",
+        "NM": "BIG PI ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR802025852",
+        "NM": "IGROW VENTURE PARTNERS ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR996764210",
+        "NM": "ΣΥΜΜΕΤΟΧΕΣ 5G ΑΕ"
+      },
+      {
+        "ID": "EGR997148287",
+        "NM": "ΕΛΛΗΝΙΚΗ ΑΕΔΟΕΕ"
+      },
+      {
+        "ID": "EGR997673346",
+        "NM": "Ελληνική Αναπτυξιακή Τράπεζα ΑΕ"
+      },
+      {
+        "ID": "EGR998159392",
+        "NM": "ΑΛΦΑ ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR998279015",
+        "NM": "PIRAEUS CAPITAL MANAGEMENT ΜΟΝΟΠΡΟΣΩΠΗ ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR998642355",
+        "NM": "CNL CAPITAL ΑΕΔΟΕΕ"
+      },
+      {
+        "ID": "EGR999510866",
+        "NM": "ΑΤΤΙΚΑ ΒΕΝΤΣΟΥΡΣ ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGR999984680",
+        "NM": "ΕΛΛΕΝΙΚ ΚΑΠΙΤΑΛ ΠΑΡΤΝΕΡΣ ΑΕΔΑΚΕΣ"
+      },
+      {
+        "ID": "EGRAEEAP002",
+        "NM": "TRASTOR ΑΕΕΑΠ"
+      },
+      {
+        "ID": "EGRAEEAP003",
+        "NM": "Προντέα ΑΕΕΑΠ"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "NM": "INTERCONTINENTAL INTERNATIONAL ΑΕΕΑΠ"
+      },
+      {
+        "ID": "EGRAEEAP006",
+        "NM": "BriQ Properties ΑΕΕΑΠ"
+      },
+      {
+        "ID": "EGRAEEAP007",
+        "NM": "ΜΠΛΕ ΚΕΔΡΟΣ ΑΕΕΑΠ"
+      },
+      {
+        "ID": "EGRAEEAP008",
+        "NM": "ORILINA PROPERTIES ΑΕΕΑΠ"
+      },
+      {
+        "ID": "EGRAEEAP009",
+        "NM": "TRADE ESTATES ΑΕΕΑΠ"
+      },
+      {
+        "ID": "EGRAEEAP010",
+        "NM": "NOVAL PROPERTY ΑΕΕΑΠ"
+      },
+      {
+        "ID": "EGRAEEX002",
+        "NM": "ALPHA TRUST ANDROMEDA ΑΕΕΧ"
+      },
+      {
+        "ID": "EGRAEPEY059",
+        "NM": "THETIS CAPITAL ΑΕΠΕΥ"
+      },
+      {
+        "ID": "EGRAEPEY065",
+        "NM": "IOLCUS INVESTMENTS ΑΕΔΟΕΕ"
+      },
+      {
+        "ID": "EGREKES001",
+        "NM": "CNL CAPITAL ΕΚΕΣ-ΔΟΕΕ"
+      },
+      {
+        "ID": "EGRMFMC000",
+        "NM": "FOO ΑΕΔΑΚ"
+      },
+      {
+        "ID": "EGRMFMC001",
+        "NM": "NN ΑΕΔΑΚ"
+      },
+      {
+        "ID": "EGRMFMC002",
+        "NM": "ALLIANZ ΜΟΝΟΠΡΟΣΩΠΗ ΑΕΔΑΚ"
+      },
+      {
+        "ID": "EGRMFMC003",
+        "NM": "ALPHA ASSET MANAGEMENT ΑΕΔΑΚ"
+      },
+      {
+        "ID": "EGRMFMC004",
+        "NM": "ALPHA TRUST ΑΕΔΑΚOEE"
+      },
+      {
+        "ID": "EGRMFMC005",
+        "NM": "ΑΕΔΑΚ ΑΣΦΑΛΙΣΤΙΚΩΝ ΟΡΓΑΝΙΣΜΩΝ"
+      },
+      {
+        "ID": "EGRMFMC008",
+        "NM": "ATTICA WEALTH MANAGEMENT ΑΕΔΑΚ"
+      },
+      {
+        "ID": "EGRMFMC009",
+        "NM": "ΕΘΝΙΚΗ ASSET MANAGEMENT ΜΟΝΟΠΡΟΣΩΠΗ ΑΕΔΑΚ"
+      },
+      {
+        "ID": "EGRMFMC010",
+        "NM": "Eurobank Asset Management ΑΕΔΑΚ"
+      },
+      {
+        "ID": "EGRMFMC012",
+        "NM": "ΕΥΡΩΠΑΙΚΗ ΠΙΣΤΗ ASSET MANAGEMENT ΑΕΔΑΚ"
+      },
+      {
+        "ID": "EGRMFMC013",
+        "NM": "ΤΡΙΤΩΝ ASSET MANAGEMENT ΑΕΔΑΚ"
+      },
+      {
+        "ID": "EGRMFMC014",
+        "NM": "3Κ INVESTMENT PARTNERS ΑΕΔΑΚ"
+      },
+      {
+        "ID": "EGRMFMC015",
+        "NM": "ΠΕΙΡΑΙΩΣ ASSET MANAGEMENT ΜΟΝΟΠΡΟΣΩΠΗ ΑΕΔΑΚ"
+      },
+      {
+        "ID": "EGRMFMC016",
+        "NM": "THETIS ΑΕΔΑΚ"
+      },
+      {
+        "ID": "EGRMFMC018",
+        "NM": "Optima Asset Management ΑΕΔΑΚ"
+      },
+      {
+        "ID": "EGRMFMC030",
+        "NM": "ATHOS ASSET MANAGEMENT ΑΕΔΑΚ"
+      }
+    ]
   }
 }
