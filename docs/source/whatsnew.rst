@@ -10,6 +10,10 @@ What's new?
 
 .. Next release
 .. ============
+v0.3.4 (2024-07-08)
+-------------------
+* Modified json schema according to discussions with IT department
+
 v0.3.3 (2024-05-20)
 -------------------
 * Created compact json schemas
