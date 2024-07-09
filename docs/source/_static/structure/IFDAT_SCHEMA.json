@@ -328,8 +328,7 @@
     },
     "AsstNnFnnclEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "NFA1",
         "NFA2",
         "NFA3",
@@ -431,8 +430,7 @@
     },
     "BoolEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "T",
         "F"
       ],
@@ -448,19 +446,19 @@
           "type": "string"
         },
         "DT_BRTH": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Cls",
           "type": "string"
         },
         "NM_LTN": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 128,
           "title": "Nm Ltn",
           "type": "string"
@@ -471,7 +469,7 @@
               "$ref": "#/$defs/GenCntryEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "INSTTTNL_SCTR": {
           "allOf": [
@@ -479,10 +477,10 @@
               "$ref": "#/$defs/OrgInstttnlSctrEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "ALS_OF": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Als Of",
@@ -807,8 +805,7 @@
     },
     "DbtCpnFrqncyEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "ZC",
         "AN",
         "SA",
@@ -825,8 +822,7 @@
     },
     "DbtCpnTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "FIX",
         "STE",
         "FLO",
@@ -840,8 +836,7 @@
     },
     "DbtCvrdTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "PUBLIC",
         "MORTGAGE",
         "SHIP",
@@ -855,8 +850,7 @@
     },
     "DbtGrntLvlEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "UNGUARANTEED",
         "GOVERNMENT",
         "OTHER",
@@ -867,8 +861,7 @@
     },
     "DbtOutstndngChnTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "INIT",
         "TRANCHE",
         "PARTIAL",
@@ -879,8 +872,7 @@
     },
     "DbtRnkLvlEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "SUB_JUNIOR",
         "SUB_SENIOR",
         "SUB_NOINFO",
@@ -895,8 +887,7 @@
     },
     "DbtScrtyLvlEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "UNSECURED",
         "SECURED",
         "NOINFO"
@@ -906,8 +897,7 @@
     },
     "DbtScrtznTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "ABS",
         "MBS",
         "CDO",
@@ -928,13 +918,13 @@
           "type": "string"
         },
         "DT_BRTH": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Cls",
           "type": "string"
@@ -945,7 +935,7 @@
               "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "TYP": {
           "allOf": [
@@ -953,17 +943,17 @@
               "$ref": "#/$defs/DbtTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "ISSD_BY": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Issd By",
           "type": "string"
         },
         "ALS_OF": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[IP][a-zA-Z0-9_]+",
           "title": "Als Of",
@@ -978,8 +968,7 @@
     },
     "DbtSttsEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "100",
         "101",
         "102",
@@ -994,8 +983,7 @@
     },
     "DbtTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "BND",
         "MNY",
         "HBRD",
@@ -1006,8 +994,7 @@
     },
     "DepNtcEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "S",
         "M",
         "L"
@@ -1017,8 +1004,7 @@
     },
     "DepTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "SIGHT",
         "AMAT",
         "ANOT"
@@ -1028,8 +1014,7 @@
     },
     "DprtmntEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "ACC",
         "ECO",
         "COM",
@@ -1042,8 +1027,7 @@
     },
     "DrvtvTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "CAL",
         "PUT",
         "WAR",
@@ -1058,8 +1042,7 @@
     },
     "DvdndCstmFrqncyEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "AN",
         "SA",
         "QA",
@@ -1073,8 +1056,7 @@
     },
     "DvdndTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "10",
         "20",
         "11",
@@ -1130,8 +1112,7 @@
     },
     "FndBndFcsEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "GOV",
         "COR",
         "MIX"
@@ -1141,8 +1122,7 @@
     },
     "FndDstrbtnPlcyEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "DIS",
         "CUM",
         "MIX"
@@ -1159,77 +1139,74 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "default": "MINDATE",
+          "default": null,
           "format": "date",
           "title": "Vld Frm",
           "type": "string"
         },
         "VLD_T": {
-          "default": "MAXDATE",
+          "default": null,
           "format": "date",
           "title": "Vld T",
           "type": "string"
         },
         "NM": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 128,
           "title": "Nm",
           "type": "string"
         },
         "NM_LTN": {
-          "default": "RETAIN",
-          "maxLength": 128,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
         "NM_SHRT": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 64,
           "title": "Nm Shrt",
           "type": "string"
         },
         "STRT": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 64,
           "title": "Strt",
           "type": "string"
         },
         "STRT_LTN": {
-          "default": "RETAIN",
-          "maxLength": 64,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,64}$)|(^\\.$)",
           "title": "Strt Ltn",
           "type": "string"
         },
         "CTY": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 32,
           "title": "Cty",
           "type": "string"
         },
         "CTY_LTN": {
-          "default": "RETAIN",
-          "maxLength": 32,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,32}$)|(^\\.$)",
           "title": "Cty Ltn",
           "type": "string"
         },
         "PSTL_CD": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 16,
           "title": "Pstl Cd",
           "type": "string"
         },
         "URL": {
-          "default": "RETAIN",
+          "default": null,
           "format": "uri",
           "minLength": 1,
           "title": "Url",
           "type": "string"
         },
         "EMAIL": {
-          "default": "RETAIN",
+          "default": null,
           "format": "email",
           "title": "Email",
           "type": "string"
@@ -1240,7 +1217,7 @@
               "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "IS_INCTV": {
           "allOf": [
@@ -1248,7 +1225,7 @@
               "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "IS_UNDR_LQDTN": {
           "allOf": [
@@ -1256,7 +1233,7 @@
               "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "INSTTTNL_SCTR_CNTRL": {
           "allOf": [
@@ -1264,16 +1241,16 @@
               "$ref": "#/$defs/OrgInstttnlSctrCntrlEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "MNGD_BY": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "title": "Mngd By",
           "type": "string"
         },
         "UNDR_UMBRLL_BY": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "title": "Undr Umbrll By",
           "type": "string"
@@ -1284,7 +1261,7 @@
               "$ref": "#/$defs/FndLglTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "INVSTMNT_PLCY": {
           "allOf": [
@@ -1292,7 +1269,7 @@
               "$ref": "#/$defs/FndInvstmntPlcyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "EQTY_TYP": {
           "allOf": [
@@ -1300,7 +1277,7 @@
               "$ref": "#/$defs/FndEqtyTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "DSTRBTN_PLCY": {
           "allOf": [
@@ -1308,7 +1285,7 @@
               "$ref": "#/$defs/FndDstrbtnPlcyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "INVSTR_TYP": {
           "allOf": [
@@ -1316,7 +1293,7 @@
               "$ref": "#/$defs/FndInvstrTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "GRN_TYP": {
           "allOf": [
@@ -1324,7 +1301,7 @@
               "$ref": "#/$defs/FndGrnTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "STRTGY": {
           "allOf": [
@@ -1332,7 +1309,7 @@
               "$ref": "#/$defs/FndStrtgyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "GGRPHCL_FCS": {
           "allOf": [
@@ -1340,7 +1317,7 @@
               "$ref": "#/$defs/FndGgrphclFcsEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "BND_FCS": {
           "allOf": [
@@ -1348,7 +1325,7 @@
               "$ref": "#/$defs/FndBndFcsEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "RL_ESTT_TYP": {
           "allOf": [
@@ -1356,7 +1333,7 @@
               "$ref": "#/$defs/FndRlEsttTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "IS_FOF": {
           "allOf": [
@@ -1364,7 +1341,7 @@
               "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "IS_ETF": {
           "allOf": [
@@ -1372,7 +1349,7 @@
               "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "IS_PEF": {
           "allOf": [
@@ -1380,7 +1357,7 @@
               "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         }
       },
       "required": [
@@ -1391,8 +1368,7 @@
     },
     "FndEqtyTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "OPEN",
         "CLOSE"
       ],
@@ -1401,8 +1377,7 @@
     },
     "FndGgrphclFcsEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "DOM",
         "EEA",
         "OEA",
@@ -1418,8 +1393,7 @@
     },
     "FndGrnTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "LIGHT",
         "DARK",
         "OTHER"
@@ -1429,8 +1403,7 @@
     },
     "FndInvstmntPlcyEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "MMF",
         "BON",
         "EQT",
@@ -1447,8 +1420,7 @@
     },
     "FndInvstrTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "PRF",
         "RTL"
       ],
@@ -1457,8 +1429,7 @@
     },
     "FndLglTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "UCITS",
         "RAIF",
         "OAIF",
@@ -1470,8 +1441,7 @@
     },
     "FndRlEsttTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "RES",
         "COM",
         "IND",
@@ -1490,47 +1460,44 @@
           "type": "string"
         },
         "DT_BRTH": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Cls",
           "type": "string"
         },
         "LEI_ID": {
-          "default": "RETAIN",
-          "maxLength": 20,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{20}$)|(^\\.$)",
           "title": "Lei Id",
           "type": "string"
         },
         "TAX_ID": {
-          "default": "RETAIN",
-          "maxLength": 31,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,31}$)|(^\\.$)",
           "title": "Tax Id",
           "type": "string"
         },
         "NBR_ID": {
-          "default": "RETAIN",
-          "maxLength": 31,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,31}$)|(^\\.$)",
           "title": "Nbr Id",
           "type": "string"
         },
         "SPLT_FRM": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Splt Frm",
           "type": "string"
         },
         "MRGD_WTH": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Mrgd Wth",
@@ -1545,8 +1512,7 @@
     },
     "FndStrtgyEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "ACTIVE",
         "SYNPAS",
         "SYNPHY"
@@ -1556,8 +1522,7 @@
     },
     "GenCntryEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "AE",
         "AF",
         "AL",
@@ -1667,8 +1632,7 @@
     },
     "GenCrrncyEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "ARS",
         "AUD",
         "BGN",
@@ -1716,8 +1680,7 @@
     },
     "GenFrqncyEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "A",
         "B",
         "D",
@@ -1758,8 +1721,7 @@
     },
     "GenMrktEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "3579",
         "24EX",
         "360T",
@@ -4332,18 +4294,15 @@
           "type": "string"
         },
         "DOMAIN": {
-          "const": "IFDat",
-          "title": "Domain"
-        },
-        "SOURCE": {
-          "$ref": "#/$defs/SourceTypeEnum"
+          "pattern": "^IFDat",
+          "title": "Domain",
+          "type": "string"
         }
       },
       "required": [
         "PARTNER",
         "USERNAME",
-        "DOMAIN",
-        "SOURCE"
+        "DOMAIN"
       ],
       "title": "Header",
       "type": "object"
@@ -4400,8 +4359,7 @@
     },
     "IncmExpnsEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "INTRST",
         "RNTS",
         "TRNSCTNS_FEES",
@@ -4418,8 +4376,7 @@
     },
     "IncmRvnEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "INTRST",
         "DVDNDS",
         "RNTS",
@@ -4525,8 +4482,7 @@
     },
     "LonTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "CRD",
         "OVR",
         "REV",
@@ -4552,77 +4508,74 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "default": "MINDATE",
+          "default": null,
           "format": "date",
           "title": "Vld Frm",
           "type": "string"
         },
         "VLD_T": {
-          "default": "MAXDATE",
+          "default": null,
           "format": "date",
           "title": "Vld T",
           "type": "string"
         },
         "NM": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 128,
           "title": "Nm",
           "type": "string"
         },
         "NM_LTN": {
-          "default": "RETAIN",
-          "maxLength": 128,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
         "NM_SHRT": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 64,
           "title": "Nm Shrt",
           "type": "string"
         },
         "STRT": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 64,
           "title": "Strt",
           "type": "string"
         },
         "STRT_LTN": {
-          "default": "RETAIN",
-          "maxLength": 64,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,64}$)|(^\\.$)",
           "title": "Strt Ltn",
           "type": "string"
         },
         "CTY": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 32,
           "title": "Cty",
           "type": "string"
         },
         "CTY_LTN": {
-          "default": "RETAIN",
-          "maxLength": 32,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,32}$)|(^\\.$)",
           "title": "Cty Ltn",
           "type": "string"
         },
         "PSTL_CD": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 16,
           "title": "Pstl Cd",
           "type": "string"
         },
         "URL": {
-          "default": "RETAIN",
+          "default": null,
           "format": "uri",
           "minLength": 1,
           "title": "Url",
           "type": "string"
         },
         "EMAIL": {
-          "default": "RETAIN",
+          "default": null,
           "format": "email",
           "title": "Email",
           "type": "string"
@@ -4633,7 +4586,7 @@
               "$ref": "#/$defs/GenCntryEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         }
       },
       "required": [
@@ -4651,47 +4604,44 @@
           "type": "string"
         },
         "DT_BRTH": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Cls",
           "type": "string"
         },
         "LEI_ID": {
-          "default": "RETAIN",
-          "maxLength": 20,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{20}$)|(^\\.$)",
           "title": "Lei Id",
           "type": "string"
         },
         "TAX_ID": {
-          "default": "RETAIN",
-          "maxLength": 31,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,31}$)|(^\\.$)",
           "title": "Tax Id",
           "type": "string"
         },
         "NBR_ID": {
-          "default": "RETAIN",
-          "maxLength": 31,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,31}$)|(^\\.$)",
           "title": "Nbr Id",
           "type": "string"
         },
         "SPLT_FRM": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Splt Frm",
           "type": "string"
         },
         "MRGD_WTH": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Mrgd Wth",
@@ -4706,8 +4656,7 @@
     },
     "OrgInstttnlSctrCntrlEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "0",
         "1",
         "2",
@@ -4718,8 +4667,7 @@
     },
     "OrgInstttnlSctrEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "S11",
         "S121",
         "S122",
@@ -4749,13 +4697,13 @@
           "type": "string"
         },
         "DT_BRTH": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Cls",
           "type": "string"
@@ -4766,7 +4714,7 @@
               "$ref": "#/$defs/DepTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "NTC": {
           "allOf": [
@@ -4774,7 +4722,7 @@
               "$ref": "#/$defs/DepNtcEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "CRRNCY": {
           "allOf": [
@@ -4782,24 +4730,24 @@
               "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "DBTR": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Dbtr",
           "type": "string"
         },
         "CRDTR": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Crdtr",
           "type": "string"
         },
         "ALS_OF": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[IP][a-zA-Z0-9_]+",
           "title": "Als Of",
@@ -4821,28 +4769,26 @@
           "type": "string"
         },
         "DT_BRTH": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Cls",
           "type": "string"
         },
         "NM_LTN": {
-          "default": "RETAIN",
-          "maxLength": 128,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
         "TCKR": {
-          "default": "RETAIN",
-          "maxLength": 12,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,12}$)|(^\\.$)",
           "title": "Tckr",
           "type": "string"
         },
@@ -4852,7 +4798,7 @@
               "$ref": "#/$defs/DrvtvTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "CRRNCY": {
           "allOf": [
@@ -4860,10 +4806,10 @@
               "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "MLTPLR": {
-          "default": "RETAIN",
+          "default": null,
           "minimum": 0.0,
           "title": "Mltplr",
           "type": "number"
@@ -4874,10 +4820,10 @@
               "$ref": "#/$defs/GenMrktEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "ALS_OF": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[IP][a-zA-Z0-9_]+",
           "title": "Als Of",
@@ -4899,13 +4845,13 @@
           "type": "string"
         },
         "DT_BRTH": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Cls",
           "type": "string"
@@ -4916,7 +4862,7 @@
               "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "TYP": {
           "allOf": [
@@ -4924,24 +4870,24 @@
               "$ref": "#/$defs/LonTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "DBTR": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Dbtr",
           "type": "string"
         },
         "CRDTR": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Crdtr",
           "type": "string"
         },
         "ALS_OF": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[P][a-zA-Z0-9_]+",
           "title": "Als Of",
@@ -4963,21 +4909,20 @@
           "type": "string"
         },
         "DT_BRTH": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Cls",
           "type": "string"
         },
         "NM_LTN": {
-          "default": "RETAIN",
-          "maxLength": 128,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
@@ -4987,7 +4932,7 @@
               "$ref": "#/$defs/DrvtvTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "CRRNCY": {
           "allOf": [
@@ -4995,30 +4940,30 @@
               "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "MLTPLR": {
-          "default": "RETAIN",
+          "default": null,
           "minimum": 0.0,
           "title": "Mltplr",
           "type": "number"
         },
         "WRTR": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Wrtr",
           "type": "string"
         },
         "BYR": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Byr",
           "type": "string"
         },
         "ALS_OF": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[IP][a-zA-Z0-9_]+",
           "title": "Als Of",
@@ -5040,13 +4985,13 @@
           "type": "string"
         },
         "DT_BRTH": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Cls",
           "type": "string"
@@ -5057,7 +5002,7 @@
               "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "TYP": {
           "allOf": [
@@ -5065,24 +5010,24 @@
               "$ref": "#/$defs/SftTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "DBTR": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Dbtr",
           "type": "string"
         },
         "CRDTR": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Crdtr",
           "type": "string"
         },
         "ALS_OF": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[P][a-zA-Z0-9_]+",
           "title": "Als Of",
@@ -5104,13 +5049,13 @@
           "type": "string"
         },
         "DT_BRTH": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Cls",
           "type": "string"
@@ -5121,7 +5066,7 @@
               "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "TYP": {
           "allOf": [
@@ -5129,17 +5074,17 @@
               "$ref": "#/$defs/ShrEsaTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "ISSD_BY": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Issd By",
           "type": "string"
         },
         "ALS_OF": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[IPU][a-zA-Z0-9_]+",
           "title": "Als Of",
@@ -5154,8 +5099,7 @@
     },
     "RemAssetEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "AI_DPST",
         "AI_LN",
         "AI_DBT",
@@ -5167,8 +5111,7 @@
     },
     "RemLiabEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "AI_LN",
         "AI_DBT",
         "AR",
@@ -5253,26 +5196,25 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "default": "MINDATE",
+          "default": null,
           "format": "date",
           "title": "Vld Frm",
           "type": "string"
         },
         "VLD_T": {
-          "default": "MAXDATE",
+          "default": null,
           "format": "date",
           "title": "Vld T",
           "type": "string"
         },
         "NM_LTN": {
-          "default": "RETAIN",
-          "maxLength": 128,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
         "NM_SHRT": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 64,
           "title": "Nm Shrt",
           "type": "string"
@@ -5283,25 +5225,24 @@
               "$ref": "#/$defs/DbtSttsEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "MTRTY_DT": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Mtrty Dt",
           "type": "string"
         },
         "ISSD_BY": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[ELTBP][a-zA-Z0-9_]+",
           "title": "Issd By",
           "type": "string"
         },
         "CFI": {
-          "default": "RETAIN",
-          "maxLength": 6,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{6}$)|(^\\.$)",
           "title": "Cfi",
           "type": "string"
         }
@@ -5357,19 +5298,19 @@
           "type": "string"
         },
         "DT_BRTH": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Cls",
           "type": "string"
         },
         "ORGNL_MTRTY": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Orgnl Mtrty",
           "type": "string"
@@ -5380,16 +5321,16 @@
               "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "ISS_PRC": {
-          "default": "RETAIN",
+          "default": null,
           "minimum": 0.0,
           "title": "Iss Prc",
           "type": "number"
         },
         "RDMPTN_PRC": {
-          "default": "RETAIN",
+          "default": null,
           "minimum": 0.0,
           "title": "Rdmptn Prc",
           "type": "number"
@@ -5400,10 +5341,10 @@
               "$ref": "#/$defs/GenMrktEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "ACCRL_STRTDT": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Accrl Strtdt",
           "type": "string"
@@ -5414,7 +5355,7 @@
               "$ref": "#/$defs/DbtTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "GRNT_LVL": {
           "allOf": [
@@ -5422,7 +5363,7 @@
               "$ref": "#/$defs/DbtGrntLvlEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "RNK_LVL": {
           "allOf": [
@@ -5430,7 +5371,7 @@
               "$ref": "#/$defs/DbtRnkLvlEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "SCRTY_LVL": {
           "allOf": [
@@ -5438,7 +5379,7 @@
               "$ref": "#/$defs/DbtScrtyLvlEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "IS_SCRTZTN": {
           "allOf": [
@@ -5446,7 +5387,7 @@
               "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "SCRTZTN_TYP": {
           "allOf": [
@@ -5454,7 +5395,7 @@
               "$ref": "#/$defs/DbtScrtznTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "IS_CVRD": {
           "allOf": [
@@ -5462,7 +5403,7 @@
               "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "CVRD_TYP": {
           "allOf": [
@@ -5470,7 +5411,7 @@
               "$ref": "#/$defs/DbtCvrdTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "CPN_TYP": {
           "allOf": [
@@ -5478,7 +5419,7 @@
               "$ref": "#/$defs/DbtCpnTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "CPN_CRRNCY": {
           "allOf": [
@@ -5486,7 +5427,7 @@
               "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "CPN_FRQNCY": {
           "allOf": [
@@ -5494,53 +5435,53 @@
               "$ref": "#/$defs/DbtCpnFrqncyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "CPN_SPRD": {
-          "default": "RETAIN",
+          "default": null,
           "minimum": 0,
           "title": "Cpn Sprd",
           "type": "integer"
         },
         "CPN_MLTPLR": {
-          "default": "RETAIN",
+          "default": null,
           "minimum": 0.0,
           "title": "Cpn Mltplr",
           "type": "number"
         },
         "CPN_CP": {
-          "default": "RETAIN",
+          "default": null,
           "minimum": 0.0,
           "title": "Cpn Cp",
           "type": "number"
         },
         "CPN_FLR": {
-          "default": "RETAIN",
+          "default": null,
           "minimum": 0.0,
           "title": "Cpn Flr",
           "type": "number"
         },
         "FRST_CPN_DT": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Frst Cpn Dt",
           "type": "string"
         },
         "LST_CPN_DT": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Lst Cpn Dt",
           "type": "string"
         },
         "UNDRLYNG": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[IP][a-zA-Z0-9_]+",
           "title": "Undrlyng",
           "type": "string"
         },
         "MNMM_INVSTMNT": {
-          "default": "RETAIN",
+          "default": null,
           "minimum": 0.0,
           "title": "Mnmm Invstmnt",
           "type": "number"
@@ -5551,31 +5492,24 @@
               "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": "RETAIN"
-        },
-        "CFI": {
-          "default": "RETAIN",
-          "maxLength": 6,
-          "pattern": "^[a-zA-Z0-9_]+",
-          "title": "Cfi",
-          "type": "string"
+          "default": null
         },
         "RSTRCTRD_T": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[IP][a-zA-Z0-9_]+",
           "title": "Rstrctrd T",
           "type": "string"
         },
         "RSTRCTRD_FRM": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[P][a-zA-Z0-9_]+",
           "title": "Rstrctrd Frm",
           "type": "string"
         },
         "ALS_OF": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[IP][a-zA-Z0-9_]+",
           "title": "Als Of",
@@ -5654,46 +5588,44 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "default": "MINDATE",
+          "default": null,
           "format": "date",
           "title": "Vld Frm",
           "type": "string"
         },
         "VLD_T": {
-          "default": "MAXDATE",
+          "default": null,
           "format": "date",
           "title": "Vld T",
           "type": "string"
         },
         "NM_LTN": {
-          "default": "RETAIN",
-          "maxLength": 128,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
         "NM_SHRT": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 64,
           "title": "Nm Shrt",
           "type": "string"
         },
         "ISSD_BY": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "title": "Issd By",
           "type": "string"
         },
         "NMNL_PRC": {
-          "default": "RETAIN",
+          "default": null,
           "minimum": 0.0,
           "title": "Nmnl Prc",
           "type": "number"
         },
         "CFI": {
-          "default": "RETAIN",
-          "maxLength": 6,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{6}$)|(^\\.$)",
           "title": "Cfi",
           "type": "string"
         },
@@ -5703,10 +5635,10 @@
               "$ref": "#/$defs/ShrFndRdmptnFrqncyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "MNMM_AMNT": {
-          "default": "RETAIN",
+          "default": null,
           "minimum": 0.0,
           "title": "Mnmm Amnt",
           "type": "number"
@@ -5717,7 +5649,7 @@
               "$ref": "#/$defs/ShrTypEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         }
       },
       "required": [
@@ -5735,13 +5667,13 @@
           "type": "string"
         },
         "DT_BRTH": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
-          "default": "RETAIN",
+          "default": null,
           "format": "date",
           "title": "Dt Cls",
           "type": "string"
@@ -5752,7 +5684,7 @@
               "$ref": "#/$defs/GenCrrncyEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "MRKT": {
           "allOf": [
@@ -5760,17 +5692,17 @@
               "$ref": "#/$defs/GenMrktEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "RSTRCTRD_T": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[IPU][a-zA-Z0-9_]+",
           "title": "Rstrctrd T",
           "type": "string"
         },
         "ALS_OF": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 512,
           "pattern": "^[IPU][a-zA-Z0-9_]+",
           "title": "Als Of",
@@ -5812,8 +5744,7 @@
     },
     "SftTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "REP",
         "SBL",
         "BSB",
@@ -5824,8 +5755,7 @@
     },
     "ShrEsaTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "F511",
         "F512",
         "F519",
@@ -5837,8 +5767,7 @@
     },
     "ShrFndRdmptnFrqncyEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "PP",
         "AN",
         "SA",
@@ -5857,8 +5786,7 @@
     },
     "ShrTypEnum": {
       "enum": [
-        "RESET",
-        "RETAIN",
+        ".",
         "CMMN",
         "PRFRRD",
         "DPSTRY_RCPT",
@@ -5869,19 +5797,6 @@
         "OTHR_FND"
       ],
       "title": "ShrTypEnum",
-      "type": "string"
-    },
-    "SourceTypeEnum": {
-      "enum": [
-        "RESET",
-        "RETAIN",
-        "SUPER",
-        "SDR",
-        "REG",
-        "CDR",
-        "INIT"
-      ],
-      "title": "SourceTypeEnum",
       "type": "string"
     },
     "Usr2RaSeries": {
@@ -5899,13 +5814,13 @@
           "type": "string"
         },
         "VLD_FRM": {
-          "default": "MINDATE",
+          "default": null,
           "format": "date",
           "title": "Vld Frm",
           "type": "string"
         },
         "VLD_T": {
-          "default": "MAXDATE",
+          "default": null,
           "format": "date",
           "title": "Vld T",
           "type": "string"
@@ -5916,7 +5831,7 @@
               "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "WRKS_FR": {
           "allOf": [
@@ -5924,7 +5839,7 @@
               "$ref": "#/$defs/DprtmntEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         },
         "RSPNSBL_FR_IFDAT": {
           "allOf": [
@@ -5932,7 +5847,7 @@
               "$ref": "#/$defs/BoolEnum"
             }
           ],
-          "default": "RETAIN"
+          "default": null
         }
       },
       "required": [
@@ -5951,27 +5866,26 @@
           "type": "string"
         },
         "EMAIL": {
-          "default": "RETAIN",
+          "default": null,
           "format": "email",
           "title": "Email",
           "type": "string"
         },
         "FRST": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 32,
           "title": "Frst",
           "type": "string"
         },
         "LST": {
-          "default": "RETAIN",
+          "default": null,
           "maxLength": 32,
           "title": "Lst",
           "type": "string"
         },
         "PHN": {
-          "default": "RETAIN",
-          "maxLength": 32,
-          "pattern": "^[a-zA-Z0-9_]+",
+          "default": null,
+          "pattern": "(^[a-zA-Z0-9_]{1,32}$)|(^\\.$)",
           "title": "Phn",
           "type": "string"
         }
