@@ -1,0 +1,17 @@
+{
+  "HEADER": {
+    "PARTNER": "EGRCDRJOURNEY",
+    "USERNAME": "jcdruser",
+    "SOURCE": "CDR",
+    "DOMAIN": "DBDat"
+  },
+  "DATASETS": {
+    "REF.ORG_ALIAS": [
+      {
+        "LID": "LJM1",
+        "RID": "EGRJM1",
+        "ALIAS_OF": "T"
+      }
+    ]
+  }
+}

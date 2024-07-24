@@ -4754,7 +4754,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -4852,7 +4852,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -4932,7 +4932,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -4958,7 +4958,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -5051,7 +5051,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -5156,7 +5156,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -5237,7 +5237,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -5269,7 +5269,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -5357,7 +5357,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -5473,7 +5473,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -5571,7 +5571,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -5597,7 +5597,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -5702,7 +5702,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -5780,7 +5780,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -5840,7 +5840,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -5866,7 +5866,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -5933,7 +5933,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -6012,7 +6012,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -6073,7 +6073,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -6099,7 +6099,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -6173,7 +6173,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -6317,7 +6317,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -6437,7 +6437,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -6469,7 +6469,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -6602,7 +6602,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -6747,7 +6747,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -6868,7 +6868,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -6900,7 +6900,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -7034,7 +7034,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -7140,7 +7140,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -7222,7 +7222,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -7254,7 +7254,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -7346,7 +7346,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -7429,7 +7429,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -7491,7 +7491,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -7520,7 +7520,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -7589,7 +7589,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "RT": {
@@ -7637,7 +7637,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "RT": {
@@ -7667,7 +7667,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -7693,7 +7693,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "RT": {
@@ -8773,7 +8773,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -8837,12 +8837,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "NM": {
@@ -8859,7 +8859,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -8897,7 +8897,7 @@
           },
           "MTRTY_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Mtrty Dt"
           },
           "MTRTY_DT.STATUS": {
@@ -9175,7 +9175,7 @@
           },
           "FRST_CPN_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Frst Cpn Dt"
           },
           "FRST_CPN_DT.STATUS": {
@@ -9187,7 +9187,7 @@
           },
           "LST_CPN_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Lst Cpn Dt"
           },
           "LST_CPN_DT.STATUS": {
@@ -9267,12 +9267,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "NM": {
@@ -9289,7 +9289,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -9327,7 +9327,7 @@
           },
           "MTRTY_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Mtrty Dt"
           },
           "MTRTY_DT.STATUS": {
@@ -9605,7 +9605,7 @@
           },
           "FRST_CPN_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Frst Cpn Dt"
           },
           "FRST_CPN_DT.STATUS": {
@@ -9617,7 +9617,7 @@
           },
           "LST_CPN_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Lst Cpn Dt"
           },
           "LST_CPN_DT.STATUS": {
@@ -9679,7 +9679,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -9705,12 +9705,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "NM": {
@@ -9727,7 +9727,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -9765,7 +9765,7 @@
           },
           "MTRTY_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Mtrty Dt"
           },
           "MTRTY_DT.STATUS": {
@@ -10043,7 +10043,7 @@
           },
           "FRST_CPN_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Frst Cpn Dt"
           },
           "FRST_CPN_DT.STATUS": {
@@ -10055,7 +10055,7 @@
           },
           "LST_CPN_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Lst Cpn Dt"
           },
           "LST_CPN_DT.STATUS": {
@@ -10127,7 +10127,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "AMNT": {
@@ -10192,7 +10192,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "AMNT": {
@@ -10236,7 +10236,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -10265,7 +10265,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "AMNT": {
@@ -10316,7 +10316,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "PRC": {
@@ -10391,7 +10391,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "PRC": {
@@ -10448,7 +10448,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -10474,7 +10474,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "PRC": {
@@ -10538,7 +10538,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -10550,7 +10550,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -10562,7 +10562,7 @@
           },
           "ORGNL_MTRTY": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Orgnl Mtrty"
           },
           "ORGNL_MTRTY.STATUS": {
@@ -10656,7 +10656,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -10668,7 +10668,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -10680,7 +10680,7 @@
           },
           "ORGNL_MTRTY": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Orgnl Mtrty"
           },
           "ORGNL_MTRTY.STATUS": {
@@ -10756,7 +10756,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -10782,7 +10782,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -10794,7 +10794,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -10806,7 +10806,7 @@
           },
           "ORGNL_MTRTY": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Orgnl Mtrty"
           },
           "ORGNL_MTRTY.STATUS": {
@@ -10889,7 +10889,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -10901,7 +10901,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -11024,7 +11024,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -11036,7 +11036,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -11141,7 +11141,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -11167,7 +11167,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -11179,7 +11179,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -11291,12 +11291,12 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "EX_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Ex Dt"
           },
           "EX_DT.STATUS": {
@@ -11308,7 +11308,7 @@
           },
           "DCLRTN_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dclrtn Dt"
           },
           "DCLRTN_DT.STATUS": {
@@ -11320,7 +11320,7 @@
           },
           "PYMNT_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Pymnt Dt"
           },
           "PYMNT_DT.STATUS": {
@@ -11412,12 +11412,12 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "EX_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Ex Dt"
           },
           "EX_DT.STATUS": {
@@ -11429,7 +11429,7 @@
           },
           "DCLRTN_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dclrtn Dt"
           },
           "DCLRTN_DT.STATUS": {
@@ -11441,7 +11441,7 @@
           },
           "PYMNT_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Pymnt Dt"
           },
           "PYMNT_DT.STATUS": {
@@ -11515,7 +11515,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -11541,12 +11541,12 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "EX_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Ex Dt"
           },
           "EX_DT.STATUS": {
@@ -11558,7 +11558,7 @@
           },
           "DCLRTN_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dclrtn Dt"
           },
           "DCLRTN_DT.STATUS": {
@@ -11570,7 +11570,7 @@
           },
           "PYMNT_DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Pymnt Dt"
           },
           "PYMNT_DT.STATUS": {
@@ -11731,7 +11731,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -11795,7 +11795,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -11807,7 +11807,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -11819,7 +11819,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -11831,7 +11831,7 @@
           },
           "TCKR": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,12}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,11}$)|(^\\.$)",
             "title": "Tckr"
           },
           "TCKR.STATUS": {
@@ -11940,7 +11940,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -11952,7 +11952,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -11964,7 +11964,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -11976,7 +11976,7 @@
           },
           "TCKR": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,12}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,11}$)|(^\\.$)",
             "title": "Tckr"
           },
           "TCKR.STATUS": {
@@ -12067,7 +12067,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -12093,7 +12093,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -12105,7 +12105,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -12117,7 +12117,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -12129,7 +12129,7 @@
           },
           "TCKR": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,12}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,11}$)|(^\\.$)",
             "title": "Tckr"
           },
           "TCKR.STATUS": {
@@ -12230,7 +12230,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -12294,7 +12294,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -12337,7 +12337,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -12366,7 +12366,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -12422,7 +12422,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -12529,7 +12529,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -12612,7 +12612,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -12644,7 +12644,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -12734,7 +12734,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -12813,7 +12813,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -12874,7 +12874,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -12900,7 +12900,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -12974,7 +12974,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -13099,7 +13099,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -13200,7 +13200,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -13232,7 +13232,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -13343,7 +13343,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -13426,7 +13426,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -13488,7 +13488,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -13517,7 +13517,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -13586,7 +13586,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -13598,7 +13598,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -13707,7 +13707,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -13719,7 +13719,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -13810,7 +13810,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -13836,7 +13836,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -13848,7 +13848,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -13946,7 +13946,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -13958,7 +13958,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -13970,7 +13970,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -14091,7 +14091,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -14103,7 +14103,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -14115,7 +14115,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -14218,7 +14218,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -14244,7 +14244,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -14256,7 +14256,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -14268,7 +14268,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -14384,12 +14384,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "ISSR_OF": {
@@ -14445,12 +14445,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "ISSR_OF": {
@@ -14482,7 +14482,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -14514,12 +14514,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "ISSR_OF": {
@@ -14564,12 +14564,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "MNGMNT_OF": {
@@ -14653,12 +14653,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "MNGMNT_OF": {
@@ -14718,7 +14718,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -14750,12 +14750,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "MNGMNT_OF": {
@@ -14828,12 +14828,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "ISSR_OF": {
@@ -14889,12 +14889,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "ISSR_OF": {
@@ -14926,7 +14926,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -14958,12 +14958,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "ISSR_OF": {
@@ -15080,7 +15080,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -15143,12 +15143,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "NM": {
@@ -15165,7 +15165,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -15201,7 +15201,7 @@
           },
           "STRT_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,64}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,63}$)|(^\\.$)",
             "title": "Strt Ltn"
           },
           "STRT_LTN.STATUS": {
@@ -15213,7 +15213,7 @@
           },
           "CTY_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,32}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
             "title": "Cty Ltn"
           },
           "CTY_LTN.STATUS": {
@@ -15626,12 +15626,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "NM": {
@@ -15648,7 +15648,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -15684,7 +15684,7 @@
           },
           "STRT_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,64}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,63}$)|(^\\.$)",
             "title": "Strt Ltn"
           },
           "STRT_LTN.STATUS": {
@@ -15696,7 +15696,7 @@
           },
           "CTY_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,32}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
             "title": "Cty Ltn"
           },
           "CTY_LTN.STATUS": {
@@ -16091,7 +16091,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -16117,12 +16117,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "NM": {
@@ -16139,7 +16139,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -16175,7 +16175,7 @@
           },
           "STRT_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,64}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,63}$)|(^\\.$)",
             "title": "Strt Ltn"
           },
           "STRT_LTN.STATUS": {
@@ -16187,7 +16187,7 @@
           },
           "CTY_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,32}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
             "title": "Cty Ltn"
           },
           "CTY_LTN.STATUS": {
@@ -16589,7 +16589,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -16601,7 +16601,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -16682,7 +16682,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -16694,7 +16694,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -16757,7 +16757,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -16783,7 +16783,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -16795,7 +16795,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -16868,7 +16868,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -16932,7 +16932,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -16975,7 +16975,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -17004,7 +17004,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -17054,7 +17054,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -17066,7 +17066,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -17175,7 +17175,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -17187,7 +17187,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -17278,7 +17278,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -17304,7 +17304,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -17316,7 +17316,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -17494,7 +17494,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -17558,12 +17558,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "NM": {
@@ -17580,8 +17580,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "maxLength": 128,
-            "pattern": "^[a-zA-Z0-9_]+$",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -17729,12 +17728,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "NM": {
@@ -17751,8 +17750,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "maxLength": 128,
-            "pattern": "^[a-zA-Z0-9_]+$",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -17882,7 +17880,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -17908,12 +17906,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "NM": {
@@ -17930,8 +17928,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "maxLength": 128,
-            "pattern": "^[a-zA-Z0-9_]+$",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -18068,7 +18065,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -18133,7 +18130,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -18180,7 +18177,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -18206,7 +18203,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FRQNCY": {
@@ -18260,7 +18257,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -18272,7 +18269,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -18340,7 +18337,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -18352,7 +18349,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -18402,7 +18399,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -18428,7 +18425,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -18440,7 +18437,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -18497,7 +18494,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FCTR": {
@@ -18546,7 +18543,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FCTR": {
@@ -18577,7 +18574,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -18603,7 +18600,7 @@
           },
           "DT": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt"
           },
           "FCTR": {
@@ -18647,12 +18644,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "ASSCTD_WTH": {
@@ -18736,12 +18733,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "ASSCTD_WTH": {
@@ -18801,7 +18798,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -18833,12 +18830,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "ASSCTD_WTH": {
@@ -18905,12 +18902,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "FRST": {
@@ -18953,7 +18950,7 @@
           },
           "PHN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,32}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
             "title": "Phn"
           },
           "PHN.STATUS": {
@@ -19021,12 +19018,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "FRST": {
@@ -19069,7 +19066,7 @@
           },
           "PHN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,32}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
             "title": "Phn"
           },
           "PHN.STATUS": {
@@ -19119,7 +19116,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -19145,12 +19142,12 @@
           },
           "VLD_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld Frm"
           },
           "VLD_T": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vld T"
           },
           "FRST": {
@@ -19193,7 +19190,7 @@
           },
           "PHN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_]{1,32}$)|(^\\.$)",
+            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
             "title": "Phn"
           },
           "PHN.STATUS": {
@@ -19250,7 +19247,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -19269,7 +19266,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -19331,7 +19328,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -19350,7 +19347,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {
@@ -19394,7 +19391,7 @@
         "properties": {
           "VRSN_FRM": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Vrsn Frm"
           },
           "SRC_USR": {
@@ -19420,7 +19417,7 @@
           },
           "DT_BRTH": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Brth"
           },
           "DT_BRTH.STATUS": {
@@ -19439,7 +19436,7 @@
           },
           "DT_CLS": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "title": "Dt Cls"
           },
           "DT_CLS.STATUS": {

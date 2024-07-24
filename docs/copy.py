@@ -27,3 +27,8 @@ src_dir = (
 )
 dst_dir = static_root.joinpath("data/ack")
 shutil.copytree(src_dir, dst_dir)
+src_dir = (
+    Path(cast(str, os.environ.get("JOURNEY_DATA"))).joinpath("test").joinpath("reports")
+)
+dst_dir = static_root.joinpath("data/reports")
+shutil.copytree(src_dir, dst_dir)

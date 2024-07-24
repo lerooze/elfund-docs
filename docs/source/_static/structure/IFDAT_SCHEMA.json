@@ -9,7 +9,7 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -56,7 +56,7 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -98,7 +98,7 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -144,7 +144,7 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -179,7 +179,7 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -221,7 +221,7 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -281,7 +281,7 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -354,7 +354,7 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -400,7 +400,7 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -447,13 +447,13 @@
         },
         "DT_BRTH": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Cls",
           "type": "string"
         },
@@ -919,13 +919,13 @@
         },
         "DT_BRTH": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Cls",
           "type": "string"
         },
@@ -1087,7 +1087,7 @@
           "$ref": "#/$defs/IncmExpnsEnum"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -1140,13 +1140,13 @@
         },
         "VLD_FRM": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Vld Frm",
           "type": "string"
         },
         "VLD_T": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Vld T",
           "type": "string"
         },
@@ -1158,7 +1158,7 @@
         },
         "NM_LTN": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
@@ -1176,7 +1176,7 @@
         },
         "STRT_LTN": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,64}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,63}$)|(^\\.$)",
           "title": "Strt Ltn",
           "type": "string"
         },
@@ -1188,7 +1188,7 @@
         },
         "CTY_LTN": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,32}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
           "title": "Cty Ltn",
           "type": "string"
         },
@@ -1461,13 +1461,13 @@
         },
         "DT_BRTH": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Cls",
           "type": "string"
         },
@@ -1479,13 +1479,13 @@
         },
         "TAX_ID": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,31}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,30}$)|(^\\.$)",
           "title": "Tax Id",
           "type": "string"
         },
         "NBR_ID": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,31}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,30}$)|(^\\.$)",
           "title": "Nbr Id",
           "type": "string"
         },
@@ -4322,7 +4322,7 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -4401,7 +4401,7 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -4452,7 +4452,7 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -4509,13 +4509,13 @@
         },
         "VLD_FRM": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Vld Frm",
           "type": "string"
         },
         "VLD_T": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Vld T",
           "type": "string"
         },
@@ -4527,7 +4527,7 @@
         },
         "NM_LTN": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
@@ -4545,7 +4545,7 @@
         },
         "STRT_LTN": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,64}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,63}$)|(^\\.$)",
           "title": "Strt Ltn",
           "type": "string"
         },
@@ -4557,7 +4557,7 @@
         },
         "CTY_LTN": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,32}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
           "title": "Cty Ltn",
           "type": "string"
         },
@@ -4605,13 +4605,13 @@
         },
         "DT_BRTH": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Cls",
           "type": "string"
         },
@@ -4623,13 +4623,13 @@
         },
         "TAX_ID": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,31}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,30}$)|(^\\.$)",
           "title": "Tax Id",
           "type": "string"
         },
         "NBR_ID": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,31}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,30}$)|(^\\.$)",
           "title": "Nbr Id",
           "type": "string"
         },
@@ -4698,13 +4698,13 @@
         },
         "DT_BRTH": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Cls",
           "type": "string"
         },
@@ -4770,25 +4770,25 @@
         },
         "DT_BRTH": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Cls",
           "type": "string"
         },
         "NM_LTN": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
         "TCKR": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,12}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,11}$)|(^\\.$)",
           "title": "Tckr",
           "type": "string"
         },
@@ -4846,13 +4846,13 @@
         },
         "DT_BRTH": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Cls",
           "type": "string"
         },
@@ -4910,19 +4910,19 @@
         },
         "DT_BRTH": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Cls",
           "type": "string"
         },
         "NM_LTN": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
@@ -4986,13 +4986,13 @@
         },
         "DT_BRTH": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Cls",
           "type": "string"
         },
@@ -5050,13 +5050,13 @@
         },
         "DT_BRTH": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Cls",
           "type": "string"
         },
@@ -5138,7 +5138,7 @@
           "$ref": "#/$defs/IncmRvnEnum"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -5170,7 +5170,7 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -5197,19 +5197,19 @@
         },
         "VLD_FRM": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Vld Frm",
           "type": "string"
         },
         "VLD_T": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Vld T",
           "type": "string"
         },
         "NM_LTN": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
@@ -5229,7 +5229,7 @@
         },
         "MTRTY_DT": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Mtrty Dt",
           "type": "string"
         },
@@ -5265,7 +5265,7 @@
           "$ref": "#/$defs/DbtOutstndngChnTypEnum"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -5299,19 +5299,19 @@
         },
         "DT_BRTH": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Cls",
           "type": "string"
         },
         "ORGNL_MTRTY": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Orgnl Mtrty",
           "type": "string"
         },
@@ -5345,7 +5345,7 @@
         },
         "ACCRL_STRTDT": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Accrl Strtdt",
           "type": "string"
         },
@@ -5463,13 +5463,13 @@
         },
         "FRST_CPN_DT": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Frst Cpn Dt",
           "type": "string"
         },
         "LST_CPN_DT": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Lst Cpn Dt",
           "type": "string"
         },
@@ -5531,22 +5531,22 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
         "EX_DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Ex Dt",
           "type": "string"
         },
         "DCLRTN_DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dclrtn Dt",
           "type": "string"
         },
         "PYMNT_DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Pymnt Dt",
           "type": "string"
         },
@@ -5589,19 +5589,19 @@
         },
         "VLD_FRM": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Vld Frm",
           "type": "string"
         },
         "VLD_T": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Vld T",
           "type": "string"
         },
         "NM_LTN": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,128}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
@@ -5668,13 +5668,13 @@
         },
         "DT_BRTH": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Brth",
           "type": "string"
         },
         "DT_CLS": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Dt Cls",
           "type": "string"
         },
@@ -5724,7 +5724,7 @@
           "type": "string"
         },
         "DT": {
-          "format": "date",
+          "format": "date-time",
           "title": "Dt",
           "type": "string"
         },
@@ -5815,13 +5815,13 @@
         },
         "VLD_FRM": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Vld Frm",
           "type": "string"
         },
         "VLD_T": {
           "default": null,
-          "format": "date",
+          "format": "date-time",
           "title": "Vld T",
           "type": "string"
         },
@@ -5885,7 +5885,7 @@
         },
         "PHN": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{1,32}$)|(^\\.$)",
+          "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
           "title": "Phn",
           "type": "string"
         }

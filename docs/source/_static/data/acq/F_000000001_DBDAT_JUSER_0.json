@@ -1,0 +1,173 @@
+{
+  "HEADER": {
+    "PARTNER": "EGRJOURNEY",
+    "USERNAME": "juser",
+    "SOURCE": "INIT",
+    "DOMAIN": "DBDat"
+  },
+  "DATASETS": {
+    "REF.ORG": [
+      {
+        "ID": "EGRJOURNEY",
+        "DT_BRTH": "1701-01-01T00:00:00"
+      },
+      {
+        "ID": "EGRJ1",
+        "DT_BRTH": "2003-03-31T00:00:00"
+      },
+      {
+        "ID": "EGRJ2",
+        "DT_BRTH": "2007-08-27T00:00:00"
+      },
+      {
+        "ID": "EGRJ3",
+        "DT_BRTH": "2020-09-01T00:00:00"
+      },
+      {
+        "ID": "EGRJM1",
+        "DT_BRTH": "2000-01-01T00:00:00"
+      }
+    ],
+    "REF.ORG_ALIAS": [
+      {
+        "LID": "LJ1",
+        "RID": "EGRJ1",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "LJ2",
+        "RID": "EGRJ2",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "LJ3",
+        "RID": "EGRJ3",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "LJM1",
+        "RID": "EGRJM1",
+        "ALIAS_OF": "T"
+      }
+    ],
+    "REF.ORG2ORG": [
+      {
+        "LID": "EGRJ1",
+        "RID": "EGRJ1",
+        "IFDAT_RPRTR_OF": "T"
+      },
+      {
+        "LID": "EGRJM1",
+        "RID": "EGRJ2",
+        "MNGMNT_OF": "T",
+        "IFDAT_RPRTR_OF": "T"
+      },
+      {
+        "LID": "EGRJM1",
+        "RID": "EGRJ3",
+        "MNGMNT_OF": "T",
+        "IFDAT_RPRTR_OF": "T"
+      }
+    ],
+    "REF.ORG_DYNMC": [
+      {
+        "ID": "EGRJ1",
+        "NM": "J1 ΑΕΕΑΠ",
+        "NM_LTN": "J1 REIC",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S124",
+        "FND_INVSTMNT_PLCY": "RES"
+      },
+      {
+        "ID": "EGRJ2",
+        "NM": "JM1 smart cash ομολογιακό",
+        "NM_LTN": "JM1 smart cash bond fund",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S124",
+        "FND_INVSTMNT_PLCY": "BON"
+      },
+      {
+        "ID": "EGRJ3",
+        "NM": "JM1 Βραχυπρόθεσμο Αμοιβαίο Κεφάλαιο Χρηματαγοράς Κυμαινόμενης Καθαρής Αξίας Ενεργητικού",
+        "NM_LTN": "JM1 Short Term Variable Net Asset Value Money Market Fund",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S123",
+        "FND_INVSTMNT_PLCY": "MMF"
+      },
+      {
+        "ID": "EGRJM1",
+        "NM": "JM1 ΑΕΔΑΚ",
+        "NM_LTN": "JM1 MFMC",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S126",
+        "INSTTTNL_SCTR_DTL": "S126_D"
+      }
+    ],
+    "REF.USR2ORG": [
+      {
+        "LID": "juser",
+        "RID": "EGRJM1",
+        "ASSCTD_WTH": "T",
+        "IFDAT_RL": "T"
+      }
+    ],
+    "REF.USR_DYNMC": [
+      {
+        "ID": "juser",
+        "FRST": "Journer",
+        "LST": "Tripper",
+        "PHN": "2106799999",
+        "EMAIL": "juser@journey.org"
+      }
+    ],
+    "REF.SHR": [
+      {
+        "ID": "IGRS487003126",
+        "DT_BRTH": "2003-03-31T00:00:00"
+      },
+      {
+        "ID": "IGRF500121049",
+        "DT_BRTH": "2007-08-27T00:00:00"
+      },
+      {
+        "ID": "IGRF710121049",
+        "DT_BRTH": "2019-08-27T00:00:00"
+      },
+      {
+        "ID": "IGRF717124049",
+        "DT_BRTH": "2020-09-01T00:00:00"
+      },
+      {
+        "ID": "PGRJM1_S1",
+        "DT_BRTH": "2000-01-01T00:00:00"
+      }
+    ],
+    "REF.ORG2SHR": [
+      {
+        "LID": "EGRJ1",
+        "RID": "IGRS487003126",
+        "ISSR_OF": "T"
+      },
+      {
+        "LID": "EGRJ2",
+        "RID": "IGRF500121049",
+        "ISSR_OF": "T"
+      },
+      {
+        "LID": "EGRJ2",
+        "RID": "IGRF710121049",
+        "ISSR_OF": "T"
+      },
+      {
+        "LID": "EGRJ3",
+        "RID": "IGRF717124049",
+        "ISSR_OF": "T"
+      },
+      {
+        "LID": "EGRJM1",
+        "RID": "PGRJM1_S1",
+        "ISSR_OF": "T"
+      }
+    ]
+  }
+}

@@ -10,8 +10,17 @@ What's new?
 
 .. Next release
 .. ============
+
+v0.3.5 (2024-07-25)
+-------------------
+
+* Use datatime format rather than date format 
+* Improve test data 
+* Introduce reports based on test data
+
 v0.3.4 (2024-07-08)
 -------------------
+
 * Modified json schema according to discussions with IT department
 
 v0.3.3 (2024-05-20)
