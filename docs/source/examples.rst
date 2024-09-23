@@ -158,8 +158,7 @@ DATABASE REPORT
 
 A report that provides the full provided data in the DBDat Database
 
-download:`Database Report </_static/data/reports/DATABASE_REPORT.xlsx>`
-#. :download:`IFDat Report </_static/data/reports/IFDAT_REPORT.xlsx>`
+:download:`Database Report </_static/data/reports/DATABASE_REPORT.xlsx>`
 
 
 IFDat REPORT
