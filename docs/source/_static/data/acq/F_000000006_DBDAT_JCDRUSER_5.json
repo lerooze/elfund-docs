@@ -1,0 +1,27 @@
+{
+  "HEADER": {
+    "PARTNER": "EGRJOURNEY",
+    "USERNAME": "jcdruser",
+    "SOURCE": "CDR",
+    "DOMAIN": "DBDat"
+  },
+  "DATASETS": {
+    "REF.ORG_DYNMC": [
+      {
+        "ID": "EGRJ1",
+        "VLD_T": "2009-01-01T00:00:00",
+        "NM": "J1CDRCHECK ΑΕΕΑΠ"
+      },
+      {
+        "ID": "EGRJ1",
+        "VLD_FRM": "2004-01-01T00:00:00",
+        "NM": "J1CDRCHK2 ΑΕΕΑΠ"
+      },
+      {
+        "ID": "EGRJ1",
+        "VLD_FRM": "2011-01-01T00:00:00",
+        "NM": "J1 ΑΕΕΑΠ"
+      }
+    ]
+  }
+}

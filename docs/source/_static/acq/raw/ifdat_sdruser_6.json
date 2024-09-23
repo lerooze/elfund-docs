@@ -1,0 +1,15 @@
+{
+  "HEADER": {
+    "PARTNER": "EGRJM1",
+    "USERNAME": "sdruser",
+    "DOMAIN": "IFDat"
+  },
+  "DATASETS": {
+    "REF.FND": [
+      {
+        "ID": "EGRJ1",
+        "LEI_ID": "LJ01"
+      }
+    ]
+  }
+}

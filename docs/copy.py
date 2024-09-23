@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from typing import cast
 import shutil
+import glob
 
 dst_root = Path(os.path.abspath(__file__)).parent
 static_root = dst_root.joinpath("source/_static")
@@ -16,6 +17,17 @@ src_dir = (
 )
 dst_dir = static_root.joinpath("structure")
 shutil.copytree(src_dir, dst_dir)
+src_dir = (
+    Path(cast(str, os.environ.get("JOURNEY_METADATA")))
+    .joinpath("test")
+    .joinpath("data")
+    .joinpath("*.*")
+)
+dst_dir = static_root.joinpath("acq/raw")
+dst_dir.mkdir(parents=True, exist_ok=True)
+for filename in glob.glob(str(src_dir)):
+    shutil.copy(filename, dst_dir)
+
 src_dir = (
     Path(cast(str, os.environ.get("JOURNEY_DATA"))).joinpath("test").joinpath("acq")
 )

@@ -1,0 +1,17 @@
+{
+  "HEADER": {
+    "PARTNER": "EGRJM1",
+    "USERNAME": "sdruser",
+    "SOURCE": "SDR",
+    "DOMAIN": "DBDat"
+  },
+  "DATASETS": {
+    "REF.ORG": [
+      {
+        "ID": "EGRJ3",
+        "DT_CLS": "2024-09-20T00:00:00",
+        "MRGD_WTH": "EGRJ2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "HEADER": {
+    "PARTNER": "EGRJM1",
+    "USERNAME": "sdruser",
+    "SOURCE": "SDR",
+    "DOMAIN": "DBDat"
+  },
+  "DATASETS": {
+    "REF.ORG_ALIAS": [
+      {
+        "LID": "LJ1",
+        "RID": "EGRJ1",
+        "ALIAS_OF": "F"
+      },
+      {
+        "LID": "LJ01",
+        "RID": "EGRJ1",
+        "ALIAS_OF": "T"
+      }
+    ]
+  }
+}
