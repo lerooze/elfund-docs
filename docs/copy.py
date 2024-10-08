@@ -4,17 +4,14 @@ from typing import cast
 import shutil
 import glob
 
+cwd = Path(__file__).parent
 dst_root = Path(os.path.abspath(__file__)).parent
 static_root = dst_root.joinpath("source/_static")
 try:
     shutil.rmtree(static_root)
 except FileNotFoundError:
     os.makedirs(static_root)
-src_dir = (
-    Path(cast(str, os.environ.get("JOURNEY_METADATA")))
-    .joinpath("test")
-    .joinpath("structure")
-)
+src_dir = cwd.parent.parent.joinpath("journey/tests/metaresources/structure")
 dst_dir = static_root.joinpath("structure")
 shutil.copytree(src_dir, dst_dir)
 src_dir = (

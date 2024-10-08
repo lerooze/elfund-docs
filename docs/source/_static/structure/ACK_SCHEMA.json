@@ -309,8 +309,8 @@
         "from_filename": {
           "anyOf": [
             {
-              "maxLength": 512,
-              "pattern": "^[a-zA-Z0-9]+",
+              "maxLength": 51,
+              "pattern": "^[a-zA-Z][!-~]*",
               "type": "string"
             },
             {
@@ -323,8 +323,8 @@
         "from_object": {
           "anyOf": [
             {
-              "maxLength": 512,
-              "pattern": "^[a-zA-Z0-9]+",
+              "maxLength": 51,
+              "pattern": "^[a-zA-Z][!-~]*",
               "type": "string"
             },
             {
@@ -392,8 +392,8 @@
     "submitter": {
       "anyOf": [
         {
-          "maxLength": 512,
-          "pattern": "^[a-zA-Z0-9]+",
+          "maxLength": 51,
+          "pattern": "^[a-zA-Z][!-~]*",
           "type": "string"
         },
         {

@@ -4748,8 +4748,8 @@
         "properties": {
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[JIPC][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|([P_][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "DT": {
@@ -4831,14 +4831,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -4846,8 +4846,8 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[JIPC][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|([P_][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "DT": {
@@ -4937,14 +4937,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -4952,8 +4952,8 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[JIPC][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|([P_][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "DT": {
@@ -5039,14 +5039,14 @@
         "properties": {
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -5129,14 +5129,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -5144,14 +5144,14 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -5242,14 +5242,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -5257,14 +5257,14 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -5351,8 +5351,8 @@
         "properties": {
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Iid"
           },
           "DT": {
@@ -5452,14 +5452,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -5467,8 +5467,8 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Iid"
           },
           "DT": {
@@ -5576,14 +5576,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -5591,8 +5591,8 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Iid"
           },
           "DT": {
@@ -5696,8 +5696,8 @@
         "properties": {
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "DT": {
@@ -5759,14 +5759,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -5774,8 +5774,8 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "DT": {
@@ -5845,14 +5845,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -5860,8 +5860,8 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "DT": {
@@ -5927,8 +5927,8 @@
         "properties": {
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Iid"
           },
           "DT": {
@@ -5991,14 +5991,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -6006,8 +6006,8 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Iid"
           },
           "DT": {
@@ -6078,14 +6078,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -6093,8 +6093,8 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Iid"
           },
           "DT": {
@@ -6161,14 +6161,14 @@
         "properties": {
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -6290,14 +6290,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -6305,14 +6305,14 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -6442,14 +6442,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -6457,14 +6457,14 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -6590,14 +6590,14 @@
         "properties": {
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -6720,14 +6720,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -6735,14 +6735,14 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -6873,14 +6873,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -6888,14 +6888,14 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -7028,8 +7028,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -7113,14 +7113,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -7134,8 +7134,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -7227,14 +7227,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -7248,8 +7248,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -7340,8 +7340,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -7405,14 +7405,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -7423,8 +7423,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -7496,14 +7496,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -7514,8 +7514,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -7583,8 +7583,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -7616,14 +7616,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -7631,8 +7631,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -7672,14 +7672,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -7687,8 +7687,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -8687,15 +8687,15 @@
         "properties": {
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
             "maxLength": 13,
             "minLength": 13,
-            "pattern": "^[I][a-zA-Z0-9_]+",
+            "pattern": "^I[A-Z][A-Z][A-Z0-9]{9}[0-9]",
             "title": "Rid"
           },
           "ALIAS_OF": {
@@ -8721,14 +8721,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -8736,15 +8736,15 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
             "maxLength": 13,
             "minLength": 13,
-            "pattern": "^[I][a-zA-Z0-9_]+",
+            "pattern": "^I[A-Z][A-Z][A-Z0-9]{9}[0-9]",
             "title": "Rid"
           },
           "ALIAS_OF": {
@@ -8778,14 +8778,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -8793,15 +8793,15 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
             "maxLength": 13,
             "minLength": 13,
-            "pattern": "^[I][a-zA-Z0-9_]+",
+            "pattern": "^I[A-Z][A-Z][A-Z0-9]{9}[0-9]",
             "title": "Rid"
           },
           "ALIAS_OF": {
@@ -8831,8 +8831,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "VLD_FRM": {
@@ -8859,7 +8859,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -8960,8 +8960,8 @@
             ]
           },
           "ACCRL_STRTDT": {
-            "type": "number",
-            "minimum": 0.0,
+            "type": "string",
+            "format": "date-time",
             "title": "Accrl Strtdt"
           },
           "ACCRL_STRTDT.STATUS": {
@@ -9246,14 +9246,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -9261,8 +9261,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "VLD_FRM": {
@@ -9289,7 +9289,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -9390,8 +9390,8 @@
             ]
           },
           "ACCRL_STRTDT": {
-            "type": "number",
-            "minimum": 0.0,
+            "type": "string",
+            "format": "date-time",
             "title": "Accrl Strtdt"
           },
           "ACCRL_STRTDT.STATUS": {
@@ -9684,14 +9684,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -9699,8 +9699,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "VLD_FRM": {
@@ -9727,7 +9727,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -9828,8 +9828,8 @@
             ]
           },
           "ACCRL_STRTDT": {
-            "type": "number",
-            "minimum": 0.0,
+            "type": "string",
+            "format": "date-time",
             "title": "Accrl Strtdt"
           },
           "ACCRL_STRTDT.STATUS": {
@@ -10118,8 +10118,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "TP": {
@@ -10168,14 +10168,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -10183,8 +10183,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "TP": {
@@ -10241,14 +10241,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -10256,8 +10256,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "TP": {
@@ -10310,8 +10310,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -10370,14 +10370,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -10385,8 +10385,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -10453,14 +10453,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -10468,8 +10468,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -10532,8 +10532,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -10574,8 +10574,8 @@
           },
           "RSTRCTRD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Rstrctrd T"
           },
           "RSTRCTRD_T.STATUS": {
@@ -10587,8 +10587,8 @@
           },
           "RSTRCTRD_FRM": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Rstrctrd Frm"
           },
           "RSTRCTRD_FRM.STATUS": {
@@ -10600,8 +10600,8 @@
           },
           "UNDRLYNG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Undrlyng"
           },
           "UNDRLYNG.STATUS": {
@@ -10613,8 +10613,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -10635,14 +10635,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -10650,8 +10650,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -10692,8 +10692,8 @@
           },
           "RSTRCTRD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Rstrctrd T"
           },
           "RSTRCTRD_T.STATUS": {
@@ -10705,8 +10705,8 @@
           },
           "RSTRCTRD_FRM": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Rstrctrd Frm"
           },
           "RSTRCTRD_FRM.STATUS": {
@@ -10718,8 +10718,8 @@
           },
           "UNDRLYNG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Undrlyng"
           },
           "UNDRLYNG.STATUS": {
@@ -10731,8 +10731,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -10761,14 +10761,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -10776,8 +10776,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -10818,8 +10818,8 @@
           },
           "RSTRCTRD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Rstrctrd T"
           },
           "RSTRCTRD_T.STATUS": {
@@ -10831,8 +10831,8 @@
           },
           "RSTRCTRD_FRM": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Rstrctrd Frm"
           },
           "RSTRCTRD_FRM.STATUS": {
@@ -10844,8 +10844,8 @@
           },
           "UNDRLYNG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Undrlyng"
           },
           "UNDRLYNG.STATUS": {
@@ -10857,8 +10857,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -10883,8 +10883,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|([P_][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -10955,8 +10955,8 @@
           },
           "DBTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Dbtr"
           },
           "DBTR.STATUS": {
@@ -10968,8 +10968,8 @@
           },
           "CRDTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Crdtr"
           },
           "CRDTR.STATUS": {
@@ -10981,8 +10981,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -11003,14 +11003,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -11018,8 +11018,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|([P_][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -11090,8 +11090,8 @@
           },
           "DBTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Dbtr"
           },
           "DBTR.STATUS": {
@@ -11103,8 +11103,8 @@
           },
           "CRDTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Crdtr"
           },
           "CRDTR.STATUS": {
@@ -11116,8 +11116,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -11146,14 +11146,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -11161,8 +11161,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|([P_][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -11233,8 +11233,8 @@
           },
           "DBTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Dbtr"
           },
           "DBTR.STATUS": {
@@ -11246,8 +11246,8 @@
           },
           "CRDTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Crdtr"
           },
           "CRDTR.STATUS": {
@@ -11259,8 +11259,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -11285,8 +11285,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -11391,14 +11391,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -11406,8 +11406,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -11520,14 +11520,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -11535,8 +11535,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -11645,15 +11645,15 @@
         "properties": {
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
             "maxLength": 13,
             "minLength": 13,
-            "pattern": "^[I][a-zA-Z0-9_]+",
+            "pattern": "^I[A-Z][A-Z][A-Z0-9]{9}[0-9]",
             "title": "Rid"
           },
           "ALIAS_OF": {
@@ -11679,14 +11679,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -11694,15 +11694,15 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
             "maxLength": 13,
             "minLength": 13,
-            "pattern": "^[I][a-zA-Z0-9_]+",
+            "pattern": "^I[A-Z][A-Z][A-Z0-9]{9}[0-9]",
             "title": "Rid"
           },
           "ALIAS_OF": {
@@ -11736,14 +11736,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -11751,15 +11751,15 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
             "maxLength": 13,
             "minLength": 13,
-            "pattern": "^[I][a-zA-Z0-9_]+",
+            "pattern": "^I[A-Z][A-Z][A-Z0-9]{9}[0-9]",
             "title": "Rid"
           },
           "ALIAS_OF": {
@@ -11789,8 +11789,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -11819,7 +11819,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -11831,7 +11831,7 @@
           },
           "TCKR": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,11}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,11}$)|(^\\.$)",
             "title": "Tckr"
           },
           "TCKR.STATUS": {
@@ -11897,8 +11897,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -11919,14 +11919,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -11934,8 +11934,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -11964,7 +11964,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -11976,7 +11976,7 @@
           },
           "TCKR": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,11}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,11}$)|(^\\.$)",
             "title": "Tckr"
           },
           "TCKR.STATUS": {
@@ -12042,8 +12042,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -12072,14 +12072,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -12087,8 +12087,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -12117,7 +12117,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -12129,7 +12129,7 @@
           },
           "TCKR": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,11}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,11}$)|(^\\.$)",
             "title": "Tckr"
           },
           "TCKR.STATUS": {
@@ -12195,8 +12195,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -12221,8 +12221,8 @@
         "properties": {
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "TP": {
@@ -12270,14 +12270,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -12285,8 +12285,8 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "TP": {
@@ -12342,14 +12342,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -12357,8 +12357,8 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "TP": {
@@ -12410,14 +12410,14 @@
         "properties": {
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -12502,14 +12502,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -12517,14 +12517,14 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -12617,14 +12617,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -12632,14 +12632,14 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -12728,8 +12728,8 @@
         "properties": {
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "DT": {
@@ -12792,14 +12792,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -12807,8 +12807,8 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "DT": {
@@ -12879,14 +12879,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -12894,8 +12894,8 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "DT": {
@@ -12962,14 +12962,14 @@
         "properties": {
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -13072,14 +13072,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -13087,14 +13087,14 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -13205,14 +13205,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -13220,14 +13220,14 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -13337,8 +13337,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -13402,14 +13402,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -13420,8 +13420,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -13493,14 +13493,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -13511,8 +13511,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT": {
@@ -13580,8 +13580,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -13638,8 +13638,8 @@
           },
           "DBTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Dbtr"
           },
           "DBTR.STATUS": {
@@ -13651,8 +13651,8 @@
           },
           "CRDTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Crdtr"
           },
           "CRDTR.STATUS": {
@@ -13664,8 +13664,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -13686,14 +13686,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -13701,8 +13701,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -13759,8 +13759,8 @@
           },
           "DBTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Dbtr"
           },
           "DBTR.STATUS": {
@@ -13772,8 +13772,8 @@
           },
           "CRDTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Crdtr"
           },
           "CRDTR.STATUS": {
@@ -13785,8 +13785,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -13815,14 +13815,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -13830,8 +13830,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -13888,8 +13888,8 @@
           },
           "DBTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Dbtr"
           },
           "DBTR.STATUS": {
@@ -13901,8 +13901,8 @@
           },
           "CRDTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Crdtr"
           },
           "CRDTR.STATUS": {
@@ -13914,8 +13914,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -13940,8 +13940,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -13970,7 +13970,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -14022,8 +14022,8 @@
           },
           "BYR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Byr"
           },
           "BYR.STATUS": {
@@ -14035,8 +14035,8 @@
           },
           "WRTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Wrtr"
           },
           "WRTR.STATUS": {
@@ -14048,8 +14048,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -14070,14 +14070,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -14085,8 +14085,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -14115,7 +14115,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -14167,8 +14167,8 @@
           },
           "BYR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Byr"
           },
           "BYR.STATUS": {
@@ -14180,8 +14180,8 @@
           },
           "WRTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Wrtr"
           },
           "WRTR.STATUS": {
@@ -14193,8 +14193,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -14223,14 +14223,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -14238,8 +14238,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -14268,7 +14268,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -14320,8 +14320,8 @@
           },
           "BYR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Byr"
           },
           "BYR.STATUS": {
@@ -14333,8 +14333,8 @@
           },
           "WRTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Wrtr"
           },
           "WRTR.STATUS": {
@@ -14346,8 +14346,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -14372,14 +14372,14 @@
         "properties": {
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Rid"
           },
           "VLD_FRM": {
@@ -14418,14 +14418,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -14433,14 +14433,14 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Rid"
           },
           "VLD_FRM": {
@@ -14487,14 +14487,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -14502,14 +14502,14 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Rid"
           },
           "VLD_FRM": {
@@ -14552,14 +14552,14 @@
         "properties": {
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Rid"
           },
           "VLD_FRM": {
@@ -14656,28 +14656,28 @@
               }
             ]
           },
-          "INSDAT_RPRTR_OF": {
+          "ICDAT_RPRTR_OF": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/BoolEnum"
               }
             ]
           },
-          "INSDAT_RPRTR_OF.STATUS": {
+          "ICDAT_RPRTR_OF.STATUS": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
               }
             ]
           },
-          "PENDAT_RPRTR_OF": {
+          "PFDAT_RPRTR_OF": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/BoolEnum"
               }
             ]
           },
-          "PENDAT_RPRTR_OF.STATUS": {
+          "PFDAT_RPRTR_OF.STATUS": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
@@ -14696,14 +14696,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -14711,14 +14711,14 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Rid"
           },
           "VLD_FRM": {
@@ -14815,28 +14815,28 @@
               }
             ]
           },
-          "INSDAT_RPRTR_OF": {
+          "ICDAT_RPRTR_OF": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/BoolEnum"
               }
             ]
           },
-          "INSDAT_RPRTR_OF.STATUS": {
+          "ICDAT_RPRTR_OF.STATUS": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
               }
             ]
           },
-          "PENDAT_RPRTR_OF": {
+          "PFDAT_RPRTR_OF": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/BoolEnum"
               }
             ]
           },
-          "PENDAT_RPRTR_OF.STATUS": {
+          "PFDAT_RPRTR_OF.STATUS": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
@@ -14863,14 +14863,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -14878,14 +14878,14 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Rid"
           },
           "VLD_FRM": {
@@ -14982,28 +14982,28 @@
               }
             ]
           },
-          "INSDAT_RPRTR_OF": {
+          "ICDAT_RPRTR_OF": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/BoolEnum"
               }
             ]
           },
-          "INSDAT_RPRTR_OF.STATUS": {
+          "ICDAT_RPRTR_OF.STATUS": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
               }
             ]
           },
-          "PENDAT_RPRTR_OF": {
+          "PFDAT_RPRTR_OF": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/BoolEnum"
               }
             ]
           },
-          "PENDAT_RPRTR_OF.STATUS": {
+          "PFDAT_RPRTR_OF.STATUS": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
@@ -15026,14 +15026,14 @@
         "properties": {
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Rid"
           },
           "VLD_FRM": {
@@ -15072,14 +15072,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -15087,14 +15087,14 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Rid"
           },
           "VLD_FRM": {
@@ -15141,14 +15141,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -15156,14 +15156,14 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Rid"
           },
           "VLD_FRM": {
@@ -15206,14 +15206,14 @@
         "properties": {
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[LTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[LTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[E][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[E][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Rid"
           },
           "ALIAS_OF": {
@@ -15239,14 +15239,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -15254,14 +15254,14 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[LTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[LTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[E][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[E][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Rid"
           },
           "ALIAS_OF": {
@@ -15295,14 +15295,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -15310,14 +15310,14 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[LTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[LTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[E][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[E][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Rid"
           },
           "ALIAS_OF": {
@@ -15347,8 +15347,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "VLD_FRM": {
@@ -15375,7 +15375,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -15399,7 +15399,7 @@
           },
           "STRT": {
             "type": "string",
-            "maxLength": 64,
+            "maxLength": 256,
             "title": "Strt"
           },
           "STRT.STATUS": {
@@ -15411,7 +15411,7 @@
           },
           "STRT_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,63}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Strt Ltn"
           },
           "STRT_LTN.STATUS": {
@@ -15421,24 +15421,24 @@
               }
             ]
           },
-          "CTY_LTN": {
+          "CTY": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
-            "title": "Cty Ltn"
+            "maxLength": 64,
+            "title": "Cty"
           },
-          "CTY_LTN.STATUS": {
+          "CTY.STATUS": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
               }
             ]
           },
-          "CTY": {
+          "CTY_LTN": {
             "type": "string",
-            "maxLength": 32,
-            "title": "Cty"
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,32}$)|(^\\.$)",
+            "title": "Cty Ltn"
           },
-          "CTY.STATUS": {
+          "CTY_LTN.STATUS": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
@@ -15815,14 +15815,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -15830,8 +15830,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "VLD_FRM": {
@@ -15858,7 +15858,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -15882,7 +15882,7 @@
           },
           "STRT": {
             "type": "string",
-            "maxLength": 64,
+            "maxLength": 256,
             "title": "Strt"
           },
           "STRT.STATUS": {
@@ -15894,7 +15894,7 @@
           },
           "STRT_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,63}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Strt Ltn"
           },
           "STRT_LTN.STATUS": {
@@ -15904,24 +15904,24 @@
               }
             ]
           },
-          "CTY_LTN": {
+          "CTY": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
-            "title": "Cty Ltn"
+            "maxLength": 64,
+            "title": "Cty"
           },
-          "CTY_LTN.STATUS": {
+          "CTY.STATUS": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
               }
             ]
           },
-          "CTY": {
+          "CTY_LTN": {
             "type": "string",
-            "maxLength": 32,
-            "title": "Cty"
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,32}$)|(^\\.$)",
+            "title": "Cty Ltn"
           },
-          "CTY.STATUS": {
+          "CTY_LTN.STATUS": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
@@ -16306,14 +16306,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -16321,8 +16321,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "VLD_FRM": {
@@ -16349,7 +16349,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -16373,7 +16373,7 @@
           },
           "STRT": {
             "type": "string",
-            "maxLength": 64,
+            "maxLength": 256,
             "title": "Strt"
           },
           "STRT.STATUS": {
@@ -16385,7 +16385,7 @@
           },
           "STRT_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,63}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Strt Ltn"
           },
           "STRT_LTN.STATUS": {
@@ -16395,24 +16395,24 @@
               }
             ]
           },
-          "CTY_LTN": {
+          "CTY": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
-            "title": "Cty Ltn"
+            "maxLength": 64,
+            "title": "Cty"
           },
-          "CTY_LTN.STATUS": {
+          "CTY.STATUS": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
               }
             ]
           },
-          "CTY": {
+          "CTY_LTN": {
             "type": "string",
-            "maxLength": 32,
-            "title": "Cty"
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,32}$)|(^\\.$)",
+            "title": "Cty Ltn"
           },
-          "CTY.STATUS": {
+          "CTY_LTN.STATUS": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
@@ -16793,8 +16793,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -16823,8 +16823,8 @@
           },
           "SPLT_FRM": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Splt Frm"
           },
           "SPLT_FRM.STATUS": {
@@ -16836,8 +16836,8 @@
           },
           "MRGD_WTH": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Mrgd Wth"
           },
           "MRGD_WTH.STATUS": {
@@ -16849,8 +16849,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -16871,14 +16871,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -16886,8 +16886,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -16916,8 +16916,8 @@
           },
           "SPLT_FRM": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Splt Frm"
           },
           "SPLT_FRM.STATUS": {
@@ -16929,8 +16929,8 @@
           },
           "MRGD_WTH": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Mrgd Wth"
           },
           "MRGD_WTH.STATUS": {
@@ -16942,8 +16942,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -16972,14 +16972,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -16987,8 +16987,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -17017,8 +17017,8 @@
           },
           "SPLT_FRM": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Splt Frm"
           },
           "SPLT_FRM.STATUS": {
@@ -17030,8 +17030,8 @@
           },
           "MRGD_WTH": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Mrgd Wth"
           },
           "MRGD_WTH.STATUS": {
@@ -17043,8 +17043,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -17069,8 +17069,8 @@
         "properties": {
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "TP": {
@@ -17118,14 +17118,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -17133,8 +17133,8 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "TP": {
@@ -17190,14 +17190,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -17205,8 +17205,8 @@
           },
           "IID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Iid"
           },
           "TP": {
@@ -17258,8 +17258,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -17316,8 +17316,8 @@
           },
           "DBTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Dbtr"
           },
           "DBTR.STATUS": {
@@ -17329,8 +17329,8 @@
           },
           "CRDTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Crdtr"
           },
           "CRDTR.STATUS": {
@@ -17342,8 +17342,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -17364,14 +17364,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -17379,8 +17379,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -17437,8 +17437,8 @@
           },
           "DBTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Dbtr"
           },
           "DBTR.STATUS": {
@@ -17450,8 +17450,8 @@
           },
           "CRDTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Crdtr"
           },
           "CRDTR.STATUS": {
@@ -17463,8 +17463,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -17493,14 +17493,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -17508,8 +17508,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -17566,8 +17566,8 @@
           },
           "DBTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Dbtr"
           },
           "DBTR.STATUS": {
@@ -17579,8 +17579,8 @@
           },
           "CRDTR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Crdtr"
           },
           "CRDTR.STATUS": {
@@ -17592,8 +17592,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[P][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -17618,15 +17618,15 @@
         "properties": {
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[PU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[PU][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
             "maxLength": 13,
             "minLength": 13,
-            "pattern": "^[I][a-zA-Z0-9_]+",
+            "pattern": "^I[A-Z][A-Z][A-Z0-9]{9}[0-9]",
             "title": "Rid"
           },
           "ALIAS_OF": {
@@ -17652,14 +17652,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -17667,15 +17667,15 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[PU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[PU][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
             "maxLength": 13,
             "minLength": 13,
-            "pattern": "^[I][a-zA-Z0-9_]+",
+            "pattern": "^I[A-Z][A-Z][A-Z0-9]{9}[0-9]",
             "title": "Rid"
           },
           "ALIAS_OF": {
@@ -17709,14 +17709,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -17724,15 +17724,15 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[PU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[PU][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
             "maxLength": 13,
             "minLength": 13,
-            "pattern": "^[I][a-zA-Z0-9_]+",
+            "pattern": "^I[A-Z][A-Z][A-Z0-9]{9}[0-9]",
             "title": "Rid"
           },
           "ALIAS_OF": {
@@ -17762,8 +17762,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "VLD_FRM": {
@@ -17790,7 +17790,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -17917,14 +17917,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -17932,8 +17932,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "VLD_FRM": {
@@ -17960,7 +17960,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -18095,14 +18095,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -18110,8 +18110,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "VLD_FRM": {
@@ -18138,7 +18138,7 @@
           },
           "NM_LTN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,127}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
             "title": "Nm Ltn"
           },
           "NM_LTN.STATUS": {
@@ -18269,8 +18269,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -18319,14 +18319,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -18334,8 +18334,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -18392,14 +18392,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -18407,8 +18407,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -18461,8 +18461,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -18491,8 +18491,8 @@
           },
           "RSTRCTRD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Rstrctrd T"
           },
           "RSTRCTRD_T.STATUS": {
@@ -18504,8 +18504,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -18526,14 +18526,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -18541,8 +18541,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -18571,8 +18571,8 @@
           },
           "RSTRCTRD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Rstrctrd T"
           },
           "RSTRCTRD_T.STATUS": {
@@ -18584,8 +18584,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -18614,14 +18614,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -18629,8 +18629,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -18659,8 +18659,8 @@
           },
           "RSTRCTRD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Rstrctrd T"
           },
           "RSTRCTRD_T.STATUS": {
@@ -18672,8 +18672,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -18698,8 +18698,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -18732,14 +18732,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -18747,8 +18747,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -18789,14 +18789,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -18804,8 +18804,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IPU][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Id"
           },
           "DT": {
@@ -18842,14 +18842,14 @@
         "properties": {
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Rid"
           },
           "VLD_FRM": {
@@ -19021,14 +19021,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -19036,14 +19036,14 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Rid"
           },
           "VLD_FRM": {
@@ -19223,14 +19223,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -19238,14 +19238,14 @@
           },
           "LID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Lid"
           },
           "RID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Rid"
           },
           "VLD_FRM": {
@@ -19421,8 +19421,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Id"
           },
           "VLD_FRM": {
@@ -19437,7 +19437,7 @@
           },
           "FRST": {
             "type": "string",
-            "maxLength": 32,
+            "maxLength": 256,
             "title": "Frst"
           },
           "FRST.STATUS": {
@@ -19456,7 +19456,7 @@
           },
           "LST": {
             "type": "string",
-            "maxLength": 32,
+            "maxLength": 256,
             "title": "Lst"
           },
           "LST.STATUS": {
@@ -19475,7 +19475,7 @@
           },
           "PHN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,32}$)|(^\\.$)",
             "title": "Phn"
           },
           "PHN.STATUS": {
@@ -19522,14 +19522,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -19537,8 +19537,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Id"
           },
           "VLD_FRM": {
@@ -19553,7 +19553,7 @@
           },
           "FRST": {
             "type": "string",
-            "maxLength": 32,
+            "maxLength": 256,
             "title": "Frst"
           },
           "FRST.STATUS": {
@@ -19572,7 +19572,7 @@
           },
           "LST": {
             "type": "string",
-            "maxLength": 32,
+            "maxLength": 256,
             "title": "Lst"
           },
           "LST.STATUS": {
@@ -19591,7 +19591,7 @@
           },
           "PHN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,32}$)|(^\\.$)",
             "title": "Phn"
           },
           "PHN.STATUS": {
@@ -19646,14 +19646,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -19661,8 +19661,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Id"
           },
           "VLD_FRM": {
@@ -19677,7 +19677,7 @@
           },
           "FRST": {
             "type": "string",
-            "maxLength": 32,
+            "maxLength": 256,
             "title": "Frst"
           },
           "FRST.STATUS": {
@@ -19696,7 +19696,7 @@
           },
           "LST": {
             "type": "string",
-            "maxLength": 32,
+            "maxLength": 256,
             "title": "Lst"
           },
           "LST.STATUS": {
@@ -19715,7 +19715,7 @@
           },
           "PHN": {
             "type": "string",
-            "pattern": "(^[a-zA-Z0-9_][a-zA-Z0-9_ \\(\\)\\-\u2013&./]{1,31}$)|(^\\.$)",
+            "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,32}$)|(^\\.$)",
             "title": "Phn"
           },
           "PHN.STATUS": {
@@ -19766,8 +19766,8 @@
         "properties": {
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -19810,8 +19810,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -19832,14 +19832,14 @@
         "properties": {
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_TYP": {
@@ -19847,8 +19847,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -19891,8 +19891,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
@@ -19921,14 +19921,14 @@
           },
           "SRC_USR": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Src Usr"
           },
           "SRC_ORG": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[ELTBP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
             "title": "Src Org"
           },
           "SRC_TYP": {
@@ -19936,8 +19936,8 @@
           },
           "ID": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[a-zA-Z0-9]+",
+            "maxLength": 51,
+            "pattern": "^[a-zA-Z][!-~]*",
             "title": "Id"
           },
           "DT_BRTH": {
@@ -19980,8 +19980,8 @@
           },
           "TRNSFRMD_T": {
             "type": "string",
-            "maxLength": 512,
-            "pattern": "^[IP][a-zA-Z0-9_]+",
+            "maxLength": 51,
+            "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(P[A-Za-z0-9_@$\\-][!-~]*)",
             "title": "Trnsfrmd T"
           },
           "TRNSFRMD_T.STATUS": {
