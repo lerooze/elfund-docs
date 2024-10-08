@@ -11,6 +11,13 @@ What's new?
 .. Next release
 .. ============
 
+v0.3.7 (2024-10-08)
+-------------------
+* Improve regex patterns
+* Improve data model and thus update json datamodel schemas
+* Json schemas modified due to the above
+* Improve IFDAT documentation
+
 v0.3.6 (2024-09-23)
 -------------------
 

@@ -14613,6 +14613,76 @@
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
               }
             ]
+          },
+          "BSIDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "BSIDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "MIRDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "MIRDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "AUXDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "AUXDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "INSDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "INSDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "PENDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "PENDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
           }
         },
         "type": "object",
@@ -14697,6 +14767,76 @@
             ]
           },
           "IFDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "BSIDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "BSIDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "MIRDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "MIRDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "AUXDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "AUXDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "INSDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "INSDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "PENDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "PENDAT_RPRTR_OF.STATUS": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
@@ -14794,6 +14934,76 @@
             ]
           },
           "IFDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "BSIDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "BSIDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "MIRDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "MIRDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "AUXDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "AUXDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "INSDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "INSDAT_RPRTR_OF.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "PENDAT_RPRTR_OF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "PENDAT_RPRTR_OF.STATUS": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
@@ -18693,6 +18903,111 @@
                 "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
               }
             ]
+          },
+          "BSIDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "BSIDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "BSIDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
+          },
+          "MIRDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "MIRDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "MIRDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
+          },
+          "AUXDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "AUXDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "AUXDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
+          },
+          "INSDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "INSDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "INSDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
+          },
+          "PENDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "PENDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "PENDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
           }
         },
         "type": "object",
@@ -18777,6 +19092,111 @@
             ]
           },
           "IFDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
+          },
+          "BSIDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "BSIDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "BSIDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
+          },
+          "MIRDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "MIRDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "MIRDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
+          },
+          "AUXDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "AUXDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "AUXDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
+          },
+          "INSDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "INSDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "INSDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
+          },
+          "PENDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "PENDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "PENDAT_RL.CONF": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
@@ -18874,6 +19294,111 @@
             ]
           },
           "IFDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
+          },
+          "BSIDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "BSIDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "BSIDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
+          },
+          "MIRDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "MIRDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "MIRDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
+          },
+          "AUXDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "AUXDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "AUXDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
+          },
+          "INSDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "INSDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "INSDAT_RL.CONF": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"
+              }
+            ]
+          },
+          "PENDAT_RL": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/BoolEnum"
+              }
+            ]
+          },
+          "PENDAT_RL.STATUS": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AttrObsrvtnSttsEnum"
+              }
+            ]
+          },
+          "PENDAT_RL.CONF": {
             "allOf": [
               {
                 "$ref": "#/components/schemas/AttrCnfdntltySttsEnum"

@@ -6440,6 +6440,86 @@
             }
           ],
           "default": null
+        },
+        "BSIDAT_RPRTR_OF": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": null
+        },
+        "BSIDAT_RPRTR_OF.STATUS": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
+            }
+          ],
+          "default": null
+        },
+        "MIRDAT_RPRTR_OF": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": null
+        },
+        "MIRDAT_RPRTR_OF.STATUS": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
+            }
+          ],
+          "default": null
+        },
+        "AUXDAT_RPRTR_OF": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": null
+        },
+        "AUXDAT_RPRTR_OF.STATUS": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
+            }
+          ],
+          "default": null
+        },
+        "INSDAT_RPRTR_OF": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": null
+        },
+        "INSDAT_RPRTR_OF.STATUS": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
+            }
+          ],
+          "default": null
+        },
+        "PENDAT_RPRTR_OF": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": null
+        },
+        "PENDAT_RPRTR_OF.STATUS": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
+            }
+          ],
+          "default": null
         }
       },
       "required": [
@@ -9120,6 +9200,126 @@
           "default": null
         },
         "IFDAT_RL.CONF": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
+            }
+          ],
+          "default": null
+        },
+        "BSIDAT_RL": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": null
+        },
+        "BSIDAT_RL.STATUS": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
+            }
+          ],
+          "default": null
+        },
+        "BSIDAT_RL.CONF": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
+            }
+          ],
+          "default": null
+        },
+        "MIRDAT_RL": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": null
+        },
+        "MIRDAT_RL.STATUS": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
+            }
+          ],
+          "default": null
+        },
+        "MIRDAT_RL.CONF": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
+            }
+          ],
+          "default": null
+        },
+        "AUXDAT_RL": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": null
+        },
+        "AUXDAT_RL.STATUS": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
+            }
+          ],
+          "default": null
+        },
+        "AUXDAT_RL.CONF": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
+            }
+          ],
+          "default": null
+        },
+        "INSDAT_RL": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": null
+        },
+        "INSDAT_RL.STATUS": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
+            }
+          ],
+          "default": null
+        },
+        "INSDAT_RL.CONF": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
+            }
+          ],
+          "default": null
+        },
+        "PENDAT_RL": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/BoolEnum"
+            }
+          ],
+          "default": null
+        },
+        "PENDAT_RL.STATUS": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
+            }
+          ],
+          "default": null
+        },
+        "PENDAT_RL.CONF": {
           "allOf": [
             {
               "$ref": "#/$defs/AttrCnfdntltySttsEnum"

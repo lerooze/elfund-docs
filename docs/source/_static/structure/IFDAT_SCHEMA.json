@@ -679,124 +679,124 @@
           "title": "Acc.Dpst",
           "type": "array"
         },
-        "ASST.SFT": {
+        "ACC.ASST_SFT": {
           "default": null,
           "items": {
             "$ref": "#/$defs/AccSftSeries"
           },
-          "title": "Asst.Sft",
+          "title": "Acc.Asst Sft",
           "type": "array"
         },
-        "ASST.DBT": {
+        "ACC.ASST_DBT": {
           "default": null,
           "items": {
             "$ref": "#/$defs/AsstDbtSeries"
           },
-          "title": "Asst.Dbt",
+          "title": "Acc.Asst Dbt",
           "type": "array"
         },
-        "ASST.LN": {
+        "ACC.ASST_LN": {
           "default": null,
           "items": {
             "$ref": "#/$defs/AccLnSeries"
           },
-          "title": "Asst.Ln",
+          "title": "Acc.Asst Ln",
           "type": "array"
         },
-        "SHR": {
+        "ACC.SHR": {
           "default": null,
           "items": {
             "$ref": "#/$defs/AccShrSeries"
           },
-          "title": "Shr",
+          "title": "Acc.Shr",
           "type": "array"
         },
-        "EDR": {
+        "ACC.EDR": {
           "default": null,
           "items": {
             "$ref": "#/$defs/AccEdrSeries"
           },
-          "title": "Edr",
+          "title": "Acc.Edr",
           "type": "array"
         },
-        "ODR": {
+        "ACC.ODR": {
           "default": null,
           "items": {
             "$ref": "#/$defs/AccOdrSeries"
           },
-          "title": "Odr",
+          "title": "Acc.Odr",
           "type": "array"
         },
-        "ASST.NN_FNNCL": {
+        "ACC.ASST_NN_FNNCL": {
           "default": null,
           "items": {
             "$ref": "#/$defs/AsstNnFnnclSeries"
           },
-          "title": "Asst.Nn Fnncl",
+          "title": "Acc.Asst Nn Fnncl",
           "type": "array"
         },
-        "ASST.RMNNG": {
+        "ACC.ASST_RMNNG": {
           "default": null,
           "items": {
             "$ref": "#/$defs/AsstRmnngSeries"
           },
-          "title": "Asst.Rmnng",
+          "title": "Acc.Asst Rmnng",
           "type": "array"
         },
-        "LBLTY.SFT": {
+        "ACC.LBLTY_SFT": {
           "default": null,
           "items": {
             "$ref": "#/$defs/AccSftSeries"
           },
-          "title": "Lblty.Sft",
+          "title": "Acc.Lblty Sft",
           "type": "array"
         },
-        "LBLTY.DBT": {
+        "ACC.LBLTY_DBT": {
           "default": null,
           "items": {
             "$ref": "#/$defs/LbltyDbtSeries"
           },
-          "title": "Lblty.Dbt",
+          "title": "Acc.Lblty Dbt",
           "type": "array"
         },
-        "LBLTY.LN": {
+        "ACC.LBLTY_LN": {
           "default": null,
           "items": {
             "$ref": "#/$defs/AccLnSeries"
           },
-          "title": "Lblty.Ln",
+          "title": "Acc.Lblty Ln",
           "type": "array"
         },
-        "LBLTY.RMNNG": {
+        "ACC.LBLTY_RMNNG": {
           "default": null,
           "items": {
             "$ref": "#/$defs/LbltyRmnngSeries"
           },
-          "title": "Lblty.Rmnng",
+          "title": "Acc.Lblty Rmnng",
           "type": "array"
         },
-        "HLDR": {
+        "ACC.HLDR": {
           "default": null,
           "items": {
             "$ref": "#/$defs/HldrSeries"
           },
-          "title": "Hldr",
+          "title": "Acc.Hldr",
           "type": "array"
         },
-        "RVN": {
+        "ACC.RVN": {
           "default": null,
           "items": {
             "$ref": "#/$defs/RvnSeries"
           },
-          "title": "Rvn",
+          "title": "Acc.Rvn",
           "type": "array"
         },
-        "EXPNS": {
+        "ACC.EXPNS": {
           "default": null,
           "items": {
             "$ref": "#/$defs/ExpnsSeries"
           },
-          "title": "Expns",
+          "title": "Acc.Expns",
           "type": "array"
         }
       },

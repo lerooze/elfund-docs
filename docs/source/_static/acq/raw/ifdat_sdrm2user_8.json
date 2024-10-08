@@ -48,5 +48,22 @@
         "MNGD_BY": "EGRJM2"
       }
     ],
+    "REF.USR2ORG": [
+      {
+        "LID": "sdrm2user",
+        "RID": "EGRJM2",
+        "ASSCTD_WTH": "T",
+        "IFDAT_RL": "T"
+      }
+    ],
+    "REF.USR_DYNMC": [
+      {
+        "ID": "sdrm2user",
+        "FRST": "Datter",
+        "LST": "Comper",
+        "PHN": "2100000000",
+        "EMAIL": "datter@egrjm2.org"
+      }
+    ],
   }
 }
