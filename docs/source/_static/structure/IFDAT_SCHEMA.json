@@ -1,10 +1,58 @@
 {
   "$defs": {
+    "AccDerSeries": {
+      "properties": {
+        "IID": {
+          "maxLength": 51,
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(M[A-Z]{4}_[!-~]+)|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Iid",
+          "type": "string"
+        },
+        "ID": {
+          "maxLength": 51,
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date-time",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "STCK": {
+          "title": "Stck",
+          "type": "number"
+        },
+        "FLS": {
+          "title": "Fls",
+          "type": "number"
+        },
+        "QNTTY": {
+          "minimum": 0.0,
+          "title": "Qntty",
+          "type": "number"
+        }
+      },
+      "required": [
+        "IID",
+        "ID",
+        "DT",
+        "FRQNCY",
+        "STCK",
+        "FLS",
+        "QNTTY"
+      ],
+      "title": "AccDerSeries",
+      "type": "object"
+    },
     "AccDpstSeries": {
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|([P_][A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(P[A-Za-z0-9@$-]+_[!-~]+)|(_[A-Z]{3}_E[A-Za-z0-9_@$\\-][!-~]*)$",
           "title": "Iid",
           "type": "string"
         },
@@ -41,18 +89,12 @@
       "title": "AccDpstSeries",
       "type": "object"
     },
-    "AccEdrSeries": {
+    "AccDrgtnSeries": {
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Iid",
-          "type": "string"
-        },
-        "ID": {
-          "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Id",
           "type": "string"
         },
         "DT": {
@@ -63,37 +105,49 @@
         "FRQNCY": {
           "$ref": "#/$defs/GenFrqncyEnum"
         },
-        "STCK": {
-          "title": "Stck",
-          "type": "number"
-        },
-        "FLS": {
-          "title": "Fls",
-          "type": "number"
-        },
         "QNTTY": {
           "minimum": 0.0,
           "title": "Qntty",
+          "type": "number"
+        },
+        "BK_PRC": {
+          "minimum": 0.0,
+          "title": "Bk Prc",
+          "type": "number"
+        },
+        "SBSCRPTNS": {
+          "minimum": 0.0,
+          "title": "Sbscrptns",
+          "type": "number"
+        },
+        "RDMPTNS": {
+          "minimum": 0.0,
+          "title": "Rdmptns",
+          "type": "number"
+        },
+        "INCM": {
+          "title": "Incm",
           "type": "number"
         }
       },
       "required": [
         "IID",
-        "ID",
         "DT",
         "FRQNCY",
-        "STCK",
-        "FLS",
-        "QNTTY"
+        "QNTTY",
+        "BK_PRC",
+        "SBSCRPTNS",
+        "RDMPTNS",
+        "INCM"
       ],
-      "title": "AccEdrSeries",
+      "title": "AccDrgtnSeries",
       "type": "object"
     },
     "AccLnSeries": {
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^PE[A-Za-z0-9@$-]+_[!-~]+$",
           "title": "Iid",
           "type": "string"
         },
@@ -135,88 +189,17 @@
       "title": "AccLnSeries",
       "type": "object"
     },
-    "AccOdrSeries": {
-      "properties": {
-        "IID": {
-          "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
-          "title": "Iid",
-          "type": "string"
-        },
-        "DT": {
-          "format": "date-time",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        },
-        "STCK": {
-          "title": "Stck",
-          "type": "number"
-        },
-        "FLS": {
-          "title": "Fls",
-          "type": "number"
-        }
-      },
-      "required": [
-        "IID",
-        "DT",
-        "FRQNCY",
-        "STCK",
-        "FLS"
-      ],
-      "title": "AccOdrSeries",
-      "type": "object"
-    },
-    "AccSftSeries": {
-      "properties": {
-        "IID": {
-          "maxLength": 51,
-          "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Iid",
-          "type": "string"
-        },
-        "DT": {
-          "format": "date-time",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        },
-        "STCK": {
-          "minimum": 0.0,
-          "title": "Stck",
-          "type": "number"
-        },
-        "FLS": {
-          "title": "Fls",
-          "type": "number"
-        }
-      },
-      "required": [
-        "IID",
-        "DT",
-        "FRQNCY",
-        "STCK",
-        "FLS"
-      ],
-      "title": "AccSftSeries",
-      "type": "object"
-    },
     "AccShrSeries": {
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Iid",
           "type": "string"
         },
         "ID": {
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -229,7 +212,6 @@
           "$ref": "#/$defs/GenFrqncyEnum"
         },
         "STCK": {
-          "minimum": 0.0,
           "title": "Stck",
           "type": "number"
         },
@@ -238,7 +220,6 @@
           "type": "number"
         },
         "QNTTY": {
-          "minimum": 0.0,
           "title": "Qntty",
           "type": "number"
         },
@@ -248,8 +229,7 @@
           "type": "number"
         },
         "IS_DRCT_INVSTMNT": {
-          "title": "Is Drct Invstmnt",
-          "type": "boolean"
+          "$ref": "#/$defs/BoolExtEnum"
         }
       },
       "required": [
@@ -270,13 +250,13 @@
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Iid",
           "type": "string"
         },
         "ID": {
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -289,7 +269,6 @@
           "$ref": "#/$defs/GenFrqncyEnum"
         },
         "STCK": {
-          "minimum": 0.0,
           "title": "Stck",
           "type": "number"
         },
@@ -298,7 +277,6 @@
           "type": "number"
         },
         "NMNL_STCK": {
-          "minimum": 0.0,
           "title": "Nmnl Stck",
           "type": "number"
         },
@@ -341,17 +319,17 @@
     },
     "AsstNnFnnclSeries": {
       "properties": {
+        "ID": {
+          "maxLength": 51,
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Id",
+          "type": "string"
+        },
         "TYP": {
           "$ref": "#/$defs/AsstNnFnnclEnum"
         },
         "CNTRY": {
           "$ref": "#/$defs/GenCntryEnum"
-        },
-        "ID": {
-          "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Id",
-          "type": "string"
         },
         "DT": {
           "format": "date-time",
@@ -376,9 +354,9 @@
         }
       },
       "required": [
+        "ID",
         "TYP",
         "CNTRY",
-        "ID",
         "DT",
         "FRQNCY",
         "STCK",
@@ -390,14 +368,14 @@
     },
     "AsstRmnngSeries": {
       "properties": {
-        "TYP": {
-          "$ref": "#/$defs/RemAssetEnum"
-        },
         "ID": {
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
+        },
+        "TYP": {
+          "$ref": "#/$defs/RemAssetEnum"
         },
         "DT": {
           "format": "date-time",
@@ -418,8 +396,8 @@
         }
       },
       "required": [
-        "TYP",
         "ID",
+        "TYP",
         "DT",
         "FRQNCY",
         "STCK",
@@ -437,24 +415,22 @@
       "title": "BoolEnum",
       "type": "string"
     },
+    "BoolExtEnum": {
+      "enum": [
+        ".",
+        "T",
+        "F",
+        "U"
+      ],
+      "title": "BoolExtEnum",
+      "type": "string"
+    },
     "CntrprtySeries": {
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
-          "type": "string"
-        },
-        "DT_BRTH": {
-          "default": null,
-          "format": "date-time",
-          "title": "Dt Brth",
-          "type": "string"
-        },
-        "DT_CLS": {
-          "default": null,
-          "format": "date-time",
-          "title": "Dt Cls",
           "type": "string"
         },
         "NM_LTN": {
@@ -474,17 +450,10 @@
         "INSTTTNL_SCTR": {
           "allOf": [
             {
-              "$ref": "#/$defs/OrgInstttnlSctrEnum"
+              "$ref": "#/$defs/EsaSectorEnum"
             }
           ],
           "default": null
-        },
-        "ALS_OF": {
-          "default": null,
-          "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Als Of",
-          "type": "string"
         }
       },
       "required": [
@@ -495,6 +464,134 @@
     },
     "DataSets": {
       "properties": {
+        "ACC.DPST": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AccDpstSeries"
+          },
+          "title": "Acc.Dpst",
+          "type": "array"
+        },
+        "ACC.ASST_DBT": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AsstDbtSeries"
+          },
+          "title": "Acc.Asst Dbt",
+          "type": "array"
+        },
+        "ACC.ASST_LN": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AccLnSeries"
+          },
+          "title": "Acc.Asst Ln",
+          "type": "array"
+        },
+        "ACC.SHR": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AccShrSeries"
+          },
+          "title": "Acc.Shr",
+          "type": "array"
+        },
+        "ACC.DER": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AccDerSeries"
+          },
+          "title": "Acc.Der",
+          "type": "array"
+        },
+        "ACC.ASST_NN_FNNCL": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AsstNnFnnclSeries"
+          },
+          "title": "Acc.Asst Nn Fnncl",
+          "type": "array"
+        },
+        "ACC.ASST_RMNNG": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AsstRmnngSeries"
+          },
+          "title": "Acc.Asst Rmnng",
+          "type": "array"
+        },
+        "ACC.LBLTY_DBT": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/LbltyDbtSeries"
+          },
+          "title": "Acc.Lblty Dbt",
+          "type": "array"
+        },
+        "ACC.LBLTY_LN": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AccLnSeries"
+          },
+          "title": "Acc.Lblty Ln",
+          "type": "array"
+        },
+        "ACC.LBLTY_RMNNG": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/LbltyRmnngSeries"
+          },
+          "title": "Acc.Lblty Rmnng",
+          "type": "array"
+        },
+        "ACC.HLDR": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/HldrSeries"
+          },
+          "title": "Acc.Hldr",
+          "type": "array"
+        },
+        "ACC.SHR_KEY": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/ShrKeySeries"
+          },
+          "title": "Acc.Shr Key",
+          "type": "array"
+        },
+        "ACC.FND_KEY": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/FndKeySeries"
+          },
+          "title": "Acc.Fnd Key",
+          "type": "array"
+        },
+        "ACC.DRGTN": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/AccDrgtnSeries"
+          },
+          "title": "Acc.Drgtn",
+          "type": "array"
+        },
+        "REF.MNGMNT": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/MngmntSeries"
+          },
+          "title": "Ref.Mngmnt",
+          "type": "array"
+        },
+        "REF.MNGMNT_DYNMC": {
+          "default": null,
+          "items": {
+            "$ref": "#/$defs/MngmntDynmcSeries"
+          },
+          "title": "Ref.Mngmnt Dynmc",
+          "type": "array"
+        },
         "REF.FND": {
           "default": null,
           "items": {
@@ -575,22 +672,6 @@
           "title": "Ref.Self Shr Splt",
           "type": "array"
         },
-        "REF.MNGMNT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/MngmntSeries"
-          },
-          "title": "Ref.Mngmnt",
-          "type": "array"
-        },
-        "REF.MNGMNT_DYNMC": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/MngmntDynmcSeries"
-          },
-          "title": "Ref.Mngmnt Dynmc",
-          "type": "array"
-        },
         "REF.CNTRPRTY": {
           "default": null,
           "items": {
@@ -605,14 +686,6 @@
             "$ref": "#/$defs/RefDpstSeries"
           },
           "title": "Ref.Dpst",
-          "type": "array"
-        },
-        "REF.SFT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/RefSftSeries"
-          },
-          "title": "Ref.Sft",
           "type": "array"
         },
         "REF.LN": {
@@ -639,148 +712,20 @@
           "title": "Ref.Shr",
           "type": "array"
         },
-        "REF.EDR": {
+        "REF.DER": {
           "default": null,
           "items": {
-            "$ref": "#/$defs/RefEdrSeries"
+            "$ref": "#/$defs/RefDerSeries"
           },
-          "title": "Ref.Edr",
+          "title": "Ref.Der",
           "type": "array"
         },
-        "REF.ODR": {
+        "REF.DRGTN": {
           "default": null,
           "items": {
-            "$ref": "#/$defs/RefOdrSeries"
+            "$ref": "#/$defs/RefDrgtnSeries"
           },
-          "title": "Ref.Odr",
-          "type": "array"
-        },
-        "ACC.DPST": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/AccDpstSeries"
-          },
-          "title": "Acc.Dpst",
-          "type": "array"
-        },
-        "ACC.ASST_SFT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/AccSftSeries"
-          },
-          "title": "Acc.Asst Sft",
-          "type": "array"
-        },
-        "ACC.ASST_DBT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/AsstDbtSeries"
-          },
-          "title": "Acc.Asst Dbt",
-          "type": "array"
-        },
-        "ACC.ASST_LN": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/AccLnSeries"
-          },
-          "title": "Acc.Asst Ln",
-          "type": "array"
-        },
-        "ACC.SHR": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/AccShrSeries"
-          },
-          "title": "Acc.Shr",
-          "type": "array"
-        },
-        "ACC.EDR": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/AccEdrSeries"
-          },
-          "title": "Acc.Edr",
-          "type": "array"
-        },
-        "ACC.ODR": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/AccOdrSeries"
-          },
-          "title": "Acc.Odr",
-          "type": "array"
-        },
-        "ACC.ASST_NN_FNNCL": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/AsstNnFnnclSeries"
-          },
-          "title": "Acc.Asst Nn Fnncl",
-          "type": "array"
-        },
-        "ACC.ASST_RMNNG": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/AsstRmnngSeries"
-          },
-          "title": "Acc.Asst Rmnng",
-          "type": "array"
-        },
-        "ACC.LBLTY_SFT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/AccSftSeries"
-          },
-          "title": "Acc.Lblty Sft",
-          "type": "array"
-        },
-        "ACC.LBLTY_DBT": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/LbltyDbtSeries"
-          },
-          "title": "Acc.Lblty Dbt",
-          "type": "array"
-        },
-        "ACC.LBLTY_LN": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/AccLnSeries"
-          },
-          "title": "Acc.Lblty Ln",
-          "type": "array"
-        },
-        "ACC.LBLTY_RMNNG": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/LbltyRmnngSeries"
-          },
-          "title": "Acc.Lblty Rmnng",
-          "type": "array"
-        },
-        "ACC.HLDR": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/HldrSeries"
-          },
-          "title": "Acc.Hldr",
-          "type": "array"
-        },
-        "ACC.RVN": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/RvnSeries"
-          },
-          "title": "Acc.Rvn",
-          "type": "array"
-        },
-        "ACC.EXPNS": {
-          "default": null,
-          "items": {
-            "$ref": "#/$defs/ExpnsSeries"
-          },
-          "title": "Acc.Expns",
+          "title": "Ref.Drgtn",
           "type": "array"
         }
       },
@@ -879,25 +824,11 @@
       "title": "DbtScrtyLvlEnum",
       "type": "string"
     },
-    "DbtScrtznTypEnum": {
-      "enum": [
-        ".",
-        "ABS",
-        "MBS",
-        "CDO",
-        "CMO",
-        "MIX",
-        "OTHER",
-        "NOINFO"
-      ],
-      "title": "DbtScrtznTypEnum",
-      "type": "string"
-    },
     "DbtSeries": {
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -921,26 +852,11 @@
           ],
           "default": null
         },
-        "TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DbtTypEnum"
-            }
-          ],
-          "default": null
-        },
         "ISSD_BY": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Issd By",
-          "type": "string"
-        },
-        "ALS_OF": {
-          "default": null,
-          "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
-          "title": "Als Of",
           "type": "string"
         }
       },
@@ -1046,46 +962,34 @@
       "title": "DvdndTypEnum",
       "type": "string"
     },
-    "ExpnsSeries": {
-      "properties": {
-        "IID": {
-          "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
-          "title": "Iid",
-          "type": "string"
-        },
-        "TP": {
-          "$ref": "#/$defs/IncmExpnsEnum"
-        },
-        "DT": {
-          "format": "date-time",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        },
-        "AMNT": {
-          "minimum": 0.0,
-          "title": "Amnt",
-          "type": "number"
-        }
-      },
-      "required": [
-        "IID",
-        "TP",
-        "DT",
-        "FRQNCY",
-        "AMNT"
+    "EsaSectorEnum": {
+      "enum": [
+        ".",
+        "S11",
+        "S121",
+        "S122",
+        "S123",
+        "S124",
+        "S125",
+        "S126",
+        "S127",
+        "S128",
+        "S129",
+        "S1311",
+        "S1312",
+        "S1313",
+        "S1314",
+        "S14",
+        "S15"
       ],
-      "title": "ExpnsSeries",
-      "type": "object"
+      "title": "EsaSectorEnum",
+      "type": "string"
     },
     "FndBndFcsEnum": {
       "enum": [
         ".",
-        "GOV",
         "COR",
+        "GOV",
         "MIX"
       ],
       "title": "FndBndFcsEnum",
@@ -1105,7 +1009,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -1121,6 +1025,18 @@
           "title": "Vld T",
           "type": "string"
         },
+        "RPRTD_BY": {
+          "default": null,
+          "maxLength": 51,
+          "title": "Rprtd By",
+          "type": "string"
+        },
+        "MNGD_BY": {
+          "default": null,
+          "maxLength": 51,
+          "title": "Mngd By",
+          "type": "string"
+        },
         "NM": {
           "default": null,
           "maxLength": 256,
@@ -1129,7 +1045,7 @@
         },
         "NM_LTN": {
           "default": null,
-          "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,255}$)|(^\\.$)",
+          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,255}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
@@ -1139,6 +1055,14 @@
           "title": "Nm Shrt",
           "type": "string"
         },
+        "CNTRY_RSDNC": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/GenCntryEnum"
+            }
+          ],
+          "default": null
+        },
         "STRT": {
           "default": null,
           "maxLength": 256,
@@ -1147,7 +1071,7 @@
         },
         "STRT_LTN": {
           "default": null,
-          "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,255}$)|(^\\.$)",
+          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,255}$)|(^\\.$)",
           "title": "Strt Ltn",
           "type": "string"
         },
@@ -1159,7 +1083,7 @@
         },
         "CTY_LTN": {
           "default": null,
-          "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,32}$)|(^\\.$)",
+          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,32}$)|(^\\.$)",
           "title": "Cty Ltn",
           "type": "string"
         },
@@ -1172,6 +1096,7 @@
         "URL": {
           "default": null,
           "format": "uri",
+          "maxLength": 256,
           "minLength": 1,
           "title": "Url",
           "type": "string"
@@ -1213,12 +1138,6 @@
             }
           ],
           "default": null
-        },
-        "MNGD_BY": {
-          "default": null,
-          "maxLength": 51,
-          "title": "Mngd By",
-          "type": "string"
         },
         "UNDR_UMBRLL_BY": {
           "default": null,
@@ -1329,6 +1248,14 @@
             }
           ],
           "default": null
+        },
+        "CRRNCY": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/GenCrrncyEnum"
+            }
+          ],
+          "default": null
         }
       },
       "required": [
@@ -1393,10 +1320,42 @@
       "enum": [
         ".",
         "PRF",
-        "RTL"
+        "RTL",
+        "MIX"
       ],
       "title": "FndInvstrTypEnum",
       "type": "string"
+    },
+    "FndKeySeries": {
+      "properties": {
+        "ID": {
+          "maxLength": 51,
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date-time",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "FEES": {
+          "minimum": 0.0,
+          "title": "Fees",
+          "type": "number"
+        }
+      },
+      "required": [
+        "ID",
+        "DT",
+        "FRQNCY",
+        "FEES"
+      ],
+      "title": "FndKeySeries",
+      "type": "object"
     },
     "FndLglTypEnum": {
       "enum": [
@@ -1417,6 +1376,7 @@
         "COM",
         "IND",
         "MUL",
+        "OFC",
         "OTH"
       ],
       "title": "FndRlEsttTypEnum",
@@ -1426,7 +1386,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -1444,7 +1404,7 @@
         },
         "LEI_ID": {
           "default": null,
-          "pattern": "(^[0-9]{4}[0]{2}[A-Z0-9]{12}[0-9]{2}$)|(^\\.$)",
+          "pattern": "(^[0-9A-Z]{18}[0-9]{2}$)|(^\\.$)",
           "title": "Lei Id",
           "type": "string"
         },
@@ -1463,14 +1423,14 @@
         "SPLT_FRM": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Splt Frm",
           "type": "string"
         },
         "MRGD_WTH": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Mrgd Wth",
           "type": "string"
         }
@@ -4255,13 +4215,13 @@
       "properties": {
         "PARTNER": {
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Partner",
           "type": "string"
         },
         "USERNAME": {
           "maxLength": 51,
-          "pattern": "^[a-zA-Z][!-~]*",
+          "pattern": "^[a-zA-Z][!-~-]*$",
           "title": "Username",
           "type": "string"
         },
@@ -4283,13 +4243,13 @@
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Iid",
           "type": "string"
         },
         "ID": {
           "maxLength": 51,
-          "pattern": "^[ELTBP_][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|([P_][A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -4329,47 +4289,21 @@
       "title": "HldrSeries",
       "type": "object"
     },
-    "IncmExpnsEnum": {
+    "IfdatDrgtnTypEnum": {
       "enum": [
         ".",
-        "INTRST",
-        "RNTS",
-        "TRNSCTNS_FEES",
-        "MNGMNT_FEES",
-        "DPSTR_FEES",
-        "TAXES",
-        "WAGES",
-        "BDE",
-        "BLE",
-        "OTHER"
+        "A",
+        "B"
       ],
-      "title": "IncmExpnsEnum",
-      "type": "string"
-    },
-    "IncmRvnEnum": {
-      "enum": [
-        ".",
-        "INTRST",
-        "DVDNDS",
-        "RNTS",
-        "FDI",
-        "INS"
-      ],
-      "title": "IncmRvnEnum",
+      "title": "IfdatDrgtnTypEnum",
       "type": "string"
     },
     "LbltyDbtSeries": {
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Iid",
-          "type": "string"
-        },
-        "ID": {
-          "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Id",
           "type": "string"
         },
         "DT": {
@@ -4401,7 +4335,6 @@
       },
       "required": [
         "IID",
-        "ID",
         "DT",
         "FRQNCY",
         "STCK",
@@ -4414,14 +4347,14 @@
     },
     "LbltyRmnngSeries": {
       "properties": {
-        "TYP": {
-          "$ref": "#/$defs/RemLiabEnum"
-        },
         "ID": {
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
+        },
+        "TYP": {
+          "$ref": "#/$defs/RemLiabEnum"
         },
         "DT": {
           "format": "date-time",
@@ -4442,8 +4375,8 @@
         }
       },
       "required": [
-        "TYP",
         "ID",
+        "TYP",
         "DT",
         "FRQNCY",
         "STCK",
@@ -4455,17 +4388,15 @@
     "LonTypEnum": {
       "enum": [
         ".",
-        "CRD",
         "OVR",
         "REV",
         "FLS",
         "NOS",
         "TRD",
-        "SUB",
         "INT",
-        "RFC",
-        "NFC",
         "LVG",
+        "REP",
+        "SBL",
         "OTH"
       ],
       "title": "LonTypEnum",
@@ -4475,7 +4406,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -4499,7 +4430,7 @@
         },
         "NM_LTN": {
           "default": null,
-          "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
+          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
@@ -4517,7 +4448,7 @@
         },
         "STRT_LTN": {
           "default": null,
-          "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,64}$)|(^\\.$)",
+          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,64}$)|(^\\.$)",
           "title": "Strt Ltn",
           "type": "string"
         },
@@ -4529,7 +4460,7 @@
         },
         "CTY_LTN": {
           "default": null,
-          "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,32}$)|(^\\.$)",
+          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,32}$)|(^\\.$)",
           "title": "Cty Ltn",
           "type": "string"
         },
@@ -4542,6 +4473,7 @@
         "URL": {
           "default": null,
           "format": "uri",
+          "maxLength": 256,
           "minLength": 1,
           "title": "Url",
           "type": "string"
@@ -4571,7 +4503,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -4589,33 +4521,33 @@
         },
         "LEI_ID": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{20}$)|(^\\.$)",
+          "pattern": "(^[0-9A-Z]{18}[0-9]{2}$)|(^\\.$)",
           "title": "Lei Id",
           "type": "string"
         },
         "TAX_ID": {
           "default": null,
-          "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,31}$)|(^\\.$)",
+          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,31}$)|(^\\.$)",
           "title": "Tax Id",
           "type": "string"
         },
         "NBR_ID": {
           "default": null,
-          "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,31}$)|(^\\.$)",
+          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,31}$)|(^\\.$)",
           "title": "Nbr Id",
           "type": "string"
         },
         "SPLT_FRM": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Splt Frm",
           "type": "string"
         },
         "MRGD_WTH": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Mrgd Wth",
           "type": "string"
         }
@@ -4637,34 +4569,96 @@
       "title": "OrgInstttnlSctrCntrlEnum",
       "type": "string"
     },
-    "OrgInstttnlSctrEnum": {
+    "OtherRdmptnFrqncyEnum": {
       "enum": [
         ".",
-        "S11",
-        "S121",
-        "S122",
-        "S123",
-        "S124",
-        "S125",
-        "S126",
-        "S127",
-        "S128",
-        "S129",
-        "S1311",
-        "S1312",
-        "S1313",
-        "S1314",
-        "S14",
-        "S15"
+        "D",
+        "W",
+        "M",
+        "Q",
+        "B",
+        "Y",
+        "E",
+        "O"
       ],
-      "title": "OrgInstttnlSctrEnum",
+      "title": "OtherRdmptnFrqncyEnum",
       "type": "string"
+    },
+    "RefDerSeries": {
+      "properties": {
+        "ID": {
+          "maxLength": 51,
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(M[A-Z]{4}_[!-~]+)|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT_BRTH": {
+          "default": null,
+          "format": "date-time",
+          "title": "Dt Brth",
+          "type": "string"
+        },
+        "DT_CLS": {
+          "default": null,
+          "format": "date-time",
+          "title": "Dt Cls",
+          "type": "string"
+        },
+        "FISN": {
+          "default": null,
+          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
+          "title": "Fisn",
+          "type": "string"
+        },
+        "TCKR": {
+          "default": null,
+          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,11}$)|(^\\.$)",
+          "title": "Tckr",
+          "type": "string"
+        },
+        "TYP": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/DrvtvTypEnum"
+            }
+          ],
+          "default": null
+        },
+        "CRRNCY": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/GenCrrncyEnum"
+            }
+          ],
+          "default": null
+        },
+        "MRKT_CNTRPRTY": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/GenMrktEnum"
+            }
+          ],
+          "default": null
+        },
+        "CNTRPRTY": {
+          "default": null,
+          "maxLength": 51,
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Cntrprty",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ID"
+      ],
+      "title": "RefDerSeries",
+      "type": "object"
     },
     "RefDpstSeries": {
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|([P_][A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(P[A-Za-z0-9@$-]+_[!-~]+)|(_[A-Z]{3}_E[A-Za-z0-9_@$\\-][!-~]*)$",
           "title": "Id",
           "type": "string"
         },
@@ -4704,25 +4698,18 @@
           ],
           "default": null
         },
-        "DBTR": {
+        "OAID": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Dbtr",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Oaid",
           "type": "string"
         },
-        "CRDTR": {
+        "CNTRPRTY": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Crdtr",
-          "type": "string"
-        },
-        "ALS_OF": {
-          "default": null,
-          "maxLength": 51,
-          "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(P[A-Za-z0-9_@$\\-][!-~]*)",
-          "title": "Als Of",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Cntrprty",
           "type": "string"
         }
       },
@@ -4732,87 +4719,66 @@
       "title": "RefDpstSeries",
       "type": "object"
     },
-    "RefEdrSeries": {
+    "RefDrgtnSeries": {
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
-        "DT_BRTH": {
+        "VLTN_DT": {
           "default": null,
           "format": "date-time",
-          "title": "Dt Brth",
+          "title": "Vltn Dt",
           "type": "string"
         },
-        "DT_CLS": {
-          "default": null,
-          "format": "date-time",
-          "title": "Dt Cls",
-          "type": "string"
-        },
-        "NM_LTN": {
-          "default": null,
-          "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
-          "title": "Nm Ltn",
-          "type": "string"
-        },
-        "TCKR": {
-          "default": null,
-          "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,11}$)|(^\\.$)",
-          "title": "Tckr",
-          "type": "string"
-        },
-        "TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DrvtvTypEnum"
-            }
-          ],
-          "default": null
-        },
-        "CRRNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/GenCrrncyEnum"
-            }
-          ],
-          "default": null
-        },
-        "MLTPLR": {
+        "ASSTS": {
           "default": null,
           "minimum": 0.0,
-          "title": "Mltplr",
+          "title": "Assts",
           "type": "number"
         },
-        "WRTR": {
+        "VLTN_FRQNCY": {
           "allOf": [
             {
-              "$ref": "#/$defs/GenMrktEnum"
+              "$ref": "#/$defs/GenFrqncyEnum"
             }
           ],
           "default": null
         },
-        "ALS_OF": {
+        "DRGTN_TYPE": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/IfdatDrgtnTypEnum"
+            }
+          ],
+          "default": null
+        },
+        "DRGTN_YR": {
           "default": null,
-          "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
-          "title": "Als Of",
+          "exclusiveMinimum": 0,
+          "title": "Drgtn Yr",
+          "type": "integer"
+        },
+        "CMMNT": {
+          "default": null,
+          "maxLength": 512,
+          "title": "Cmmnt",
           "type": "string"
         }
       },
       "required": [
         "ID"
       ],
-      "title": "RefEdrSeries",
+      "title": "RefDrgtnSeries",
       "type": "object"
     },
     "RefLnSeries": {
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^PE[A-Za-z0-9@$-]+_[!-~]+$",
           "title": "Id",
           "type": "string"
         },
@@ -4844,25 +4810,18 @@
           ],
           "default": null
         },
-        "DBTR": {
+        "OAID": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Dbtr",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Oaid",
           "type": "string"
         },
-        "CRDTR": {
+        "CNTRPRTY": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Crdtr",
-          "type": "string"
-        },
-        "ALS_OF": {
-          "default": null,
-          "maxLength": 51,
-          "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Als Of",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Cntrprty",
           "type": "string"
         }
       },
@@ -4872,164 +4831,12 @@
       "title": "RefLnSeries",
       "type": "object"
     },
-    "RefOdrSeries": {
-      "properties": {
-        "ID": {
-          "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
-          "title": "Id",
-          "type": "string"
-        },
-        "DT_BRTH": {
-          "default": null,
-          "format": "date-time",
-          "title": "Dt Brth",
-          "type": "string"
-        },
-        "DT_CLS": {
-          "default": null,
-          "format": "date-time",
-          "title": "Dt Cls",
-          "type": "string"
-        },
-        "NM_LTN": {
-          "default": null,
-          "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
-          "title": "Nm Ltn",
-          "type": "string"
-        },
-        "TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DrvtvTypEnum"
-            }
-          ],
-          "default": null
-        },
-        "CRRNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/GenCrrncyEnum"
-            }
-          ],
-          "default": null
-        },
-        "MLTPLR": {
-          "default": null,
-          "minimum": 0.0,
-          "title": "Mltplr",
-          "type": "number"
-        },
-        "WRTR": {
-          "default": null,
-          "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Wrtr",
-          "type": "string"
-        },
-        "BYR": {
-          "default": null,
-          "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Byr",
-          "type": "string"
-        },
-        "ALS_OF": {
-          "default": null,
-          "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
-          "title": "Als Of",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID"
-      ],
-      "title": "RefOdrSeries",
-      "type": "object"
-    },
-    "RefSftSeries": {
-      "properties": {
-        "ID": {
-          "maxLength": 51,
-          "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Id",
-          "type": "string"
-        },
-        "DT_BRTH": {
-          "default": null,
-          "format": "date-time",
-          "title": "Dt Brth",
-          "type": "string"
-        },
-        "DT_CLS": {
-          "default": null,
-          "format": "date-time",
-          "title": "Dt Cls",
-          "type": "string"
-        },
-        "CRRNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/GenCrrncyEnum"
-            }
-          ],
-          "default": null
-        },
-        "TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/SftTypEnum"
-            }
-          ],
-          "default": null
-        },
-        "DBTR": {
-          "default": null,
-          "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Dbtr",
-          "type": "string"
-        },
-        "CRDTR": {
-          "default": null,
-          "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Crdtr",
-          "type": "string"
-        },
-        "ALS_OF": {
-          "default": null,
-          "maxLength": 51,
-          "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
-          "title": "Als Of",
-          "type": "string"
-        }
-      },
-      "required": [
-        "ID"
-      ],
-      "title": "RefSftSeries",
-      "type": "object"
-    },
     "RefShrSeries": {
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
-          "type": "string"
-        },
-        "DT_BRTH": {
-          "default": null,
-          "format": "date-time",
-          "title": "Dt Brth",
-          "type": "string"
-        },
-        "DT_CLS": {
-          "default": null,
-          "format": "date-time",
-          "title": "Dt Cls",
           "type": "string"
         },
         "CRRNCY": {
@@ -5051,15 +4858,8 @@
         "ISSD_BY": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Issd By",
-          "type": "string"
-        },
-        "ALS_OF": {
-          "default": null,
-          "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
-          "title": "Als Of",
           "type": "string"
         }
       },
@@ -5087,10 +4887,9 @@
         "AI_LN",
         "AI_DBT",
         "AR",
-        "MNGMNT_FEES",
-        "TRNSCTNS_FEES",
-        "TAXES",
-        "OTHER_PRVSNS",
+        "NO_RIGHTS",
+        "NOT_MAIN",
+        "PRVSNS",
         "NO_CASH_SL",
         "FUTURE",
         "OTHER"
@@ -5098,46 +4897,11 @@
       "title": "RemLiabEnum",
       "type": "string"
     },
-    "RvnSeries": {
-      "properties": {
-        "IID": {
-          "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
-          "title": "Iid",
-          "type": "string"
-        },
-        "TP": {
-          "$ref": "#/$defs/IncmRvnEnum"
-        },
-        "DT": {
-          "format": "date-time",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        },
-        "AMNT": {
-          "minimum": 0.0,
-          "title": "Amnt",
-          "type": "number"
-        }
-      },
-      "required": [
-        "IID",
-        "TP",
-        "DT",
-        "FRQNCY",
-        "AMNT"
-      ],
-      "title": "RvnSeries",
-      "type": "object"
-    },
     "SelfCpnSeries": {
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -5163,7 +4927,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -5181,7 +4945,7 @@
         },
         "NM_LTN": {
           "default": null,
-          "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
+          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
@@ -5208,7 +4972,7 @@
         "ISSD_BY": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^[ELTBP][A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Issd By",
           "type": "string"
         },
@@ -5229,7 +4993,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -5265,7 +5029,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -5353,22 +5117,6 @@
           ],
           "default": null
         },
-        "IS_SCRTZTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
-          "default": null
-        },
-        "SCRTZTN_TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DbtScrtznTypEnum"
-            }
-          ],
-          "default": null
-        },
         "IS_CVRD": {
           "allOf": [
             {
@@ -5448,7 +5196,7 @@
         "UNDRLYNG": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Undrlyng",
           "type": "string"
         },
@@ -5469,22 +5217,15 @@
         "RSTRCTRD_T": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Rstrctrd T",
           "type": "string"
         },
         "RSTRCTRD_FRM": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^P[A-Za-z0-9_@$\\-][!-~]*",
+          "pattern": "^PE[A-Za-z0-9@$-]+_[!-~]+$",
           "title": "Rstrctrd Frm",
-          "type": "string"
-        },
-        "ALS_OF": {
-          "default": null,
-          "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(P[A-Za-z0-9_@$\\-][!-~]*)",
-          "title": "Als Of",
           "type": "string"
         }
       },
@@ -5498,7 +5239,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -5555,7 +5296,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -5573,7 +5314,7 @@
         },
         "NM_LTN": {
           "default": null,
-          "pattern": "(^[\\u0000-u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
+          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
           "title": "Nm Ltn",
           "type": "string"
         },
@@ -5604,7 +5345,7 @@
         "RDMPTN_FRQNCY": {
           "allOf": [
             {
-              "$ref": "#/$defs/ShrFndRdmptnFrqncyEnum"
+              "$ref": "#/$defs/OtherRdmptnFrqncyEnum"
             }
           ],
           "default": null
@@ -5634,7 +5375,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -5669,15 +5410,8 @@
         "RSTRCTRD_T": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Rstrctrd T",
-          "type": "string"
-        },
-        "ALS_OF": {
-          "default": null,
-          "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
-          "title": "Als Of",
           "type": "string"
         }
       },
@@ -5691,7 +5425,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|([PU][A-Za-z0-9_@$\\-][!-~]*)",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -5714,17 +5448,6 @@
       "title": "SelfSpltSeries",
       "type": "object"
     },
-    "SftTypEnum": {
-      "enum": [
-        ".",
-        "REP",
-        "SBL",
-        "BSB",
-        "MLT"
-      ],
-      "title": "SftTypEnum",
-      "type": "string"
-    },
     "ShrEsaTypEnum": {
       "enum": [
         ".",
@@ -5737,24 +5460,41 @@
       "title": "ShrEsaTypEnum",
       "type": "string"
     },
-    "ShrFndRdmptnFrqncyEnum": {
-      "enum": [
-        ".",
-        "PP",
-        "AN",
-        "SA",
-        "QU",
-        "MO",
-        "BA",
-        "OR",
-        "IR",
-        "SS",
-        "ON",
-        "EL",
-        "OT"
+    "ShrKeySeries": {
+      "properties": {
+        "IID": {
+          "maxLength": 51,
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Iid",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date-time",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "BK_PRC": {
+          "minimum": 0.0,
+          "title": "Bk Prc",
+          "type": "number"
+        },
+        "INCM": {
+          "title": "Incm",
+          "type": "number"
+        }
+      },
+      "required": [
+        "IID",
+        "DT",
+        "FRQNCY",
+        "BK_PRC",
+        "INCM"
       ],
-      "title": "ShrFndRdmptnFrqncyEnum",
-      "type": "string"
+      "title": "ShrKeySeries",
+      "type": "object"
     },
     "ShrTypEnum": {
       "enum": [

@@ -11,6 +11,12 @@ What's new?
 .. Next release
 .. ============
 
+v0.4.0 (2025-01-15)
+-------------------
+* Refactor acknowledgment schema (ΑΠΑ)
+* Improve validation documentation
+* DBDAT and IFDAT schemas based on IFDAT version 0.9.0
+
 v0.3.7 (2024-10-08)
 -------------------
 * Improve regex patterns

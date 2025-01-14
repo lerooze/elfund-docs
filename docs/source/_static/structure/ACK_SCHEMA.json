@@ -1,97 +1,23 @@
 {
   "$defs": {
-    "CriticalErrorsModel": {
+    "CorruptExcelReason": {
       "properties": {
-        "no_header": {
-          "default": [],
-          "items": {
-            "type": "string"
-          },
-          "title": "No Header",
-          "type": "array"
+        "unspecified": {
+          "default": false,
+          "title": "Unspecified",
+          "type": "boolean"
         },
-        "corrupt_zip": {
-          "default": [],
-          "items": {
-            "type": "string"
-          },
-          "title": "Corrupt Zip",
-          "type": "array"
-        },
-        "corrupt_excel": {
-          "default": [],
-          "items": {
-            "type": "string"
-          },
-          "title": "Corrupt Excel",
-          "type": "array"
-        },
-        "not_supported_domain": {
-          "default": [],
-          "items": {
-            "type": "string"
-          },
-          "title": "Not Supported Domain",
-          "type": "array"
-        },
-        "corrupt_json": {
-          "default": [],
-          "items": {
-            "type": "string"
-          },
-          "title": "Corrupt Json",
-          "type": "array"
-        },
-        "submitter_inconsistency": {
-          "default": [],
-          "items": {
-            "$ref": "#/$defs/SubmitterInconsistencyModel"
-          },
-          "title": "Submitter Inconsistency",
-          "type": "array"
-        },
-        "unauthorized_submitter": {
-          "default": [],
-          "items": {
-            "$ref": "#/$defs/UnauthorizedSubmitterModel"
-          },
-          "title": "Unauthorized Submitter",
-          "type": "array"
-        },
-        "schema_errors": {
-          "default": [],
-          "items": {
-            "$ref": "#/$defs/SchemaErrorSeries"
-          },
-          "title": "Schema Errors",
-          "type": "array"
-        },
-        "no_content": {
-          "default": [],
-          "items": {
-            "type": "string"
-          },
-          "title": "No Content",
-          "type": "array"
-        },
-        "wrong_extension": {
-          "default": [],
-          "items": {
-            "type": "string"
-          },
-          "title": "Wrong Extension",
-          "type": "array"
+        "header": {
+          "default": false,
+          "title": "Header",
+          "type": "boolean"
         }
       },
-      "title": "CriticalErrorsModel",
+      "title": "CorruptExcelReason",
       "type": "object"
     },
     "DupAliasModel": {
       "properties": {
-        "typ": {
-          "title": "Typ",
-          "type": "string"
-        },
         "lid": {
           "title": "Lid",
           "type": "string"
@@ -102,69 +28,237 @@
         }
       },
       "required": [
-        "typ",
         "lid",
         "rids"
       ],
       "title": "DupAliasModel",
       "type": "object"
     },
-    "EmailInfo": {
+    "ErrorInfo": {
       "properties": {
-        "email_id": {
-          "title": "Email Id",
-          "type": "integer"
+        "wrong_suffix": {
+          "anyOf": [
+            {
+              "const": true
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wrong Suffix"
         },
-        "email_subject": {
-          "title": "Email Subject",
-          "type": "string"
+        "no_header": {
+          "anyOf": [
+            {
+              "const": true
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "No Header"
         },
-        "email_date": {
-          "format": "date-time",
-          "title": "Email Date",
-          "type": "string"
+        "corrupt_excel": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/CorruptExcelReason"
+            }
+          ],
+          "default": {
+            "unspecified": false,
+            "header": false
+          }
         },
-        "files": {
+        "corrupt_json": {
+          "anyOf": [
+            {
+              "const": true
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Corrupt Json"
+        },
+        "not_supported_domain": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Not Supported Domain"
+        },
+        "inconsistency": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Inconsistency"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "no_content": {
           "default": [],
           "items": {
             "type": "string"
           },
-          "title": "Files",
+          "title": "No Content",
+          "type": "array"
+        },
+        "schema_error": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/SchemaError"
+          },
+          "title": "Schema Error",
+          "type": "array"
+        },
+        "unauthorized": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/UnauthorizedRecord"
+          },
+          "title": "Unauthorized",
+          "type": "array"
+        },
+        "dup_ra": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/DupAliasModel"
+          },
+          "title": "Dup Ra",
           "type": "array"
         }
       },
-      "required": [
-        "email_id",
-        "email_subject",
-        "email_date"
-      ],
-      "title": "EmailInfo",
+      "title": "ErrorInfo",
       "type": "object"
     },
-    "FileInfoStatus": {
+    "Header": {
       "properties": {
-        "name": {
-          "title": "Name",
+        "id": {
+          "title": "Id",
+          "type": "integer"
+        },
+        "submitter": {
+          "maxLength": 51,
+          "pattern": "^[a-zA-Z][!-~-]*$",
+          "title": "Submitter",
           "type": "string"
         },
-        "processed": {
-          "title": "Processed",
-          "type": "boolean"
-        }
-      },
-      "required": [
-        "name",
-        "processed"
-      ],
-      "title": "FileInfoStatus",
-      "type": "object"
-    },
-    "SchemaErrorSeries": {
-      "properties": {
+        "partner": {
+          "maxLength": 51,
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Partner",
+          "type": "string"
+        },
+        "domain": {
+          "enum": [
+            "IFDAT",
+            "DBDAT"
+          ],
+          "title": "Domain",
+          "type": "string"
+        },
         "filename": {
           "title": "Filename",
           "type": "string"
         },
+        "uploaded": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uploaded"
+        }
+      },
+      "required": [
+        "id",
+        "submitter",
+        "partner",
+        "domain",
+        "filename"
+      ],
+      "title": "Header",
+      "type": "object"
+    },
+    "Inconsistency": {
+      "properties": {
+        "partner_filename": {
+          "anyOf": [
+            {
+              "maxLength": 51,
+              "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Partner Filename"
+        },
+        "partner_object": {
+          "anyOf": [
+            {
+              "maxLength": 51,
+              "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Partner Object"
+        },
+        "user_filename": {
+          "anyOf": [
+            {
+              "maxLength": 51,
+              "pattern": "^[a-zA-Z][!-~-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "User Filename"
+        },
+        "user_object": {
+          "anyOf": [
+            {
+              "maxLength": 51,
+              "pattern": "^[a-zA-Z][!-~-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "User Object"
+        }
+      },
+      "title": "Inconsistency",
+      "type": "object"
+    },
+    "SchemaError": {
+      "properties": {
         "location": {
           "anyOf": [
             {
@@ -280,37 +374,51 @@
           "title": "File"
         }
       },
-      "required": [
-        "filename"
-      ],
-      "title": "SchemaErrorSeries",
+      "title": "SchemaError",
       "type": "object"
     },
-    "StandardErrorsModel": {
+    "UnauthorizedRecord": {
       "properties": {
-        "dup_alias": {
-          "default": [],
-          "items": {
-            "$ref": "#/$defs/DupAliasModel"
-          },
-          "title": "Dup Alias",
-          "type": "array"
-        }
-      },
-      "title": "StandardErrorsModel",
-      "type": "object"
-    },
-    "SubmitterInconsistencyModel": {
-      "properties": {
-        "filename": {
-          "title": "Filename",
+        "user": {
+          "maxLength": 51,
+          "pattern": "^[a-zA-Z][!-~-]*$",
+          "title": "User",
           "type": "string"
         },
-        "from_filename": {
+        "partner": {
+          "maxLength": 51,
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Partner",
+          "type": "string"
+        },
+        "iris_timestamp": {
+          "format": "date-time",
+          "title": "Iris Timestamp",
+          "type": "string"
+        },
+        "table": {
+          "title": "Table",
+          "type": "string"
+        },
+        "record_id": {
+          "title": "Record Id",
+          "type": "integer"
+        },
+        "ra_mc": {
+          "maxLength": 51,
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Ra Mc",
+          "type": "string"
+        },
+        "oa": {
+          "maxLength": 51,
+          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "title": "Oa",
+          "type": "string"
+        },
+        "iid": {
           "anyOf": [
             {
-              "maxLength": 51,
-              "pattern": "^[a-zA-Z][!-~]*",
               "type": "string"
             },
             {
@@ -318,13 +426,13 @@
             }
           ],
           "default": null,
-          "title": "From Filename"
+          "title": "Iid"
         },
-        "from_object": {
+        "cntrprty": {
           "anyOf": [
             {
               "maxLength": 51,
-              "pattern": "^[a-zA-Z][!-~]*",
+              "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
               "type": "string"
             },
             {
@@ -332,164 +440,111 @@
             }
           ],
           "default": null,
-          "title": "From Object"
-        }
-      },
-      "required": [
-        "filename"
-      ],
-      "title": "SubmitterInconsistencyModel",
-      "type": "object"
-    },
-    "UnauthorizedSubmitterModel": {
-      "properties": {
-        "filename": {
-          "title": "Filename",
-          "type": "string"
+          "title": "Cntrprty"
         },
-        "domain": {
-          "title": "Domain",
-          "type": "string"
+        "dt": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dt"
         }
       },
       "required": [
-        "filename",
-        "domain"
+        "user",
+        "partner",
+        "iris_timestamp",
+        "table",
+        "record_id",
+        "ra_mc",
+        "oa"
       ],
-      "title": "UnauthorizedSubmitterModel",
+      "title": "UnauthorizedRecord",
       "type": "object"
     },
-    "WarningsModel": {
+    "WarningInfo": {
       "properties": {
-        "empty_sheet": {
+        "wrong_alias": {
           "default": [],
           "items": {
-            "maxItems": 2,
-            "minItems": 2,
-            "prefixItems": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "string"
-              }
-            ],
-            "type": "array"
+            "$ref": "#/$defs/WrongAliasModel"
           },
-          "title": "Empty Sheet",
+          "title": "Wrong Alias",
           "type": "array"
         }
       },
-      "title": "WarningsModel",
+      "title": "WarningInfo",
+      "type": "object"
+    },
+    "WrongAliasModel": {
+      "properties": {
+        "typ": {
+          "title": "Typ",
+          "type": "string"
+        },
+        "lid": {
+          "title": "Lid",
+          "type": "string"
+        },
+        "rids": {
+          "title": "Rids",
+          "type": "string"
+        }
+      },
+      "required": [
+        "typ",
+        "lid",
+        "rids"
+      ],
+      "title": "WrongAliasModel",
       "type": "object"
     }
   },
   "properties": {
-    "id": {
-      "title": "Id",
-      "type": "integer"
+    "header": {
+      "$ref": "#/$defs/Header"
     },
-    "submitter": {
-      "anyOf": [
-        {
-          "maxLength": 51,
-          "pattern": "^[a-zA-Z][!-~]*",
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Submitter"
-    },
-    "submitter_email": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Submitter Email"
-    },
-    "submitter_unknown": {
-      "default": false,
-      "title": "Submitter Unknown",
-      "type": "boolean"
-    },
-    "data_domain": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Data Domain"
-    },
-    "emails": {
-      "default": [],
-      "items": {
-        "$ref": "#/$defs/EmailInfo"
-      },
-      "title": "Emails",
-      "type": "array"
-    },
-    "files": {
-      "default": [],
-      "items": {
-        "$ref": "#/$defs/FileInfoStatus"
-      },
-      "title": "Files",
-      "type": "array"
-    },
-    "critical_errors": {
+    "errors": {
       "allOf": [
         {
-          "$ref": "#/$defs/CriticalErrorsModel"
+          "$ref": "#/$defs/ErrorInfo"
         }
       ],
       "default": {
-        "no_header": [],
-        "corrupt_zip": [],
-        "corrupt_excel": [],
-        "not_supported_domain": [],
-        "corrupt_json": [],
-        "submitter_inconsistency": [],
-        "unauthorized_submitter": [],
-        "schema_errors": [],
+        "wrong_suffix": null,
+        "no_header": null,
+        "corrupt_excel": {
+          "header": false,
+          "unspecified": false
+        },
+        "corrupt_json": null,
+        "not_supported_domain": null,
+        "inconsistency": null,
         "no_content": [],
-        "wrong_extension": []
-      }
-    },
-    "standard_errors": {
-      "allOf": [
-        {
-          "$ref": "#/$defs/StandardErrorsModel"
-        }
-      ],
-      "default": {
-        "dup_alias": []
+        "schema_error": [],
+        "unauthorized": [],
+        "dup_ra": []
       }
     },
     "warnings": {
       "allOf": [
         {
-          "$ref": "#/$defs/WarningsModel"
+          "$ref": "#/$defs/WarningInfo"
         }
       ],
       "default": {
-        "empty_sheet": []
+        "wrong_alias": []
       }
     }
   },
   "required": [
-    "id"
+    "header"
   ],
   "title": "AcknowledgeModel",
   "type": "object"
