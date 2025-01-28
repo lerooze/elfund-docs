@@ -1,5 +1,8 @@
 version: 2
 
+sphinx:
+  configuration: docs/source/conf.py
+
 build:
   os: ubuntu-22.04
   tools:
@@ -16,3 +19,4 @@ python:
 formats:
   - epub
   - pdf
+
