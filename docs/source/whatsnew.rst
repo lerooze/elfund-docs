@@ -10,6 +10,9 @@ What's new?
 
 .. Next release
 .. ============
+v0.4.1 (2025-01-31)
+-------------------
+* Update IFDAT schema based on IFDAT version 0.9.1
 
 v0.4.0 (2025-01-15)
 -------------------
