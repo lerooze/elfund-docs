@@ -78,7 +78,7 @@ v0.3.0 (2024-02-29)
 v0.2.0 (2023-09-21)
 -------------------
 
-* Update DBDat and IFDat models after extensive consultations within the Statistics Department of BoG (see also respective changes in IFDat documentation).
+* Update DBDat and IFDat models after extensive consultations (see also respective changes in IFDat documentation).
 * Build documentation in pdf, epub and word
 * Minor fixes
 
