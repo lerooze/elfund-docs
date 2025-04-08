@@ -64,10 +64,29 @@
 
 Μετά από όλες τις προσαρμογές το περιεχόμενο του πίνακα IFDAT:REF_FND αναμένουμε να έχει μεταφερθεί όλο στη βάση DAT.
 
+----
+Μετατροπή πίνακα IFDAT.FND_DNMC στη δομή DAT.
 
+#. Από ένα αντίγραφο του πίνακα διαγράφονται όλες οι μετρήσεις πλην της RPRTD_BY, MNGD_BY και UNDR_UMBRLL_BY. Οι δύο αυτές μετρήσεις μαζί με τις διαστάσεις του πίνακα IFDAT.FND_DNMC (που είναι οι: ID, VLD_FRM, VLD_T) μεταφέρονται στον πίνακα DAT: REF.ORG2ORG με τον εξής τρόπο:
+  - Στη διάσταση LID του πίνακα REF.ORG2ORG μπαίνει το ESCB code που υπάρχει στις μετρήσεις RPRTD_BY, MNGD_BY και UNDR_UMBRLL_BY. Δημιουργούνται τόσες γραμμές όσα και τα διαφορετικά ESCB codes.
+    Αν για παραδειγμα στο μοντέλο IFDAT έχουμε:
+    +--+--------+------+--------+---------+--------------+
+    |ID| VLD_FRM| VLD_T|RPRTD_BY| MNGD_BY |UNDR_UMBRLL_BY| 
+    +==+========+======+========+=========+==============+
+    |A|21/01/2025||B|B|C|
+   Στο μοντέλο DBDAT θα δημιουργηθούν οι γραμμές
+    +---+---+--------+------+---------+-----------+--------------+
+    |LID|RID| VLD_FRM| VLD_T|MNGMNT_OF| UMBRLL_OF |IFDAT_RPRTR_OF| 
+    +===+========+====+========+=========+==============+
+    |A|B|21/01/2025||T||T|
+    |-|-|----------|--|--|--|
+    |A|C|21/01/2025|||T||
 
-Η1 
+#. Από ένα αντίγραφο του πίνακα διαγράφονται όλες οι μετρήσεις πλην των 
+NM, NM_LTN, NM_SHRT, CNTRY_RSDNC, STRT, STRT_LTN, CTY, CTY_LTN, PSTL_CD, URL, EMAIL, IS_LSTD, IS_INCTV, IS_UNDR_LQDTN, INSTTTNL_SCTR_CNTRL, IS_FOF, IS_ETF, IS_PEF, CRRNCY. 
+Οι μετρήσεις NM, NM_LTN, NM_SHRT, CNTRY_RSDNC, STRT, STRT_LTN, CTY, CTY_LTN, PSTL_CD, URL, EMAIL, IS_LSTD, IS_INCTV, IS_UNDR_LQDTN, INSTTTNL_SCTR_CNTRL, IS_FOF, IS_ETF, IS_PEF, CRRNCY μαζί με τις διαστάσεις του πίνακα IFDAT.FND_DNMC (που είναι οι: ID, VLD_FRM, VLD_T) μεταφέρονται στις αντίστοιχες μετρήσεις του πίνακα DAT: REF.ORG_DYNMC (και το ID ή αντικαθιστούμε με το ESCB_ID?).
+Οι μετρήσεις LGL_TYP, INVSTMNT_PLCY, DSTRBTN_PLCY, INVSTR_TYP, GRN_TYP, STRTGY, GGRPHCL_FCS, BND_FCS, RL_ESTT_TYP μεταφέρονται στον πίνακα στις μετρήσεις FND_LGL_TYP, FND_INVSTMNT_PLCY, FND_DSTRBTN_PLCY, FND_INVSTR_TYP, FND_GRN_TYP, FND_STRTGY, FND_GGRPHCL_FCS, FND_BND_FCS, FND_RL_ESTT_TYP αντίστοιχα.
+Από τη μεταβλητή INVSTMNT_PLCY του πίνακα IFDAT: REF.FND_DYNMC θα υπολογίζεται και η μέτρηση INSTTTNL_SCTR του πίνακα DAT: REF.ORG_DYNMC οποία θα παίρνει την τιμή S123 όταν το INVSTMNT_PLCY είναι 'MMF', '.' όταν το INVSTMNT_PLCY δεν έχει τιμή ή έχει την τιμή αρχικοποίησης και S124 σε όλες τις άλλες περιπτώσεις.
 
-
-
+#. 
 TBC
