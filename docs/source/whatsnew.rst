@@ -10,6 +10,10 @@ What's new?
 
 .. Next release
 .. ============
+v0.5.0 (2025-05-01)
+-------------------
+* Describe transformations between IFDAT and DBDAT to DAT
+
 v0.4.1 (2025-01-31)
 -------------------
 * Update IFDAT schema based on IFDAT version 0.9.1
