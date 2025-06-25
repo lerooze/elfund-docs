@@ -1,0 +1,208 @@
+{
+  "HEADER": {
+    "PARTNER": "E$0ECBM00221",
+    "USERNAME": "RIAD_RESTFUL",
+    "SOURCE": "REG",
+    "DOMAIN": "DBDat"
+  },
+  "DATASETS": {
+    "REF.ORG": [
+      {
+        "ID": "AUECBM876961",
+        "DT_BRTH": "1983-09-05T00:00:00Z",
+        "DT_CLS": "2022-10-01T00:00:00Z"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "DT_BRTH": "2011-12-06T00:00:00Z",
+        "DT_CLS": "2024-12-23T00:00:00Z"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "DT_BRTH": "2011-12-06T00:00:00Z",
+        "DT_CLS": "2024-12-23T00:00:00Z"
+      },
+      {
+        "ID": "FI00180910",
+        "DT_BRTH": "2022-08-01T00:00:00Z"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "DT_BRTH": "2011-12-06T00:00:00Z",
+        "DT_CLS": "2024-12-23T00:00:00Z"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "DT_BRTH": "2011-12-06T00:00:00Z",
+        "DT_CLS": "2024-12-23T00:00:00Z"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "DT_BRTH": "2011-12-06T00:00:00Z",
+        "DT_CLS": "2024-12-23T00:00:00Z"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "DT_BRTH": "2011-12-06T00:00:00Z",
+        "DT_CLS": "2024-12-23T00:00:00Z"
+      },
+      {
+        "ID": "EGRAK01049",
+        "DT_BRTH": "2023-08-07T00:00:00Z"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "DT_BRTH": "2011-12-06T00:00:00Z",
+        "DT_CLS": "2024-12-23T00:00:00Z"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "DT_BRTH": "2011-12-06T00:00:00Z",
+        "DT_CLS": "2024-12-23T00:00:00Z"
+      },
+      {
+        "ID": "AUECBM876961",
+        "DT_BRTH": "1983-09-05T00:00:00Z",
+        "DT_CLS": "2022-10-01T00:00:00Z"
+      },
+      {
+        "ID": "FI00180910",
+        "DT_BRTH": "2022-08-01T00:00:00Z"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "DT_BRTH": "2011-12-06T00:00:00Z",
+        "DT_CLS": "2024-12-23T00:00:00Z"
+      }
+    ],
+    "REF.ORG_DYNMC": [
+      {
+        "ID": "AUECBM876961",
+        "VLD_FRM": "2022-07-31T00:00:00Z",
+        "VLD_T": "2022-10-01T00:00:00Z",
+        "NM_LTN": "BNP Paribas Securities Services",
+        "CNTRY_RSDNC": "AU",
+        "INSTTTNL_SCTR": "S122"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "VLD_FRM": "2022-12-31T00:00:00Z",
+        "VLD_T": "2023-01-01T00:00:00Z",
+        "NM_LTN": "INTERCONTINENTAL INTERNATIONAL R.E.I.C.",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S124"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "VLD_FRM": "2016-01-01T00:00:00Z",
+        "VLD_T": "2016-06-30T00:00:00Z",
+        "NM_LTN": "INTERCONTINENTAL INTERNATIONAL R.E.I.C.",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S124"
+      },
+      {
+        "ID": "FI00180910",
+        "VLD_FRM": "2022-08-01T00:00:00Z",
+        "VLD_T": "2023-01-01T00:00:00Z",
+        "NM_LTN": "LIEDON TAKSIASEMAYHDISTYS RY",
+        "CNTRY_RSDNC": "FI",
+        "INSTTTNL_SCTR": "S11"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "VLD_FRM": "2018-03-01T00:00:00Z",
+        "VLD_T": "2018-12-31T00:00:00Z",
+        "NM_LTN": "INTERCONTINENTAL INTERNATIONAL R.E.I.C.",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S124"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "VLD_FRM": "2023-01-01T00:00:00Z",
+        "VLD_T": "2023-12-31T00:00:00Z",
+        "NM_LTN": "INTERCONTINENTAL INTERNATIONAL R.E.I.C.",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S124"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "VLD_FRM": "2011-12-06T00:00:00Z",
+        "VLD_T": "2012-03-12T00:00:00Z",
+        "NM_LTN": "INTERCONTINENTAL INTERNATIONAL R.E.I.C.",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S124"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "VLD_FRM": "2016-07-13T00:00:00Z",
+        "VLD_T": "2017-12-31T00:00:00Z",
+        "NM_LTN": "INTERCONTINENTAL INTERNATIONAL R.E.I.C.",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S124"
+      },
+      {
+        "ID": "EGRAK01049",
+        "VLD_FRM": "2024-12-31T00:00:00Z",
+        "VLD_T": "2025-05-01T00:00:00Z",
+        "NM_LTN": "DELOS EXTRA INCOME II 18MONTHS BOND FUND",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S124"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "VLD_FRM": "2015-12-31T00:00:00Z",
+        "VLD_T": "2016-01-01T00:00:00Z",
+        "NM_LTN": "INTERCONTINENTAL INTERNATIONAL R.E.I.C.",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S124"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "VLD_FRM": "2020-09-30T00:00:00Z",
+        "VLD_T": "2020-12-31T00:00:00Z",
+        "NM_LTN": "INTERCONTINENTAL INTERNATIONAL R.E.I.C.",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S124"
+      },
+      {
+        "ID": "AUECBM876961",
+        "VLD_FRM": "2018-09-30T00:00:00Z",
+        "VLD_T": "2020-01-31T00:00:00Z",
+        "NM_LTN": "BNP Paribas Securities Services",
+        "CNTRY_RSDNC": "AU",
+        "INSTTTNL_SCTR": "S122"
+      },
+      {
+        "ID": "FI00180910",
+        "VLD_FRM": "2023-01-01T00:00:00Z",
+        "VLD_T": "2024-06-01T00:00:00Z",
+        "NM_LTN": "LIEDON TAKSIASEMAYHDISTYS RY",
+        "CNTRY_RSDNC": "FI",
+        "INSTTTNL_SCTR": "S11"
+      },
+      {
+        "ID": "EGRAEEAP005",
+        "VLD_FRM": "2012-03-12T00:00:00Z",
+        "VLD_T": "2014-01-01T00:00:00Z",
+        "NM_LTN": "INTERCONTINENTAL INTERNATIONAL R.E.I.C.",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S124"
+      },
+      {
+        "ID": "AUECBM876961",
+        "VLD_FRM": "2018-09-30T00:00:00Z",
+        "VLD_T": "2020-01-31T00:00:00Z",
+        "NM_LTN": "BNP Paribas Securities Services",
+        "CNTRY_RSDNC": "AU",
+        "INSTTTNL_SCTR": "S122"
+      },
+      {
+        "ID": "EGRAK01049",
+        "VLD_FRM": "2025-05-01T00:00:00Z",
+        "NM_LTN": "DELOS STANDARD VARIABLE NET ASSET VALUE MONEY MARKET FUND II",
+        "CNTRY_RSDNC": "GR",
+        "INSTTTNL_SCTR": "S123"
+      }
+    ]
+  }
+}

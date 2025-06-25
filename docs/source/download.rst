@@ -7,8 +7,6 @@
 * :download:`DBDat Data Model </_static/structure/DBDAT_DATAMODEL.xlsx>`
 * :download:`DBDat Υπόδειγμα EXCEL </_static/structure/DBDAT_TEMPLATE.xlsx>`
 * :download:`DBDAt JSON Schema </_static/structure/DBDAT_SCHEMA.json>`
-* :download:`ACK Schema </_static/structure/ACK_SCHEMA.json>`
-* :download:`API Schema </_static/structure/ELFUND_API_SCHEMA.json>`
 
 Τις οδηγιές για offline χρήση θα τις κατεβάσετε κάνοντας click κάτω αριστερά
 στο **Read The docs** και έπειτα **Downloads** εκτός από τις οδηγίες σε WORD

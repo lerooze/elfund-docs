@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<ns1:eventsResponse xmlns:ns2="http://www.ecb.int/schema/RIAD/filters" xmlns:ns1="http://www.ecb.int/schema/RIAD/sdd/events">
+  <ns1:filters>
+    <ns1:src_entty_riad_id>
+      <ns2:in>
+        <ns2:value>21974339</ns2:value>
+        <ns2:value>106072</ns2:value>
+        <ns2:value>23249498</ns2:value>
+        <ns2:value>18061578</ns2:value>
+      </ns2:in>
+    </ns1:src_entty_riad_id>
+  </ns1:filters>
+  <ns1:resultProperties>
+    <ns1:resultProperty>src_entty_riad_id</ns1:resultProperty>
+    <ns1:resultProperty>trgt_entty_riad_id</ns1:resultProperty>
+    <ns1:resultProperty>dt_evnt</ns1:resultProperty>
+    <ns1:resultProperty>typ_evnt</ns1:resultProperty>
+  </ns1:resultProperties>
+  <ns1:resultsInformation>
+    <ns1:count>1</ns1:count>
+  </ns1:resultsInformation>
+  <ns1:results>
+    <ns1:event>
+      <ns1:src_entty_riad_id>106072</ns1:src_entty_riad_id>
+      <ns1:trgt_entty_riad_id>762198</ns1:trgt_entty_riad_id>
+      <ns1:dt_evnt>2024-12-23</ns1:dt_evnt>
+      <ns1:typ_evnt>1</ns1:typ_evnt>
+    </ns1:event>
+  </ns1:results>
+</ns1:eventsResponse>

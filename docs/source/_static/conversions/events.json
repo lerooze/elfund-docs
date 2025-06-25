@@ -1,0 +1,16 @@
+{
+  "HEADER": {
+    "PARTNER": "E$0ECBM00221",
+    "USERNAME": "RIAD_RESTFUL",
+    "SOURCE": "REG",
+    "DOMAIN": "DBDat"
+  },
+  "DATASETS": {
+    "REF.ORG": [
+      {
+        "ID": "EGRAEEAP005",
+        "MRGD_WTH": "EGRAEEAP006"
+      }
+    ]
+  }
+}

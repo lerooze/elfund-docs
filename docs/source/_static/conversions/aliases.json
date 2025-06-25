@@ -1,0 +1,27 @@
+{
+  "HEADER": {
+    "PARTNER": "E$0ECBM00221",
+    "USERNAME": "RIAD_RESTFUL",
+    "SOURCE": "REG",
+    "DOMAIN": "DBDat"
+  },
+  "DATASETS": {
+    "REF.ORG_ALIAS": [
+      {
+        "LID": "TFI00180910",
+        "RID": "EFI00180910",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "BFI0018091-0",
+        "RID": "EFI00180910",
+        "ALIAS_OF": "T"
+      },
+      {
+        "LID": "B149 440 291",
+        "RID": "EAUECBM876961",
+        "ALIAS_OF": "T"
+      }
+    ]
+  }
+}

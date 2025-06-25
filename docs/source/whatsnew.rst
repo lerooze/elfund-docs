@@ -10,6 +10,53 @@ What's new?
 
 .. Next release
 .. ============
+.. Next release
+.. ============
+
+v0.9.6 (2025-06-12)
+-------------------
+* Enriched transition rules from DAT to BED
+* Described access rules to BED
+* Removed rvsn_rsn measure from every accounting table
+* Removed comment table
+* Minor restructuring of the ELFUND documentation
+* Updated schemas, data models, templates and examples
+
+v0.9.5 (2025-06-02)
+-------------------
+* Added riad to dbdat transformation and workflow
+* Added csdb to dbdat transformation and workflow
+* Enriched APA checks
+* Added rvsn_rsn measure to every accounting table
+* Added comment table
+* Added FM and EXR tables in DBDAT
+* Refactor ELFUND documentation structure
+* Removed TIMESTAMP variable in DAT (will be added in DAT to BED transfromation)
+* New version of IFDAT to DAT transformation
+* Regenerated schemas, datamodels, structure, examples
+
+v0.9.4 (2025-05-26)
+-------------------
+* Improve regex for identifiers
+* Rename OA to OAID in DAT:REF.DPST and DAT:REF.LN 
+* Fix max_length for string vars
+* Forbid extra variables in json schemas
+* Enrich examples
+
+v0.9.3 (2025-05-19)
+-------------------
+* Fix max_length for string vars
+* Reintroduce Reports: Database report, IFDATFULL report, IFDAT_SNAPSHOT report
+* Enrich examples
+* Introduce acq (for incoming files) and ack (for validation reports - APA)
+* Jump to v0.9.3 to allign with IFDAT versions
+
+v0.6.0 (2025-05-16)
+-------------------
+* Update data models and json schemas to not allow reseting IFDAT variables that will cause calls to the BED database
+* Fix bugs in schemas
+* Remove checks in the transformation from IFDAT and DBDAT to DAT
+
 v0.5.0 (2025-05-01)
 -------------------
 * Describe transformations between IFDAT and DBDAT to DAT

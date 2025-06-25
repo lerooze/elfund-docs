@@ -4,13 +4,12 @@
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(M[A-Z]{4}_[!-~]+)|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(M[A-Z]{4}_[!-~]+)|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Iid",
           "type": "string"
         },
         "ID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Id",
           "type": "string"
         },
@@ -27,19 +26,11 @@
           "type": "number"
         },
         "STCK.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "STCK.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "FLS": {
@@ -47,19 +38,11 @@
           "type": "number"
         },
         "FLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "QNTTY": {
@@ -68,19 +51,11 @@
           "type": "number"
         },
         "QNTTY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "QNTTY.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -99,8 +74,7 @@
     "AccDpstSeries": {
       "properties": {
         "IID": {
-          "maxLength": 51,
-          "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(P[A-Za-z0-9@$-]+_[!-~]+)|(_[A-Z]{3}_E[A-Za-z0-9_@$\\-][!-~]*)$",
+          "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)|(_[A-Z]{3}_E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,42})$",
           "title": "Iid",
           "type": "string"
         },
@@ -118,19 +92,11 @@
           "type": "number"
         },
         "STCK.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "STCK.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "FLS": {
@@ -138,19 +104,11 @@
           "type": "number"
         },
         "FLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "ACCRLS": {
@@ -158,19 +116,11 @@
           "type": "number"
         },
         "ACCRLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "ACCRLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -189,7 +139,7 @@
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Iid",
           "type": "string"
         },
@@ -207,19 +157,11 @@
           "type": "number"
         },
         "QNTTY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "QNTTY.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "BK_PRC": {
@@ -228,19 +170,11 @@
           "type": "number"
         },
         "BK_PRC.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "BK_PRC.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "SBSCRPTNS": {
@@ -249,19 +183,11 @@
           "type": "number"
         },
         "SBSCRPTNS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "SBSCRPTNS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "RDMPTNS": {
@@ -270,19 +196,11 @@
           "type": "number"
         },
         "RDMPTNS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "RDMPTNS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "INCM": {
@@ -290,19 +208,11 @@
           "type": "number"
         },
         "INCM.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "INCM.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -323,7 +233,7 @@
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^PE[A-Za-z0-9@$-]+_[!-~]+$",
+          "pattern": "^PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+$",
           "title": "Iid",
           "type": "string"
         },
@@ -341,19 +251,11 @@
           "type": "number"
         },
         "STCK.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "STCK.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "FLS": {
@@ -361,19 +263,11 @@
           "type": "number"
         },
         "FLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "ACCRLS": {
@@ -381,38 +275,22 @@
           "type": "number"
         },
         "ACCRLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "ACCRLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "IS_GRP_LN": {
           "$ref": "#/$defs/BoolEnum"
         },
         "IS_GRP_LN.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IS_GRP_LN.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -432,13 +310,12 @@
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Iid",
           "type": "string"
         },
         "ID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Id",
           "type": "string"
         },
@@ -455,19 +332,11 @@
           "type": "number"
         },
         "STCK.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "STCK.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "FLS": {
@@ -475,19 +344,11 @@
           "type": "number"
         },
         "FLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "QNTTY": {
@@ -495,19 +356,11 @@
           "type": "number"
         },
         "QNTTY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "QNTTY.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "LND_FR_SFT": {
@@ -516,38 +369,22 @@
           "type": "number"
         },
         "LND_FR_SFT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "LND_FR_SFT.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "IS_DRCT_INVSTMNT": {
           "$ref": "#/$defs/BoolExtEnum"
         },
         "IS_DRCT_INVSTMNT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IS_DRCT_INVSTMNT.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -569,13 +406,12 @@
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Iid",
           "type": "string"
         },
         "ID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Id",
           "type": "string"
         },
@@ -592,19 +428,11 @@
           "type": "number"
         },
         "STCK.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "STCK.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "FLS": {
@@ -612,19 +440,11 @@
           "type": "number"
         },
         "FLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "NMNL_STCK": {
@@ -632,19 +452,11 @@
           "type": "number"
         },
         "NMNL_STCK.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "NMNL_STCK.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "LND_FR_SFT": {
@@ -653,19 +465,11 @@
           "type": "number"
         },
         "LND_FR_SFT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "LND_FR_SFT.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "ACCRLS": {
@@ -673,19 +477,11 @@
           "type": "number"
         },
         "ACCRLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "ACCRLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -719,8 +515,7 @@
     "AsstNnFnnclSeries": {
       "properties": {
         "ID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Id",
           "type": "string"
         },
@@ -744,19 +539,11 @@
           "type": "number"
         },
         "STCK.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "STCK.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "FLS": {
@@ -764,19 +551,11 @@
           "type": "number"
         },
         "FLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "ACCRLS": {
@@ -784,19 +563,11 @@
           "type": "number"
         },
         "ACCRLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "ACCRLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -816,8 +587,7 @@
     "AsstRmnngSeries": {
       "properties": {
         "ID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Id",
           "type": "string"
         },
@@ -838,19 +608,11 @@
           "type": "number"
         },
         "STCK.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "STCK.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "FLS": {
@@ -858,19 +620,11 @@
           "type": "number"
         },
         "FLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -928,7 +682,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -942,11 +696,7 @@
           "type": "number"
         },
         "RT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -1264,20 +1014,20 @@
           "title": "Acc.Hldr",
           "type": "array"
         },
-        "ACC.SHR_KEY": {
+        "ACC.KEY": {
           "default": null,
           "items": {
             "$ref": "#/$defs/ShrKeySeries"
           },
-          "title": "Acc.Shr Key",
+          "title": "Acc.Key",
           "type": "array"
         },
-        "ACC.FUND_KEY": {
+        "ACC.ORG_KEY": {
           "default": null,
           "items": {
-            "$ref": "#/$defs/FndKeySeries"
+            "$ref": "#/$defs/OrgKeySeries"
           },
-          "title": "Acc.Fund Key",
+          "title": "Acc.Org Key",
           "type": "array"
         },
         "ACC.IFDAT_DRGTN": {
@@ -1296,7 +1046,7 @@
       "properties": {
         "LID": {
           "maxLength": 51,
-          "pattern": "^PE[A-Za-z0-9@$-]+_[!-~]+$",
+          "pattern": "^PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+$",
           "title": "Lid",
           "type": "string"
         },
@@ -1311,11 +1061,7 @@
           "$ref": "#/$defs/BoolEnum"
         },
         "ALIAS_OF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -1376,7 +1122,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -1394,30 +1140,23 @@
         },
         "NM": {
           "default": null,
-          "maxLength": 128,
+          "maxLength": 256,
           "title": "Nm",
           "type": "string"
         },
         "NM.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "NM_LTN": {
           "default": null,
-          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
+          "maxLength": 128,
+          "pattern": "^[\\u0000-\\u024F\u2018-\u201f\u20ac]+$",
           "title": "Nm Ltn",
           "type": "string"
         },
         "NM_LTN.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "NM_SHRT": {
@@ -1427,27 +1166,15 @@
           "type": "string"
         },
         "NM_SHRT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "STTS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DbtSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/DbtSttsEnum",
           "default": null
         },
         "STTS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "MTRTY_DT": {
@@ -1457,27 +1184,15 @@
           "type": "string"
         },
         "MTRTY_DT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CRRNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/GenCrrncyEnum"
-            }
-          ],
+          "$ref": "#/$defs/GenCrrncyEnum",
           "default": null
         },
         "CRRNCY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "ISS_PRC": {
@@ -1487,11 +1202,7 @@
           "type": "number"
         },
         "ISS_PRC.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "RDMPTN_PRC": {
@@ -1501,27 +1212,15 @@
           "type": "number"
         },
         "RDMPTN_PRC.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "MRKT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/GenMrktEnum"
-            }
-          ],
+          "$ref": "#/$defs/GenMrktEnum",
           "default": null
         },
         "MRKT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "ACCRL_STRTDT": {
@@ -1531,187 +1230,95 @@
           "type": "string"
         },
         "ACCRL_STRTDT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DbtTypEnum"
-            }
-          ],
+          "$ref": "#/$defs/DbtTypEnum",
           "default": null
         },
         "TYP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "GRNT_LVL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DbtGrntLvlEnum"
-            }
-          ],
+          "$ref": "#/$defs/DbtGrntLvlEnum",
           "default": null
         },
         "GRNT_LVL.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "RNK_LVL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DbtRnkLvlEnum"
-            }
-          ],
+          "$ref": "#/$defs/DbtRnkLvlEnum",
           "default": null
         },
         "RNK_LVL.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "SCRTY_LVL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DbtScrtyLvlEnum"
-            }
-          ],
+          "$ref": "#/$defs/DbtScrtyLvlEnum",
           "default": null
         },
         "SCRTY_LVL.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IS_SCRTZTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "IS_SCRTZTN.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "SCRTZTN_TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DbtScrtznTypEnum"
-            }
-          ],
+          "$ref": "#/$defs/DbtScrtznTypEnum",
           "default": null
         },
         "SCRTZTN_TYP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IS_CVRD": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "IS_CVRD.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CVRD_TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DbtCvrdTypEnum"
-            }
-          ],
+          "$ref": "#/$defs/DbtCvrdTypEnum",
           "default": null
         },
         "CVRD_TYP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CPN_TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DbtCpnTypEnum"
-            }
-          ],
+          "$ref": "#/$defs/DbtCpnTypEnum",
           "default": null
         },
         "CPN_TYP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CPN_CRRNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/GenCrrncyEnum"
-            }
-          ],
+          "$ref": "#/$defs/GenCrrncyEnum",
           "default": null
         },
         "CPN_CRRNCY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CPN_FRQNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DbtCpnFrqncyEnum"
-            }
-          ],
+          "$ref": "#/$defs/DbtCpnFrqncyEnum",
           "default": null
         },
         "CPN_FRQNCY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CPN_SPRD": {
@@ -1721,11 +1328,7 @@
           "type": "integer"
         },
         "CPN_SPRD.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CPN_MLTPLR": {
@@ -1735,11 +1338,7 @@
           "type": "number"
         },
         "CPN_MLTPLR.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CPN_CP": {
@@ -1749,11 +1348,7 @@
           "type": "number"
         },
         "CPN_CP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CPN_FLR": {
@@ -1763,11 +1358,7 @@
           "type": "number"
         },
         "CPN_FLR.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FRST_CPN_DT": {
@@ -1777,11 +1368,7 @@
           "type": "string"
         },
         "FRST_CPN_DT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "LST_CPN_DT": {
@@ -1791,11 +1378,7 @@
           "type": "string"
         },
         "LST_CPN_DT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "MNMM_INVSTMNT": {
@@ -1805,41 +1388,26 @@
           "type": "number"
         },
         "MNMM_INVSTMNT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IS_PRVT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "IS_PRVT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CFI": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{6}$)|(^\\.$)",
+          "maxLength": 6,
+          "pattern": "^[a-zA-Z0-9_]{6}$",
           "title": "Cfi",
           "type": "string"
         },
         "CFI.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -1875,7 +1443,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -1892,11 +1460,7 @@
           "type": "number"
         },
         "AMNT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "PRC": {
@@ -1905,11 +1469,7 @@
           "type": "number"
         },
         "PRC.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -1927,7 +1487,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -1942,11 +1502,7 @@
           "type": "number"
         },
         "PRC.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "ACCRD_INTRST": {
@@ -1955,11 +1511,7 @@
           "type": "number"
         },
         "ACCRD_INTRST.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "OTSTNDNG": {
@@ -1968,11 +1520,7 @@
           "type": "number"
         },
         "OTSTNDNG.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -2029,7 +1577,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -2040,11 +1588,7 @@
           "type": "string"
         },
         "DT_BRTH.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "DT_CLS": {
@@ -2054,11 +1598,7 @@
           "type": "string"
         },
         "DT_CLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "ORGNL_MTRTY": {
@@ -2068,71 +1608,51 @@
           "type": "string"
         },
         "ORGNL_MTRTY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "RSTRCTRD_T": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Rstrctrd T",
           "type": "string"
         },
         "RSTRCTRD_T.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "RSTRCTRD_FRM": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^PE[A-Za-z0-9@$-]+_[!-~]+$",
+          "pattern": "^PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+$",
           "title": "Rstrctrd Frm",
           "type": "string"
         },
         "RSTRCTRD_FRM.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "UNDRLYNG": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Undrlyng",
           "type": "string"
         },
         "UNDRLYNG.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "TRNSFRMD_T": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Trnsfrmd T",
           "type": "string"
         },
         "TRNSFRMD_T.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -2192,7 +1712,7 @@
       "properties": {
         "LID": {
           "maxLength": 51,
-          "pattern": "^PE[A-Za-z0-9@$-]+_[!-~]+$",
+          "pattern": "^(PE[A-Za-z0-9@$-]+_[!-~]+)|(U[0-9]{3,6})$",
           "title": "Lid",
           "type": "string"
         },
@@ -2207,11 +1727,7 @@
           "$ref": "#/$defs/BoolEnum"
         },
         "ALIAS_OF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -2227,7 +1743,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(M[A-Z]{4}_[!-~]+)|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(M[A-Z]{4}_[!-~]+)|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -2238,11 +1754,7 @@
           "type": "string"
         },
         "DT_BRTH.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "DT_CLS": {
@@ -2252,71 +1764,45 @@
           "type": "string"
         },
         "DT_CLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FISN": {
           "default": null,
-          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_]+$",
           "title": "Fisn",
           "type": "string"
         },
         "FISN.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "TCKR": {
           "default": null,
-          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,11}$)|(^\\.$)",
+          "maxLength": 12,
+          "pattern": "^[a-zA-Z0-9_]+$",
           "title": "Tckr",
           "type": "string"
         },
         "TCKR.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DrvtvTypEnum"
-            }
-          ],
+          "$ref": "#/$defs/DrvtvTypEnum",
           "default": null
         },
         "TYP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CRRNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/GenCrrncyEnum"
-            }
-          ],
+          "$ref": "#/$defs/GenCrrncyEnum",
           "default": null
         },
         "CRRNCY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "MLTPLR": {
@@ -2326,41 +1812,28 @@
           "type": "number"
         },
         "MLTPLR.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "MRKT_CNTRPRTY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/GenMrktEnum"
-            }
-          ],
+          "$ref": "#/$defs/GenMrktEnum",
           "default": null
         },
         "CNTRPRTY": {
           "default": null,
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^([ETB][A-Z]{2}[A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(PE[A-Z]{2}[A-Za-z0-9@$-]+)$",
           "title": "Cntrprty",
           "type": "string"
         },
         "TRNSFRMD_T": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(M[A-Z]{4}_[!-~]+)|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(M[A-Z]{4}_[!-~]+)|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Trnsfrmd T",
           "type": "string"
         },
         "TRNSFRMD_T.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -2373,8 +1846,7 @@
     "DpstSeries": {
       "properties": {
         "ID": {
-          "maxLength": 51,
-          "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(P[A-Za-z0-9@$-]+_[!-~]+)|(_[A-Z]{3}_E[A-Za-z0-9_@$\\-][!-~]*)$",
+          "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -2385,11 +1857,7 @@
           "type": "string"
         },
         "DT_BRTH.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "DT_CLS": {
@@ -2399,104 +1867,61 @@
           "type": "string"
         },
         "DT_CLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DepTypEnum"
-            }
-          ],
+          "$ref": "#/$defs/DepTypEnum",
           "default": null
         },
         "TYP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "NTC": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/DepNtcEnum"
-            }
-          ],
+          "$ref": "#/$defs/DepNtcEnum",
           "default": null
         },
         "NTC.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CRRNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/GenCrrncyEnum"
-            }
-          ],
+          "$ref": "#/$defs/GenCrrncyEnum",
           "default": null
         },
         "CRRNCY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "OA": {
           "default": null,
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Oa",
           "type": "string"
         },
         "OA.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CNTRPRTY": {
           "default": null,
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^([ETB][A-Z]{2}[A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(PE[A-Z]{2}[A-Za-z0-9@$-]+)$",
           "title": "Cntrprty",
           "type": "string"
         },
         "CNTRPRTY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "TRNSFRMD_T": {
           "default": null,
-          "maxLength": 51,
-          "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Trnsfrmd T",
           "type": "string"
         },
         "TRNSFRMD_T.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -2509,8 +1934,7 @@
     "DrgtnSeries": {
       "properties": {
         "ID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Id",
           "type": "string"
         },
@@ -2520,19 +1944,11 @@
           "type": "string"
         },
         "VLTN_DT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "VLTN_DT.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "ASSTS": {
@@ -2541,57 +1957,33 @@
           "type": "number"
         },
         "ASSTS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "ASSTS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "VLTN_FRQNCY": {
           "$ref": "#/$defs/GenFrqncyEnum"
         },
         "VLTN_FRQNCY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "VLTN_FRQNCY.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "IFDAT_DRGTN_TYPE": {
           "$ref": "#/$defs/IfdatDrgtnTypEnum"
         },
         "IFDAT_DRGTN_TYPE.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IFDAT_DRGTN_TYPE.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "DRGTN_YR": {
@@ -2600,19 +1992,11 @@
           "type": "integer"
         },
         "DRGTN_YR.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "DRGTN_YR.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "CMMNT": {
@@ -2621,19 +2005,11 @@
           "type": "string"
         },
         "CMMNT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CMMNT.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -2682,7 +2058,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -2697,11 +2073,7 @@
           "type": "string"
         },
         "EX_DT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "DCLRTN_DT": {
@@ -2710,11 +2082,7 @@
           "type": "string"
         },
         "DCLRTN_DT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "PYMNT_DT": {
@@ -2723,44 +2091,28 @@
           "type": "string"
         },
         "PYMNT_DT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FRQNCY": {
           "$ref": "#/$defs/DvdndCstmFrqncyEnum"
         },
         "FRQNCY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "TYP": {
           "$ref": "#/$defs/DvdndTypEnum"
         },
         "TYP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CRRNCY": {
           "$ref": "#/$defs/GenCrrncyEnum"
         },
         "CRRNCY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "AMNT": {
@@ -2769,11 +2121,7 @@
           "type": "number"
         },
         "AMNT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -2907,53 +2255,6 @@
       ],
       "title": "FndInvstrTypEnum",
       "type": "string"
-    },
-    "FndKeySeries": {
-      "properties": {
-        "ID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
-          "title": "Id",
-          "type": "string"
-        },
-        "DT": {
-          "format": "date-time",
-          "title": "Dt",
-          "type": "string"
-        },
-        "FRQNCY": {
-          "$ref": "#/$defs/GenFrqncyEnum"
-        },
-        "FEES": {
-          "minimum": 0.0,
-          "title": "Fees",
-          "type": "number"
-        },
-        "FEES.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
-          "default": null
-        },
-        "FEES.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
-          "default": null
-        }
-      },
-      "required": [
-        "ID",
-        "DT",
-        "FRQNCY",
-        "FEES"
-      ],
-      "title": "FndKeySeries",
-      "type": "object"
     },
     "FndLglTypEnum": {
       "enum": [
@@ -5753,14 +5054,12 @@
       "additionalProperties": false,
       "properties": {
         "PARTNER": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Partner",
           "type": "string"
         },
         "USERNAME": {
-          "maxLength": 51,
-          "pattern": "^[a-zA-Z][!-~-]*$",
+          "pattern": "^[a-zA-Z][!-~-]{1,50}$",
           "title": "Username",
           "type": "string"
         },
@@ -5786,13 +5085,12 @@
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Iid",
           "type": "string"
         },
         "ID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^([ETB][A-Z]{2}[A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(PE[A-Z]{2}[A-Za-z0-9@$-]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -5810,19 +5108,11 @@
           "type": "number"
         },
         "QNTTY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "QNTTY.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "SBSCRPTNS": {
@@ -5831,19 +5121,11 @@
           "type": "number"
         },
         "SBSCRPTNS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "SBSCRPTNS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "RDMPTNS": {
@@ -5852,19 +5134,11 @@
           "type": "number"
         },
         "RDMPTNS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "RDMPTNS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -5893,7 +5167,7 @@
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Iid",
           "type": "string"
         },
@@ -5911,19 +5185,11 @@
           "type": "number"
         },
         "STCK.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "STCK.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "FLS": {
@@ -5931,19 +5197,11 @@
           "type": "number"
         },
         "FLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "NMNL_STCK": {
@@ -5952,19 +5210,11 @@
           "type": "number"
         },
         "NMNL_STCK.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "NMNL_STCK.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "ACCRLS": {
@@ -5972,19 +5222,11 @@
           "type": "number"
         },
         "ACCRLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "ACCRLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -6003,8 +5245,7 @@
     "LbltyRmnngSeries": {
       "properties": {
         "ID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Id",
           "type": "string"
         },
@@ -6025,19 +5266,11 @@
           "type": "number"
         },
         "STCK.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "STCK.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "FLS": {
@@ -6045,19 +5278,11 @@
           "type": "number"
         },
         "FLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -6076,7 +5301,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^PE[A-Za-z0-9@$-]+_[!-~]+$",
+          "pattern": "^PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+$",
           "title": "Id",
           "type": "string"
         },
@@ -6087,11 +5312,7 @@
           "type": "string"
         },
         "DT_BRTH.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "DT_CLS": {
@@ -6101,88 +5322,54 @@
           "type": "string"
         },
         "DT_CLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CRRNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/GenCrrncyEnum"
-            }
-          ],
+          "$ref": "#/$defs/GenCrrncyEnum",
           "default": null
         },
         "CRRNCY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/LonFulTypEnum"
-            }
-          ],
+          "$ref": "#/$defs/LonFulTypEnum",
           "default": null
         },
         "TYP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "OA": {
           "default": null,
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Oa",
           "type": "string"
         },
         "OA.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CNTRPRTY": {
           "default": null,
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^([ETB][A-Z]{2}[A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(PE[A-Z]{2}[A-Za-z0-9@$-]+)$",
           "title": "Cntrprty",
           "type": "string"
         },
         "CNTRPRTY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "TRNSFRMD_T": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^PE[A-Za-z0-9@$-]+_[!-~]+$",
+          "pattern": "^PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+$",
           "title": "Trnsfrmd T",
           "type": "string"
         },
         "TRNSFRMD_T.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -6216,14 +5403,13 @@
     "Org2DbtSeries": {
       "properties": {
         "LID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Lid",
           "type": "string"
         },
         "RID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Rid",
           "type": "string"
         },
@@ -6240,19 +5426,11 @@
           "type": "string"
         },
         "ISSR_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "ISSR_OF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -6266,14 +5444,12 @@
     "Org2OrgSeries": {
       "properties": {
         "LID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Lid",
           "type": "string"
         },
         "RID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Rid",
           "type": "string"
         },
@@ -6290,131 +5466,67 @@
           "type": "string"
         },
         "MNGMNT_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "MNGMNT_OF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "UMBRLL_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "UMBRLL_OF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IFDAT_RPRTR_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "IFDAT_RPRTR_OF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "BSIDAT_RPRTR_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "BSIDAT_RPRTR_OF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "MIRDAT_RPRTR_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "MIRDAT_RPRTR_OF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "AUXDAT_RPRTR_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "AUXDAT_RPRTR_OF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "ICDAT_RPRTR_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "ICDAT_RPRTR_OF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "PFDAT_RPRTR_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "PFDAT_RPRTR_OF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -6428,14 +5540,13 @@
     "Org2ShrSeries": {
       "properties": {
         "LID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Lid",
           "type": "string"
         },
         "RID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Rid",
           "type": "string"
         },
@@ -6452,19 +5563,11 @@
           "type": "string"
         },
         "ISSR_OF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "ISSR_OF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -6478,14 +5581,12 @@
     "OrgAliasSeries": {
       "properties": {
         "LID": {
-          "maxLength": 51,
-          "pattern": "^(L[0-9A-Z]{18}[0-9]{2})|([TB][A-Za-z0-9_@$\\-][!-~]*)|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^([TB][A-Z]{2}[A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(PE[A-Z]{2}[A-Za-z0-9@$-]+)$",
           "title": "Lid",
           "type": "string"
         },
         "RID": {
-          "maxLength": 51,
-          "pattern": "^E[A-Za-z0-9_@$-][!-~]*$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Rid",
           "type": "string"
         },
@@ -6493,11 +5594,7 @@
           "$ref": "#/$defs/BoolEnum"
         },
         "ALIAS_OF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -6512,8 +5609,7 @@
     "OrgDynmcSeries": {
       "properties": {
         "ID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^([ETB][A-Z]{2}[A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(PE[A-Z]{2}[A-Za-z0-9@$-]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -6536,25 +5632,18 @@
           "type": "string"
         },
         "NM.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "NM_LTN": {
           "default": null,
-          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
+          "maxLength": 128,
+          "pattern": "^[\\u0000-\\u024F\u2018-\u201f\u20ac]+$",
           "title": "Nm Ltn",
           "type": "string"
         },
         "NM_LTN.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "NM_SHRT": {
@@ -6564,11 +5653,7 @@
           "type": "string"
         },
         "NM_SHRT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "STRT": {
@@ -6578,25 +5663,18 @@
           "type": "string"
         },
         "STRT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "STRT_LTN": {
           "default": null,
-          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
+          "maxLength": 128,
+          "pattern": "^[\\u0000-\\u024F\u2018-\u201f\u20ac]+$",
           "title": "Strt Ltn",
           "type": "string"
         },
         "STRT_LTN.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CTY": {
@@ -6606,25 +5684,18 @@
           "type": "string"
         },
         "CTY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CTY_LTN": {
           "default": null,
-          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,32}$)|(^\\.$)",
+          "maxLength": 32,
+          "pattern": "^[\\u0000-\\u024F\u2018-\u201f\u20ac]+$",
           "title": "Cty Ltn",
           "type": "string"
         },
         "CTY_LTN.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "PSTL_CD": {
@@ -6634,11 +5705,7 @@
           "type": "string"
         },
         "PSTL_CD.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "URL": {
@@ -6650,393 +5717,210 @@
           "type": "string"
         },
         "URL.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "EMAIL": {
           "default": null,
           "format": "email",
+          "maxLength": 128,
           "title": "Email",
           "type": "string"
         },
         "EMAIL.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "INTRNTNL_ORGNZTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/OrgIntrntnlOrgnstnCdEnum"
-            }
-          ],
+          "$ref": "#/$defs/OrgIntrntnlOrgnstnCdEnum",
           "default": null
         },
         "INTRNTNL_ORGNZTN.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CNTRY_RSDNC": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/GenCntryEnum"
-            }
-          ],
+          "$ref": "#/$defs/GenCntryEnum",
           "default": null
         },
         "CNTRY_RSDNC.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "INSTTTNL_SCTR": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/EsaSectorEnum"
-            }
-          ],
+          "$ref": "#/$defs/EsaSectorEnum",
           "default": null
         },
         "INSTTTNL_SCTR.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "INSTTTNL_SCTR_DTL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/OrgInstttnlSctrDtlEnum"
-            }
-          ],
+          "$ref": "#/$defs/OrgInstttnlSctrDtlEnum",
           "default": null
         },
         "INSTTTNL_SCTR_DTL.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "INSTTTNL_SCTR_CNTRL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/OrgInstttnlSctrCntrlEnum"
-            }
-          ],
+          "$ref": "#/$defs/OrgInstttnlSctrCntrlEnum",
           "default": null
         },
         "INSTTTNL_SCTR_CNTRL.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "ECNMC_ACTVTY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/OrgEcnmcActvtyTypEnum"
-            }
-          ],
+          "$ref": "#/$defs/OrgEcnmcActvtyTypEnum",
           "default": null
         },
         "ECNMC_ACTVTY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IS_LSTD": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "IS_LSTD.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IS_INVSTMNT_GRDD": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "IS_INVSTMNT_GRDD.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IS_INCTV": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "IS_INCTV.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IS_UNDR_LQDTN": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "IS_UNDR_LQDTN.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FND_LGL_TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/FndLglTypEnum"
-            }
-          ],
+          "$ref": "#/$defs/FndLglTypEnum",
           "default": null
         },
         "FND_LGL_TYP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FND_INVSTMNT_PLCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/FndInvstmntPlcyEnum"
-            }
-          ],
+          "$ref": "#/$defs/FndInvstmntPlcyEnum",
           "default": null
         },
         "FND_INVSTMNT_PLCY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FND_DSTRBTN_PLCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/FndDstrbtnPlcyEnum"
-            }
-          ],
+          "$ref": "#/$defs/FndDstrbtnPlcyEnum",
           "default": null
         },
         "FND_DSTRBTN_PLCY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FND_INVSTR_TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/FndInvstrTypEnum"
-            }
-          ],
+          "$ref": "#/$defs/FndInvstrTypEnum",
           "default": null
         },
         "FND_INVSTR_TYP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FND_GRN_TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/FndGrnTypEnum"
-            }
-          ],
+          "$ref": "#/$defs/FndGrnTypEnum",
           "default": null
         },
         "FND_GRN_TYP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FND_STRTGY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/FndStrtgyEnum"
-            }
-          ],
+          "$ref": "#/$defs/FndStrtgyEnum",
           "default": null
         },
         "FND_STRTGY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FND_GGRPHCL_FCS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/FndGgrphclFcsEnum"
-            }
-          ],
+          "$ref": "#/$defs/FndGgrphclFcsEnum",
           "default": null
         },
         "FND_GGRPHCL_FCS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FND_BND_FCS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/FndBndFcsEnum"
-            }
-          ],
+          "$ref": "#/$defs/FndBndFcsEnum",
           "default": null
         },
         "FND_BND_FCS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FND_RL_ESTT_TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/FndRlEsttTypEnum"
-            }
-          ],
+          "$ref": "#/$defs/FndRlEsttTypEnum",
           "default": null
         },
         "FND_RL_ESTT_TYP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IS_FOF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "IS_FOF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IS_ETF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "IS_ETF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IS_PEF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "IS_PEF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IS_SBFND": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "IS_SBFND.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
+          "default": null
+        },
+        "CRRNCY": {
+          "$ref": "#/$defs/GenCrrncyEnum",
+          "default": null
+        },
+        "CRRNCY.STATUS": {
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -8278,11 +7162,48 @@
       "title": "OrgIntrntnlOrgnstnCdEnum",
       "type": "string"
     },
+    "OrgKeySeries": {
+      "properties": {
+        "ID": {
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "DT": {
+          "format": "date-time",
+          "title": "Dt",
+          "type": "string"
+        },
+        "FRQNCY": {
+          "$ref": "#/$defs/GenFrqncyEnum"
+        },
+        "FEES": {
+          "minimum": 0.0,
+          "title": "Fees",
+          "type": "number"
+        },
+        "FEES.STATUS": {
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
+          "default": null
+        },
+        "FEES.CONF": {
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
+          "default": null
+        }
+      },
+      "required": [
+        "ID",
+        "DT",
+        "FRQNCY",
+        "FEES"
+      ],
+      "title": "OrgKeySeries",
+      "type": "object"
+    },
     "OrgSeries": {
       "properties": {
         "ID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^([ETB][A-Z]{2}[A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(PE[A-Z]{2}[A-Za-z0-9@$-]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -8293,11 +7214,7 @@
           "type": "string"
         },
         "DT_BRTH.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "DT_CLS": {
@@ -8307,56 +7224,37 @@
           "type": "string"
         },
         "DT_CLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "SPLT_FRM": {
           "default": null,
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Splt Frm",
           "type": "string"
         },
         "SPLT_FRM.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "MRGD_WTH": {
           "default": null,
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Mrgd Wth",
           "type": "string"
         },
         "MRGD_WTH.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "TRNSFRMD_T": {
           "default": null,
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Trnsfrmd T",
           "type": "string"
         },
         "TRNSFRMD_T.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -8428,11 +7326,7 @@
           "$ref": "#/$defs/BoolEnum"
         },
         "ALIAS_OF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -8448,7 +7342,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -8466,30 +7360,23 @@
         },
         "NM": {
           "default": null,
-          "maxLength": 128,
+          "maxLength": 256,
           "title": "Nm",
           "type": "string"
         },
         "NM.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "NM_LTN": {
           "default": null,
-          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,128}$)|(^\\.$)",
+          "maxLength": 128,
+          "pattern": "^[\\u0000-\\u024F\u2018-\u201f\u20ac]+$",
           "title": "Nm Ltn",
           "type": "string"
         },
         "NM_LTN.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "NM_SHRT": {
@@ -8499,105 +7386,58 @@
           "type": "string"
         },
         "NM_SHRT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CRRNCY": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/GenCrrncyEnum"
-            }
-          ],
+          "$ref": "#/$defs/GenCrrncyEnum",
           "default": null
         },
         "CRRNCY.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "MRKT": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/GenMrktEnum"
-            }
-          ],
+          "$ref": "#/$defs/GenMrktEnum",
           "default": null
         },
         "MRKT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/ShrTypEnum"
-            }
-          ],
+          "$ref": "#/$defs/ShrTypEnum",
           "default": null
         },
         "TYP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "ESA_TYP": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/ShrEsaTypEnum"
-            }
-          ],
+          "$ref": "#/$defs/ShrEsaTypEnum",
           "default": null
         },
         "ESA_TYP.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "CFI": {
           "default": null,
-          "pattern": "(^[a-zA-Z0-9_]{6}$)|(^\\.$)",
+          "maxLength": 6,
+          "pattern": "^[a-zA-Z0-9_]{6}$",
           "title": "Cfi",
           "type": "string"
         },
         "CFI.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "RDMPTN_FRQNCY_IF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/OtherRdmptnFrqncyEnum"
-            }
-          ],
+          "$ref": "#/$defs/OtherRdmptnFrqncyEnum",
           "default": null
         },
         "RDMPTN_FRQNCY_IF.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "MNMM_AMNT": {
@@ -8607,11 +7447,7 @@
           "type": "number"
         },
         "MNMM_AMNT.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -8637,7 +7473,7 @@
       "properties": {
         "IID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Iid",
           "type": "string"
         },
@@ -8655,19 +7491,11 @@
           "type": "number"
         },
         "BK_PRC.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "BK_PRC.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "INCM": {
@@ -8675,19 +7503,11 @@
           "type": "number"
         },
         "INCM.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "INCM.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -8705,7 +7525,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -8722,11 +7542,7 @@
           "type": "number"
         },
         "PRC.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "OTSTNDNG": {
@@ -8735,11 +7551,7 @@
           "type": "number"
         },
         "OTSTNDNG.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -8757,7 +7569,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -8768,11 +7580,7 @@
           "type": "string"
         },
         "DT_BRTH.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "DT_CLS": {
@@ -8782,41 +7590,29 @@
           "type": "string"
         },
         "DT_CLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "RSTRCTRD_T": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Rstrctrd T",
           "type": "string"
         },
         "RSTRCTRD_T.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "TRNSFRMD_T": {
           "default": null,
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Trnsfrmd T",
           "type": "string"
         },
         "TRNSFRMD_T.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -8857,7 +7653,7 @@
       "properties": {
         "ID": {
           "maxLength": 51,
-          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^(I[A-Z][A-Z][A-Z0-9]{9}[0-9])|(PE[A-Z]{2}[A-Za-z0-9@$-]*_[!-~]+)$",
           "title": "Id",
           "type": "string"
         },
@@ -8872,11 +7668,7 @@
           "type": "number"
         },
         "FCTR.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },
@@ -8891,14 +7683,12 @@
     "Usr2OrgSeries": {
       "properties": {
         "LID": {
-          "maxLength": 51,
-          "pattern": "^[a-zA-Z][!-~-]*$",
+          "pattern": "^[a-zA-Z][!-~-]{1,50}$",
           "title": "Lid",
           "type": "string"
         },
         "RID": {
-          "maxLength": 51,
-          "pattern": "^([ETB][A-Za-z0-9_@$-][!-~]*)|(L[0-9A-Z]{18}[0-9]{2})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^E[A-Z]{2}[A-Za-z0-9_@$-][!-~]{1,47}$",
           "title": "Rid",
           "type": "string"
         },
@@ -8915,171 +7705,87 @@
           "type": "string"
         },
         "ASSCTD_WTH": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "ASSCTD_WTH.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "ASSCTD_WTH.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "IFDAT_RL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "IFDAT_RL.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "IFDAT_RL.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "BSIDAT_RL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "BSIDAT_RL.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "BSIDAT_RL.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "MIRDAT_RL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "MIRDAT_RL.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "MIRDAT_RL.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "AUXDAT_RL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "AUXDAT_RL.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "AUXDAT_RL.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "INSDAT_RL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "INSDAT_RL.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "INSDAT_RL.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "PENDAT_RL": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/BoolEnum"
-            }
-          ],
+          "$ref": "#/$defs/BoolEnum",
           "default": null
         },
         "PENDAT_RL.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "PENDAT_RL.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -9093,8 +7799,7 @@
     "UsrDynmcSeries": {
       "properties": {
         "ID": {
-          "maxLength": 51,
-          "pattern": "^[a-zA-Z][!-~-]*$",
+          "pattern": "^[a-zA-Z][!-~-]{1,50}$",
           "title": "Id",
           "type": "string"
         },
@@ -9117,19 +7822,11 @@
           "type": "string"
         },
         "FRST.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "FRST.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "LST": {
@@ -9139,63 +7836,40 @@
           "type": "string"
         },
         "LST.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "LST.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "PHN": {
           "default": null,
-          "pattern": "(^[\\u0000-\\u024F\u2018-\u201f\u20ac]{1,32}$)|(^\\.$)",
+          "maxLength": 32,
           "title": "Phn",
           "type": "string"
         },
         "PHN.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "PHN.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "EMAIL": {
           "default": null,
           "format": "email",
+          "maxLength": 128,
           "title": "Email",
           "type": "string"
         },
         "EMAIL.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "EMAIL.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         }
       },
@@ -9208,8 +7882,7 @@
     "UsrSeries": {
       "properties": {
         "ID": {
-          "maxLength": 51,
-          "pattern": "^[a-zA-Z][!-~-]*$",
+          "pattern": "^[a-zA-Z][!-~-]{1,50}$",
           "title": "Id",
           "type": "string"
         },
@@ -9220,19 +7893,11 @@
           "type": "string"
         },
         "DT_BRTH.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "DT_BRTH.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "DT_CLS": {
@@ -9242,34 +7907,21 @@
           "type": "string"
         },
         "DT_CLS.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         },
         "DT_CLS.CONF": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrCnfdntltySttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrCnfdntltySttsEnum",
           "default": null
         },
         "TRNSFRMD_T": {
           "default": null,
-          "maxLength": 51,
-          "pattern": "^(I[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[A-Z0-9]{1,30})|(P[A-Za-z0-9@$-]+_[!-~]+)$",
+          "pattern": "^[a-zA-Z][!-~-]{1,50}$",
           "title": "Trnsfrmd T",
           "type": "string"
         },
         "TRNSFRMD_T.STATUS": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/AttrObsrvtnSttsEnum"
-            }
-          ],
+          "$ref": "#/$defs/AttrObsrvtnSttsEnum",
           "default": null
         }
       },

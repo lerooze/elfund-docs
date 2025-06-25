@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<orgUnitsResponse xmlns="http://www.ecb.int/schema/RIAD/sdd/orgUnitsExtended" xmlns:ns2="http://www.ecb.int/schema/RIAD/filters">
+  
+
+  <filtersExtras>
+    <identifier>
+      <entityIdentifier>
+        <ns2:in>
+          <ns2:value>FI_ALV_CD/FI00180910</ns2:value>
+          <ns2:value>FI_Y_CD/0018091-0</ns2:value>
+          <ns2:value>AU_ABN_CD/149 440 291</ns2:value>
+          <ns2:value>AU_ACN_CD/149 440 291</ns2:value>
+        </ns2:in>
+      </entityIdentifier>
+    </identifier>
+  </filtersExtras>
+  <resultProperties>
+    <resultProperty>entty_riad_cd</resultProperty>
+  </resultProperties>
+  <results>
+    <orgUnit>
+      <entty_riad_cd>AUECBM876961</entty_riad_cd>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_cd>AUECBM876961</entty_riad_cd>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_cd>AUECBM876961</entty_riad_cd>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_cd>AUECBM876961</entty_riad_cd>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_cd>AUECBM876961</entty_riad_cd>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_cd>AUECBM876961</entty_riad_cd>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_cd>FI00180910</entty_riad_cd>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_cd>FI00180910</entty_riad_cd>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_cd>FI00180910</entty_riad_cd>
+    </orgUnit>
+  </results>
+  <resultsInformation>
+    <count>9</count>
+  </resultsInformation>
+</orgUnitsResponse>

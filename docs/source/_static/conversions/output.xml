@@ -1,0 +1,394 @@
+<?xml version="1.0" ?>
+<orgUnitsResponse xmlns="http://www.ecb.int/schema/RIAD/sdd/orgUnitsExtended" xmlns:ns2="http://www.ecb.int/schema/RIAD/filters">
+  
+
+  <filters>
+    <entty_riad_cd>
+      <ns2:in>
+        <ns2:value>FI00180910</ns2:value>
+        <ns2:value>AUECBM876961</ns2:value>
+        <ns2:value>GRAEEAP005</ns2:value>
+        <ns2:value>GRAK01049</ns2:value>
+      </ns2:in>
+    </entty_riad_cd>
+  </filters>
+  <resultProperties>
+    <resultProperty>entty_riad_cd</resultProperty>
+    <resultProperty>entty_riad_id</resultProperty>
+    <resultProperty>bsnss_vld_frm</resultProperty>
+    <resultProperty>bsnss_vld_t</resultProperty>
+    <resultProperty>dt_brth</resultProperty>
+    <resultProperty>dt_cls</resultProperty>
+    <resultProperty>instttnl_sctr</resultProperty>
+    <resultProperty>nm_entty</resultProperty>
+    <resultProperty>cntry</resultProperty>
+  </resultProperties>
+  <results>
+    <orgUnit>
+      <entty_riad_id>18061578</entty_riad_id>
+      <bsnss_vld_frm>2022-07-31</bsnss_vld_frm>
+      <bsnss_vld_t>2022-09-30</bsnss_vld_t>
+      <cntry>AU</cntry>
+      <dt_brth>1983-09-05</dt_brth>
+      <dt_cls>2022-09-30</dt_cls>
+      <entty_riad_cd>AUECBM876961</entty_riad_cd>
+      <nm_entty>BNP Paribas Securities Services</nm_entty>
+      <instttnl_sctr>S122</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2022-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2022-12-31</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2016-01-01</bsnss_vld_frm>
+      <bsnss_vld_t>2016-06-29</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>21974339</entty_riad_id>
+      <bsnss_vld_frm>2022-08-01</bsnss_vld_frm>
+      <bsnss_vld_t>2022-12-31</bsnss_vld_t>
+      <cntry>FI</cntry>
+      <dt_brth>2022-08-01</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>FI00180910</entty_riad_cd>
+      <nm_entty>LIEDON TAKSIASEMAYHDISTYS RY</nm_entty>
+      <instttnl_sctr>S11</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2018-03-01</bsnss_vld_frm>
+      <bsnss_vld_t>2018-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2023-01-01</bsnss_vld_frm>
+      <bsnss_vld_t>2023-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2011-12-06</bsnss_vld_frm>
+      <bsnss_vld_t>2012-03-11</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2016-07-13</bsnss_vld_frm>
+      <bsnss_vld_t>2017-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>23249498</entty_riad_id>
+      <bsnss_vld_frm>2024-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2025-04-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2023-08-07</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAK01049</entty_riad_cd>
+      <nm_entty>DELOS EXTRA INCOME II 18MONTHS BOND FUND</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2015-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2015-12-31</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2020-09-30</bsnss_vld_frm>
+      <bsnss_vld_t>2020-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>18061578</entty_riad_id>
+      <bsnss_vld_frm>2018-09-30</bsnss_vld_frm>
+      <bsnss_vld_t>2020-01-30</bsnss_vld_t>
+      <cntry>AU</cntry>
+      <dt_brth>1983-09-05</dt_brth>
+      <dt_cls>2022-09-30</dt_cls>
+      <entty_riad_cd>AUECBM876961</entty_riad_cd>
+      <nm_entty>BNP Paribas Securities Services</nm_entty>
+      <instttnl_sctr>S122</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>21974339</entty_riad_id>
+      <bsnss_vld_frm>2023-01-01</bsnss_vld_frm>
+      <bsnss_vld_t>2024-05-31</bsnss_vld_t>
+      <cntry>FI</cntry>
+      <dt_brth>2022-08-01</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>FI00180910</entty_riad_cd>
+      <nm_entty>LIEDON TAKSIASEMAYHDISTYS RY</nm_entty>
+      <instttnl_sctr>S11</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2012-03-12</bsnss_vld_frm>
+      <bsnss_vld_t>2013-12-31</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>18061578</entty_riad_id>
+      <bsnss_vld_frm>2018-09-29</bsnss_vld_frm>
+      <bsnss_vld_t>2018-09-29</bsnss_vld_t>
+      <cntry>AU</cntry>
+      <dt_brth>1983-09-05</dt_brth>
+      <dt_cls>2022-09-30</dt_cls>
+      <entty_riad_cd>AUECBM876961</entty_riad_cd>
+      <nm_entty>BNP Paribas Securities Services</nm_entty>
+      <instttnl_sctr>S122</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>18061578</entty_riad_id>
+      <bsnss_vld_frm>2020-01-31</bsnss_vld_frm>
+      <bsnss_vld_t>2021-05-30</bsnss_vld_t>
+      <cntry>AU</cntry>
+      <dt_brth>1983-09-05</dt_brth>
+      <dt_cls>2022-09-30</dt_cls>
+      <entty_riad_cd>AUECBM876961</entty_riad_cd>
+      <nm_entty>BNP Paribas Securities Services</nm_entty>
+      <instttnl_sctr>S122</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>21974339</entty_riad_id>
+      <bsnss_vld_frm>2024-06-01</bsnss_vld_frm>
+      <bsnss_vld_t>9999-12-31</bsnss_vld_t>
+      <cntry>FI</cntry>
+      <dt_brth>2022-08-01</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>FI00180910</entty_riad_cd>
+      <nm_entty>LIEDON TAKSIASEMAYHDISTYS RY</nm_entty>
+      <instttnl_sctr>S11</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2016-06-30</bsnss_vld_frm>
+      <bsnss_vld_t>2016-07-12</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2021-01-01</bsnss_vld_frm>
+      <bsnss_vld_t>2021-03-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>23249498</entty_riad_id>
+      <bsnss_vld_frm>2023-08-07</bsnss_vld_frm>
+      <bsnss_vld_t>2023-09-03</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2023-08-07</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAK01049</entty_riad_cd>
+      <nm_entty>DELOS EXTRA INCOME II 18MONTHS BOND FUND</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>23249498</entty_riad_id>
+      <bsnss_vld_frm>2023-09-04</bsnss_vld_frm>
+      <bsnss_vld_t>2023-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2023-08-07</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAK01049</entty_riad_cd>
+      <nm_entty>DELOS EXTRA INCOME II 18MONTHS BOND FUND</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>23249498</entty_riad_id>
+      <bsnss_vld_frm>2023-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2024-06-29</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2023-08-07</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAK01049</entty_riad_cd>
+      <nm_entty>DELOS EXTRA INCOME II 18MONTHS BOND FUND</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>18061578</entty_riad_id>
+      <bsnss_vld_frm>1983-09-05</bsnss_vld_frm>
+      <bsnss_vld_t>2018-09-28</bsnss_vld_t>
+      <cntry>AU</cntry>
+      <dt_brth>1983-09-05</dt_brth>
+      <dt_cls>2022-09-30</dt_cls>
+      <entty_riad_cd>AUECBM876961</entty_riad_cd>
+      <nm_entty>BNP Paribas Securities Services</nm_entty>
+      <instttnl_sctr>S122</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>18061578</entty_riad_id>
+      <bsnss_vld_frm>2021-05-31</bsnss_vld_frm>
+      <bsnss_vld_t>2022-07-30</bsnss_vld_t>
+      <cntry>AU</cntry>
+      <dt_brth>1983-09-05</dt_brth>
+      <dt_cls>2022-09-30</dt_cls>
+      <entty_riad_cd>AUECBM876961</entty_riad_cd>
+      <nm_entty>BNP Paribas Securities Services</nm_entty>
+      <instttnl_sctr>S122</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>23249498</entty_riad_id>
+      <bsnss_vld_frm>2025-05-01</bsnss_vld_frm>
+      <bsnss_vld_t>9999-12-31</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2023-08-07</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAK01049</entty_riad_cd>
+      <nm_entty>DELOS STANDARD VARIABLE NET ASSET VALUE MONEY MARKET FUND II</nm_entty>
+      <instttnl_sctr>S123</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2017-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2018-02-28</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2018-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2020-09-29</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2020-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2020-12-31</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2021-03-31</bsnss_vld_frm>
+      <bsnss_vld_t>2021-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2021-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2022-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2023-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2024-12-22</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>23249498</entty_riad_id>
+      <bsnss_vld_frm>2024-06-30</bsnss_vld_frm>
+      <bsnss_vld_t>2024-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2023-08-07</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAK01049</entty_riad_cd>
+      <nm_entty>DELOS EXTRA INCOME II 18MONTHS BOND FUND</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>106072</entty_riad_id>
+      <bsnss_vld_frm>2014-01-01</bsnss_vld_frm>
+      <bsnss_vld_t>2015-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2011-12-06</dt_brth>
+      <dt_cls>2024-12-22</dt_cls>
+      <entty_riad_cd>GRAEEAP005</entty_riad_cd>
+      <nm_entty>INTERCONTINENTAL INTERNATIONAL R.E.I.C.</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+  </results>
+  <resultsInformation>
+    <count>33</count>
+  </resultsInformation>
+</orgUnitsResponse>

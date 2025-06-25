@@ -1,0 +1,190 @@
+Συνδυαστικοί έλεγχοι
+====================
+
+Όπου γίνεται QUERY στη BED γίνεται με SRC_TYP='AUTH', SRC_ORG='AUTH', SRC_USR='AUTH' και TIMESTAMP=MAX(TIMESTAMP) εκτός και αναφέρεται κάτι διαφορετικό
+
+Εντοπισμός ΕΟ ενδιαφέροντος 
+----------------------------
+
+Σε ένα "κουβά" προσθέτονται συνδυασμοί ΕO,DT (αν δεν υπάρχουν ήδη στο κουβά) που προκύπτουν από λογιστικά στοιχεία στη BED με TIMESTAMP>(TIMESTAMP του προηγούμενου ελέγχου).  Το DT προκύπτει απευθείας από την παρατήρηση.  Ο ΕΟ προκύπτει ως εξής για κάθε λογιστικό (BED:ACC) πίνακα ως εξής:
+
+ASST_DPST, LBLTY_DPST
+  O EO από το IID αντλείται ως εξής:
+  1.  Αν το IID έχει τη μορφή _{CCC}_E{OA_ID} τότε ο ΕΟ=Ε{OA_ID}
+  2.  Σε διαφορετική περίπτωση αναζητείται το OAID από BED:REF.DPST όπου ID=IID
+
+ASST_DBT, ASST_SHR, DER, ASST_NN_FNNCL, ASST_RMNNG, LBLTY_RMMNNG, ORG_KEY
+  O EO είναι το ID της εγγραφής
+
+ASST_LN, LBLTY_LN
+  O EO είναι το OAID που προκύπτει από αναζήτηση στον BED:REF.LN όπου ID=IID
+
+LBLTY_DBT
+  O EO είναι το LID που προκύπτει από αναζήτηση στον BED:REF.ORG2DBT όπου RID=IID, VLD_FRM<=DT, VLD_T>DT, ISSR_OF=T 
+
+HLDR, SHR_KEY
+  O EO είναι το LID που προκύπτει από αναζήτηση στον BED:REF.ORG2SHR όπου RID=IID, VLD_FRM<=DT, VLD_T>DT, ISSR_OF=T 
+
+Εμπλουτισμός λογιστικών πινάκων
+-------------------------------
+
+Γίνονται οι ακόλουθες προεργασίες σε κάθε λογιστικό πίνακαι της DAT πριν την υλοποίηση των λογιστικών ελέγχων:
+
+1. Σε κάθε λογιστικό πίνακα διατηρούνται οι εγγραφές όπου το DT περιλαμβάνεται στο κουβά καθώς και το SRC_TYP=SDR, SRC_ORG=AUTH, SRC_USR=AUTH
+
+2. Επειτα προσθέτεται νέα μεταβλητή ΕΟ το ID του ΕΟ όπως έχει εντοπισθεί από το προηγούμενο βήμα.
+
+3. Σε κάθε πίνακα προσθέτεται μεταβλητή με τη ΜΠΣ όπως προκύπτει από τον πίνακα REF.ORG2ORG με RID=EO, IFDAT_RPRTF_OF=T, NOW>=VLD_FRM, NOW<VLD_T
+
+
+
+
+Έλεγχος καθαρής θέσης (NET_ASSET)
+---------------------------------
+
+Ελέγχεται ότι το άθροισμα του γινόμενου της λογιστικής τιμής επί τον αριθμό
+μετοχών/μεριδίων για κάθε είδος μετοχής/μεριδίου του ΕΟ ισούται με την αξία του
+ενεργητικού μείον την αξία του παθητικού. 
+
+Πιο αναλυτικά θα πρέπει να ισχύει η παρακάτω σχέση: 
+
+.. math::
+
+    \mathrm{LHS} &= \mathrm{RHS}
+
+    \mathrm{LHS} &= \sum_s(\mathrm{SHR_KEY.BK\_PRC}\sum_h\mathrm{HLDR.QNTTY})
+
+    \mathrm{RHS} &= \mathrm{ASSETS} - \mathrm{LIABILITIES}
+
+    \mathrm{ASSETS} &= \sum_i\mathrm{ASST\_DPST.STCK} + \sum_i\mathrm{ASST\_DBT.STCK}  + \sum_i\mathrm{ASST\_LN.STCK} + \sum_i\mathrm{SHR.STCK} + \sum_i\mathrm{DER.STCK} + \sum_i\mathrm{ASST\_NN\_FNNCL.STCK} + \sum_i\mathrm{ASST\_RMNNG.STCK}
+
+    \mathrm{LIABILITIES} &= \sum_i\mathrm{LBLTY\_DPST.STCK} + \sum_i\mathrm{LBLTY\_DBT.STCK} + \sum_i\mathrm{LBLTY\_LN.STCK} + \sum_i\mathrm{LBLTY\_RMNNG.STCK}
+
+    s &= \text{Άθροισμα ανά μετοχή, μερίδιο, κατηγορία μεριδίου του επενδυτικού οργανισμού}
+
+    h &= \text{Άθροισμα ανά κάτοχο}
+
+    i &= \text{Άθροισμα ανά στοιχείο του λογαριασμού του ισολογισμού που ακολουθεί}
+
+Σε περίπτωση που δεν ισχύει η παραπάνω σχέση θα παρέχονται οι παρακάτω τιμές ανά ΜΠΣ:
+
+    ID 
+        Αναγνωριστικός κωδικός ΕΟ
+
+    DATE
+        Ημερομηνία
+
+    LHS
+        H τιμή του LHS
+
+    RHS
+        Η τιμή του RHS
+
+    ASSETS
+        Η αξία του ενεργητικού
+
+    LIABILITIES
+        Η αξία του παθητικού
+
+    DIFFERENCE
+        H διαφορά LHS - RHS 
+
+
+
+Έλεγχος μεταξύ εισοδήματος και ροών (INCOME_CROSSCHECK)
+-------------------------------------------------------
+
+Ελέγχεται ότι το συνολικό εισόδημα για κάθε ΕΟ ισούται με το υπολογιζόμενο
+εισόδημα με βάση τις συναλλαγές στο ενεργητικό, παθητικό καθώς και τις
+συμμετοχές και εξοφλήσεις. 
+
+Πιο αναλυτικά θα πρέπει να ισχύει η παρακάτω σχέση: 
+
+.. math::
+
+    \mathrm{LHS} &= \mathrm{RHS}
+
+    \mathrm{LHS} &= (\mathrm{ASSET\_FLOWS} - \mathrm{LIABILITY\_FLOWS}) - (\mathrm{SUBSCRIPTIONS} - \mathrm{REDEMPTIONS})
+
+    \mathrm{RHS} &= \sum_s(\mathrm{SHR_KEY.INCM}\sum_h\mathrm{HLDR.QNTTY})
+
+    \mathrm{SUBSCRIPTIONS} &= \sum_s\sum_h\mathrm{HLDR.SBSCRPTNS}
+
+    \mathrm{REDEMPTIONS} &= \sum_s\sum_h\mathrm{HLDR.RDMPTNS}
+
+    \mathrm{ASSET\_FLOWS} &= \sum_i\mathrm{ASST\_DPST.FLS} + \sum_i\mathrm{ASST\_DBT.FLS}  + \sum_i\mathrm{ASST\_LN.FLS} + \sum_i\mathrm{SHR.FLS} + \sum_i\mathrm{DER.FLS} + \sum_i\mathrm{ASST\_NN\_FNNCL.FLS} + \sum_i\mathrm{ASST\_RMNNG.FLS}
+
+    \mathrm{LIABILITY\_FLOWS} &= \sum_i\mathrm{LBLTY\_DPST.FLS} + \sum_i\mathrm{LBLTY\_DBT.FLS} + \sum_i\mathrm{LBLTY\_LN.FLS} + \sum_i\mathrm{LBLTY\_RMNNG.FLS}
+
+    s &= \text{Άθροισμα ανά μετοχή, μερίδιο, κατηγορία μεριδίου του επενδυτικού οργανισμού}
+
+    h &= \text{Άθροισμα ανά κάτοχο}
+
+    i &= \text{Άθροισμα ανά στοιχείο του λογαριασμού του ισολογισμού}
+
+Σε περίπτωση που δεν ισχύει ο έλεγχος θα παρέχονται οι παρακάτω τιμές ανά ΜΠΣ:
+
+    ID 
+        Αναγνωριστικός κωδικός ΕΟ
+
+    DATE
+        Ημερομηνία αναφοράς
+
+    PERIOD
+        Περίοδος αναφοράς
+
+    LHS
+        H τιμή του LHS
+
+    RHS
+        Η τιμή του RHS
+
+    Εισροές
+        Η τιμή των εισροών
+
+    Εκροές
+        Η τιμή των εκροών
+
+    Συναλλαγές Ενεργητικού
+        Η τιμή των συναλλαγών στο ενεργητικού
+
+    Συναλλαγές Παθητικού 
+        Η τιμή των συναλλαγών στο παθητικό
+
+    DIFFERENCE
+        LHS - RHS
+
+   
+Έλεγχος δεδουλευμένων τόκων (ACCRLS)
+------------------------------------
+Ελέγχεται ότι το άθροισμα των δεδουλευμένω τόκων και μισθωμάτων ισούται με το
+αντίστοιχο ποσό από τα λοιπά στοιχεία ενεργητικού.
+
+Πιο αναλυτικά θα πρέπει να ισχύει η παρακάτω σχέση: 
+
+.. math::
+
+    \mathrm{LHS} &= \mathrm{RHS}
+
+    \mathrm{LHS} &=  \sum_i\mathrm{ASST\_DPST.ACCRLS} + \sum_i\mathrm{ASST\_DBT.ACCRLS} + \sum_i\mathrm{ASST\_LN.ACCRLS} + \sum_i\mathrm{ASST\_NN\_FNNCL.ACCRLS} 
+
+    \mathrm{RHS} &= \mathrm{ASST\_RMNNG.AI_DPST.STCK} + \mathrm{ASST\_RMNNG.AI_DBT.STCK} + \mathrm{ASST\_RMNNG.AI_LN.STCK} + \mathrm{ASST\_RMNNG.AR.STCK}
+
+    i &= \text{Άθροισμα ανά στοιχείο του λογαριασμού του ισολογισμού που ακολουθεί}
+
+Σε περίπτωση που δεν ισχύει η παραπάνω σχέση θα παρέχονται οι παρακάτω τιμές ανά ΜΠΣ:
+
+    ID 
+        Αναγνωριστικός κωδικός ΕΟ
+
+    DATE
+        Ημερομηνία αναφοράς
+
+    LHS
+        H τιμή του LHS
+
+    RHS
+        Η τιμή του RHS
+
+    DIFFERENCE
+        Η διαφορά LHS - RHS

@@ -1,0 +1,281 @@
+<?xml version="1.0" ?>
+<orgUnitsResponse xmlns="http://www.ecb.int/schema/RIAD/sdd/orgUnitsExtended" xmlns:ns2="http://www.ecb.int/schema/RIAD/filters">
+  
+
+  <filters>
+    <entty_riad_id>
+      <ns2:in>
+        <ns2:value>762198</ns2:value>
+      </ns2:in>
+    </entty_riad_id>
+  </filters>
+  <resultProperties>
+    <resultProperty>entty_riad_cd</resultProperty>
+    <resultProperty>entty_riad_id</resultProperty>
+    <resultProperty>bsnss_vld_frm</resultProperty>
+    <resultProperty>bsnss_vld_t</resultProperty>
+    <resultProperty>dt_brth</resultProperty>
+    <resultProperty>dt_cls</resultProperty>
+    <resultProperty>instttnl_sctr</resultProperty>
+    <resultProperty>nm_entty</resultProperty>
+    <resultProperty>cntry</resultProperty>
+  </resultProperties>
+  <results>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2019-11-13</bsnss_vld_frm>
+      <bsnss_vld_t>2019-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2020-08-06</bsnss_vld_frm>
+      <bsnss_vld_t>2020-09-29</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2017-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2018-02-28</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2021-03-31</bsnss_vld_frm>
+      <bsnss_vld_t>2021-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2021-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2022-03-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2022-03-31</bsnss_vld_frm>
+      <bsnss_vld_t>2022-04-28</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2018-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2019-11-12</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2022-04-29</bsnss_vld_frm>
+      <bsnss_vld_t>2022-12-29</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2016-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2017-06-29</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2020-09-30</bsnss_vld_frm>
+      <bsnss_vld_t>2020-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2020-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2021-03-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2023-01-01</bsnss_vld_frm>
+      <bsnss_vld_t>2023-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2023-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2023-12-31</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2024-01-01</bsnss_vld_frm>
+      <bsnss_vld_t>2024-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2016-10-11</bsnss_vld_frm>
+      <bsnss_vld_t>2016-10-20</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2016-10-21</bsnss_vld_frm>
+      <bsnss_vld_t>2016-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2017-07-31</bsnss_vld_frm>
+      <bsnss_vld_t>2017-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2022-12-30</bsnss_vld_frm>
+      <bsnss_vld_t>2022-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2024-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>9999-12-31</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2017-06-30</bsnss_vld_frm>
+      <bsnss_vld_t>2017-07-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2018-03-01</bsnss_vld_frm>
+      <bsnss_vld_t>2018-12-30</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2019-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2020-08-05</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+    <orgUnit>
+      <entty_riad_id>762198</entty_riad_id>
+      <bsnss_vld_frm>2022-12-31</bsnss_vld_frm>
+      <bsnss_vld_t>2022-12-31</bsnss_vld_t>
+      <cntry>GR</cntry>
+      <dt_brth>2016-10-11</dt_brth>
+      <dt_cls>9999-12-31</dt_cls>
+      <entty_riad_cd>GRAEEAP006</entty_riad_cd>
+      <nm_entty>BriQ Properties A.E.E.A.P</nm_entty>
+      <instttnl_sctr>S124</instttnl_sctr>
+    </orgUnit>
+  </results>
+  <resultsInformation>
+    <count>23</count>
+  </resultsInformation>
+</orgUnitsResponse>
