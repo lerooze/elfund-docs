@@ -1,0 +1,15 @@
+"ID","NAME","DESCRIPTION","IID"
+".","Reset","Reset value",0
+"COR","Εταιρικό ομόλογο","
+            Τα εταιρικά ομόλογα (corporate bond funds) κατά κύριο λόγο (άνω του
+            50 %) επενδύουν σε χρεόγραφα έκδοσης χρηματοοικονομικών και μη
+            χρηματοοικονομικών εταιρειών.
+            ",1
+"GOV","Κρατικό ομόλογο","
+            Τα κρατικά ομόλογα (government bond funds) κατά κύριο λόγο (άνω του
+            50 %) επενδύουν σε χρεόγραφα έκδοσης κυβερνήσεων.
+            ",2
+"MIX","Μεικτό εταιρικό ομόλογο / κρατικό ομόλογο","
+            Bond funds that invest in both government and corporate bonds with
+            no prevailing policy in favour of one or the other.
+            ",3

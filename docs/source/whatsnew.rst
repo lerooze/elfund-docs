@@ -10,8 +10,16 @@ What's new?
 
 .. Next release
 .. ============
-.. Next release
-.. ============
+
+v0.9.7 (2025-06-27)
+-------------------
+* Disallow leading empty spaces in some patterns
+* Improve IFDAT-LIST
+* Examples were added and imporoved
+* Corner cases were added in IFDAT
+* Change SHR_KEY to KEY where needed in IFDAT
+* Fix license and credits
+* Other improvements in documentation
 
 v0.9.6 (2025-06-12)
 -------------------

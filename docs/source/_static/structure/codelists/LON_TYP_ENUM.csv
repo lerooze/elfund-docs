@@ -1,0 +1,73 @@
+"ID","NAME","DESCRIPTION","IID"
+".","Reset","Reset value",0
+"OVR","Overdraft","
+Where a deposit account has an overdraft facility and subsequently becomes
+overdrawn, the withdrawal to zero is the withdrawal of a deposit (recorded in
+the DEPOSIT relevant tables) and the amount of overdraft is recorded in the
+LOAN relevant tables.
+            ",1
+"REV","Revolving loans","
+Revolving loans are loans, excluding overdrafts and credit card debt, obtained
+through a line of credit and not yet repaid, where funds can be repeatedly
+repaid and drawn again (whether in one amount or in installments) up to an
+agreed contractual credit limit.  Revolving loans have the following features:
+
+* the borrower may draw on the facility up to an agreed amount without notifying the lender
+
+* the amount of available credit fluctuates as funds are borrowed and repaid
+
+* the facility may be used repeatedly
+
+* there is no obligation to repay regularly
+
+A margin account in which the broker-dealer lends the investor cash to purchase
+securities is a revolving loan.
+            ",2
+"FLS","Financial leases","
+Financial leases are defined in Regulation ECB/2013/33 as contracts under which
+the legal owner of a durable good (lessor) lends it to a third party (lessee)
+for most if not all of its economic life, in exchange for instalments covering
+the cost of the good and an imputed interest charge. The lessee, as the
+economic owner, enjoys all the benefits from the use of the good and incurs the
+costs and risks of ownership. In addition it is the lessee, as the economic
+owner, that must provide any necessary repair and maintenance of the good. For
+statistical purposes, financial leases are treated as loans from the lessor to
+the lessee, with payments treated as loan repayments rather than rentals on the
+asset. The durable goods which are the subject of the lease are recorded on the
+balance sheet of the lessee (and valued at the purchase price paid by the
+lessor). Hire-purchase agreements are considered a type of financial lease.
+            ",3
+"NOS","Non-negotiable securities","
+Holdings of debt securities which are not negotiable and cannot be traded on
+secondary markets are recorded as loans. These are instruments where the
+transfer of legal ownership is subject to restrictions which imply that they
+cannot be marketed or, although they are technically negotiable, cannot be
+traded owing to the absence of an organised market. Non-negotiable instruments
+that subsequently become negotiable and can be traded on secondary markets
+should be reclassified as debt securities.
+            ",4
+"TRD","Traded loans","
+Loans that have de facto become negotiable are called traded loans. Where there
+is no evidence of secondary market trading in the traded loans, they are
+classified as loans. Otherwise, they are classified as debt securities.
+            ",5
+"INT","Intragroup loans","
+For subsidiaries, financing via inter-company or funding can be classified
+either as inter-company lending or as capital endowments (equity) in a
+subsidiary. As with subordinated debt, positions should be classified according
+to the criteria of loan and equity instruments.
+            ",6
+"LVG","Leveraged loan","
+Leveraged loan is a syndicated loan extended to a corporation with low credit quality.
+            ",7
+"REP","Repurchase transaction","
+            If it appears on the asset side it refers to claims under reverse repos or reverse repos type operations against cash collateral, ie, counterpart of cash paid out in exchange for securities purchased at a given price under a firm commitment to resell the same or similar securities at a fixed price on a specific future date.
+            If it appears on the liability side it refers to repo or repo-type operations against cash collateral, ie, counterpart of cash received in exchange for securities sold at a given price under a firm commitment to repurchase the same (or similar) securities at a fixed price on a specific future date.  Amounts received in exchange for securities transferred to a third party ('temporary acquirer') are to be classified here where there is a firm commetment to reverse the operation and not merely an option to do so.  This implies that all risks and rewards of the underlying security are retained during the operation.
+            ",8
+"SBL","Securities lending/borrowing","
+            If it appears on the asset side it refers to claims under securities borrowing against cash collateral, ie, counterpart of cash paid in exchange for securities borrowed.
+            If it appears on the liability side it refers to cash collateral received in exchange for securities lending or gold transfer, ie, amounts received in exchange for securities or gold temporarily transferred to a third party in the form of securities/gold cash lending operations against cash collateral.
+            ",9
+"OTH","Other loan","
+Loan other than CRD, OVR, REV, FLS, NOS, TRD, INT, LVG, REP, SBL.
+            ",10

@@ -1,0 +1,5 @@
+"ID","NAME","DESCRIPTION","IID"
+".","Reset","Reset value",0
+"S","Less than one year","Less than one year",1
+"M","Over one year and up to and including two years","Over one year and up to and including two years",2
+"L","Over two years","Over two years",3

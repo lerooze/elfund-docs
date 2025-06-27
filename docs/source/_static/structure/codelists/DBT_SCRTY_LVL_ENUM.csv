@@ -1,0 +1,5 @@
+"ID","NAME","DESCRIPTION","IID"
+".","Reset","Reset value",0
+"UNSECURED","Unsecured","Unsecured",1
+"SECURED","Secured","Secured",2
+"NOINFO","No detailed information available","No detailed information available",3
